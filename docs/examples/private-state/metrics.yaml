@@ -1,0 +1,26 @@
+schema_version: 1
+as_of: '2026-11-18'
+completion:
+  current_week_percent: 75
+  trailing_4_week_percent: 82
+study_time:
+  current_week_hours: 8.5
+  trailing_4_week_average_hours: 11.2
+assessments:
+  current_week_average: 74
+  trailing_4_week_average: 77
+modes:
+  solo_average: 69
+  hybrid_average: 79
+  ai_assisted_average: 88
+reviews:
+  pending: 6
+  overdue: 2
+projects:
+  modernization_lab_percent: 65
+  laravel_backend_percent: 20
+career:
+  jobs_analyzed: 15
+  applications: 0
+  interviews: 0
+  offers: 0

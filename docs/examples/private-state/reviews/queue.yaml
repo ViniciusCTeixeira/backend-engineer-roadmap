@@ -1,0 +1,17 @@
+schema_version: 1
+items:
+- id: review-2026-11-19-mysql-composite-indexes-d1
+  topic: mysql-composite-indexes
+  skill_ids:
+  - mysql-composite-indexes
+  source_ids:
+  - assessment-2026-11-18-mysql-indexes
+  reason: confused-concepts
+  due_date: '2026-11-19'
+  interval: D+1
+  mode: SOLO
+  review_style: explain-and-small-exercise
+  status: pending
+  estimated_minutes: 20
+  priority: high
+  reschedule_count: 0

@@ -1,0 +1,27 @@
+schema_version: 1
+current_week: 10
+current_phase: data-and-web
+start_date: '2026-09-21'
+target_role: senior-backend-engineer
+weekly_hours_target: 12
+weekly_hours_ceiling: 15
+study_modes:
+  solo: true
+  hybrid: true
+  ai_assisted: true
+skill_state:
+  mysql-composite-indexes:
+    demonstrated_score: 64
+    evidence_confidence: medium
+    solo_score: 61
+    hybrid_score: 72
+    ai_assisted_score: null
+    confidence_self_report: 85
+    calibration_flag: overconfident
+    study_priority: high
+    recommended_entry_depth: foundation
+    last_evidence_date: '2026-11-18'
+active_gaps:
+- mysql-composite-indexes
+current_milestones:
+- modern-backend-data-model
