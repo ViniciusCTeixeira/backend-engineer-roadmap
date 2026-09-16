@@ -1,46 +1,112 @@
 ---
 type: diagnostic-result
 schema_version: 1
+id: "{{diagnostic_result_id}}"
 date: "{{date}}"
+question_ids: []
 skill_ids: []
+assessment_type: conceptual
 mode: SOLO
-status: completed
+status: planned
+assistance_declared: none
+started_at: null
+submitted_at: null
+graded_at: null
+score_total: null
+score_dimensions:
+  factual_correctness: null
+  reasoning: null
+  practical_execution: null
+  validation: null
+  communication: null
+  english_quality: null
+  ai_supervision: null
+confidence_self_report: null
+evidence_confidence: null
+recommended_entry_depth: null
+grader: null
 ---
 
 # Diagnostic Result — {{date}}
 
-## Domain
+## Domain / skill IDs
 
-## Mode
+## Question IDs
 
-## Raw attempt
+## Mode and assistance declaration
 
-> Preserve the learner's original attempt exactly as submitted.
+## Raw attempt — IMMUTABLE AFTER SUBMISSION
 
-## Score
+> Preserve the learner's original attempt exactly as submitted. Do not rewrite it after feedback.
 
-Scoring model pending C2 approval.
+## Scoring
 
-## Reasoning quality
+Use `docs/assessments.md` and the rubric for `assessment_type`.
 
-## Practical execution
+### Dimension scores
 
-## Communication quality
+- Factual correctness:
+- Reasoning / explanation:
+- Practical execution:
+- Validation / testing:
+- Communication:
+- English quality:
+- AI supervision:
 
-## English quality (when applicable)
+### Total score
 
-## AI supervision quality (when applicable)
+## Critical dimension floors
+
+Record any applicable floor violation, including:
+
+- validation `<50` where production/security/data-integrity validation applies;
+- reasoning `<50` for conceptual mastery;
+- AI supervision `<50` for agentic mastery;
+- English quality `<50` when English is explicitly assessed.
+
+## Confidence calibration
+
+- confidence self-report:
+- demonstrated evidence:
+- calibration flag:
+
+## Evidence by study mode
+
+Do not merge AI-assisted evidence into SOLO evidence.
+
+- SOLO evidence:
+- HYBRID evidence:
+- AI-ASSISTED evidence:
 
 ## Gaps detected
 
-## Confidence self-report
+## Recommended entry depth
 
-## Evidence links
+Choose from:
 
-## Recommended adaptation
+```text
+foundation
+standard
+accelerated
+recovery
+```
+
+## Recommended private adaptation
+
+Use approved thresholds and critical floors. Do not change public curriculum from one learner's result.
 
 ## Review events to create
 
-- [ ] D+1
-- [ ] D+7
-- [ ] D+30 when justified
+- [ ] D+1 when justified
+- [ ] D+7 when justified
+- [ ] D+30 transfer when justified
+
+## Evidence links
+
+## Feedback
+
+Append feedback after submission. Never replace the raw attempt.
+
+## Regrade history
+
+Append corrections; preserve previous grade events.
