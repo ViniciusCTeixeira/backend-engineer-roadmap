@@ -1,7 +1,7 @@
 # Task 11 Validation — Obsidian Dashboard
 
 **Date:** 2026-09-16  
-**Status:** Requires Task 11.1 repository correction, then revalidation
+**Status:** PASS — approved after Task 11.1 repository revalidation
 
 ## Scope
 
@@ -67,42 +67,44 @@ Result: **PASS**
 
 ## Open-vault Git-noise regression
 
-Repository validation after the first Task 11 implementation showed that Obsidian generated or rewrote:
+The first Task 11 implementation revealed that Obsidian generated or rewrote local vault files such as:
 
 - `.obsidian/app.json`
 - `.obsidian/appearance.json`
 - `.obsidian/core-plugins.json`
 - `.obsidian/workspace.json`
 
-This invalidated the earlier assumption that these files were suitable shared configuration.
-
-Task 11.1 changes the rule:
+Task 11.1 corrected the repository rule to:
 
 ```gitignore
 .obsidian/*
 !.obsidian/templates.json
 ```
 
-Expected after correction:
+Repository revalidation on `master` after commit:
 
-- opening/using Obsidian may modify local files;
-- those files remain ignored;
-- no workspace/recent-file state enters Git;
-- only `.obsidian/templates.json` is tracked.
+```text
+d2a06d58354f45853cc64e4ee12e80394170b318
+fix: keep obsidian local state out of git
+```
 
-Result before correction: **FAIL — regression discovered**
+confirmed:
 
-Result after applying Task 11.1 must be confirmed from GitHub before Task 11 is approved.
+- local Obsidian files were removed from repository tracking;
+- `.obsidian/templates.json` is the only public Obsidian configuration file;
+- `.gitignore` keeps future `.obsidian/*` state local by default.
+
+Result after correction: **PASS**
 
 ## Portable configuration
 
-Only this file is repository configuration:
+The sole tracked Obsidian configuration is:
 
 ```text
 .obsidian/templates.json
 ```
 
-Expected content:
+with:
 
 ```json
 {
@@ -110,7 +112,9 @@ Expected content:
 }
 ```
 
-No shared `core-plugins.json` is required. Templates core plugin is recommended locally, not enforced globally.
+No shared `core-plugins.json` is required. The Templates core plugin is recommended locally, not enforced globally.
+
+Result: **PASS**
 
 ## Public/private boundary
 
@@ -118,28 +122,27 @@ No shared `core-plugins.json` is required. Templates core plugin is recommended 
 - private-dashboard template contains placeholders only: PASS
 - learner values remain under `.study/`: PASS
 - dashboard explicitly marked derived: PASS
-- workspace/recent-file state must not be public: pending repository correction
+- workspace/recent-file state is not public: PASS
+- future Obsidian-local state is ignored by default: PASS
 
-## Post-correction commands
+## Repository evidence
 
-```bash
-python -m json.tool .obsidian/templates.json >/dev/null
-git check-ignore .obsidian/workspace.json
-git check-ignore .obsidian/core-plugins.json
-git check-ignore .obsidian/app.json
-git check-ignore .obsidian/appearance.json
-git ls-files .obsidian
-git diff --check
-```
-
-Expected:
+GitHub `master` was revalidated after Task 11.1:
 
 ```text
-.obsidian/templates.json
+.obsidian/
+└── templates.json
 ```
 
-is the only output from `git ls-files .obsidian`.
+The parent `.gitignore` contains:
+
+```gitignore
+.obsidian/*
+!.obsidian/templates.json
+```
 
 ## Conclusion
 
-Task 11 is approved only after the Task 11.1 correction is committed, pushed, and the repository confirms that `.obsidian/templates.json` is the sole tracked Obsidian configuration file.
+**Task 11 is approved.**
+
+The Obsidian interface is plugin-optional, clean-clone safe, keeps learner state private, treats the dashboard as a derived view, and no longer tracks volatile workspace/plugin/preference state.
