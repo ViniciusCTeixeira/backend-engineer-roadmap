@@ -1,11 +1,29 @@
 # Task 12 Validation — Executable Week 0
 
 **Date:** 2026-09-16  
-**Status:** Local package validation PASS; repository validation pending commit/push
+**Status:** PASS — approved after repository revalidation
 
 ## Scope
 
-Turn the already-approved C1 Week 0 blueprint into executable public prompts while preserving assessment integrity and private learner state.
+Turn the approved C1 Week 0 blueprint into executable public prompts while preserving assessment integrity and private learner state.
+
+## Repository evidence
+
+Implementation commit:
+
+```text
+3dcb97359e0e9f7260d2ec36d96f1ca770481372
+feat: make week zero diagnostic executable
+```
+
+Validation-record commit:
+
+```text
+1d4d16690c22acb8b1d0174337adc4c6381408f4
+docs: validate executable week zero diagnostic
+```
+
+Repository revalidation confirmed that the validation-record commit changed only this Task 12 validation document.
 
 ## Schedule validation
 
@@ -47,7 +65,7 @@ All 19 approved diagnostic domains have at least one public prompt:
 
 Result: **PASS**
 
-## Mode coverage
+## Mode and communication coverage
 
 - closed SOLO conceptual/practical evidence: PASS
 - HYBRID testing/static-analysis exercise: PASS
@@ -68,11 +86,11 @@ Result: **PASS**
 ## Assessment integrity
 
 - public Question Bank contains prompts only: PASS
-- no public answer key/model solution section: PASS
+- no public answer-key/model-solution section: PASS
 - SOLO prompts prohibit agent help before submission/abandonment: PASS
 - HYBRID prompts preserve first SOLO evidence: PASS
 - raw attempts are stored privately and immutable after submission: PASS
-- diagnostic result template uses C2 scoring instead of the obsolete "pending C2" placeholder: PASS
+- diagnostic result template uses C2 scoring: PASS
 
 ## Agentic diagnostic safety
 
@@ -89,7 +107,7 @@ Result: **PASS**
 
 ## Adaptation
 
-Day 7 uses the existing adaptation model:
+Day 7 uses the approved adaptation model:
 
 ```text
 >=85  maintenance
@@ -98,28 +116,12 @@ Day 7 uses the existing adaptation model:
 <50   recovery before dependent advanced work
 ```
 
-Critical floors, mode separation, review generation, workload ceiling, and public/private boundary remain authoritative.
+Critical floors, mode separation, review generation, workload ceiling, and public/private boundaries remain authoritative.
 
 Result: **PASS**
 
-## Files added/updated
+## Conclusion
 
-- Week 0 README
-- 7 executable day files
-- Question Bank README
-- 19 diagnostic domain files
-- diagnostic result template
-- this validation record
+**Task 12 is approved.**
 
-## Repository gate
-
-After commit/push, validate on GitHub:
-
-1. only Task 12 files changed;
-2. all 19 diagnostic domain files exist;
-3. all day totals match blueprint;
-4. no public answer-key/model-solution section exists;
-5. diagnostic-result template references current C2 scoring;
-6. public curriculum outside Week 0 is unchanged.
-
-Task 12 is approved only after repository revalidation passes.
+The executable Week 0 matches the C1 blueprint, uses current C2 scoring/integrity rules, covers all 19 diagnostic domains, and does not modify the public 52-week curriculum from learner results.
