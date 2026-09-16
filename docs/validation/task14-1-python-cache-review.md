@@ -1,53 +1,41 @@
 # Task 14.1 Validation — Python Cache Regression
 
 **Date:** 2026-09-16  
-**Status:** Local validation PASS; GitHub Actions platform revalidation pending push
+**Status:** PASS — repository cleanup revalidated
 
 ## Root cause
 
-Running the validator tests creates Python bytecode caches locally.
+Running Python tests created bytecode cache files locally, and the repository did not initially ignore them.
 
-The repository `.gitignore` did not previously exclude:
+Two generated artifacts were accidentally tracked:
 
 ```text
-__pycache__/
-*.pyc
-*.pyo
+scripts/__pycache__/validate_repo.cpython-314.pyc
+tests/__pycache__/test_validate_repo.cpython-314.pyc
 ```
-
-As a result, two generated cache files were accidentally committed with Task 14.
 
 ## Fix
 
-The repository now ignores generated Python caches globally:
+The repository now ignores generated caches globally:
 
 ```gitignore
 __pycache__/
 *.py[cod]
 ```
 
-The single synthetic negative fixture under `tests/fixtures/generated-python-cache/` is explicitly allowlisted so it can remain versioned and prove the validator rejects this condition.
+The synthetic negative fixture is explicitly allowlisted so the validator can prove that a tracked cache artifact is rejected.
 
-The validator also rejects tracked Python cache artifacts with:
+The validator now emits:
 
 ```text
 [GENERATED_ARTIFACT]
 ```
 
-This provides defense in depth:
-
-1. Git normally ignores the artifacts.
-2. Static validation still fails if such a file is force-added or otherwise tracked.
+for tracked `__pycache__`, `.pyc`, or `.pyo` content.
 
 ## TDD evidence
 
-A failing fixture/test was added first:
-
-```text
-tests/fixtures/generated-python-cache/
-```
-
-RED result:
+RED:
 
 ```text
 18 tests
@@ -55,7 +43,7 @@ RED result:
 generated-python-cache unexpectedly passed
 ```
 
-After implementing `GENERATED_ARTIFACT` detection:
+GREEN:
 
 ```text
 18 tests
@@ -63,30 +51,52 @@ After implementing `GENERATED_ARTIFACT` detection:
 0 errors
 ```
 
-## Repository cleanup required
+## Repository revalidation
 
-The previously committed files must be removed from Git tracking:
+Correction commit:
 
 ```text
-scripts/__pycache__/validate_repo.cpython-314.pyc
-tests/__pycache__/test_validate_repo.cpython-314.pyc
+195a915fcf79beb5781fd39c04d4eaad9d3a97ac
+fix: keep generated python artifacts out of git
 ```
 
-Deleting them from the repository is safe because they are generated artifacts.
+The commit removed the two real generated `.pyc` files from the current repository tree.
 
-## GitHub Actions observation
+Current `scripts/` contains only:
 
-The Task 14 push produced a GitHub Actions run with:
+```text
+README.md
+validate_repo.py
+```
+
+Current `tests/` contains only the test source and fixtures at its top level; no runtime `__pycache__` remains.
+
+The intentionally invalid fixture remains at:
+
+```text
+tests/fixtures/generated-python-cache/
+```
+
+Result: **PASS**
+
+## GitHub Actions follow-up
+
+The correction push produced run:
+
+```text
+35055576555
+```
+
+It again ended with:
 
 ```text
 conclusion: startup_failure
-workflow name: empty
-workflow path: BuildFailed
+path: BuildFailed
 jobs: 0
 ```
 
-No repository job, runner, checkout step, Python setup, test, or validator step started.
+No workflow job executed. This is tracked as an external GitHub Actions startup condition, not as a failure of the Python-cache correction.
 
-Therefore this correction does not change the workflow YAML as a speculative response to a failure that occurred before the job graph existed.
+## Conclusion
 
-After this patch is pushed, inspect the new Actions run. If it again shows `BuildFailed` + `startup_failure` + zero jobs, record the CI layer as externally blocked while continuing to rely on local validator execution until GitHub Actions registration/dispatch recovers.
+**Task 14.1 is approved.**
