@@ -1,6 +1,6 @@
 # Foundations Resources
 
-> Curated from `catalog.yaml`. Resource metadata was verified on 2026-09-15.
+> Curated from `catalog.yaml`. Pilot coverage reviewed on 2026-09-15.
 
 ## `php-supported-versions` — PHP Supported Versions
 - **URL:** https://www.php.net/supported-versions.php
@@ -15,6 +15,20 @@
 - **Depth:** `core`
 - **Version scope:** current PHP manual
 - **Use:** Primary source for Week 1 type-system experiments.
+
+## `php-oop-manual` — PHP Manual — Classes and Objects
+- **URL:** https://www.php.net/manual/en/language.oop5.php
+- **Topics:** php-oop, interfaces, abstract-final, inheritance
+- **Depth:** `core`
+- **Version scope:** current PHP manual
+- **Use:** Primary Week 2 language reference; use design experiments to teach trade-offs, not syntax memorization.
+
+## `php-errors-exceptions` — PHP Manual — Errors and Exceptions
+- **URL:** https://www.php.net/exceptions
+- **Topics:** php-errors, php-exceptions, throwable, debugging
+- **Depth:** `core`
+- **Version scope:** current PHP manual
+- **Use:** Primary Week 4 failure-model reference; pair with prediction and reproducible failure experiments.
 
 ## `composer-basic-usage` — Composer — Basic Usage
 - **URL:** https://getcomposer.org/doc/01-basic-usage.md
@@ -51,9 +65,23 @@
 - **Version scope:** CakePHP 5.x
 - **Use:** Primary source for characterization/integration tests in Project A.
 
+## `phpunit-writing-tests` — PHPUnit 12.5 Manual — Writing Tests
+- **URL:** https://docs.phpunit.de/en/12.5/writing-tests-for-phpunit.html
+- **Topics:** phpunit, unit-testing, assertions, exception-testing
+- **Depth:** `core`
+- **Version scope:** PHPUnit 12.5; use a runtime-compatible major when project PHP differs
+- **Use:** Primary Week 3 testing reference; concepts are stable while the project should pin a compatible major.
+
 ## `phpstan-getting-started` — PHPStan — Getting Started
 - **URL:** https://phpstan.org/user-guide/getting-started
 - **Topics:** static-analysis, phpstan
 - **Depth:** `core`
 - **Version scope:** current PHPStan docs
 - **Use:** Use for a measurable static-analysis baseline.
+
+## `xdebug-step-debugging` — Xdebug — Step Debugging
+- **URL:** https://xdebug.org/docs/step_debug
+- **Topics:** xdebug, debugging, breakpoints, php
+- **Depth:** `supporting`
+- **Version scope:** current Xdebug documentation
+- **Use:** Week 4 supporting-platform reference; form a hypothesis before stepping through code.

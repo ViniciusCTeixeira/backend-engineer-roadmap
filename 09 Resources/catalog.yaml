@@ -639,3 +639,67 @@ resources:
   version_scope: MCP 2026-07-28
   technology_depth: core
   notes: Protocol is fast-moving; re-check spec before Week 46.
+- id: php-oop-manual
+  title: PHP Manual — Classes and Objects
+  url: https://www.php.net/manual/en/language.oop5.php
+  topic_ids:
+  - php-oop
+  - interfaces
+  - abstract-final
+  - inheritance
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current PHP manual
+  technology_depth: core
+  notes: Primary Week 2 language reference; use design experiments to teach trade-offs, not syntax memorization.
+- id: php-errors-exceptions
+  title: PHP Manual — Errors and Exceptions
+  url: https://www.php.net/exceptions
+  topic_ids:
+  - php-errors
+  - php-exceptions
+  - throwable
+  - debugging
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current PHP manual
+  technology_depth: core
+  notes: Primary Week 4 failure-model reference; pair with prediction and reproducible failure experiments.
+- id: phpunit-writing-tests
+  title: PHPUnit 12.5 Manual — Writing Tests
+  url: https://docs.phpunit.de/en/12.5/writing-tests-for-phpunit.html
+  topic_ids:
+  - phpunit
+  - unit-testing
+  - assertions
+  - exception-testing
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: PHPUnit 12.5; use a runtime-compatible major when project PHP differs
+  technology_depth: core
+  notes: Primary Week 3 testing reference; concepts are stable while the project should pin a compatible major.
+- id: xdebug-step-debugging
+  title: Xdebug — Step Debugging
+  url: https://xdebug.org/docs/step_debug
+  topic_ids:
+  - xdebug
+  - debugging
+  - breakpoints
+  - php
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current Xdebug documentation
+  technology_depth: supporting
+  notes: Week 4 supporting-platform reference; form a hypothesis before stepping through code.
