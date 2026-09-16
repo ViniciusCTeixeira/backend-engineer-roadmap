@@ -1,7 +1,7 @@
 # Task 14 Validation — Static Repository Validator
 
 **Date:** 2026-09-16  
-**Status:** Local package validation PASS; repository/CI validation pending commit/push
+**Status:** Local validator PASS; repository cleanup required; GitHub Actions blocked at startup before jobs
 
 ## Scope
 
@@ -117,3 +117,12 @@ After commit/push:
 3. require tests PASS;
 4. require repository validator PASS;
 5. only then treat Task 14 as approved for mass-generation batches.
+
+
+## Repository revalidation after first push
+
+The Task 14 implementation commit reached `master`, but repository review found two generated Python cache files committed under `__pycache__/`.
+
+GitHub Actions also created run `35055206204`, but the run ended with `startup_failure`, an empty workflow name, path `BuildFailed`, and zero jobs. No workflow step executed.
+
+Task 14.1 removes the tracked cache files, adds ignore rules, and adds a regression invariant. The workflow definition is left unchanged pending evidence from a subsequent run.

@@ -10,6 +10,14 @@
 .DS_Store
 Thumbs.db
 
+# Python generated artifacts
+__pycache__/
+*.py[cod]
+
+# Intentional negative fixture used to prove the validator rejects cache artifacts.
+!tests/fixtures/generated-python-cache/
+!tests/fixtures/generated-python-cache/**
+
 # Claude Code local/personal project instructions
 CLAUDE.local.md
 

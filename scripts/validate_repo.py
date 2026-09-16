@@ -367,6 +367,14 @@ def validate_private_and_obsidian_boundary(root: Path, files: list[Path]) -> lis
     errors = []
     for path in files:
         rel = _norm_rel(path.relative_to(root))
+        rel_parts = Path(rel).parts
+
+        if "__pycache__" in rel_parts or path.suffix.lower() in {".pyc", ".pyo"}:
+            errors.append(ValidationError(
+                "GENERATED_ARTIFACT", rel,
+                "generated Python cache artifacts must not be tracked publicly",
+            ))
+
         if rel == ".study" or rel.startswith(".study/"):
             errors.append(ValidationError(
                 "PRIVATE_TRACKED", rel,

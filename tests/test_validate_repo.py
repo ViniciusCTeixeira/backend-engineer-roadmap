@@ -77,6 +77,9 @@ class ValidatorContractTests(unittest.TestCase):
     def test_resource_invalid_technology_depth_fails(self):
         self.assert_fixture_fails_with("invalid-resource-depth", "INVALID_TECHNOLOGY_DEPTH")
 
+    def test_generated_python_cache_artifact_fails(self):
+        self.assert_fixture_fails_with("generated-python-cache", "GENERATED_ARTIFACT")
+
     def test_inline_code_that_looks_like_wikilink_is_ignored(self):
         errors = self.errors_for("inline-code-link")
         self.assertEqual([], errors, [e.render() for e in errors])
