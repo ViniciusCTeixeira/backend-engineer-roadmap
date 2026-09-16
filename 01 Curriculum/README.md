@@ -16,8 +16,9 @@ This directory contains the public 52-week learning sequence for the V1 PHP-to-S
 - `year-1-matrix.yaml` — machine-readable weekly matrix.
 - `00 - Week 0 Diagnostic/` — diagnostic entry point.
 - `01 - Week 01 - php-types-and-safe-git/` through `04 - Week 04 - debugging-and-git-recovery/` — C5 representative-month pilot.
+- `05 - Week 05 - php-runtime-and-fpm/` through `08 - Week 08 - foundations-integration-and-reproducible-workflow/` — first C6/Task 15 generation batch.
 - `docs/design/52-week-curriculum-matrix.md` — human-readable design artifact.
 
 ## Generation status
 
-Weeks 1–4 are the C5 representative-month pilot. Full daily generation for Weeks 5–52 remains blocked until C5 is approved and C6 authorizes full generation.
+Weeks 1–4 are the validated C5 representative-month pilot. C6 has authorized full generation. Weeks 5–8 are the first Task 15 batch; Weeks 9–52 proceed in independently validated batches.

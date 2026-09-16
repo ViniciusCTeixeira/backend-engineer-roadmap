@@ -20,8 +20,12 @@ If private state is not initialized yet, that is expected. This public dashboard
 - [[01 Curriculum/02 - Week 02 - oop-composer-and-boundaries/README|Week 2 — OOP, Composer, Boundaries]]
 - [[01 Curriculum/03 - Week 03 - solid-testing-and-safe-refactoring/README|Week 3 — SOLID, Testing, Refactoring]]
 - [[01 Curriculum/04 - Week 04 - debugging-and-git-recovery/README|Week 4 — Debugging and Git Recovery]]
+- [[01 Curriculum/05 - Week 05 - php-runtime-and-fpm/README|Week 5 — PHP Runtime and FPM]]
+- [[01 Curriculum/06 - Week 06 - cakephp-depth-and-boundaries/README|Week 6 — CakePHP Depth and Boundaries]]
+- [[01 Curriculum/07 - Week 07 - linux-operations-and-network-troubleshooting/README|Week 7 — Linux Operations and Troubleshooting]]
+- [[01 Curriculum/08 - Week 08 - foundations-integration-and-reproducible-workflow/README|Week 8 — Foundations Integration]]
 
-Weeks 5–52 are generated and validated in C6 batches.
+Weeks 1–8 are generated. Weeks 9–52 continue in independently validated Task 15 batches under the approved C6 gate.
 
 ## Projects
 
@@ -41,6 +45,7 @@ Completed learner attempts, scores, errors, and review queues belong only in pri
 
 - [[09 Resources/README|Learning Resources]]
 - [[09 Resources/01-foundations|Foundations Resources]]
+- [[09 Resources/07-foundations-runtime-linux|Weeks 5–8 Runtime/Linux Resources]]
 - [[docs/resource-policy|Resource Policy]]
 
 ## AI / agent workflows

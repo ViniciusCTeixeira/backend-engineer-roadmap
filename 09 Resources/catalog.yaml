@@ -703,3 +703,174 @@ resources:
   version_scope: current Xdebug documentation
   technology_depth: supporting
   notes: Week 4 supporting-platform reference; form a hypothesis before stepping through code.
+- id: php-fpm-manual
+  title: PHP Manual — FastCGI Process Manager (FPM)
+  url: https://www.php.net/manual/en/install.fpm.php
+  topic_ids:
+  - php-fpm
+  - php-runtime
+  - process-management
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-16'
+  version_scope: current PHP manual
+  technology_depth: core
+  notes: Primary Weeks 5/8 runtime reference; pair process-model concepts with local evidence.
+- id: cakephp-5-request-cycle
+  title: CakePHP 5 — Request Cycle / CakePHP at a Glance
+  url: https://book.cakephp.org/5.x/intro.html
+  topic_ids:
+  - cakephp
+  - request-lifecycle
+  - routing
+  - middleware
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-16'
+  version_scope: CakePHP 5.x
+  technology_depth: core
+  notes: Primary Week 6 request-cycle reference; connect conventions to actual execution flow.
+- id: cakephp-5-controllers
+  title: CakePHP 5 — Controllers and Request Flow
+  url: https://book.cakephp.org/5.x/controllers.html
+  topic_ids:
+  - cakephp
+  - controllers
+  - request-flow
+  - middleware
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-16'
+  version_scope: CakePHP 5.x
+  technology_depth: core
+  notes: Use for controller responsibility and request-flow reasoning, not CRUD memorization.
+- id: linux-proc-manpage
+  title: Linux man-pages — proc(5)
+  url: https://man7.org/linux/man-pages/man5/proc.5.html
+  topic_ids:
+  - linux
+  - processes
+  - procfs
+  - operations
+  type: reference
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-16'
+  version_scope: Linux man-pages current online edition
+  technology_depth: core
+  notes: Primary process-inspection reference for Week 7; use read-only inspection in labs.
+- id: openssh-ssh-manpage
+  title: OpenSSH — ssh(1) Manual
+  url: https://man.openbsd.org/ssh
+  topic_ids:
+  - linux
+  - ssh
+  - remote-operations
+  - security
+  type: reference
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-16'
+  version_scope: OpenBSD-current/OpenSSH manual
+  technology_depth: core
+  notes: Primary SSH client reference; never weaken host-key checks as a default workaround.
+- id: curl-manpage
+  title: curl — Command Line Manual
+  url: https://curl.se/docs/manpage.html
+  topic_ids:
+  - curl
+  - http
+  - network-troubleshooting
+  type: reference
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-16'
+  version_scope: current curl online man page
+  technology_depth: supporting
+  notes: Week 7/8 evidence tool for HTTP behavior; commands must test explicit hypotheses.
+- id: jq-manual
+  title: jq Manual
+  url: https://jqlang.org/manual/
+  topic_ids:
+  - jq
+  - json
+  - log-inspection
+  type: reference
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-16'
+  version_scope: current jq manual
+  technology_depth: supporting
+  notes: Use to extract evidence from JSON/log output rather than for filter memorization.
+- id: linux-ss-manpage
+  title: iproute2 — ss(8) Manual
+  url: https://man7.org/linux/man-pages/man8/ss.8.html
+  topic_ids:
+  - linux
+  - sockets
+  - network-troubleshooting
+  - ss
+  type: reference
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-16'
+  version_scope: current upstream-derived ss manual
+  technology_depth: supporting
+  notes: Week 7 socket/listener evidence tool.
+- id: lsof-manpage
+  title: lsof — Manual Page
+  url: https://lsof.readthedocs.io/en/stable/manpage/
+  topic_ids:
+  - linux
+  - open-files
+  - processes
+  - lsof
+  type: reference
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-16'
+  version_scope: current lsof stable documentation
+  technology_depth: supporting
+  notes: Use to correlate processes, descriptors/files, and network endpoints.
+- id: bind9-dig-manpage
+  title: BIND 9 — dig DNS Lookup Utility
+  url: https://bind9.readthedocs.io/en/stable/manpages.html#dig-dns-lookup-utility
+  topic_ids:
+  - dns
+  - dig
+  - network-troubleshooting
+  type: reference
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-16'
+  version_scope: BIND 9 stable documentation
+  technology_depth: supporting
+  notes: Week 7 DNS evidence tool; a successful lookup does not prove application reachability.
+- id: github-cli-manual
+  title: GitHub CLI Manual
+  url: https://cli.github.com/manual/
+  topic_ids:
+  - github-cli
+  - git
+  - collaboration
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-16'
+  version_scope: current GitHub CLI manual
+  technology_depth: supporting
+  notes: Week 8 collaboration tooling; hosted GitHub Actions is intentionally not enabled for this roadmap repository.
