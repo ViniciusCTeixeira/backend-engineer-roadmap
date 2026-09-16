@@ -9,3 +9,6 @@
 # OS/editor noise
 .DS_Store
 Thumbs.db
+
+# Claude Code local/personal project instructions
+CLAUDE.local.md
