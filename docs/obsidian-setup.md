@@ -2,7 +2,7 @@
 
 ## Goal
 
-Use the repository as one Obsidian vault while keeping public curriculum and private learner state separate.
+Use the repository as one Obsidian vault while keeping public curriculum, private learner state, and personal Obsidian preferences separate.
 
 ## 1. Open the repository as a vault
 
@@ -14,35 +14,61 @@ The first public page to open is:
 00 Dashboard/Dashboard.md
 ```
 
-## 2. Core experience requires no community plugin
-
-The committed `.obsidian/` configuration only enables portable core features used for navigation and templates.
+## 2. Core study requires no community plugin
 
 The roadmap is designed to work with standard Markdown.
 
-Community plugins are optional.
+Dataview and Tasks are optional convenience layers.
 
-## 3. Templates
+## 3. What the repository versions from `.obsidian/`
 
-The Obsidian Templates core plugin is configured to use:
+The repository intentionally versions only:
+
+```text
+.obsidian/templates.json
+```
+
+Its purpose is to point Obsidian's Templates feature to:
 
 ```text
 90 Templates
 ```
 
-Public templates contain placeholders and synthetic structure only.
+All other Obsidian state is local and ignored by Git.
 
-Learner-specific instantiated notes belong under `.study/`.
+This includes, for example:
 
-## 4. Initialize private learner state
+```text
+app.json
+appearance.json
+core-plugins.json
+workspace.json
+workspace-mobile.json
+community plugin configuration
+future Obsidian-generated settings
+```
 
-From the repository root, run the agent recipe:
+This prevents simply opening/using the vault from creating unrelated public Git changes.
+
+## 4. Templates core plugin
+
+The Obsidian **Templates** core plugin is recommended if you want to insert templates interactively.
+
+Enable it locally in Obsidian if desired.
+
+The roadmap does not version your `core-plugins.json`, so one learner's enabled plugins do not become global repository policy.
+
+Even without the Templates plugin, public template Markdown files can still be copied/used manually or by an agent.
+
+## 5. Initialize private learner state
+
+From the repository root, run:
 
 ```text
 11 Agent/prompts/initialize-study.md
 ```
 
-The workflow creates or validates the independent ignored private state, including:
+The workflow creates or validates:
 
 ```text
 .study/
@@ -63,9 +89,9 @@ The workflow creates or validates the independent ignored private state, includi
 
 `.study/dashboard.md` is created from `90 Templates/private-dashboard.md`.
 
-## 5. Open the private dashboard
+## 6. Open the private dashboard
 
-After initialization, use the Obsidian File explorer to open:
+After initialization, open:
 
 ```text
 .study/dashboard.md
@@ -73,7 +99,7 @@ After initialization, use the Obsidian File explorer to open:
 
 If it does not exist, rerun/validate `initialize-study`.
 
-## 6. Canonical state vs dashboard
+## 7. Canonical state vs dashboard
 
 Canonical private state includes:
 
@@ -88,9 +114,9 @@ Canonical private state includes:
 .study/career/
 ```
 
-The dashboard is only a presentation layer.
+The dashboard is only a derived presentation layer.
 
-To refresh it, use:
+Refresh it with:
 
 ```text
 11 Agent/prompts/sync-dashboard.md
@@ -98,23 +124,23 @@ To refresh it, use:
 
 Never repair a dashboard mismatch by rewriting historical evidence.
 
-## 7. Clean clone behavior
+## 8. Clean clone behavior
 
-A learner who has not created `.study/` can still:
+Without `.study/`, a learner can still:
 
-- read the public dashboard;
-- read all public curriculum;
+- use `00 Dashboard/Dashboard.md`;
+- read curriculum;
 - inspect Week 0;
 - inspect projects/resources;
 - read agent commands.
 
-No Dataview or Tasks query is required, so a clean clone does not show plugin-query errors.
+No community plugin query is required.
 
-## 8. Optional Dataview
+## 9. Optional Dataview
 
 Dataview may be installed manually for richer note queries.
 
-Example use after private state exists:
+Example after private state exists:
 
 ```dataview
 TABLE date, week, actual_minutes
@@ -123,31 +149,50 @@ SORT date DESC
 LIMIT 7
 ```
 
-This is optional convenience only.
+This is optional convenience only and does not become canonical data.
 
-A Dataview query does not become canonical data.
+## 10. Optional Tasks
 
-## 9. Optional Tasks
+Tasks may be installed manually for interactive Markdown task views.
 
-The Tasks community plugin may be installed manually if a learner wants interactive task views over Markdown checkboxes.
+Do not make completion depend on Tasks metadata. Canonical progress remains in the roadmap's private schemas.
 
-Do not make completion depend on Tasks metadata. Canonical progress is still recorded using the roadmap's private schemas.
+## 11. Local Obsidian state and Git
 
-## 10. Workspace files
+The repository uses:
 
-Personal workspace layout is intentionally not committed.
+```gitignore
+.obsidian/*
+!.obsidian/templates.json
+```
 
-Open panes, recent files, local window state, and personal layout should remain learner-specific.
+Therefore normal Obsidian-generated settings remain local.
 
-## 11. Public/private safety check
+If local state was previously tracked, remove it from the Git index without deleting local files:
 
-Before committing public repository changes:
+```bash
+git rm --cached --ignore-unmatch \
+  .obsidian/app.json \
+  .obsidian/appearance.json \
+  .obsidian/core-plugins.json \
+  .obsidian/workspace.json \
+  .obsidian/workspace-mobile.json
+```
+
+## 12. Public/private safety check
+
+Before public commits:
 
 ```bash
 git status
 git check-ignore .study
+git ls-files .obsidian
 ```
 
-`.study` should be ignored by the parent public repository.
+Expected tracked Obsidian configuration:
 
-If learner-specific values appear in a public diff, remove them before committing.
+```text
+.obsidian/templates.json
+```
+
+If learner-specific values or local workspace state appear in a public diff, remove them before committing.

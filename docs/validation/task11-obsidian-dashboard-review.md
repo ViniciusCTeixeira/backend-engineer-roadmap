@@ -1,6 +1,7 @@
 # Task 11 Validation — Obsidian Dashboard
 
-**Date:** 2026-09-16
+**Date:** 2026-09-16  
+**Status:** Requires Task 11.1 repository correction, then revalidation
 
 ## Scope
 
@@ -26,17 +27,6 @@ Expected:
 Result: **PASS**
 
 ## Initialized-state tabletop
-
-Starting state:
-
-```text
-.study/
-├── state.yaml
-├── metrics.yaml
-├── current-plan.md
-├── reviews/queue.yaml
-└── ...
-```
 
 Expected:
 
@@ -75,13 +65,52 @@ Expected:
 
 Result: **PASS**
 
-## Obsidian configuration
+## Open-vault Git-noise regression
 
-- minimal `app.json`: PASS
-- portable core-plugin list: PASS
-- Templates folder set to `90 Templates`: PASS
-- no committed workspace layout: PASS
-- no community plugin required: PASS
+Repository validation after the first Task 11 implementation showed that Obsidian generated or rewrote:
+
+- `.obsidian/app.json`
+- `.obsidian/appearance.json`
+- `.obsidian/core-plugins.json`
+- `.obsidian/workspace.json`
+
+This invalidated the earlier assumption that these files were suitable shared configuration.
+
+Task 11.1 changes the rule:
+
+```gitignore
+.obsidian/*
+!.obsidian/templates.json
+```
+
+Expected after correction:
+
+- opening/using Obsidian may modify local files;
+- those files remain ignored;
+- no workspace/recent-file state enters Git;
+- only `.obsidian/templates.json` is tracked.
+
+Result before correction: **FAIL — regression discovered**
+
+Result after applying Task 11.1 must be confirmed from GitHub before Task 11 is approved.
+
+## Portable configuration
+
+Only this file is repository configuration:
+
+```text
+.obsidian/templates.json
+```
+
+Expected content:
+
+```json
+{
+  "folder": "90 Templates"
+}
+```
+
+No shared `core-plugins.json` is required. Templates core plugin is recommended locally, not enforced globally.
 
 ## Public/private boundary
 
@@ -89,7 +118,28 @@ Result: **PASS**
 - private-dashboard template contains placeholders only: PASS
 - learner values remain under `.study/`: PASS
 - dashboard explicitly marked derived: PASS
+- workspace/recent-file state must not be public: pending repository correction
+
+## Post-correction commands
+
+```bash
+python -m json.tool .obsidian/templates.json >/dev/null
+git check-ignore .obsidian/workspace.json
+git check-ignore .obsidian/core-plugins.json
+git check-ignore .obsidian/app.json
+git check-ignore .obsidian/appearance.json
+git ls-files .obsidian
+git diff --check
+```
+
+Expected:
+
+```text
+.obsidian/templates.json
+```
+
+is the only output from `git ls-files .obsidian`.
 
 ## Conclusion
 
-Task 11 design requirements are satisfied. Final repository validation should confirm the Task 11 files are the only changes in the corresponding commit.
+Task 11 is approved only after the Task 11.1 correction is committed, pushed, and the repository confirms that `.obsidian/templates.json` is the sole tracked Obsidian configuration file.

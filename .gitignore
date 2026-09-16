@@ -12,3 +12,8 @@ Thumbs.db
 
 # Claude Code local/personal project instructions
 CLAUDE.local.md
+
+# Obsidian local state
+# Keep only the portable Templates folder configuration under version control.
+.obsidian/*
+!.obsidian/templates.json

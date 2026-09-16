@@ -1,11 +1,12 @@
 # Obsidian Dashboard Design
 
-**Status:** Approved for implementation  
-**Approved:** 2026-09-16
+**Status:** Approved for implementation — amended after repository validation  
+**Approved:** 2026-09-16  
+**Amended:** 2026-09-16
 
 ## Goal
 
-Provide a clean Obsidian-first interface for the roadmap without making Obsidian plugins or dashboard notes the source of truth.
+Provide a clean Obsidian-first interface for the roadmap without making Obsidian plugins, local vault state, or dashboard notes the source of truth.
 
 ## Design decision
 
@@ -15,7 +16,8 @@ Use a **plugin-optional** model:
 2. learner-specific dashboard lives only under `.study/`;
 3. canonical learner state remains in private schema files;
 4. Dataview/Tasks may enhance the experience but are never required for core study;
-5. no custom web application is introduced.
+5. no custom web application is introduced;
+6. Obsidian-generated local state is not versioned.
 
 ## Architecture
 
@@ -76,7 +78,7 @@ When a source value is absent, the dashboard must state `Not available yet` rath
 
 ## Templates
 
-Add:
+Public reusable templates include:
 
 - `90 Templates/private-dashboard.md`
 - `90 Templates/daily-progress.md`
@@ -86,31 +88,48 @@ The templates contain reusable placeholders only and no personal data.
 
 ## Obsidian configuration
 
-Commit only portable settings:
+Repository validation showed that Obsidian rewrites local vault configuration while the vault is open. Therefore the public repository versions **only** the portable template-folder setting:
 
-- `.obsidian/app.json`
-- `.obsidian/core-plugins.json`
-- `.obsidian/templates.json`
+```text
+.obsidian/templates.json
+```
 
-Do not commit a workspace layout because panes/open files are personal.
+It configures:
 
-No community plugin is required or automatically installed.
+```text
+90 Templates
+```
 
-## Core-plugin baseline
+All other `.obsidian/` state is local and ignored by Git by default.
 
-Enable a conservative set of long-standing core features used by the roadmap:
+Examples of local state that must not be tracked:
 
-- File explorer
-- Search
-- Quick switcher
-- Backlinks
-- Outgoing links
-- Templates
-- Command palette
-- Outline
-- File recovery
+```text
+.obsidian/app.json
+.obsidian/appearance.json
+.obsidian/core-plugins.json
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+community-plugin state
+future Obsidian-generated local configuration
+```
 
-The roadmap remains readable even if a learner changes these settings.
+The `.gitignore` policy is:
+
+```gitignore
+.obsidian/*
+!.obsidian/templates.json
+```
+
+This is intentional: future Obsidian-generated files are private/local by default unless a later reviewed design explicitly promotes one to portable repository configuration.
+
+## Core-plugin behavior
+
+The roadmap does not enforce a shared `core-plugins.json`.
+
+Learners may enable/disable Obsidian core plugins according to local preference.
+
+For convenient template insertion, the Obsidian **Templates** core plugin is recommended and should use `90 Templates`, but the roadmap's core learning workflow does not depend on that plugin being enabled.
 
 ## Optional enhancements
 
@@ -121,7 +140,8 @@ If installed, they may provide dynamic views over private notes, but:
 - their queries are optional;
 - canonical state remains `.study/*.yaml` and historical records;
 - the public dashboard must not depend on them;
-- community plugin failure must not block study.
+- community plugin failure must not block study;
+- plugin configuration remains local.
 
 ## Agent integration
 
@@ -151,7 +171,8 @@ Without `.study/`:
 - `00 Dashboard/Dashboard.md` remains useful;
 - no query errors appear;
 - setup instructions point to `initialize-study`;
-- Week 0 remains accessible.
+- Week 0 remains accessible;
+- the repository does not require a particular personal Obsidian workspace/plugin selection.
 
 ## Public/private boundary
 
@@ -160,7 +181,8 @@ Public repository may contain:
 - dashboard structure;
 - placeholders;
 - synthetic examples;
-- Obsidian setup documentation.
+- Obsidian setup documentation;
+- `.obsidian/templates.json`.
 
 Public repository must not contain:
 
@@ -168,15 +190,18 @@ Public repository must not contain:
 - real review backlog;
 - career funnel values;
 - personal gap lists;
-- interview/application information.
+- interview/application information;
+- personal Obsidian workspace/recent-file state.
 
 ## Acceptance criteria
 
 - public dashboard works before private initialization;
 - private dashboard is a derived view;
 - no community plugin is mandatory;
-- template directory is configured;
+- `90 Templates` folder configuration is portable;
+- local Obsidian state is ignored;
 - `initialize-study` creates/validates `.study/dashboard.md`;
 - `sync-dashboard` has explicit read/write boundaries;
 - no workspace-specific layout is committed;
+- opening the vault does not create tracked Obsidian configuration noise;
 - all learner-specific information remains private.
