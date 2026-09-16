@@ -1,0 +1,11 @@
+# Private learner state — independent nested Git repository
+.study/
+
+# Secrets / local environment
+.env
+.env.*
+!.env.example
+
+# OS/editor noise
+.DS_Store
+Thumbs.db

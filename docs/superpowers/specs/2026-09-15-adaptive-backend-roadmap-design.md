@@ -1,6 +1,7 @@
 # Adaptive Backend Engineer Roadmap — Design Specification
 
-**Status:** Draft for user review  
+**Status:** Approved for V1 implementation
+**Approved:** 2026-09-15
 **Date:** 2026-09-15  
 **Primary profile for V1:** Experienced PHP developer progressing toward Senior Backend / Software Engineer  
 **Primary study horizon:** 52 weeks to strengthen engineering depth and obtain a stronger role  
