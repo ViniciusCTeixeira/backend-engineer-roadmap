@@ -1,0 +1,48 @@
+schema_version: 1
+pilot_weeks:
+- 1
+- 2
+- 3
+- 4
+default_weekly_minutes: 720
+weeks:
+- week: 1
+  daily_minutes:
+  - 105
+  - 105
+  - 105
+  - 105
+  - 105
+  - 135
+  - 60
+  total_minutes: 720
+- week: 2
+  daily_minutes:
+  - 105
+  - 105
+  - 105
+  - 105
+  - 105
+  - 135
+  - 60
+  total_minutes: 720
+- week: 3
+  daily_minutes:
+  - 105
+  - 105
+  - 105
+  - 105
+  - 105
+  - 135
+  - 60
+  total_minutes: 720
+- week: 4
+  daily_minutes:
+  - 105
+  - 105
+  - 105
+  - 105
+  - 105
+  - 135
+  - 60
+  total_minutes: 720

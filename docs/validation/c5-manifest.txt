@@ -1,0 +1,71 @@
+01 Curriculum/01 - Week 01 - php-types-and-safe-git/Day 01.md
+01 Curriculum/01 - Week 01 - php-types-and-safe-git/Day 02.md
+01 Curriculum/01 - Week 01 - php-types-and-safe-git/Day 03.md
+01 Curriculum/01 - Week 01 - php-types-and-safe-git/Day 04.md
+01 Curriculum/01 - Week 01 - php-types-and-safe-git/Day 05.md
+01 Curriculum/01 - Week 01 - php-types-and-safe-git/Day 06.md
+01 Curriculum/01 - Week 01 - php-types-and-safe-git/Day 07.md
+01 Curriculum/01 - Week 01 - php-types-and-safe-git/README.md
+01 Curriculum/02 - Week 02 - oop-composer-and-boundaries/Day 01.md
+01 Curriculum/02 - Week 02 - oop-composer-and-boundaries/Day 02.md
+01 Curriculum/02 - Week 02 - oop-composer-and-boundaries/Day 03.md
+01 Curriculum/02 - Week 02 - oop-composer-and-boundaries/Day 04.md
+01 Curriculum/02 - Week 02 - oop-composer-and-boundaries/Day 05.md
+01 Curriculum/02 - Week 02 - oop-composer-and-boundaries/Day 06.md
+01 Curriculum/02 - Week 02 - oop-composer-and-boundaries/Day 07.md
+01 Curriculum/02 - Week 02 - oop-composer-and-boundaries/README.md
+01 Curriculum/03 - Week 03 - solid-testing-and-safe-refactoring/Day 01.md
+01 Curriculum/03 - Week 03 - solid-testing-and-safe-refactoring/Day 02.md
+01 Curriculum/03 - Week 03 - solid-testing-and-safe-refactoring/Day 03.md
+01 Curriculum/03 - Week 03 - solid-testing-and-safe-refactoring/Day 04.md
+01 Curriculum/03 - Week 03 - solid-testing-and-safe-refactoring/Day 05.md
+01 Curriculum/03 - Week 03 - solid-testing-and-safe-refactoring/Day 06.md
+01 Curriculum/03 - Week 03 - solid-testing-and-safe-refactoring/Day 07.md
+01 Curriculum/03 - Week 03 - solid-testing-and-safe-refactoring/README.md
+01 Curriculum/04 - Week 04 - debugging-and-git-recovery/Day 01.md
+01 Curriculum/04 - Week 04 - debugging-and-git-recovery/Day 02.md
+01 Curriculum/04 - Week 04 - debugging-and-git-recovery/Day 03.md
+01 Curriculum/04 - Week 04 - debugging-and-git-recovery/Day 04.md
+01 Curriculum/04 - Week 04 - debugging-and-git-recovery/Day 05.md
+01 Curriculum/04 - Week 04 - debugging-and-git-recovery/Day 06.md
+01 Curriculum/04 - Week 04 - debugging-and-git-recovery/Day 07.md
+01 Curriculum/04 - Week 04 - debugging-and-git-recovery/README.md
+01 Curriculum/README.md
+02 Daily Assessments/Week 01/Day 01.md
+02 Daily Assessments/Week 01/Day 02.md
+02 Daily Assessments/Week 01/Day 03.md
+02 Daily Assessments/Week 01/Day 04.md
+02 Daily Assessments/Week 01/Day 05.md
+02 Daily Assessments/Week 01/Day 06.md
+02 Daily Assessments/Week 01/Day 07.md
+02 Daily Assessments/Week 02/Day 01.md
+02 Daily Assessments/Week 02/Day 02.md
+02 Daily Assessments/Week 02/Day 03.md
+02 Daily Assessments/Week 02/Day 04.md
+02 Daily Assessments/Week 02/Day 05.md
+02 Daily Assessments/Week 02/Day 06.md
+02 Daily Assessments/Week 02/Day 07.md
+02 Daily Assessments/Week 03/Day 01.md
+02 Daily Assessments/Week 03/Day 02.md
+02 Daily Assessments/Week 03/Day 03.md
+02 Daily Assessments/Week 03/Day 04.md
+02 Daily Assessments/Week 03/Day 05.md
+02 Daily Assessments/Week 03/Day 06.md
+02 Daily Assessments/Week 03/Day 07.md
+02 Daily Assessments/Week 04/Day 01.md
+02 Daily Assessments/Week 04/Day 02.md
+02 Daily Assessments/Week 04/Day 03.md
+02 Daily Assessments/Week 04/Day 04.md
+02 Daily Assessments/Week 04/Day 05.md
+02 Daily Assessments/Week 04/Day 06.md
+02 Daily Assessments/Week 04/Day 07.md
+03 Weekly Simulations/Week 01.md
+03 Weekly Simulations/Week 02.md
+03 Weekly Simulations/Week 03.md
+03 Weekly Simulations/Week 04.md
+09 Resources/01-foundations.md
+09 Resources/catalog.yaml
+docs/validation/c5-synthetic-strong-learner.md
+docs/validation/c5-synthetic-struggling-learner.md
+docs/validation/c5-workload.yaml
+docs/validation/sample-month-review.md
