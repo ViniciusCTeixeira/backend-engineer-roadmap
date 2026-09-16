@@ -1,0 +1,1089 @@
+schema_version: 1
+default_weekly_hours: 12
+weeks:
+- week: 1
+  phase: Foundations
+  estimated_hours: 12
+  primary_outcome: Explain and experimentally verify PHP type behavior and establish safe Git/agent habits
+  core_topics:
+  - PHP type system
+  - strict_types
+  - type coercion
+  - Git working tree/staging/commit
+  english_outcome: Give a 2-minute technical self-introduction and explain one PHP behavior in English.
+  ai_outcome: Use Codex/Claude only after a SOLO attempt; inspect every diff before acceptance.
+  project_milestone: Initialize the modernization lab and record a clean baseline.
+  assessment_mode: closed technical assessment
+  career_action: Observe target-role job descriptions only; no application quota.
+  prerequisites: []
+  phase_gate: false
+- week: 2
+  phase: Foundations
+  estimated_hours: 12
+  primary_outcome: Use OOP deliberately and understand Composer/autoloading rather than only framework conventions
+  core_topics:
+  - classes/interfaces/abstract/final
+  - composition vs inheritance
+  - Composer
+  - PSR-4
+  - semantic versioning
+  english_outcome: Write a short English design note explaining composition vs inheritance.
+  ai_outcome: Practice context engineering and task decomposition; provide bounded instructions to an agent.
+  project_milestone: Extract one responsibility from legacy-style PHP into a testable class boundary.
+  assessment_mode: hybrid code/design exercise
+  career_action: Continue passive market observation and collect recurring role titles.
+  prerequisites:
+  - 1
+  phase_gate: false
+- week: 3
+  phase: Foundations
+  estimated_hours: 12
+  primary_outcome: Apply SOLID and testing feedback to refactor PHP without changing behavior
+  core_topics:
+  - SOLID
+  - dependency inversion
+  - unit-test boundaries
+  - PHPUnit fundamentals
+  - Git branches
+  english_outcome: Write an English pull-request description for the refactor.
+  ai_outcome: Use an agent for test suggestions/code review, then independently validate usefulness.
+  project_milestone: Add characterization/unit tests before a small refactor.
+  assessment_mode: coding/lab challenge
+  career_action: Record common requirements seen in Senior Backend/PHP roles.
+  prerequisites:
+  - 2
+  phase_gate: false
+- week: 4
+  phase: Foundations
+  estimated_hours: 12
+  primary_outcome: Debug failures systematically and recover safely with Git
+  core_topics:
+  - exceptions/errors
+  - debugging method
+  - Git merge/rebase concepts
+  - revert/reset/reflog
+  - basic CLI
+  english_outcome: Explain a debugging timeline aloud in English.
+  ai_outcome: Debug with an agent but require hypotheses, evidence, and independent reproduction.
+  project_milestone: Create and fix a reproducible bug; document root cause.
+  assessment_mode: debugging simulation
+  career_action: No applications yet; create a private list of interesting employers.
+  prerequisites:
+  - 1
+  - 2
+  - 3
+  phase_gate: false
+- week: 5
+  phase: Foundations
+  estimated_hours: 12
+  primary_outcome: Understand the PHP web runtime from request to process and dependency execution
+  core_topics:
+  - PHP runtime model
+  - PHP-FPM concept
+  - web request lifecycle
+  - Composer scripts
+  - environment/config
+  english_outcome: Read an English PHP/runtime source and summarize it without translation.
+  ai_outcome: Use an agent to map a repository, then verify its claims against actual files/config.
+  project_milestone: Document the current request lifecycle of the modernization lab.
+  assessment_mode: closed technical assessment
+  career_action: Classify observed vacancies by backend depth and engineering maturity.
+  prerequisites:
+  - 1
+  - 2
+  - 3
+  - 4
+  phase_gate: false
+- week: 6
+  phase: Foundations
+  estimated_hours: 12
+  primary_outcome: Go deeper than CakePHP CRUD by reasoning about framework lifecycle, ORM behavior, and boundaries
+  core_topics:
+  - CakePHP request lifecycle
+  - ORM/query building
+  - entities/tables
+  - framework conventions vs domain logic
+  english_outcome: Record a short English explanation of where business logic should live.
+  ai_outcome: Constrain an agent to propose a refactor without editing; compare its plan to your own.
+  project_milestone: Identify one CakePHP-style legacy smell and design a modernization path.
+  assessment_mode: architecture/code-reading simulation
+  career_action: Continue market observation; identify whether Laravel appears more frequently than CakePHP.
+  prerequisites:
+  - 2
+  - 3
+  - 5
+  phase_gate: false
+- week: 7
+  phase: Foundations
+  estimated_hours: 12
+  primary_outcome: Operate comfortably in Linux and reason about processes, files, permissions, ports, and logs
+  core_topics:
+  - Linux filesystem
+  - permissions
+  - processes/signals
+  - SSH
+  - ports/sockets
+  - curl/log inspection
+  english_outcome: Run a five-minute English troubleshooting narration.
+  ai_outcome: Use an agent as a troubleshooting partner without allowing it to execute destructive commands.
+  project_milestone: Create a local troubleshooting runbook for PHP service failures.
+  assessment_mode: hands-on troubleshooting lab
+  career_action: No application quota; note common Linux/infra expectations in target roles.
+  prerequisites:
+  - 4
+  - 5
+  phase_gate: false
+- week: 8
+  phase: Foundations
+  estimated_hours: 12
+  primary_outcome: Integrate PHP, OOP, Composer, Git, CakePHP reasoning, and Linux into a reproducible engineering workflow
+  core_topics:
+  - integration/refactoring
+  - Git collaboration workflow
+  - dependency hygiene
+  - runtime troubleshooting
+  english_outcome: Present the modernization lab architecture in English for 5 minutes.
+  ai_outcome: Compare Codex and Claude Code on the same bounded review task; assess quality, not style preference.
+  project_milestone: Publish the first public-safe modernization milestone with README and decisions.
+  assessment_mode: weekly integrated simulation
+  career_action: Prepare a list of 20 target-role postings for structured analysis starting Week 9.
+  prerequisites:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  phase_gate: false
+- week: 9
+  phase: Data and Web
+  estimated_hours: 12
+  primary_outcome: Model relational data deliberately and write SQL without relying on an ORM
+  core_topics:
+  - relational modeling
+  - normalization
+  - keys/constraints
+  - joins
+  - aggregation
+  - SQL
+  english_outcome: Explain one schema decision in written English.
+  ai_outcome: Ask an agent to critique a schema; accept changes only with SQL reasoning.
+  project_milestone: Design the data model for the modern Laravel backend project.
+  assessment_mode: SQL/modeling assessment
+  career_action: Begin structured vacancy analysis; capture recurring skills and seniority signals.
+  prerequisites:
+  - 8
+  phase_gate: false
+- week: 10
+  phase: Data and Web
+  estimated_hours: 12
+  primary_outcome: Understand B-tree indexing and prove query improvements with EXPLAIN/EXPLAIN ANALYZE
+  core_topics:
+  - indexes
+  - composite indexes
+  - selectivity
+  - covering indexes
+  - EXPLAIN
+  - query plans
+  english_outcome: Write an English before/after performance note with evidence.
+  ai_outcome: Use an agent to propose indexes, then independently validate with query plans and measurements.
+  project_milestone: Create a repeatable dataset and query-performance benchmark.
+  assessment_mode: SQL performance lab
+  career_action: Analyze at least 5 relevant vacancies; do not change public curriculum from this sample.
+  prerequisites:
+  - 9
+  phase_gate: false
+- week: 11
+  phase: Data and Web
+  estimated_hours: 12
+  primary_outcome: Reason about ACID, isolation, locks, deadlocks, and concurrent updates
+  core_topics:
+  - transactions
+  - ACID
+  - isolation levels
+  - locking
+  - deadlocks
+  - optimistic/pessimistic concurrency
+  english_outcome: Explain a deadlock scenario aloud in English.
+  ai_outcome: Use an agent to generate concurrency experiments, but predict expected behavior before running them.
+  project_milestone: Implement and test a transaction-sensitive workflow.
+  assessment_mode: concurrency/debugging lab
+  career_action: Continue vacancy analysis and identify common database depth expectations.
+  prerequisites:
+  - 9
+  - 10
+  phase_gate: false
+- week: 12
+  phase: Data and Web
+  estimated_hours: 12
+  primary_outcome: Use Redis by data model and failure mode, not merely as a generic fast cache
+  core_topics:
+  - Redis data structures
+  - TTL
+  - eviction
+  - RDB/AOF concepts
+  - cache-aside
+  - cache stampede
+  - hot keys
+  english_outcome: Write an English cache-strategy ADR.
+  ai_outcome: Review an agent-proposed caching strategy for stale data, invalidation, and failure behavior.
+  project_milestone: Add measured cache-aside behavior and invalidation to a project use case.
+  assessment_mode: scenario + hands-on lab
+  career_action: Create first draft of your skills inventory against observed market demand.
+  prerequisites:
+  - 9
+  - 10
+  - 11
+  phase_gate: false
+- week: 13
+  phase: Gate 1
+  estimated_hours: 12
+  primary_outcome: Demonstrate foundations and data-layer understanding without framework or agent dependence
+  core_topics:
+  - PHP/OOP/Composer
+  - Git/Linux
+  - MySQL modeling/indexes/transactions
+  - Redis fundamentals
+  english_outcome: Complete part of the gate explanation and retrospective in English.
+  ai_outcome: Agents are prohibited during closed sections; use them only after submission for feedback comparison.
+  project_milestone: Freeze Gate 1 project evidence and remediation list.
+  assessment_mode: PHASE GATE 1 — cumulative SOLO + practical
+  career_action: Start CV/LinkedIn/GitHub positioning work from evidence, not self-description.
+  prerequisites:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  phase_gate: true
+- week: 14
+  phase: Data and Web
+  estimated_hours: 12
+  primary_outcome: Reason about HTTP semantics before designing APIs
+  core_topics:
+  - DNS/TCP overview
+  - HTTP methods
+  - headers
+  - status codes
+  - cookies/sessions
+  - caching
+  - idempotency
+  english_outcome: Explain an HTTP request lifecycle in English.
+  ai_outcome: Use an agent to inspect HTTP traces/logs, but independently identify protocol-level facts.
+  project_milestone: Expose a simple API endpoint and document protocol behavior.
+  assessment_mode: HTTP analysis assessment
+  career_action: Draft role-focused headline/about positioning; no mass applications yet.
+  prerequisites:
+  - 13
+  phase_gate: false
+- week: 15
+  phase: Data and Web
+  estimated_hours: 12
+  primary_outcome: Design secure, evolvable APIs with explicit auth and authorization trade-offs
+  core_topics:
+  - REST constraints
+  - pagination/filtering
+  - versioning
+  - JWT
+  - OAuth2/OIDC concepts
+  - RBAC
+  - rate limiting
+  - OWASP API risks
+  english_outcome: Write an English API design review comment.
+  ai_outcome: Use an agent for threat brainstorming, then verify each risk against actual architecture.
+  project_milestone: Add authentication/authorization and API error conventions.
+  assessment_mode: API/security design simulation
+  career_action: Finalize first resume draft and GitHub profile cleanup.
+  prerequisites:
+  - 14
+  phase_gate: false
+- week: 16
+  phase: Data and Web
+  estimated_hours: 12
+  primary_outcome: Build a reliable PHP quality loop with tests, static analysis, and useful failure feedback
+  core_topics:
+  - unit/integration/functional tests
+  - test doubles
+  - PHPUnit
+  - PHPStan
+  - coverage trade-offs
+  - testability
+  english_outcome: Explain your testing strategy in English.
+  ai_outcome: Use an agent for test generation only after defining expected behavior and missing cases yourself.
+  project_milestone: Create a repeatable test/static-analysis command and quality baseline.
+  assessment_mode: coding + test-strategy simulation
+  career_action: Prepare a public-safe portfolio narrative for the modernization project.
+  prerequisites:
+  - 3
+  - 15
+  phase_gate: false
+- week: 17
+  phase: Modern Backend
+  estimated_hours: 12
+  primary_outcome: Understand Laravel request lifecycle, service container, dependency injection, and configuration
+  core_topics:
+  - Laravel lifecycle
+  - service container
+  - dependency injection
+  - routing/middleware
+  - configuration
+  english_outcome: Compare CakePHP and Laravel lifecycle concepts in English.
+  ai_outcome: Use an agent to map a Laravel repository, then verify container bindings and execution path manually.
+  project_milestone: Bootstrap the modern Laravel backend with explicit architecture notes.
+  assessment_mode: framework architecture assessment
+  career_action: Begin selective applications to high-fit roles; quality over volume.
+  prerequisites:
+  - 16
+  phase_gate: false
+- week: 18
+  phase: Modern Backend
+  estimated_hours: 12
+  primary_outcome: Use Eloquent and migrations without losing SQL/data-model awareness
+  core_topics:
+  - Eloquent
+  - migrations
+  - relationships
+  - query scopes
+  - N+1
+  - validation
+  english_outcome: Write an English code-review note identifying an N+1 risk.
+  ai_outcome: Use an agent to flag ORM performance issues; validate every claim with SQL/query evidence.
+  project_milestone: Implement core entities and migrations for the modern backend.
+  assessment_mode: ORM/SQL integration lab
+  career_action: Track application outcomes and role-fit privately.
+  prerequisites:
+  - 9
+  - 10
+  - 17
+  phase_gate: false
+- week: 19
+  phase: Modern Backend
+  estimated_hours: 12
+  primary_outcome: Implement application security as a design property, not a framework checkbox
+  core_topics:
+  - authentication
+  - authorization/policies
+  - input validation
+  - secrets
+  - CSRF/CORS
+  - secure defaults
+  english_outcome: Explain one auth/authz trade-off in English.
+  ai_outcome: Use an agent for security review with explicit scope and false-positive validation.
+  project_milestone: Add role/permission rules and a security checklist.
+  assessment_mode: security review simulation
+  career_action: Continue selective applications; refine CV based on recurring requirements, not one vacancy.
+  prerequisites:
+  - 15
+  - 17
+  - 18
+  phase_gate: false
+- week: 20
+  phase: Modern Backend
+  estimated_hours: 12
+  primary_outcome: Modernize legacy CakePHP code using tests, boundaries, and measured database/cache improvements
+  core_topics:
+  - legacy characterization
+  - refactoring
+  - strangler thinking
+  - CakePHP modernization
+  - technical debt
+  english_outcome: Write an English modernization proposal.
+  ai_outcome: 'Run a HYBRID refactor: design SOLO, ask agent for alternative, then compare and implement deliberately.'
+  project_milestone: Complete a public-safe CakePHP modernization case study.
+  assessment_mode: take-home style modernization challenge
+  career_action: Review first application feedback and update private gap analysis.
+  prerequisites:
+  - 6
+  - 12
+  - 16
+  - 19
+  phase_gate: false
+- week: 21
+  phase: Modern Backend
+  estimated_hours: 12
+  primary_outcome: Apply pragmatic architecture patterns without overengineering
+  core_topics:
+  - application services
+  - repositories trade-offs
+  - domain boundaries
+  - DTO/value objects
+  - dependency direction
+  - ADRs
+  english_outcome: Defend an architecture decision in English.
+  ai_outcome: Use an agent as an architecture critic, not as final authority.
+  project_milestone: Refactor one Laravel flow into clearer boundaries and create an ADR.
+  assessment_mode: architecture reasoning simulation
+  career_action: Start interview question bank from real recruiter/technical-screen patterns.
+  prerequisites:
+  - 17
+  - 18
+  - 19
+  - 20
+  phase_gate: false
+- week: 22
+  phase: Modern Backend
+  estimated_hours: 12
+  primary_outcome: Containerize a PHP application with reproducible images, networks, volumes, and health checks
+  core_topics:
+  - Docker images/layers
+  - Dockerfile
+  - Compose
+  - networks
+  - volumes
+  - multi-stage builds
+  - health checks
+  english_outcome: Explain the container topology in English.
+  ai_outcome: Use an agent to review Dockerfile/Compose, then verify build reproducibility and runtime behavior.
+  project_milestone: Containerize Laravel + MySQL + Redis locally.
+  assessment_mode: hands-on Docker lab
+  career_action: Continue applications; prioritize roles with mature engineering practices.
+  prerequisites:
+  - 7
+  - 17
+  - 18
+  phase_gate: false
+- week: 23
+  phase: Modern Backend
+  estimated_hours: 12
+  primary_outcome: Understand Nginx/PHP-FPM/runtime behavior inside and outside containers
+  core_topics:
+  - Nginx basics
+  - PHP-FPM pools
+  - process model
+  - reverse proxy
+  - timeouts
+  - logs
+  - resource limits
+  english_outcome: Troubleshoot a simulated incident in English.
+  ai_outcome: Use an agent to help form hypotheses from logs, while you choose and validate the next experiment.
+  project_milestone: Add reverse proxy/runtime configuration and an incident runbook.
+  assessment_mode: production-troubleshooting simulation
+  career_action: Run first recruiter/technical mock interview if not yet reached through applications.
+  prerequisites:
+  - 7
+  - 22
+  phase_gate: false
+- week: 24
+  phase: Modern Backend
+  estimated_hours: 12
+  primary_outcome: Integrate API, security, tests, architecture, Docker, and runtime operations into one deployable local
+    system
+  core_topics:
+  - integration
+  - configuration hygiene
+  - failure modes
+  - documentation
+  - performance baseline
+  english_outcome: Deliver a 7-minute English project walkthrough.
+  ai_outcome: Use an agent for repository-wide review under bounded goals; triage findings by evidence.
+  project_milestone: Release modern backend local milestone v1.
+  assessment_mode: integrated take-home simulation
+  career_action: Continue selective applications and prepare for experimental interviews.
+  prerequisites:
+  - 17
+  - 18
+  - 19
+  - 21
+  - 22
+  - 23
+  phase_gate: false
+- week: 25
+  phase: Cloud and Delivery
+  estimated_hours: 12
+  primary_outcome: Build a mental model of AWS identity, networking, regions, and shared responsibility
+  core_topics:
+  - AWS IAM
+  - regions/AZs
+  - VPC/subnets
+  - security groups
+  - shared responsibility
+  - cost awareness
+  english_outcome: Explain a basic AWS deployment architecture in English.
+  ai_outcome: Use an agent for cloud-design questions but verify service behavior in official docs during resource phase.
+  project_milestone: Draft the AWS target architecture for the Laravel backend.
+  assessment_mode: cloud architecture assessment
+  career_action: Prepare for experimental interviews; track cloud gaps surfaced by vacancies.
+  prerequisites:
+  - 24
+  phase_gate: false
+- week: 26
+  phase: Gate 2
+  estimated_hours: 12
+  primary_outcome: Demonstrate production-ready backend fundamentals through a cumulative implementation and design review
+  core_topics:
+  - HTTP/API/security
+  - testing
+  - Laravel/CakePHP modernization
+  - Docker/runtime
+  - AWS foundations
+  english_outcome: Perform part of the gate as an English design walkthrough.
+  ai_outcome: Closed gate sections remain SOLO; post-gate agent review is allowed.
+  project_milestone: Freeze Gate 2 evidence and remediation backlog.
+  assessment_mode: PHASE GATE 2 — practical + architecture + interview
+  career_action: Run at least one experimental interview or equivalent mock loop.
+  prerequisites:
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  phase_gate: true
+- week: 27
+  phase: Cloud and Delivery
+  estimated_hours: 12
+  primary_outcome: Deploy core backend infrastructure using managed AWS compute, storage, database, and cache choices
+  core_topics:
+  - EC2/ECS concepts
+  - ECR
+  - S3
+  - RDS
+  - ElastiCache
+  - load balancer
+  - secrets
+  english_outcome: Explain managed-vs-self-hosted trade-offs in English.
+  ai_outcome: Use an agent to compare deployment options, then document cost/ops/security trade-offs yourself.
+  project_milestone: Deploy a minimal environment manually before automating it.
+  assessment_mode: cloud deployment lab
+  career_action: Move from selective to regular applications.
+  prerequisites:
+  - 25
+  - 26
+  phase_gate: false
+- week: 28
+  phase: Cloud and Delivery
+  estimated_hours: 12
+  primary_outcome: Design asynchronous work with queues, retries, DLQs, idempotency, and event boundaries
+  core_topics:
+  - SQS
+  - SNS concept
+  - workers
+  - retry/backoff
+  - DLQ
+  - idempotency
+  - outbox introduction
+  english_outcome: Explain an asynchronous failure path in English.
+  ai_outcome: Use an agent to generate failure scenarios; validate them against your queue design.
+  project_milestone: Add background job processing and failure handling.
+  assessment_mode: event-driven backend simulation
+  career_action: Regular applications; capture messaging/queue requirements in market signals.
+  prerequisites:
+  - 11
+  - 19
+  - 27
+  phase_gate: false
+- week: 29
+  phase: Cloud and Delivery
+  estimated_hours: 12
+  primary_outcome: Build CI/CD that produces evidence, not just automated commands
+  core_topics:
+  - GitHub Actions
+  - build/test/static analysis
+  - artifact/image build
+  - deployment gates
+  - rollback concepts
+  english_outcome: Write an English CI failure/rollback note.
+  ai_outcome: Delegate pipeline boilerplate to an agent but independently validate permissions, secrets, triggers, and failure
+    behavior.
+  project_milestone: Create CI and a controlled deployment pipeline.
+  assessment_mode: CI/CD engineering challenge
+  career_action: Regular applications; use pipeline/project evidence in interviews.
+  prerequisites:
+  - 16
+  - 22
+  - 27
+  phase_gate: false
+- week: 30
+  phase: Cloud and Delivery
+  estimated_hours: 12
+  primary_outcome: Make the backend observable with structured logs, metrics, traces, and actionable signals
+  core_topics:
+  - structured logging
+  - metrics
+  - tracing
+  - OpenTelemetry concepts
+  - CloudWatch
+  - SLI/SLO basics
+  english_outcome: Explain how you would diagnose high p95 latency in English.
+  ai_outcome: Use an agent to propose observability signals, then remove vanity/noise metrics.
+  project_milestone: Instrument one critical request path end-to-end.
+  assessment_mode: incident/observability simulation
+  career_action: Regular applications and interview remediation.
+  prerequisites:
+  - 23
+  - 27
+  - 29
+  phase_gate: false
+- week: 31
+  phase: Cloud and Delivery
+  estimated_hours: 12
+  primary_outcome: Represent cloud infrastructure declaratively with Terraform and safe state practices
+  core_topics:
+  - Terraform providers/resources
+  - variables/outputs
+  - state
+  - remote state concepts
+  - plan/apply
+  - modules basics
+  english_outcome: Write an English infrastructure change summary.
+  ai_outcome: Use an agent to draft Terraform only after defining desired architecture; inspect every resource and IAM implication.
+  project_milestone: Codify a subset of the manually deployed AWS environment.
+  assessment_mode: infrastructure-as-code lab
+  career_action: Regular applications; identify IaC frequency in target market.
+  prerequisites:
+  - 25
+  - 27
+  - 29
+  phase_gate: false
+- week: 32
+  phase: Cloud and Delivery
+  estimated_hours: 12
+  primary_outcome: Integrate cloud, queues, CI/CD, observability, and IaC into a production-oriented deployment
+  core_topics:
+  - resilience
+  - backup/restore
+  - secrets
+  - cost
+  - autoscaling concepts
+  - deployment verification
+  english_outcome: Deliver a 10-minute English production-readiness review.
+  ai_outcome: Use an agent for a pre-production checklist, then independently verify critical controls.
+  project_milestone: Release cloud milestone v2 with deployment/runbook evidence.
+  assessment_mode: production-readiness simulation
+  career_action: Regular applications; start prioritizing roles with international exposure when fit is comparable.
+  prerequisites:
+  - 27
+  - 28
+  - 29
+  - 30
+  - 31
+  phase_gate: false
+- week: 33
+  phase: Architecture and AI Engineering
+  estimated_hours: 12
+  primary_outcome: Design scalable services using load balancing, caching, replication, and capacity reasoning
+  core_topics:
+  - latency/throughput
+  - vertical/horizontal scaling
+  - load balancing
+  - caching
+  - replication
+  - capacity estimation
+  english_outcome: Run a system-design explanation in English for 15 minutes.
+  ai_outcome: Do the first architecture pass SOLO; use an agent only for critique and missing failure modes.
+  project_milestone: Create a system-design document for scaling the backend.
+  assessment_mode: system-design interview simulation
+  career_action: Regular applications; log system-design feedback from interviews/mocks.
+  prerequisites:
+  - 32
+  phase_gate: false
+- week: 34
+  phase: Architecture and AI Engineering
+  estimated_hours: 12
+  primary_outcome: Reason about partitioning, consistency, CAP trade-offs, and distributed data ownership
+  core_topics:
+  - partitioning/sharding
+  - consistency
+  - CAP
+  - quorums concepts
+  - data ownership
+  - eventual consistency
+  english_outcome: Defend a consistency trade-off in English.
+  ai_outcome: Compare your SOLO design to an agent critique; record disagreements and evidence.
+  project_milestone: Add scaling/data-consistency ADRs.
+  assessment_mode: architecture trade-off assessment
+  career_action: Regular applications and targeted remediation.
+  prerequisites:
+  - 33
+  phase_gate: false
+- week: 35
+  phase: Architecture and AI Engineering
+  estimated_hours: 12
+  primary_outcome: Use reliability patterns deliberately across synchronous and asynchronous boundaries
+  core_topics:
+  - timeouts
+  - retries/backoff
+  - circuit breaker
+  - bulkheads concept
+  - outbox
+  - saga
+  - distributed locks trade-offs
+  english_outcome: Explain a failure/recovery sequence in English.
+  ai_outcome: Use an agent to attack the architecture with failure scenarios; prioritize realistic ones.
+  project_milestone: Implement or simulate at least two reliability patterns with tests.
+  assessment_mode: failure-mode design challenge
+  career_action: Regular applications; use reliability stories in behavioral/technical interviews.
+  prerequisites:
+  - 11
+  - 28
+  - 34
+  phase_gate: false
+- week: 36
+  phase: Architecture and AI Engineering
+  estimated_hours: 12
+  primary_outcome: Integrate an LLM API as a backend dependency with structured outputs, latency, cost, and failure controls
+  core_topics:
+  - LLM fundamentals
+  - tokens/context
+  - model selection concepts
+  - streaming
+  - structured outputs
+  - timeouts/retries
+  - cost/latency
+  english_outcome: Explain the AI feature architecture in English without marketing language.
+  ai_outcome: Build with an LLM API but require schemas, validation, observability, and fallback behavior.
+  project_milestone: Add a small structured extraction/classification feature to the normal product.
+  assessment_mode: AI integration lab
+  career_action: Regular applications; begin noting AI-integration requirements where relevant.
+  prerequisites:
+  - 15
+  - 30
+  - 35
+  phase_gate: false
+- week: 37
+  phase: Architecture and AI Engineering
+  estimated_hours: 12
+  primary_outcome: Use tool/function calling safely and distinguish deterministic application logic from model decisions
+  core_topics:
+  - tool calling
+  - JSON schema
+  - tool permissions
+  - validation
+  - idempotent tools
+  - human approval boundaries
+  english_outcome: Explain which actions the model may and may not take.
+  ai_outcome: Implement bounded tool calling with explicit allowlists and validation.
+  project_milestone: Add one safe read tool and one consequential action requiring approval.
+  assessment_mode: AI tool-calling challenge
+  career_action: Regular applications; prepare to discuss AI supervision as engineering, not prompting.
+  prerequisites:
+  - 36
+  phase_gate: false
+- week: 38
+  phase: Architecture and AI Engineering
+  estimated_hours: 12
+  primary_outcome: Build and evaluate retrieval when semantic search is justified
+  core_topics:
+  - embeddings
+  - semantic search
+  - chunking
+  - vector storage concepts
+  - RAG
+  - retrieval quality
+  - citations
+  english_outcome: 'Write an English RAG trade-off note: when to use it and when not to.'
+  ai_outcome: Use agents/LLMs to help generate evaluation queries, but manually inspect retrieval failures.
+  project_milestone: Add a small document-retrieval feature with measurable retrieval checks.
+  assessment_mode: RAG/retrieval lab
+  career_action: Regular applications; keep AI work secondary to core backend fit unless role requires it.
+  prerequisites:
+  - 36
+  - 37
+  phase_gate: false
+- week: 39
+  phase: Gate 3
+  estimated_hours: 12
+  primary_outcome: Demonstrate cloud, distributed-system, system-design, and foundational AI-engineering capability
+  core_topics:
+  - AWS/CI/CD/observability/Terraform
+  - system design
+  - distributed reliability
+  - LLM integration/tool calling/RAG fundamentals
+  english_outcome: Complete a senior-level architecture walkthrough partly in English.
+  ai_outcome: Closed sections SOLO; HYBRID section measures agent supervision explicitly.
+  project_milestone: Freeze Gate 3 evidence and remediation backlog.
+  assessment_mode: PHASE GATE 3 — system design + production + AI
+  career_action: Transition to intensive campaign if baseline criteria are met; otherwise remediate while continuing applications.
+  prerequisites:
+  - 26
+  - 27
+  - 28
+  - 29
+  - 30
+  - 31
+  - 32
+  - 33
+  - 34
+  - 35
+  - 36
+  - 37
+  - 38
+  phase_gate: true
+- week: 40
+  phase: Architecture and AI Engineering
+  estimated_hours: 12
+  primary_outcome: Evaluate AI behavior, trace failures, and defend against prompt injection/data-boundary failures
+  core_topics:
+  - evals
+  - test datasets
+  - AI tracing
+  - prompt injection
+  - data leakage
+  - guardrails
+  - human-in-the-loop
+  english_outcome: Present one AI failure analysis in English.
+  ai_outcome: Use agents to generate adversarial cases, but keep acceptance criteria deterministic where possible.
+  project_milestone: Add evals/security checks and an AI observability note.
+  assessment_mode: AI safety/evals simulation
+  career_action: Intensive applications begin; convert real feedback into private remediation tasks.
+  prerequisites:
+  - 36
+  - 37
+  - 38
+  - 39
+  phase_gate: false
+- week: 41
+  phase: Interviews and Agentic Engineering
+  estimated_hours: 12
+  primary_outcome: Build coding-interview fundamentals around complexity, arrays, strings, and hash maps
+  core_topics:
+  - Big O
+  - arrays/strings
+  - hash maps/sets
+  - two-sum style patterns
+  - coding communication
+  english_outcome: Solve and explain one problem in English under time pressure.
+  ai_outcome: Use AI only after the timed SOLO attempt; compare solution clarity and complexity.
+  project_milestone: Maintain project; no major new feature this week.
+  assessment_mode: timed coding interview
+  career_action: Intensive applications; begin systematic interview loop tracking.
+  prerequisites:
+  - 39
+  phase_gate: false
+- week: 42
+  phase: Interviews and Agentic Engineering
+  estimated_hours: 12
+  primary_outcome: Recognize stack, queue, linked-list, and binary-search patterns
+  core_topics:
+  - stack
+  - queue
+  - linked list
+  - binary search
+  - problem decomposition
+  english_outcome: Narrate assumptions and complexity in English.
+  ai_outcome: Use an agent to review post-solution reasoning, not during timed SOLO work.
+  project_milestone: Address one project remediation item from Gate 3.
+  assessment_mode: timed coding interview
+  career_action: Intensive applications and targeted recruiter/technical-screen practice.
+  prerequisites:
+  - 41
+  phase_gate: false
+- week: 43
+  phase: Interviews and Agentic Engineering
+  estimated_hours: 12
+  primary_outcome: Use trees and graphs with DFS/BFS while communicating trade-offs clearly
+  core_topics:
+  - trees/BST
+  - graphs
+  - DFS
+  - BFS
+  - visited state
+  - complexity
+  english_outcome: Complete a graph/tree explanation in English.
+  ai_outcome: Use an agent to create variant problems after SOLO mastery, not to solve the timed attempt.
+  project_milestone: Create one engineering note connecting graph concepts to real backend dependencies if useful.
+  assessment_mode: timed coding interview
+  career_action: Intensive applications; prepare company-specific technical topics from upcoming interviews.
+  prerequisites:
+  - 41
+  - 42
+  phase_gate: false
+- week: 44
+  phase: Interviews and Agentic Engineering
+  estimated_hours: 12
+  primary_outcome: Use common interview patterns such as sliding window, two pointers, heap, and priority queue
+  core_topics:
+  - two pointers
+  - sliding window
+  - heap/priority queue
+  - top-k patterns
+  english_outcome: Run a 45-minute coding mock primarily in English.
+  ai_outcome: Post-mock agent review may identify communication and edge-case gaps.
+  project_milestone: Keep production project healthy; focus on interview readiness.
+  assessment_mode: full coding mock
+  career_action: Intensive applications; prioritize quality of interview conversion over raw application count.
+  prerequisites:
+  - 41
+  - 42
+  - 43
+  phase_gate: false
+- week: 45
+  phase: Interviews and Agentic Engineering
+  estimated_hours: 12
+  primary_outcome: Handle recursion, backtracking, and introductory dynamic programming without memorizing templates blindly
+  core_topics:
+  - recursion
+  - backtracking
+  - memoization
+  - dynamic programming basics
+  english_outcome: Explain state, recurrence, and complexity in English.
+  ai_outcome: Use an agent only after SOLO attempt to compare alternative formulations.
+  project_milestone: Complete a project architecture/portfolio polish pass.
+  assessment_mode: coding + system-design mixed simulation
+  career_action: Intensive applications; practice behavioral stories using measurable impact.
+  prerequisites:
+  - 41
+  - 42
+  - 43
+  - 44
+  phase_gate: false
+- week: 46
+  phase: Interviews and Agentic Engineering
+  estimated_hours: 12
+  primary_outcome: Build an agentic engineering workflow using repository instructions, tool boundaries, MCP concepts, and
+    human review
+  core_topics:
+  - agent workflows
+  - context management
+  - repository instructions
+  - MCP client/server concepts
+  - tool boundaries
+  - human-in-the-loop
+  english_outcome: Explain an agent architecture and its safety boundaries in English.
+  ai_outcome: Implement an MCP-based or equivalent tool integration after defining permissions and contracts.
+  project_milestone: Expose or consume a bounded project capability through MCP where justified.
+  assessment_mode: agentic engineering challenge
+  career_action: Intensive applications; be prepared to discuss AI-assisted engineering practices with evidence.
+  prerequisites:
+  - 37
+  - 40
+  - 45
+  phase_gate: false
+- week: 47
+  phase: Market Campaign
+  estimated_hours: 12
+  primary_outcome: Convert real interview/application feedback into targeted backend remediation without derailing the curriculum
+  core_topics:
+  - gap triage
+  - backend deep dive
+  - SQL/API/runtime review
+  - evidence-based remediation
+  english_outcome: Practice recruiter + technical answers in English from actual gaps.
+  ai_outcome: Use agents to cluster feedback; humans decide whether the signal is real and generalizable.
+  project_milestone: Fix the highest-value project gap discovered through market feedback.
+  assessment_mode: backend deep-dive mock
+  career_action: Set a sustainable intensive application cadence and track funnel metrics.
+  prerequisites:
+  - 46
+  phase_gate: false
+- week: 48
+  phase: Market Campaign
+  estimated_hours: 12
+  primary_outcome: Perform a complete senior backend interview loop across PHP, SQL, APIs, runtime, and architecture
+  core_topics:
+  - PHP deep dive
+  - SQL performance
+  - HTTP/API
+  - Docker/cloud
+  - system design
+  english_outcome: Run the majority of a full mock loop in English.
+  ai_outcome: Keep timed/closed sections SOLO; use agent only for retrospective.
+  project_milestone: Polish project walkthrough and incident/debug stories.
+  assessment_mode: full senior backend mock loop
+  career_action: Intensive applications; review funnel conversion and role-fit quality.
+  prerequisites:
+  - 47
+  phase_gate: false
+- week: 49
+  phase: Market Campaign
+  estimated_hours: 12
+  primary_outcome: Demonstrate production troubleshooting and data-performance reasoning under interview constraints
+  core_topics:
+  - query diagnosis
+  - locks/concurrency
+  - cache failures
+  - logs/metrics/traces
+  - incident reasoning
+  english_outcome: Run an English incident explanation using STAR + technical detail.
+  ai_outcome: Use an agent after the mock to challenge root-cause assumptions.
+  project_milestone: Create a concise public incident/postmortem-style case study from synthetic/project data.
+  assessment_mode: production incident simulation
+  career_action: Intensive applications; target companies where engineering maturity matches goals.
+  prerequisites:
+  - 48
+  phase_gate: false
+- week: 50
+  phase: Market Campaign
+  estimated_hours: 12
+  primary_outcome: Combine coding, system design, and behavioral communication in one realistic interview day
+  core_topics:
+  - DSA review
+  - system design
+  - behavioral stories
+  - trade-off communication
+  english_outcome: Conduct an end-to-end mock interview day in English.
+  ai_outcome: Agents remain outside closed mocks; use them for structured retrospective only.
+  project_milestone: Final portfolio documentation polish.
+  assessment_mode: multi-round interview simulation
+  career_action: Intensive applications; company-specific preparation for active pipelines.
+  prerequisites:
+  - 48
+  - 49
+  phase_gate: false
+- week: 51
+  phase: Market Campaign
+  estimated_hours: 12
+  primary_outcome: Prepare selectively for active companies while maintaining general engineering readiness
+  core_topics:
+  - company-specific gaps
+  - backend review
+  - architecture review
+  - offer/role evaluation criteria
+  english_outcome: Practice questions, clarification, and negotiation language in English.
+  ai_outcome: Use agents for research organization and mock generation; verify factual company claims externally when needed.
+  project_milestone: Freeze a release candidate of the public-safe portfolio evidence.
+  assessment_mode: targeted interview simulation
+  career_action: Focus on active pipelines, referrals, follow-ups, and role-quality evaluation.
+  prerequisites:
+  - 47
+  - 48
+  - 49
+  - 50
+  phase_gate: false
+- week: 52
+  phase: Gate 4
+  estimated_hours: 12
+  primary_outcome: Demonstrate job-ready Senior Backend capability and produce the transition plan for the next professional
+    year
+  core_topics:
+  - cumulative backend engineering
+  - cloud/architecture
+  - AI-assisted engineering
+  - interview readiness
+  - career evidence
+  english_outcome: Complete final technical/behavioral presentation in English and define next English goals.
+  ai_outcome: Complete both SOLO and AI-ASSISTED sections to measure independence and leverage.
+  project_milestone: Tag Year 1 portfolio milestone and archive evidence without rewriting history.
+  assessment_mode: PHASE GATE 4 — final cumulative assessment
+  career_action: Evaluate job outcome/funnel; start Year 2 consolidation when a stronger role is obtained, otherwise continue
+    a focused campaign with remediation.
+  prerequisites:
+  - 39
+  - 40
+  - 41
+  - 42
+  - 43
+  - 44
+  - 45
+  - 46
+  - 47
+  - 48
+  - 49
+  - 50
+  - 51
+  phase_gate: true
