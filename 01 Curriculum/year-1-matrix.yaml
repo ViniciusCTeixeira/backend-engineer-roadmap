@@ -4,6 +4,7 @@ weeks:
 - week: 1
   phase: Foundations
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Explain and experimentally verify PHP type behavior and establish safe Git/agent habits
   core_topics:
   - PHP type system
@@ -20,6 +21,7 @@ weeks:
 - week: 2
   phase: Foundations
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Use OOP deliberately and understand Composer/autoloading rather than only framework conventions
   core_topics:
   - classes/interfaces/abstract/final
@@ -38,6 +40,7 @@ weeks:
 - week: 3
   phase: Foundations
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Apply SOLID and testing feedback to refactor PHP without changing behavior
   core_topics:
   - SOLID
@@ -56,6 +59,8 @@ weeks:
 - week: 4
   phase: Foundations
   estimated_hours: 12
+  industry_platforms:
+  - xdebug
   primary_outcome: Debug failures systematically and recover safely with Git
   core_topics:
   - exceptions/errors
@@ -76,6 +81,7 @@ weeks:
 - week: 5
   phase: Foundations
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Understand the PHP web runtime from request to process and dependency execution
   core_topics:
   - PHP runtime model
@@ -97,6 +103,7 @@ weeks:
 - week: 6
   phase: Foundations
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Go deeper than CakePHP CRUD by reasoning about framework lifecycle, ORM behavior, and boundaries
   core_topics:
   - CakePHP request lifecycle
@@ -116,6 +123,11 @@ weeks:
 - week: 7
   phase: Foundations
   estimated_hours: 12
+  industry_platforms:
+  - curl
+  - jq
+  - dig
+  - ss/lsof
   primary_outcome: Operate comfortably in Linux and reason about processes, files, permissions, ports, and logs
   core_topics:
   - Linux filesystem
@@ -136,6 +148,8 @@ weeks:
 - week: 8
   phase: Foundations
   estimated_hours: 12
+  industry_platforms:
+  - github-cli
   primary_outcome: Integrate PHP, OOP, Composer, Git, CakePHP reasoning, and Linux into a reproducible engineering workflow
   core_topics:
   - integration/refactoring
@@ -159,6 +173,7 @@ weeks:
 - week: 9
   phase: Data and Web
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Model relational data deliberately and write SQL without relying on an ORM
   core_topics:
   - relational modeling
@@ -178,6 +193,7 @@ weeks:
 - week: 10
   phase: Data and Web
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Understand B-tree indexing and prove query improvements with EXPLAIN/EXPLAIN ANALYZE
   core_topics:
   - indexes
@@ -197,6 +213,7 @@ weeks:
 - week: 11
   phase: Data and Web
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Reason about ACID, isolation, locks, deadlocks, and concurrent updates
   core_topics:
   - transactions
@@ -217,6 +234,7 @@ weeks:
 - week: 12
   phase: Data and Web
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Use Redis by data model and failure mode, not merely as a generic fast cache
   core_topics:
   - Redis data structures
@@ -239,6 +257,7 @@ weeks:
 - week: 13
   phase: Gate 1
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Demonstrate foundations and data-layer understanding without framework or agent dependence
   core_topics:
   - PHP/OOP/Composer
@@ -267,6 +286,10 @@ weeks:
 - week: 14
   phase: Data and Web
   estimated_hours: 12
+  industry_platforms:
+  - openapi-swagger
+  - bruno
+  - postman
   primary_outcome: Reason about HTTP semantics before designing APIs
   core_topics:
   - DNS/TCP overview
@@ -287,6 +310,7 @@ weeks:
 - week: 15
   phase: Data and Web
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Design secure, evolvable APIs with explicit auth and authorization trade-offs
   core_topics:
   - REST constraints
@@ -308,6 +332,7 @@ weeks:
 - week: 16
   phase: Data and Web
   estimated_hours: 12
+  industry_platforms: []  # Quality-tooling context; PHPStan/PHPUnit remain core.
   primary_outcome: Build a reliable PHP quality loop with tests, static analysis, and useful failure feedback
   core_topics:
   - unit/integration/functional tests
@@ -328,6 +353,7 @@ weeks:
 - week: 17
   phase: Modern Backend
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Understand Laravel request lifecycle, service container, dependency injection, and configuration
   core_topics:
   - Laravel lifecycle
@@ -346,6 +372,7 @@ weeks:
 - week: 18
   phase: Modern Backend
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Use Eloquent and migrations without losing SQL/data-model awareness
   core_topics:
   - Eloquent
@@ -367,6 +394,7 @@ weeks:
 - week: 19
   phase: Modern Backend
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Implement application security as a design property, not a framework checkbox
   core_topics:
   - authentication
@@ -388,6 +416,7 @@ weeks:
 - week: 20
   phase: Modern Backend
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Modernize legacy CakePHP code using tests, boundaries, and measured database/cache improvements
   core_topics:
   - legacy characterization
@@ -409,6 +438,7 @@ weeks:
 - week: 21
   phase: Modern Backend
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Apply pragmatic architecture patterns without overengineering
   core_topics:
   - application services
@@ -431,6 +461,8 @@ weeks:
 - week: 22
   phase: Modern Backend
   estimated_hours: 12
+  industry_platforms:
+  - docker-compose
   primary_outcome: Containerize a PHP application with reproducible images, networks, volumes, and health checks
   core_topics:
   - Docker images/layers
@@ -453,6 +485,8 @@ weeks:
 - week: 23
   phase: Modern Backend
   estimated_hours: 12
+  industry_platforms:
+  - nginx
   primary_outcome: Understand Nginx/PHP-FPM/runtime behavior inside and outside containers
   core_topics:
   - Nginx basics
@@ -474,6 +508,8 @@ weeks:
 - week: 24
   phase: Modern Backend
   estimated_hours: 12
+  industry_platforms:
+  - k6
   primary_outcome: Integrate API, security, tests, architecture, Docker, and runtime operations into one deployable local
     system
   core_topics:
@@ -498,6 +534,9 @@ weeks:
 - week: 25
   phase: Cloud and Delivery
   estimated_hours: 12
+  industry_platforms:
+  - cloudflare
+  - aws-cli
   primary_outcome: Build a mental model of AWS identity, networking, regions, and shared responsibility
   core_topics:
   - AWS IAM
@@ -517,6 +556,7 @@ weeks:
 - week: 26
   phase: Gate 2
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Demonstrate production-ready backend fundamentals through a cumulative implementation and design review
   core_topics:
   - HTTP/API/security
@@ -547,6 +587,7 @@ weeks:
 - week: 27
   phase: Cloud and Delivery
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Deploy core backend infrastructure using managed AWS compute, storage, database, and cache choices
   core_topics:
   - EC2/ECS concepts
@@ -568,6 +609,10 @@ weeks:
 - week: 28
   phase: Cloud and Delivery
   estimated_hours: 12
+  industry_platforms:
+  - sqs
+  - rabbitmq
+  - kafka
   primary_outcome: Design asynchronous work with queues, retries, DLQs, idempotency, and event boundaries
   core_topics:
   - SQS
@@ -590,6 +635,9 @@ weeks:
 - week: 29
   phase: Cloud and Delivery
   estimated_hours: 12
+  industry_platforms:
+  - sonarqube
+  - trivy
   primary_outcome: Build CI/CD that produces evidence, not just automated commands
   core_topics:
   - GitHub Actions
@@ -611,6 +659,13 @@ weeks:
 - week: 30
   phase: Cloud and Delivery
   estimated_hours: 12
+  industry_platforms:
+  - opentelemetry
+  - prometheus
+  - grafana
+  - sentry
+  - datadog
+  - new-relic
   primary_outcome: Make the backend observable with structured logs, metrics, traces, and actionable signals
   core_topics:
   - structured logging
@@ -632,6 +687,9 @@ weeks:
 - week: 31
   phase: Cloud and Delivery
   estimated_hours: 12
+  industry_platforms:
+  - cloudflare
+  - vault
   primary_outcome: Represent cloud infrastructure declaratively with Terraform and safe state practices
   core_topics:
   - Terraform providers/resources
@@ -653,6 +711,12 @@ weeks:
 - week: 32
   phase: Cloud and Delivery
   estimated_hours: 12
+  industry_platforms:
+  - cloudflare-waf
+  - kubernetes
+  - helm
+  - gitops
+  - argo-cd
   primary_outcome: Integrate cloud, queues, CI/CD, observability, and IaC into a production-oriented deployment
   core_topics:
   - resilience
@@ -676,6 +740,8 @@ weeks:
 - week: 33
   phase: Architecture and AI Engineering
   estimated_hours: 12
+  industry_platforms:
+  - k6
   primary_outcome: Design scalable services using load balancing, caching, replication, and capacity reasoning
   core_topics:
   - latency/throughput
@@ -695,6 +761,9 @@ weeks:
 - week: 34
   phase: Architecture and AI Engineering
   estimated_hours: 12
+  industry_platforms:
+  - opensearch
+  - elasticsearch
   primary_outcome: Reason about partitioning, consistency, CAP trade-offs, and distributed data ownership
   core_topics:
   - partitioning/sharding
@@ -714,6 +783,10 @@ weeks:
 - week: 35
   phase: Architecture and AI Engineering
   estimated_hours: 12
+  industry_platforms:
+  - sqs
+  - rabbitmq
+  - kafka
   primary_outcome: Use reliability patterns deliberately across synchronous and asynchronous boundaries
   core_topics:
   - timeouts
@@ -736,6 +809,7 @@ weeks:
 - week: 36
   phase: Architecture and AI Engineering
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Integrate an LLM API as a backend dependency with structured outputs, latency, cost, and failure controls
   core_topics:
   - LLM fundamentals
@@ -758,6 +832,7 @@ weeks:
 - week: 37
   phase: Architecture and AI Engineering
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Use tool/function calling safely and distinguish deterministic application logic from model decisions
   core_topics:
   - tool calling
@@ -777,6 +852,7 @@ weeks:
 - week: 38
   phase: Architecture and AI Engineering
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Build and evaluate retrieval when semantic search is justified
   core_topics:
   - embeddings
@@ -798,6 +874,7 @@ weeks:
 - week: 39
   phase: Gate 3
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Demonstrate cloud, distributed-system, system-design, and foundational AI-engineering capability
   core_topics:
   - AWS/CI/CD/observability/Terraform
@@ -827,6 +904,7 @@ weeks:
 - week: 40
   phase: Architecture and AI Engineering
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Evaluate AI behavior, trace failures, and defend against prompt injection/data-boundary failures
   core_topics:
   - evals
@@ -850,6 +928,7 @@ weeks:
 - week: 41
   phase: Interviews and Agentic Engineering
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Build coding-interview fundamentals around complexity, arrays, strings, and hash maps
   core_topics:
   - Big O
@@ -868,6 +947,7 @@ weeks:
 - week: 42
   phase: Interviews and Agentic Engineering
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Recognize stack, queue, linked-list, and binary-search patterns
   core_topics:
   - stack
@@ -886,6 +966,7 @@ weeks:
 - week: 43
   phase: Interviews and Agentic Engineering
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Use trees and graphs with DFS/BFS while communicating trade-offs clearly
   core_topics:
   - trees/BST
@@ -906,6 +987,7 @@ weeks:
 - week: 44
   phase: Interviews and Agentic Engineering
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Use common interview patterns such as sliding window, two pointers, heap, and priority queue
   core_topics:
   - two pointers
@@ -925,6 +1007,7 @@ weeks:
 - week: 45
   phase: Interviews and Agentic Engineering
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Handle recursion, backtracking, and introductory dynamic programming without memorizing templates blindly
   core_topics:
   - recursion
@@ -945,6 +1028,7 @@ weeks:
 - week: 46
   phase: Interviews and Agentic Engineering
   estimated_hours: 12
+  industry_platforms: []  # MCP remains in Agentic Engineering; bounded platform tools are optional.
   primary_outcome: Build an agentic engineering workflow using repository instructions, tool boundaries, MCP concepts, and
     human review
   core_topics:
@@ -967,6 +1051,7 @@ weeks:
 - week: 47
   phase: Market Campaign
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Convert real interview/application feedback into targeted backend remediation without derailing the curriculum
   core_topics:
   - gap triage
@@ -984,6 +1069,7 @@ weeks:
 - week: 48
   phase: Market Campaign
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Perform a complete senior backend interview loop across PHP, SQL, APIs, runtime, and architecture
   core_topics:
   - PHP deep dive
@@ -1002,6 +1088,7 @@ weeks:
 - week: 49
   phase: Market Campaign
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Demonstrate production troubleshooting and data-performance reasoning under interview constraints
   core_topics:
   - query diagnosis
@@ -1020,6 +1107,7 @@ weeks:
 - week: 50
   phase: Market Campaign
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Combine coding, system design, and behavioral communication in one realistic interview day
   core_topics:
   - DSA review
@@ -1038,6 +1126,7 @@ weeks:
 - week: 51
   phase: Market Campaign
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Prepare selectively for active companies while maintaining general engineering readiness
   core_topics:
   - company-specific gaps
@@ -1058,6 +1147,7 @@ weeks:
 - week: 52
   phase: Gate 4
   estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Demonstrate job-ready Senior Backend capability and produce the transition plan for the next professional
     year
   core_topics:

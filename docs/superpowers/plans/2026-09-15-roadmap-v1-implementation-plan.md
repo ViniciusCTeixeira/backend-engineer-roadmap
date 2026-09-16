@@ -22,6 +22,7 @@
 - Every practical activity declares one study mode: `SOLO`, `AI-ASSISTED`, or `HYBRID`.
 - Public curriculum cannot be automatically rewritten from one learner's performance or one job posting.
 - Material curation prioritizes official/free primary sources and records verification date/version relevance.
+- Supporting / Industry Platforms is a transversal track; technology depth is classified as `core`, `supporting`, `professional-exposure`, or `market-triggered`.
 - Major curriculum changes are proposal-first; low-risk public maintenance and future private schedule adaptation may be autonomous within documented rules.
 - Daily-file mass generation is forbidden until the 52-week matrix, Week 0 diagnostic design, schemas, assessment model, and agent rules have each passed their checkpoint review.
 - Obsidian remains the human interface; V1 must not become a custom web application.
@@ -301,6 +302,7 @@ Every week matrix entry must explicitly account for applicable tracks:
 
 ```text
 Core Backend Engineering
+Supporting / Industry Platforms
 English
 AI-Assisted Development
 Project
@@ -599,7 +601,7 @@ and point to detailed rule files.
 
 - [ ] **Step 3: Add scoped rules**
 
-Assessment scope must forbid answer-key leakage; career scope must forbid changing public curriculum from a single vacancy; AI scope must require freshness checks for fast-moving vendor/tool material.
+Assessment scope must forbid answer-key leakage; career scope must forbid changing public curriculum from a single vacancy; AI scope must require freshness checks for fast-moving vendor/tool material; platform governance must require a proposal before adding a public platform or promoting/demoting its depth class.
 
 - [ ] **Step 4: Create Claude bootstrap**
 
@@ -792,6 +794,7 @@ Each resource records:
 title: ""
 url: ""
 topic_ids: []
+technology_depth: core
 type: docs
 source_authority: official
 language: en
@@ -800,6 +803,8 @@ last_verified: YYYY-MM-DD
 version_scope: ""
 notes: ""
 ```
+
+Allowed `technology_depth` values are `core`, `supporting`, `professional-exposure`, and `market-triggered`. Resource curation must preserve the approved depth classification and must not promote a platform from a single vacancy.
 
 - [ ] **Step 2: Curate in curriculum order**
 

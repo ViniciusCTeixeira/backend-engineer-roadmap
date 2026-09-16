@@ -6,14 +6,49 @@
 
 ## Transversal tracks
 
-Every week accounts for six tracks:
+Every week accounts for seven tracks:
 
 1. Core Backend Engineering
-2. English
-3. AI-Assisted Development / AI Engineering
-4. Project
-5. Review & Assessment
-6. Career
+2. Supporting / Industry Platforms
+3. English
+4. AI-Assisted Development / AI Engineering
+5. Project
+6. Review & Assessment
+7. Career
+
+Supporting / Industry Platforms follows four technology-depth classes:
+
+- **core** — deep enough to design, implement, debug, explain trade-offs, and use independently;
+- **supporting** — realistic practical use and normal backend operation/debugging;
+- **professional-exposure** — a small lab or interview-level understanding without production-level mastery in V1;
+- **market-triggered** — promoted only after recurring evidence from relevant vacancies or interviews justifies additional depth.
+
+The platform integrations below are embedded in existing engineering topics, not delivered as separate full courses. Empty platform weeks remain valid when the week intentionally focuses on core concepts.
+
+## Approved supporting / industry platform integration
+
+| Week | Industry platform integration |
+|---|---|
+| 4 | Xdebug as a practical debugging tool |
+| 7 | curl, jq, dig, ss/lsof in Linux/network troubleshooting |
+| 8 | GitHub CLI exposure in repository workflow |
+| 14 | OpenAPI/Swagger + Bruno or Postman for API inspection/contracts |
+| 16 | Quality-tooling context; keep PHPStan/PHPUnit core |
+| 22 | Docker Compose as part of container workflow |
+| 23 | Nginx as reverse proxy in front of PHP-FPM |
+| 24 | k6 for basic API load/performance testing |
+| 25 | Cloudflare DNS/CDN/TLS/reverse-proxy fundamentals; AWS CLI |
+| 28 | SQS as core queue; compare RabbitMQ and Kafka and perform one bounded lab based on project fit |
+| 29 | SonarQube/quality-gate concepts and Trivy/container/dependency scanning exposure |
+| 30 | OpenTelemetry + Prometheus + Grafana; Sentry as error-monitoring practice; Datadog/New Relic as commercial equivalents |
+| 31 | Terraform may manage selected Cloudflare/AWS resources; Vault concepts alongside secrets management |
+| 32 | Cloudflare WAF/rate limiting/origin protection; Kubernetes + Helm professional exposure; GitOps/Argo CD concepts |
+| 33 | k6/capacity measurements support scaling exercises |
+| 34 | OpenSearch/Elasticsearch exposure when discussing search/indexing/data-access trade-offs |
+| 35 | Messaging platform trade-offs revisited in reliability/event-driven design |
+| 46 | MCP remains part of Agentic Engineering; supporting platforms may be exposed through bounded tools when useful |
+
+AWS remains the primary cloud platform, Cloudflare remains complementary edge/DNS/CDN/security infrastructure, Kubernetes and Helm remain professional-exposure topics, and the default workload remains 12 hours/week.
 
 The curriculum is intentionally not “finish studying, then job hunt.” Market observation begins immediately, structured vacancy analysis starts in Month 3, first selective applications start in Month 5, experimental interviews begin around Month 6, regular applications run through Months 7–9, and the final quarter is an intensive campaign.
 
@@ -606,7 +641,7 @@ A gate may trigger private recovery work. It never rewrites historical schedules
 ## C1-B acceptance criteria
 
 - All 52 weeks have one primary outcome.
-- English, AI, project, assessment, and career tracks remain visible.
+- Core Backend Engineering, Supporting / Industry Platforms, English, AI, project, assessment, and career tracks remain visible.
 - AI-assisted development starts in Week 1.
 - Building AI-enabled systems starts only after adequate backend/production foundations.
 - Job search is progressive and begins before curriculum completion.

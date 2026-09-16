@@ -399,7 +399,28 @@ Year 1 is organized around the following progression:
 - Weeks 41–46: algorithms, technical interviews, advanced project work, agentic engineering;
 - Weeks 47–52: intensive applications, interviews, remediation based on real market feedback.
 
-English, project work, AI-assisted development, review, and career preparation are transversal tracks from early in the roadmap.
+The seven tracks below are transversal from early in the roadmap; their depth and weekly allocation vary by phase.
+
+### 13.1 Transversal tracks and technology depth
+
+Year 1 officially has seven transversal tracks:
+
+1. Core Backend Engineering
+2. Supporting / Industry Platforms
+3. English
+4. AI-Assisted Development / AI Engineering
+5. Project
+6. Review & Assessment
+7. Career
+
+Supporting platforms are integrated where their underlying engineering concepts are already taught. They are not separate full courses or a vendor-logo checklist. Technology depth is classified as:
+
+- **core** — deep enough to design, implement, debug, explain trade-offs, and use independently;
+- **supporting** — realistic practical use and normal backend operation/debugging;
+- **professional-exposure** — a small lab or interview-level understanding without production-level mastery in V1;
+- **market-triggered** — promoted only after recurring evidence from relevant vacancies or interviews justifies additional depth.
+
+AWS remains the primary cloud platform. Cloudflare is complementary edge/DNS/CDN/security infrastructure, not an AWS replacement. Kubernetes and Helm remain at professional-exposure depth in V1. SQS is the primary managed queue for the AWS path; RabbitMQ and Kafka are used for alternative messaging models and trade-offs with bounded practical exposure. These integrations must preserve the configured default workload of 12 hours per week.
 
 The exact weekly matrix is a separate design artifact and must be approved before daily-file generation.
 
@@ -641,6 +662,8 @@ V1 is ready when a new experienced PHP learner can clone the public repository, 
 - `AGENTS.md` is concise and points to scoped/detail documentation.
 - Obsidian remains the primary human interface.
 - Git remains the audit/versioning mechanism.
+- Supporting / Industry Platforms is the seventh transversal Year 1 track.
+- Technology depth is classified as core, supporting, professional-exposure, or market-triggered.
 
 ## 27. Items deliberately deferred to the next design artifacts
 
