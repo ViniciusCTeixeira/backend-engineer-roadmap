@@ -1,0 +1,641 @@
+schema_version: 1
+last_full_review: '2026-09-15'
+resources:
+- id: php-supported-versions
+  title: PHP Supported Versions
+  url: https://www.php.net/supported-versions.php
+  topic_ids:
+  - php-runtime
+  - php-versioning
+  type: reference
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: PHP support lifecycle; currently 8.2–8.5 supported
+  technology_depth: core
+  notes: Use to choose a supported runtime; do not make the curriculum depend on one point release.
+- id: php-types-manual
+  title: PHP Manual — Types
+  url: https://www.php.net/manual/en/language.types.php
+  topic_ids:
+  - php-type-system
+  - php-type-coercion
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current PHP manual
+  technology_depth: core
+  notes: Primary source for Week 1 type-system experiments.
+- id: composer-basic-usage
+  title: Composer — Basic Usage
+  url: https://getcomposer.org/doc/01-basic-usage.md
+  topic_ids:
+  - composer
+  - composer-autoload
+  type: tutorial
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current Composer documentation
+  technology_depth: core
+  notes: Use with hands-on dependency/autoload experiments.
+- id: composer-schema
+  title: Composer — composer.json Schema
+  url: https://getcomposer.org/doc/04-schema.md
+  topic_ids:
+  - composer
+  - psr4
+  - dependency-management
+  type: reference
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current Composer documentation
+  technology_depth: core
+  notes: Reference for autoload/version/config details.
+- id: git-pro-book
+  title: Pro Git
+  url: https://git-scm.com/book/en/v2
+  topic_ids:
+  - git
+  - git-branching
+  - git-recovery
+  type: book
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: Git concepts; living online edition
+  technology_depth: core
+  notes: Primary Git conceptual reference.
+- id: cakephp-5-orm
+  title: CakePHP 5 — Database Access & ORM
+  url: https://book.cakephp.org/5.x/orm.html
+  topic_ids:
+  - cakephp
+  - orm
+  - legacy-modernization
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: CakePHP 5.x
+  technology_depth: core
+  notes: Use to contrast ORM behavior with underlying SQL.
+- id: cakephp-5-testing
+  title: CakePHP 5 — Testing
+  url: https://book.cakephp.org/5.x/development/testing.html
+  topic_ids:
+  - cakephp
+  - testing
+  - legacy-modernization
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: CakePHP 5.x
+  technology_depth: core
+  notes: Primary source for characterization/integration tests in Project A.
+- id: phpstan-getting-started
+  title: PHPStan — Getting Started
+  url: https://phpstan.org/user-guide/getting-started
+  topic_ids:
+  - static-analysis
+  - phpstan
+  type: tutorial
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current PHPStan docs
+  technology_depth: core
+  notes: Use for a measurable static-analysis baseline.
+- id: mysql-84-manual
+  title: MySQL 8.4 Reference Manual
+  url: https://dev.mysql.com/doc/refman/8.4/en/
+  topic_ids:
+  - mysql
+  - indexes
+  - transactions
+  - explain
+  type: reference
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: MySQL 8.4 LTS
+  technology_depth: core
+  notes: Primary reference; pair with experiments/EXPLAIN rather than passive reading.
+- id: redis-data-types
+  title: Redis — Data Types
+  url: https://redis.io/docs/latest/develop/data-types/
+  topic_ids:
+  - redis
+  - redis-data-types
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current Redis Open Source docs
+  technology_depth: core
+  notes: Choose Redis structures by behavior, not familiarity.
+- id: redis-persistence
+  title: Redis — Persistence
+  url: https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/
+  topic_ids:
+  - redis
+  - persistence
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current Redis Open Source docs
+  technology_depth: core
+  notes: RDB/AOF/no-persistence trade-offs.
+- id: redis-eviction
+  title: Redis — Key Eviction
+  url: https://redis.io/docs/latest/develop/reference/eviction/
+  topic_ids:
+  - redis
+  - cache
+  - eviction
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current Redis docs
+  technology_depth: core
+  notes: Use in cache-failure/TTL exercises.
+- id: openapi-spec
+  title: OpenAPI Specification
+  url: https://spec.openapis.org/oas/
+  topic_ids:
+  - http-api
+  - openapi
+  type: specification
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: OAS current published specification set
+  technology_depth: supporting
+  notes: Use for contract literacy; project may use a stable 3.x dialect selected at implementation time.
+- id: laravel-current-docs
+  title: Laravel Documentation
+  url: https://laravel.com/docs
+  topic_ids:
+  - laravel
+  - service-container
+  - eloquent
+  - testing
+  - queues
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: Laravel 13.x current docs as verified
+  technology_depth: core
+  notes: Curriculum concepts remain framework-principle-first; record major if project pins it.
+- id: docker-get-started
+  title: Docker — Get Started
+  url: https://docs.docker.com/get-started/
+  topic_ids:
+  - docker
+  - containers
+  type: tutorial
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current Docker docs
+  technology_depth: core
+  notes: Use for image/container/stack exercises, then deepen through project Dockerfiles.
+- id: nginx-beginners-guide
+  title: NGINX Beginner's Guide
+  url: https://nginx.org/en/docs/beginners_guide.html
+  topic_ids:
+  - nginx
+  - reverse-proxy
+  - php-fpm
+  type: tutorial
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current nginx docs
+  technology_depth: supporting
+  notes: Covers config structure, proxying and FastCGI basics.
+- id: github-actions-docs
+  title: GitHub Actions Documentation
+  url: https://docs.github.com/en/actions
+  topic_ids:
+  - ci-cd
+  - github-actions
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current GitHub Actions docs
+  technology_depth: supporting
+  notes: Use to build CI evidence rather than memorize YAML.
+- id: aws-iam-getting-started
+  title: AWS IAM — Getting Started
+  url: https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started.html
+  topic_ids:
+  - aws
+  - iam
+  - security
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current AWS docs
+  technology_depth: core
+  notes: Primary cloud security entry point.
+- id: aws-vpc-overview
+  title: AWS — What is Amazon VPC?
+  url: https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html
+  topic_ids:
+  - aws
+  - vpc
+  - networking
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current AWS docs
+  technology_depth: core
+  notes: Use with architecture diagram and subnet/routing exercises.
+- id: aws-rds-overview
+  title: AWS — Amazon RDS Overview
+  url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html
+  topic_ids:
+  - aws
+  - rds
+  - mysql
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current AWS docs
+  technology_depth: core
+  notes: Connect managed-database trade-offs back to MySQL concepts.
+- id: aws-sqs-overview
+  title: AWS — Amazon SQS Developer Guide
+  url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html
+  topic_ids:
+  - aws
+  - sqs
+  - queues
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current AWS docs
+  technology_depth: core
+  notes: Primary managed queue for the AWS path.
+- id: aws-cloudwatch-overview
+  title: AWS — What is Amazon CloudWatch?
+  url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html
+  topic_ids:
+  - aws
+  - observability
+  - cloudwatch
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current AWS docs
+  technology_depth: core
+  notes: Use alongside vendor-neutral OpenTelemetry concepts.
+- id: terraform-aws-get-started
+  title: Terraform — Get Started with AWS
+  url: https://developer.hashicorp.com/terraform/tutorials/aws-get-started
+  topic_ids:
+  - terraform
+  - iac
+  - aws
+  type: tutorial
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current Terraform tutorials
+  technology_depth: core
+  notes: Hands-on primary path for Terraform workflow/state.
+- id: builders-library
+  title: Amazon Builders' Library
+  url: https://aws.amazon.com/builders-library/
+  topic_ids:
+  - system-design
+  - distributed-systems
+  - reliability
+  type: article-library
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: living article collection
+  technology_depth: core
+  notes: Real-world distributed-systems design; use selected articles tied to weekly topics.
+- id: otel-php
+  title: OpenTelemetry — PHP
+  url: https://opentelemetry.io/docs/languages/php/
+  topic_ids:
+  - observability
+  - opentelemetry
+  - php
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current OpenTelemetry PHP docs; traces/metrics/logs marked stable
+  technology_depth: supporting
+  notes: Primary vendor-neutral PHP telemetry resource.
+- id: prometheus-overview
+  title: Prometheus — Overview
+  url: https://prometheus.io/docs/introduction/overview/
+  topic_ids:
+  - observability
+  - metrics
+  - prometheus
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current Prometheus docs
+  technology_depth: supporting
+  notes: Use to understand time-series metrics and collection model.
+- id: grafana-get-started
+  title: Grafana Open Source — Get Started
+  url: https://grafana.com/docs/grafana/latest/fundamentals/getting-started/
+  topic_ids:
+  - observability
+  - grafana
+  - dashboards
+  type: tutorial
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current Grafana docs
+  technology_depth: supporting
+  notes: Build dashboards from project metrics; avoid dashboard vanity.
+- id: k6-get-started
+  title: Grafana k6 — Get Started
+  url: https://grafana.com/docs/k6/latest/examples/get-started-with-k6/
+  topic_ids:
+  - performance
+  - load-testing
+  - k6
+  type: tutorial
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current k6 docs
+  technology_depth: supporting
+  notes: Use for endpoint/SLO-oriented load experiments.
+- id: cloudflare-dns
+  title: Cloudflare DNS — DNS Records
+  url: https://developers.cloudflare.com/dns/manage-dns-records/
+  topic_ids:
+  - cloudflare
+  - dns
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current Cloudflare docs
+  technology_depth: supporting
+  notes: Use with proxy-status behavior and origin architecture.
+- id: cloudflare-cache
+  title: Cloudflare Cache — Concepts
+  url: https://developers.cloudflare.com/cache/concepts/
+  topic_ids:
+  - cloudflare
+  - cdn
+  - cache
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current Cloudflare docs
+  technology_depth: supporting
+  notes: Connect CDN behavior to HTTP cache-control.
+- id: cloudflare-waf
+  title: Cloudflare Learning Path — Web Application Firewall
+  url: https://developers.cloudflare.com/learning-paths/application-security/firewall/
+  topic_ids:
+  - cloudflare
+  - waf
+  - security
+  type: learning-path
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current Cloudflare docs
+  technology_depth: supporting
+  notes: Use after HTTP/security fundamentals.
+- id: cloudflare-workers-get-started
+  title: Cloudflare Workers — Getting Started
+  url: https://developers.cloudflare.com/workers/get-started/
+  topic_ids:
+  - cloudflare
+  - workers
+  - edge
+  type: tutorial
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current Cloudflare Workers docs
+  technology_depth: supporting
+  notes: Exposure/practical edge capability; not a second core cloud.
+- id: cloudflare-terraform
+  title: Cloudflare Terraform Provider
+  url: https://developers.cloudflare.com/terraform/
+  topic_ids:
+  - cloudflare
+  - terraform
+  - iac
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current Cloudflare Terraform docs
+  technology_depth: supporting
+  notes: Use after Terraform fundamentals.
+- id: kubernetes-basics
+  title: Kubernetes — Learn Kubernetes Basics
+  url: https://kubernetes.io/docs/tutorials/kubernetes-basics/
+  topic_ids:
+  - kubernetes
+  - orchestration
+  type: tutorial
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current Kubernetes docs
+  technology_depth: professional-exposure
+  notes: Exposure lab only in V1 unless market signal promotes depth.
+- id: helm-quickstart
+  title: Helm — Quickstart Guide
+  url: https://docs.helm.sh/docs/intro/quickstart/
+  topic_ids:
+  - helm
+  - kubernetes
+  type: tutorial
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: Helm 4.3.0 current docs as verified
+  technology_depth: professional-exposure
+  notes: Run only after Kubernetes basics.
+- id: rabbitmq-tutorials
+  title: RabbitMQ Tutorials
+  url: https://www.rabbitmq.com/tutorials
+  topic_ids:
+  - messaging
+  - rabbitmq
+  - queues
+  type: tutorial
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: RabbitMQ 4.x tutorials
+  technology_depth: supporting
+  notes: Bounded lab to compare messaging models with SQS.
+- id: kafka-quickstart
+  title: Apache Kafka — Quickstart
+  url: https://kafka.apache.org/quickstart/
+  topic_ids:
+  - messaging
+  - kafka
+  - event-streaming
+  type: tutorial
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: Kafka 4.3.1 current quickstart as verified
+  technology_depth: professional-exposure
+  notes: Compare durable event streams with queue semantics; no Year-1 production mastery requirement.
+- id: opensearch-getting-started
+  title: OpenSearch — Getting Started
+  url: https://docs.opensearch.org/latest/getting-started/
+  topic_ids:
+  - search
+  - opensearch
+  - vector-search
+  type: tutorial
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current OpenSearch docs
+  technology_depth: professional-exposure
+  notes: Use to compare full-text/vector search with relational/Redis approaches when justified.
+- id: trivy-install
+  title: Trivy — Installation / Getting Started
+  url: https://www.trivy.dev/docs/latest/getting-started/installation/
+  topic_ids:
+  - security-scanning
+  - trivy
+  - containers
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current Trivy docs
+  technology_depth: professional-exposure
+  notes: CI/container scanning exposure.
+- id: openai-developers
+  title: OpenAI Developers Documentation
+  url: https://developers.openai.com/
+  topic_ids:
+  - llm-api
+  - structured-output
+  - tool-calling
+  - embeddings
+  - evals
+  - codex
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current OpenAI developer platform; fast-moving
+  technology_depth: core
+  notes: Use concept-specific current pages at study time; re-verify before tasks.
+- id: openai-embeddings-api
+  title: OpenAI API — Create Embeddings
+  url: https://developers.openai.com/api/reference/ruby/resources/embeddings/methods/create
+  topic_ids:
+  - embeddings
+  - semantic-search
+  - rag
+  type: api-reference
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current API reference; fast-moving
+  technology_depth: core
+  notes: API specifics are vendor-specific; embedding concepts remain provider-neutral.
+- id: openai-evals-api
+  title: OpenAI API — Evals
+  url: https://developers.openai.com/api/reference/java/resources/evals/methods/create
+  topic_ids:
+  - ai-evals
+  - llm-quality
+  type: api-reference
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: current API reference; fast-moving
+  technology_depth: core
+  notes: Use alongside provider-neutral evaluation methodology.
+- id: mcp-spec-release
+  title: Model Context Protocol — 2026-07-28 Specification Release
+  url: https://blog.modelcontextprotocol.io/posts/2026-07-28/
+  topic_ids:
+  - mcp
+  - agents
+  - tool-protocols
+  type: spec-release
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-15'
+  version_scope: MCP 2026-07-28
+  technology_depth: core
+  notes: Protocol is fast-moving; re-check spec before Week 46.
