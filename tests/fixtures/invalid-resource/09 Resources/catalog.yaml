@@ -1,0 +1,6 @@
+schema_version: 1
+resources:
+- id: no-date
+  title: Missing verification date
+  url: https://example.com
+  technology_depth: core

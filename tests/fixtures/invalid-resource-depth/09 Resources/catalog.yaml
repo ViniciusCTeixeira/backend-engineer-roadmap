@@ -1,0 +1,7 @@
+schema_version: 1
+resources:
+- id: bad-depth
+  title: Bad depth
+  url: https://example.com
+  last_verified: '2026-09-16'
+  technology_depth: expert-plus

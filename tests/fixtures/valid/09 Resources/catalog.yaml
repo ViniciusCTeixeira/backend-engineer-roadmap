@@ -1,0 +1,16 @@
+schema_version: 1
+last_full_review: '2026-09-16'
+resources:
+- id: resource-one
+  title: Example
+  url: https://example.com/docs
+  topic_ids:
+  - example
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-16'
+  version_scope: current
+  technology_depth: core
+  notes: fixture
