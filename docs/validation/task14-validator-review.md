@@ -1,7 +1,7 @@
 # Task 14 Validation — Static Repository Validator
 
 **Date:** 2026-09-16  
-**Status:** PASS — static validator approved; GitHub Actions execution externally blocked before job creation
+**Status:** PASS — static validator approved; hosted GitHub Actions intentionally removed
 
 ## Scope
 
@@ -16,7 +16,6 @@ scripts/validate_repo.py
 scripts/README.md
 tests/test_validate_repo.py
 tests/fixtures/
-.github/workflows/validate.yml
 ```
 
 The validator is standard-library-only and does not mutate the repository.
@@ -33,6 +32,13 @@ Python-cache regression fix:
 ```text
 195a915fcf79beb5781fd39c04d4eaad9d3a97ac
 fix: keep generated python artifacts out of git
+```
+
+Hosted workflow removal:
+
+```text
+5ef36e7059bb7b7c07f07e713273f8211ac0b67f
+chore: remove hosted github actions workflow
 ```
 
 ## TDD evidence
@@ -103,75 +109,37 @@ tests/
 └── test_validate_repo.py
 ```
 
-The accidentally tracked runtime caches were removed:
-
-```text
-scripts/__pycache__/validate_repo.cpython-314.pyc
-tests/__pycache__/test_validate_repo.cpython-314.pyc
-```
-
-The synthetic negative fixture under `tests/fixtures/generated-python-cache/` remains intentionally versioned.
+The accidentally tracked runtime caches were removed. The synthetic negative fixture under `tests/fixtures/generated-python-cache/` remains intentionally versioned.
 
 Result: **PASS**
 
-## GitHub Actions
+## Hosted CI history
 
-The committed workflow remains:
-
-```text
-.github/workflows/validate.yml
-```
-
-and is designed to run:
-
-1. checkout;
-2. Python 3.12 setup;
-3. validator tests;
-4. repository validator.
-
-### Run 1
+A GitHub Actions workflow was initially added, but repeated runs failed at the platform startup layer before jobs were created:
 
 ```text
-run: 35055206204
-head: c9cce5c518b69148e95427552ab0f754242fef4e
-conclusion: startup_failure
-workflow name: empty
-workflow path: BuildFailed
-jobs: 0
+run: 35055206204 → startup_failure, jobs: 0
+run: 35055576555 → startup_failure, jobs: 0
+run: 35055883687 → startup_failure, jobs: 0
 ```
 
-### Run 2
+The user then explicitly chose to remove hosted GitHub Actions from this repository to avoid hosted CI charges.
 
-```text
-run: 35055576555
-head: 195a915fcf79beb5781fd39c04d4eaad9d3a97ac
-conclusion: startup_failure
-workflow name: empty
-workflow path: BuildFailed
-jobs: 0
-```
+This is a repository-operation decision, not a curriculum change: GitHub Actions remains part of the Year 1 learning plan and should be practiced in bounded learning/project exercises.
 
-Both failures occurred before GitHub created a job graph. Therefore no repository step, runner, checkout, Python setup, unit test, or validator command executed.
+## Validation policy from now on
 
-The second run reproduced the same platform-layer signature after an unrelated repository correction without changing the workflow definition.
-
-## Decision
-
-Task 14's **static validator and repository invariants are approved**.
-
-The GitHub Actions workflow is present but cannot currently be execution-validated because the hosting platform aborts the run before jobs exist.
-
-This external CI condition does **not** block Task 15 generation. Until GitHub Actions starts creating jobs again:
+After every curriculum-generation batch and before release gates, run locally:
 
 ```bash
 python -m unittest discover -s tests -p "test_*.py" -v
 python scripts/validate_repo.py
 ```
 
-must be run locally after every curriculum batch.
+Both commands must pass before the batch is approved.
 
-The Actions integration remains an open external revalidation item and must be checked again before C7/V1 release.
+No hosted GitHub Actions run is required for C7/V1 unless this decision is explicitly revisited.
 
 ## Conclusion
 
-**Task 14 is approved for continuation to Task 15, with GitHub Actions execution explicitly marked as externally blocked and deferred for revalidation before C7.**
+**Task 14 is approved. Repository validation for V1 is local-only, deterministic, and mandatory after every Task 15 batch.**
