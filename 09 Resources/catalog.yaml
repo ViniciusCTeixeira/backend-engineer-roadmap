@@ -597,7 +597,7 @@ resources:
   notes: Use concept-specific current pages at study time; re-verify before tasks.
 - id: openai-embeddings-api
   title: OpenAI API — Create Embeddings
-  url: https://developers.openai.com/api/reference/ruby/resources/embeddings/methods/create
+  url: https://developers.openai.com/api/docs/guides/embeddings
   topic_ids:
   - embeddings
   - semantic-search
@@ -612,7 +612,7 @@ resources:
   notes: API specifics are vendor-specific; embedding concepts remain provider-neutral.
 - id: openai-evals-api
   title: OpenAI API — Evals
-  url: https://developers.openai.com/api/reference/java/resources/evals/methods/create
+  url: https://developers.openai.com/api/docs/guides/evals
   topic_ids:
   - ai-evals
   - llm-quality
@@ -1098,3 +1098,268 @@ resources:
   version_scope: RFC 7519
   technology_depth: core
   notes: Teach JWT as a token format, not a complete auth architecture.
+- id: aws-cli-v2
+  title: AWS CLI v2 — Getting Started
+  url: https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html
+  topic_ids:
+  - aws
+  - aws-cli
+  - operations
+  - iam
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-17'
+  version_scope: AWS CLI version 2 current docs
+  technology_depth: supporting
+  notes: Use read-oriented commands and least-privilege credentials first.
+- id: aws-ecs-overview
+  title: AWS — Amazon ECS Developer Guide
+  url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html
+  topic_ids:
+  - aws
+  - ecs
+  - fargate
+  - containers
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-17'
+  version_scope: current Amazon ECS docs
+  technology_depth: core
+  notes: Primary managed-container runtime for the Year-1 AWS path.
+- id: aws-elasticache-overview
+  title: AWS — What is Amazon ElastiCache?
+  url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/WhatIs.html
+  topic_ids:
+  - aws
+  - elasticache
+  - redis
+  - valkey
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-17'
+  version_scope: current Amazon ElastiCache docs
+  technology_depth: core
+  notes: Connect managed cache operations back to Week 12 Redis concepts.
+- id: aws-alb-overview
+  title: AWS — Application Load Balancer Overview
+  url: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html
+  topic_ids:
+  - aws
+  - alb
+  - load-balancing
+  - http
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-17'
+  version_scope: current Elastic Load Balancing docs
+  technology_depth: core
+  notes: Use listeners, target groups, health checks, and routing concepts.
+- id: aws-ec2-autoscaling
+  title: AWS — What is Amazon EC2 Auto Scaling?
+  url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html
+  topic_ids:
+  - aws
+  - autoscaling
+  - capacity
+  - availability
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-17'
+  version_scope: current EC2 Auto Scaling docs
+  technology_depth: core
+  notes: Connect scaling policy to capacity and warmup evidence.
+- id: sonarqube-quality-gates
+  title: SonarQube Server — Understanding Quality Gates
+  url: https://docs.sonarsource.com/sonarqube-server/2026.1/quality-standards-administration/managing-quality-gates/introduction-to-quality-gates
+  topic_ids:
+  - sonarqube
+  - quality-gates
+  - static-analysis
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-17'
+  version_scope: SonarQube Server 2026.1 LTA
+  technology_depth: professional-exposure
+  notes: Professional exposure; compare with PHPStan/test quality loop.
+- id: vault-docs
+  title: HashiCorp Vault Documentation
+  url: https://developer.hashicorp.com/vault/docs
+  topic_ids:
+  - vault
+  - secrets
+  - identity
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-17'
+  version_scope: current Vault docs
+  technology_depth: professional-exposure
+  notes: Conceptual secrets-management exposure; no production Vault mastery required.
+- id: sentry-php-docs
+  title: Sentry — PHP Platform Documentation
+  url: https://docs.sentry.io/platforms/php/
+  topic_ids:
+  - sentry
+  - php
+  - errors
+  - observability
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-17'
+  version_scope: current Sentry PHP docs
+  technology_depth: supporting
+  notes: Error/event observability concepts; vendor account use is optional.
+- id: datadog-php-tracing
+  title: Datadog — Tracing PHP Applications
+  url: https://docs.datadoghq.com/tracing/trace_collection/dd_libraries/php/
+  topic_ids:
+  - datadog
+  - php
+  - apm
+  - tracing
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-17'
+  version_scope: current Datadog PHP tracing docs
+  technology_depth: professional-exposure
+  notes: Map vendor APM features to vendor-neutral telemetry concepts.
+- id: newrelic-php-intro
+  title: New Relic — Introduction for PHP
+  url: https://docs.newrelic.com/docs/apm/agents/php-agent/getting-started/introduction-new-relic-php/
+  topic_ids:
+  - new-relic
+  - php
+  - apm
+  - observability
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-17'
+  version_scope: current New Relic PHP docs
+  technology_depth: professional-exposure
+  notes: Vendor-equivalence exposure, not a second observability core.
+- id: argocd-getting-started
+  title: Argo CD — Getting Started
+  url: https://argo-cd.readthedocs.io/en/stable/getting_started/
+  topic_ids:
+  - argocd
+  - gitops
+  - kubernetes
+  type: tutorial
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-17'
+  version_scope: current stable Argo CD docs
+  technology_depth: professional-exposure
+  notes: GitOps exposure after Kubernetes/Helm concepts.
+- id: mcp-intro
+  title: Model Context Protocol — Introduction
+  url: https://modelcontextprotocol.io/docs/getting-started/intro
+  topic_ids:
+  - mcp
+  - agents
+  - tools
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-17'
+  version_scope: current MCP docs / 2026-07-28 documentation
+  technology_depth: core
+  notes: Week 46 bounded MCP capability with explicit permissions.
+- id: openai-structured-outputs-guide
+  title: OpenAI API — Structured Outputs Guide
+  url: https://developers.openai.com/api/docs/guides/structured-outputs
+  topic_ids:
+  - llm
+  - structured-outputs
+  - json-schema
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-17'
+  version_scope: current OpenAI developer docs; fast-moving
+  technology_depth: core
+  notes: Use schema-constrained output plus application validation.
+- id: openai-function-calling-guide
+  title: OpenAI API — Function Calling Guide
+  url: https://developers.openai.com/api/docs/guides/function-calling
+  topic_ids:
+  - llm
+  - function-calling
+  - tools
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-17'
+  version_scope: current OpenAI developer docs; fast-moving
+  technology_depth: core
+  notes: Application owns tool execution, authorization, and side effects.
+- id: openai-embeddings-guide
+  title: OpenAI API — Vector Embeddings Guide
+  url: https://developers.openai.com/api/docs/guides/embeddings
+  topic_ids:
+  - embeddings
+  - semantic-search
+  - rag
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-17'
+  version_scope: current OpenAI developer docs; fast-moving
+  technology_depth: core
+  notes: Evaluate retrieval quality instead of assuming embedding quality.
+- id: openai-evals-guide
+  title: OpenAI API — Working with Evals
+  url: https://developers.openai.com/api/docs/guides/evals
+  topic_ids:
+  - evals
+  - llm-quality
+  - regression
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-17'
+  version_scope: current OpenAI developer docs; fast-moving
+  technology_depth: core
+  notes: Use reproducible eval sets and regression evidence.
+- id: mit-ocw-algorithms
+  title: MIT OpenCourseWare — Introduction to Algorithms 6.006
+  url: https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/
+  topic_ids:
+  - algorithms
+  - data-structures
+  - complexity
+  - graphs
+  - dynamic-programming
+  type: course
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-17'
+  version_scope: MIT OCW 6.006 stable fundamentals
+  technology_depth: core
+  notes: Use selected notes/problems; interview practice remains explanation-first.

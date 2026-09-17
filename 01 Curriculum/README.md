@@ -5,21 +5,25 @@ This directory contains the public 52-week learning sequence for the V1 PHP-to-S
 ## How to use it
 
 1. Complete Week 0 diagnostics.
-2. Keep the public matrix unchanged for personal weaknesses.
-3. Store learner-specific adaptations under the private `.study/` repository.
-4. Follow the seven transversal tracks: Core Backend Engineering, Supporting / Industry Platforms, English, AI-Assisted Development / AI Engineering, Project, Review & Assessment, and Career.
-5. Respect declared SOLO / HYBRID / AI-ASSISTED modes in generated daily content.
-6. Phase-gate failures create private remediation; they do not erase history.
+2. Keep public curriculum generic; store learner-specific adaptation under private `.study/`.
+3. Respect SOLO / HYBRID / AI-ASSISTED modes exactly.
+4. Complete due reviews before optional new content.
+5. Preserve historical attempts; failed gates create private remediation rather than reset history.
+6. Keep the default workload at 12 hours/week unless private planning intentionally changes the ceiling.
 
-## Files
+## Generated ranges
 
-- `year-1-matrix.yaml` — machine-readable weekly matrix.
-- `00 - Week 0 Diagnostic/` — diagnostic entry point.
-- `01 - Week 01 - php-types-and-safe-git/` through `04 - Week 04 - debugging-and-git-recovery/` — C5 representative-month pilot.
-- `05 - Week 05 - php-runtime-and-fpm/` through `08 - Week 08 - foundations-integration-and-reproducible-workflow/` — first C6/Task 15 generation batch.
-- `09 - Week 09 - relational-modeling-and-sql/` through `16 - Week 16 - php-testing-static-analysis-and-quality-loop/` — Data & Web batch including Phase Gate 1.
-- `docs/design/52-week-curriculum-matrix.md` — human-readable design artifact.
+- Weeks 01–04 — validated C5 representative month.
+- Weeks 05–08 — Foundations completion batch.
+- Weeks 09–16 — Data & Web + Phase Gate 1.
+- Weeks 17–24 — Modern Backend + local-production project evidence.
+- Weeks 25–32 — AWS, delivery, observability, IaC, edge + Phase Gate 2.
+- Weeks 33–40 — scalability, distributed systems, AI engineering + Phase Gate 3.
+- Weeks 41–46 — algorithms, senior interview preparation, agents/MCP.
+- Weeks 47–52 — evidence-driven remediation, interview campaign + Phase Gate 4.
 
 ## Generation status
 
-Weeks 1–16 are generated under the approved C6 gate. Weeks 17–52 proceed in independently validated Task 15 batches.
+**Weeks 1–52 are generated under the approved C6 gate.**
+
+The remaining V1 work is release documentation and C7/public-release QA, not additional daily curriculum generation.

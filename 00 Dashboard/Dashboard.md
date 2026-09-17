@@ -7,15 +7,12 @@
 
 1. [[docs/obsidian-setup|Open the roadmap in Obsidian]]
 2. [[01 Curriculum/00 - Week 0 Diagnostic/README|Read the Week 0 diagnostic guide]]
-3. Run the `initialize-study` recipe from [[11 Agent/prompts/initialize-study|Initialize Study]]
-4. Complete Week 0
-5. Open `.study/dashboard.md` from the Obsidian File explorer after initialization
+3. Run [[11 Agent/prompts/initialize-study|Initialize Study]]
+4. Complete Week 0 and follow private adaptation
+5. Open `.study/dashboard.md` after initialization
 
-If private state is not initialized yet, that is expected. This public dashboard still works.
+## Year 1 — Weeks 1–52
 
-## Year 1
-
-- [[01 Curriculum/README|Year 1 Curriculum]]
 - [[01 Curriculum/01 - Week 01 - php-types-and-safe-git/README|Week 1 — PHP Types and Safe Git]]
 - [[01 Curriculum/02 - Week 02 - oop-composer-and-boundaries/README|Week 2 — OOP, Composer, Boundaries]]
 - [[01 Curriculum/03 - Week 03 - solid-testing-and-safe-refactoring/README|Week 3 — SOLID, Testing, Refactoring]]
@@ -32,8 +29,44 @@ If private state is not initialized yet, that is expected. This public dashboard
 - [[01 Curriculum/14 - Week 14 - http-semantics-idempotency-and-api-contracts/README|Week 14 — HTTP and API Contracts]]
 - [[01 Curriculum/15 - Week 15 - api-design-auth-authorization-and-security/README|Week 15 — API Security]]
 - [[01 Curriculum/16 - Week 16 - php-testing-static-analysis-and-quality-loop/README|Week 16 — Testing and Static Analysis]]
+- [[01 Curriculum/17 - Week 17 - laravel-lifecycle-container-and-configuration/README|Week 17 — Laravel Lifecycle, Container, DI, and Configuration]]
+- [[01 Curriculum/18 - Week 18 - eloquent-migrations-and-sql-awareness/README|Week 18 — Eloquent, Migrations, Relationships, and SQL Awareness]]
+- [[01 Curriculum/19 - Week 19 - laravel-application-security/README|Week 19 — Laravel Application Security and Secure Defaults]]
+- [[01 Curriculum/20 - Week 20 - cakephp-modernization-case-study/README|Week 20 — CakePHP Modernization Case Study]]
+- [[01 Curriculum/21 - Week 21 - pragmatic-backend-architecture/README|Week 21 — Pragmatic Backend Architecture and ADRs]]
+- [[01 Curriculum/22 - Week 22 - docker-images-compose-and-runtime/README|Week 22 — Docker Images, Containers, Compose, and Reproducibility]]
+- [[01 Curriculum/23 - Week 23 - nginx-php-fpm-production-path/README|Week 23 — Nginx, PHP-FPM, Reverse Proxy, and Production Request Path]]
+- [[01 Curriculum/24 - Week 24 - local-production-integration-and-load-testing/README|Week 24 — Local Production Integration, k6, and Release Evidence]]
+- [[01 Curriculum/25 - Week 25 - aws-foundations-iam-vpc-and-edge/README|Week 25 — AWS Foundations: IAM, VPC, CLI, DNS, CDN, and Edge]]
+- [[01 Curriculum/26 - Week 26 - phase-gate-two-modern-backend-and-cloud/README|Week 26 — Phase Gate 2 — Modern Backend and Cloud Foundations]]
+- [[01 Curriculum/27 - Week 27 - aws-runtime-rds-elasticache-ecs-alb/README|Week 27 — AWS Runtime: ECS/Fargate, ALB, RDS, ElastiCache, and Scaling]]
+- [[01 Curriculum/28 - Week 28 - async-messaging-sqs-rabbitmq-and-kafka/README|Week 28 — Asynchronous Messaging: SQS, Retries, DLQs, RabbitMQ, and Kafka]]
+- [[01 Curriculum/29 - Week 29 - delivery-pipelines-quality-and-security-scanning/README|Week 29 — Delivery Pipelines, Quality Gates, and Security Scanning]]
+- [[01 Curriculum/30 - Week 30 - observability-otel-metrics-traces-and-errors/README|Week 30 — Observability: OpenTelemetry, Metrics, Traces, Errors, and Dashboards]]
+- [[01 Curriculum/31 - Week 31 - terraform-state-modules-and-secrets/README|Week 31 — Terraform: State, Modules, AWS/Cloudflare, and Secret Boundaries]]
+- [[01 Curriculum/32 - Week 32 - resilience-edge-kubernetes-and-gitops-exposure/README|Week 32 — Resilience, Cloudflare WAF, Kubernetes/Helm, and GitOps Exposure]]
+- [[01 Curriculum/33 - Week 33 - capacity-scalability-and-load-models/README|Week 33 — Scalability, Capacity Planning, and Load Models]]
+- [[01 Curriculum/34 - Week 34 - distributed-data-replication-consistency-and-search/README|Week 34 — Distributed Data, Replication, Consistency, and Search Exposure]]
+- [[01 Curriculum/35 - Week 35 - reliability-outbox-saga-and-messaging-tradeoffs/README|Week 35 — Reliability Patterns: Outbox, Saga, Idempotency, and Messaging Trade-offs]]
+- [[01 Curriculum/36 - Week 36 - llm-api-structured-output-and-validation/README|Week 36 — LLM Fundamentals, Structured Outputs, and Validation]]
+- [[01 Curriculum/37 - Week 37 - llm-tool-calling-and-bounded-actions/README|Week 37 — LLM Tool Calling, Permissions, and Bounded Actions]]
+- [[01 Curriculum/38 - Week 38 - rag-embeddings-retrieval-and-citations/README|Week 38 — RAG, Embeddings, Retrieval Quality, and Citations]]
+- [[01 Curriculum/39 - Week 39 - phase-gate-three-cloud-distributed-and-ai/README|Week 39 — Phase Gate 3 — Cloud, Distributed Systems, and AI Engineering]]
+- [[01 Curriculum/40 - Week 40 - ai-evals-security-and-production-quality/README|Week 40 — AI Evals, Security, Regression, and Production Quality]]
+- [[01 Curriculum/41 - Week 41 - algorithms-arrays-hashing-and-complexity/README|Week 41 — Algorithms: Complexity, Arrays, Strings, and Hashing]]
+- [[01 Curriculum/42 - Week 42 - algorithms-stacks-queues-linked-structures/README|Week 42 — Algorithms: Stacks, Queues, Linked Structures, and Monotonic Patterns]]
+- [[01 Curriculum/43 - Week 43 - algorithms-trees-heaps-and-search/README|Week 43 — Algorithms: Trees, Heaps, Binary Search, and Ordered Search]]
+- [[01 Curriculum/44 - Week 44 - algorithms-graphs-bfs-dfs-and-shortest-paths/README|Week 44 — Algorithms: Graphs, BFS/DFS, Topological Order, and Shortest Paths]]
+- [[01 Curriculum/45 - Week 45 - algorithms-dynamic-programming-and-mixed-interviews/README|Week 45 — Algorithms: Dynamic Programming and Mixed Interview Practice]]
+- [[01 Curriculum/46 - Week 46 - agents-workflows-and-mcp/README|Week 46 — Agentic Engineering and MCP]]
+- [[01 Curriculum/47 - Week 47 - evidence-driven-remediation-and-gap-closure/README|Week 47 — Evidence-Driven Remediation and Gap Closure]]
+- [[01 Curriculum/48 - Week 48 - senior-backend-system-design-and-behavioral/README|Week 48 — Senior Backend Interviews: System Design, Trade-offs, and Behavioral Evidence]]
+- [[01 Curriculum/49 - Week 49 - production-diagnosis-and-incident-interviews/README|Week 49 — Production Diagnosis and Incident Interviews]]
+- [[01 Curriculum/50 - Week 50 - full-senior-backend-interview-loop/README|Week 50 — Full Senior Backend Interview Loop]]
+- [[01 Curriculum/51 - Week 51 - company-specific-preparation-and-interview-campaign/README|Week 51 — Company-Specific Preparation and Interview Campaign]]
+- [[01 Curriculum/52 - Week 52 - phase-gate-four-year-one-release/README|Week 52 — Phase Gate 4 — Year 1 Senior Backend Readiness]]
 
-Weeks 1–16 are generated. Weeks 17–52 continue in independently validated Task 15 batches under the approved C6 gate.
+**All 52 public weeks are generated.** Personal sequencing/remediation remains private.
 
 ## Projects
 
@@ -45,16 +78,17 @@ Weeks 1–16 are generated. Weeks 17–52 continue in independently validated Ta
 
 - [[docs/assessments|Assessment and Scoring Model]]
 - [[docs/adaptive-learning|Adaptive Learning Model]]
-- [[03 Weekly Simulations/Week 13|Phase Gate 1 — Week 13]]
-
-Completed learner attempts, scores, errors, and review queues belong only in private state.
+- [[03 Weekly Simulations/Week 13|Phase Gate 1]]
+- [[03 Weekly Simulations/Week 26|Phase Gate 2]]
+- [[03 Weekly Simulations/Week 39|Phase Gate 3]]
+- [[03 Weekly Simulations/Week 52|Phase Gate 4]]
 
 ## Resources
 
 - [[09 Resources/README|Learning Resources]]
-- [[09 Resources/01-foundations|Foundations Resources]]
-- [[09 Resources/07-foundations-runtime-linux|Weeks 5–8 Runtime/Linux Resources]]
-- [[09 Resources/08-data-web|Weeks 9–16 Data & Web Resources]]
+- [[09 Resources/09-modern-backend|Weeks 17–24 Modern Backend Resources]]
+- [[09 Resources/10-cloud-distributed|Weeks 25–35 Cloud/Distributed Resources]]
+- [[09 Resources/11-ai-interviews|Weeks 36–52 AI/Interview Resources]]
 - [[docs/resource-policy|Resource Policy]]
 
 ## AI / agent workflows
@@ -65,21 +99,11 @@ Completed learner attempts, scores, errors, and review queues belong only in pri
 - [[11 Agent/prompts/weekly-retrospective|Weekly Retrospective]]
 - [[11 Agent/prompts/sync-dashboard|Sync Dashboard]]
 
-## Career
+## Career / Year 2
 
 - [[07 Career/README|Career Track]]
 - [[07 Career/role-target|Target Role]]
 - [[12 Year 2/README|Year 2 — Consolidation and International Readiness]]
 
-## Private dashboard
-
-After `initialize-study`, open:
-
-```text
-.study/dashboard.md
-```
-
-That view is derived from your private canonical state. If a value is missing from source records, the dashboard must show `Not available yet` rather than guessing.
-
 > [!warning] Public/private boundary
-> Do not record personal scores, applications, interview notes, weaknesses, or private project notes in this public dashboard.
+> Scores, weaknesses, applications, interview notes, and learner-specific project notes belong only in `.study/`.
