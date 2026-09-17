@@ -24,8 +24,16 @@ If private state is not initialized yet, that is expected. This public dashboard
 - [[01 Curriculum/06 - Week 06 - cakephp-depth-and-boundaries/README|Week 6 — CakePHP Depth and Boundaries]]
 - [[01 Curriculum/07 - Week 07 - linux-operations-and-network-troubleshooting/README|Week 7 — Linux Operations and Troubleshooting]]
 - [[01 Curriculum/08 - Week 08 - foundations-integration-and-reproducible-workflow/README|Week 8 — Foundations Integration]]
+- [[01 Curriculum/09 - Week 09 - relational-modeling-and-sql/README|Week 9 — Relational Modeling and SQL]]
+- [[01 Curriculum/10 - Week 10 - mysql-indexes-explain-and-benchmarking/README|Week 10 — MySQL Indexes and EXPLAIN]]
+- [[01 Curriculum/11 - Week 11 - mysql-transactions-locks-and-concurrency/README|Week 11 — Transactions and Concurrency]]
+- [[01 Curriculum/12 - Week 12 - redis-data-model-caching-and-failure-modes/README|Week 12 — Redis and Caching]]
+- [[01 Curriculum/13 - Week 13 - phase-gate-one-foundations-and-data/README|Week 13 — Phase Gate 1]]
+- [[01 Curriculum/14 - Week 14 - http-semantics-idempotency-and-api-contracts/README|Week 14 — HTTP and API Contracts]]
+- [[01 Curriculum/15 - Week 15 - api-design-auth-authorization-and-security/README|Week 15 — API Security]]
+- [[01 Curriculum/16 - Week 16 - php-testing-static-analysis-and-quality-loop/README|Week 16 — Testing and Static Analysis]]
 
-Weeks 1–8 are generated. Weeks 9–52 continue in independently validated Task 15 batches under the approved C6 gate.
+Weeks 1–16 are generated. Weeks 17–52 continue in independently validated Task 15 batches under the approved C6 gate.
 
 ## Projects
 
@@ -37,7 +45,7 @@ Weeks 1–8 are generated. Weeks 9–52 continue in independently validated Task
 
 - [[docs/assessments|Assessment and Scoring Model]]
 - [[docs/adaptive-learning|Adaptive Learning Model]]
-- [[03 Weekly Simulations/Week 01|Sample Weekly Simulation — Week 1]]
+- [[03 Weekly Simulations/Week 13|Phase Gate 1 — Week 13]]
 
 Completed learner attempts, scores, errors, and review queues belong only in private state.
 
@@ -46,6 +54,7 @@ Completed learner attempts, scores, errors, and review queues belong only in pri
 - [[09 Resources/README|Learning Resources]]
 - [[09 Resources/01-foundations|Foundations Resources]]
 - [[09 Resources/07-foundations-runtime-linux|Weeks 5–8 Runtime/Linux Resources]]
+- [[09 Resources/08-data-web|Weeks 9–16 Data & Web Resources]]
 - [[docs/resource-policy|Resource Policy]]
 
 ## AI / agent workflows

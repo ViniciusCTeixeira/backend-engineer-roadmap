@@ -874,3 +874,227 @@ resources:
   version_scope: current GitHub CLI manual
   technology_depth: supporting
   notes: Week 8 collaboration tooling; hosted GitHub Actions is intentionally not enabled for this roadmap repository.
+- id: mysql-indexes-manual
+  title: MySQL 8.4 — Optimization and Indexes
+  url: https://dev.mysql.com/doc/refman/8.4/en/optimization-indexes.html
+  topic_ids:
+  - mysql
+  - indexes
+  - btree
+  - query-performance
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-16'
+  version_scope: MySQL 8.4 LTS
+  technology_depth: core
+  notes: Primary Week 10 index reference; validate with plans and measurements.
+- id: mysql-explain-manual
+  title: MySQL 8.4 — EXPLAIN Statement
+  url: https://dev.mysql.com/doc/refman/8.4/en/explain.html
+  topic_ids:
+  - mysql
+  - explain
+  - query-plans
+  - performance
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-16'
+  version_scope: MySQL 8.4 LTS
+  technology_depth: core
+  notes: Use EXPLAIN/EXPLAIN ANALYZE as evidence, not as proof by itself.
+- id: mysql-innodb-transactions
+  title: MySQL 8.4 — InnoDB Locking and Transaction Model
+  url: https://dev.mysql.com/doc/refman/8.4/en/innodb-locking-transaction-model.html
+  topic_ids:
+  - mysql
+  - transactions
+  - isolation
+  - locking
+  - deadlocks
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-16'
+  version_scope: MySQL 8.4 LTS
+  technology_depth: core
+  notes: Primary Week 11 transaction/concurrency reference.
+- id: redis-transactions
+  title: Redis — Transactions
+  url: https://redis.io/docs/latest/develop/using-commands/transactions/
+  topic_ids:
+  - redis
+  - transactions
+  - watch
+  - multi-exec
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-16'
+  version_scope: current Redis docs
+  technology_depth: core
+  notes: Distinguish Redis transaction semantics from relational ACID assumptions.
+- id: redis-pipelining
+  title: Redis — Pipelining
+  url: https://redis.io/docs/latest/develop/using-commands/pipelining/
+  topic_ids:
+  - redis
+  - pipelining
+  - latency
+  - rtt
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-16'
+  version_scope: current Redis docs
+  technology_depth: supporting
+  notes: Separate RTT savings from atomicity/data-model concerns.
+- id: rfc9110-http-semantics
+  title: RFC 9110 — HTTP Semantics
+  url: https://www.rfc-editor.org/rfc/rfc9110.html
+  topic_ids:
+  - http
+  - methods
+  - status-codes
+  - headers
+  - idempotency
+  type: specification
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-16'
+  version_scope: RFC 9110 / STD 97
+  technology_depth: core
+  notes: Primary Week 14 HTTP semantics reference.
+- id: rfc9111-http-caching
+  title: RFC 9111 — HTTP Caching
+  url: https://www.rfc-editor.org/rfc/rfc9111.html
+  topic_ids:
+  - http
+  - caching
+  - cache-control
+  - validators
+  type: specification
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-16'
+  version_scope: RFC 9111 / STD 98
+  technology_depth: core
+  notes: Primary Week 14 HTTP caching reference.
+- id: bruno-openapi
+  title: Bruno — OpenAPI and Import
+  url: https://docs.usebruno.com/open-api/overview
+  topic_ids:
+  - bruno
+  - openapi
+  - api-client
+  - api-testing
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-16'
+  version_scope: current Bruno docs
+  technology_depth: supporting
+  notes: Git-friendly API client exposure; keep secrets out of version control.
+- id: postman-collections
+  title: Postman — Create and Manage Collections
+  url: https://learning.postman.com/docs/use/use-collections/overview
+  topic_ids:
+  - postman
+  - api-client
+  - collections
+  - api-testing
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-16'
+  version_scope: current Postman docs
+  technology_depth: supporting
+  notes: Bounded comparison exposure; no hosted automation required.
+- id: owasp-api-security-2023
+  title: OWASP API Security Top 10 — 2023
+  url: https://api-security.owasp.org/editions/2023/en/0x11-t10/
+  topic_ids:
+  - api-security
+  - owasp
+  - authorization
+  - authentication
+  type: reference
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-16'
+  version_scope: OWASP API Security Top 10 2023
+  technology_depth: core
+  notes: Use for threat awareness and architecture-specific checks.
+- id: rfc6749-oauth2
+  title: RFC 6749 — OAuth 2.0 Authorization Framework
+  url: https://www.rfc-editor.org/rfc/rfc6749.html
+  topic_ids:
+  - oauth2
+  - authorization
+  - tokens
+  type: specification
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-16'
+  version_scope: RFC 6749 with later updates
+  technology_depth: core
+  notes: Conceptual OAuth roles/flows; pair with RFC 9700.
+- id: rfc9700-oauth-security
+  title: RFC 9700 — OAuth 2.0 Security Best Current Practice
+  url: https://www.rfc-editor.org/rfc/rfc9700.html
+  topic_ids:
+  - oauth2
+  - security
+  - pkce
+  - token-security
+  type: specification
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-16'
+  version_scope: RFC 9700 / BCP 240
+  technology_depth: core
+  notes: Current OAuth security guidance.
+- id: openid-connect-core
+  title: OpenID Connect Core 1.0
+  url: https://openid.net/specs/openid-connect-core-1_0-18.html
+  topic_ids:
+  - openid-connect
+  - authentication
+  - identity
+  - id-token
+  type: specification
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-16'
+  version_scope: OpenID Connect Core 1.0 final
+  technology_depth: core
+  notes: Distinguish authentication/identity from OAuth authorization.
+- id: rfc7519-jwt
+  title: RFC 7519 — JSON Web Token (JWT)
+  url: https://www.rfc-editor.org/rfc/rfc7519.html
+  topic_ids:
+  - jwt
+  - tokens
+  - claims
+  type: specification
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-16'
+  version_scope: RFC 7519
+  technology_depth: core
+  notes: Teach JWT as a token format, not a complete auth architecture.
