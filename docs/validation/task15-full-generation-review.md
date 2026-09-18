@@ -1,7 +1,7 @@
 # Task 15 Validation — Full 52-Week Public Curriculum
 
 **Date:** 2026-09-17  
-**Status:** Weeks 1–16 repository-approved; Weeks 17–52 package validation PASS; final repository validation pending application
+**Status:** PASS — full 52-week curriculum approved after `master` repository revalidation
 
 ## Result
 
@@ -30,4 +30,25 @@ git diff --check
 git status
 ```
 
-Task 15 is approved only after these pass in the real repository and the pushed `master` is revalidated.
+Repository revalidation completed against `master` at:
+
+```text
+11686b597c1d45c80dd8abd483f54a44bb5424fd
+docs: validate full fifty two week curriculum generation
+```
+
+Fresh revalidation evidence:
+
+- 36 Week README files for Weeks 17–52;
+- 252 daily plans;
+- 252 daily assessments;
+- 36 weekly simulations;
+- 540 generated canonical IDs, all unique;
+- every generated week totals exactly 720 minutes / 12 hours;
+- Phase Gates 2, 3, and 4 are SOLO at Weeks 26, 39, and 52;
+- no public `## Solution` / `## Answer Key` leakage detected in generated assessments/simulations;
+- no hosted GitHub Actions workflow exists;
+- all 47 resource IDs referenced by Weeks 17–52 exist in `09 Resources/catalog.yaml`;
+- all 588 tracked files from the generation package match the GitHub tree byte-for-byte by Git blob SHA.
+
+Result: **Task 15 PASS.**
