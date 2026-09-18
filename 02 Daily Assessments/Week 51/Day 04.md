@@ -4,7 +4,7 @@ schema_version: 1
 id: assessment-w51-d04-v1-1
 date: null
 week: 51
-assessment_type: closed-technical
+assessment_type: conceptual
 mode: SOLO
 skill_ids:
 - company-specific-prep
