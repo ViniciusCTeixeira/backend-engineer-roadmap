@@ -35,3 +35,32 @@ Clean-clone onboarding, private-state initialization/ignore behavior, agent writ
 Evidence: `docs/validation/v1-release-checklist.md`.
 
 The release candidate is approved for the annotated `v1.0.0` tag.
+
+
+## V1.1 — Market-alignment proposal approved ✅
+
+**Approved:** 2026-09-18
+
+The V1.1 amendment adds PostgreSQL/Python/FastAPI as core depth, MongoDB/DynamoDB/Kubernetes/gRPC as supporting depth, and bounded Go/Java/TypeScript/GraphQL/Cassandra exposure without increasing the 52-week / 12h-per-week budget.
+
+Evidence:
+
+- `docs/proposals/2026-09-17-v1-1-us-market-alignment.md`
+- `docs/superpowers/specs/2026-09-18-v1-1-us-market-alignment-amendment.md`
+
+## V1.1 — Implementation and release QA ⏳
+
+The `v1.1-market-alignment` branch contains the regenerated curriculum candidate.
+
+Before merge/release:
+
+- [ ] run all local validator tests;
+- [ ] run `scripts/validate_repo.py`;
+- [ ] run `git diff --check`;
+- [ ] verify clean clone;
+- [ ] verify `.study/` initialization/ignore behavior;
+- [ ] verify V1.0.0 tag is unchanged;
+- [ ] review branch diff/PR;
+- [ ] merge;
+- [ ] rerun public-release QA;
+- [ ] create a new V1.1 release tag only after approval.

@@ -1,4 +1,4 @@
-# Project Portfolio
+# Project Portfolio — V1.1
 
 The roadmap uses two cumulative projects to generate credible engineering evidence across the year.
 
@@ -14,7 +14,7 @@ implementation / artifact
 + explanation / trade-off
 ```
 
-Prefer a smaller system with strong evidence over a large system built mostly by an agent.
+Prefer a smaller system with strong evidence over a large system assembled to collect technology logos.
 
 ## Project A — CakePHP Modernization Lab
 
@@ -30,19 +30,26 @@ Primary period:
 Weeks 1–24
 ```
 
+Project A intentionally remains:
+
+```text
+CakePHP
+MySQL
+Redis
+```
+
 Purpose:
 
 - understand a legacy PHP/CakePHP runtime;
 - characterize behavior before changing it;
+- preserve deep MySQL evidence;
 - improve boundaries safely;
-- deepen SQL/Redis reasoning;
+- practice Redis/data/cache failure reasoning;
 - practice production troubleshooting;
 - containerize the system;
 - produce a public-safe modernization case study.
 
-The project should remain synthetic or otherwise safe to publish.
-
-Do not paste confidential employer/customer code into it.
+Keeping MySQL here is deliberate: V1.1 adds PostgreSQL through Project B rather than erasing the learner's MySQL depth.
 
 ## Project B — Production Backend Platform
 
@@ -52,26 +59,58 @@ Path:
 05 Projects/02-production-backend-platform/
 ```
 
-Pre-work begins during the Data & Web phase.
+Primary stack:
 
-Main progression starts around Week 17 and continues through the rest of Year 1.
+```text
+Laravel
+PostgreSQL
+Redis
+Docker
+AWS
+Terraform
+```
 
-Evidence areas include:
+Bounded additions:
+
+```text
+Python / FastAPI secondary backend
+gRPC / Protobuf where a service boundary is justified
+DynamoDB AWS modeling lab
+MongoDB document-modeling lab
+Kubernetes application-operations evidence
+```
+
+### Boundary rule
+
+New technology does not automatically become permanent architecture.
+
+Before adding a separate service or datastore, preserve evidence answering:
+
+1. Which access pattern / failure / ownership / ecosystem need exists?
+2. Why does the current Laravel/PostgreSQL/Redis system not solve it cleanly?
+3. What operational cost is introduced?
+4. How will the choice be tested and observed?
+5. What evidence would justify removing/reversing it?
+
+### Evidence areas
 
 - Laravel lifecycle and DI;
-- relational design and migrations;
-- MySQL performance/concurrency;
+- PostgreSQL relational design, plans, migrations, transactions;
+- comparison with Project A MySQL evidence;
 - Redis;
-- API contracts/security;
-- containers;
-- AWS;
+- REST/OpenAPI and gRPC trade-offs;
+- authentication/authorization;
+- Python/FastAPI bounded service;
+- Docker and Nginx;
+- AWS and DynamoDB modeling;
 - asynchronous messaging;
-- delivery concepts;
-- observability;
+- observability across PHP/Python paths;
 - Terraform;
-- resilience and distributed-system design;
-- AI structured output/tool calling/RAG/evals;
-- bounded agent/MCP integration.
+- Kubernetes application operations;
+- capacity/reliability/distributed-system design;
+- MongoDB document modeling and datastore selection;
+- structured output/tool calling/RAG/evals;
+- bounded MCP integration.
 
 ## Public vs private project material
 
@@ -100,13 +139,13 @@ Respect the current task's mode.
 
 For HYBRID work:
 
-1. create/freeze the SOLO design or attempt;
+1. freeze the SOLO design or attempt;
 2. ask the agent for an alternative/review;
 3. compare;
 4. validate;
 5. implement deliberately.
 
-An agent-generated feature without independent validation is weak portfolio evidence.
+Agent-generated multi-stack code without independent understanding is weak portfolio evidence.
 
 ## Portfolio narrative
 
@@ -119,4 +158,4 @@ A public case study should answer:
 5. How did you validate the result?
 6. What remains imperfect or intentionally out of scope?
 
-See `docs/design/project-progression.md` for the milestone design.
+See `05 Projects/02-production-backend-platform/README.md` and `docs/design/project-progression.md`.
