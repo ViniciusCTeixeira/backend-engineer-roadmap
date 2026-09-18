@@ -173,6 +173,23 @@ weeks:
 - week: 9
   phase: Data and Web
   estimated_hours: 12
+  industry_platforms:
+  - postgresql
+  primary_outcome: Model relational data deliberately and write SQL across MySQL and PostgreSQL without ORM dependence
+  core_topics:
+  - relational modeling
+  - normalization
+  - keys/constraints
+  - joins/aggregation
+  - MySQL and PostgreSQL SQL evidence
+  english_outcome: Explain one engine-independent schema decision and one engine-specific behavior in English.
+  ai_outcome: Ask an agent to critique the schema only after a SOLO baseline; validate suggestions in both engines.
+  project_milestone: Keep Project A on MySQL and establish Project B on PostgreSQL with equivalent relational invariants.
+  assessment_mode: dual-engine SQL/modeling assessment
+  career_action: Track whether target roles ask for PostgreSQL/MySQL depth versus generic ORM familiarity.
+  prerequisites: []
+  phase_gate: false
+  estimated_hours: 12
   industry_platforms: []
   primary_outcome: Model relational data deliberately and write SQL without relying on an ORM
   core_topics:
@@ -193,6 +210,23 @@ weeks:
 - week: 10
   phase: Data and Web
   estimated_hours: 12
+  industry_platforms:
+  - postgresql
+  primary_outcome: Prove index and query-plan improvements across MySQL and PostgreSQL with engine-specific evidence
+  core_topics:
+  - B-tree indexes
+  - composite indexes/selectivity
+  - MySQL EXPLAIN
+  - PostgreSQL EXPLAIN ANALYZE
+  - repeatable benchmarking
+  english_outcome: Write an English plan comparison that separates shared indexing concepts from optimizer-specific evidence.
+  ai_outcome: Let an agent propose indexes only after your prediction; independently validate on the relevant engine.
+  project_milestone: Benchmark comparable Project A MySQL and Project B PostgreSQL query shapes.
+  assessment_mode: dual-engine SQL performance lab
+  career_action: Treat PostgreSQL/query-planner depth as a recurring senior-backend signal.
+  prerequisites: []
+  phase_gate: false
+  estimated_hours: 12
   industry_platforms: []
   primary_outcome: Understand B-tree indexing and prove query improvements with EXPLAIN/EXPLAIN ANALYZE
   core_topics:
@@ -212,6 +246,24 @@ weeks:
   phase_gate: false
 - week: 11
   phase: Data and Web
+  estimated_hours: 12
+  industry_platforms:
+  - postgresql
+  primary_outcome: Reason about transactions, MVCC, isolation, locks, and deadlocks across MySQL and PostgreSQL
+  core_topics:
+  - ACID
+  - MVCC
+  - isolation levels
+  - locking/deadlocks
+  - optimistic/pessimistic concurrency
+  - engine-specific behavior
+  english_outcome: Explain a MySQL/PostgreSQL concurrency difference without claiming one engine is universally better.
+  ai_outcome: Use an agent to propose race experiments only after predicting each engine's behavior.
+  project_milestone: Implement the same integrity-sensitive workflow in Project A evidence and Project B PostgreSQL.
+  assessment_mode: dual-engine concurrency/debugging lab
+  career_action: Build interview evidence around transactions/concurrency rather than only CRUD/database syntax.
+  prerequisites: []
+  phase_gate: false
   estimated_hours: 12
   industry_platforms: []
   primary_outcome: Reason about ACID, isolation, locks, deadlocks, and concurrent updates
@@ -257,6 +309,22 @@ weeks:
 - week: 13
   phase: Gate 1
   estimated_hours: 12
+  industry_platforms:
+  - postgresql
+  primary_outcome: Demonstrate foundations plus MySQL/PostgreSQL relational and Redis understanding without framework or agent dependence
+  core_topics:
+  - PHP/OOP/Composer
+  - Git/Linux
+  - MySQL and PostgreSQL modeling/indexes/transactions
+  - Redis fundamentals
+  english_outcome: Complete a closed relational-engine comparison and gate retrospective in English.
+  ai_outcome: Agents are prohibited during scored gate sections; compare feedback only after immutable submission.
+  project_milestone: Freeze Gate 1 evidence including dual-relational transfer and private remediation.
+  assessment_mode: PHASE GATE 1 — cumulative SOLO + dual-relational practical
+  career_action: Use Gate 1 evidence to strengthen database-depth positioning.
+  prerequisites: []
+  phase_gate: false
+  estimated_hours: 12
   industry_platforms: []
   primary_outcome: Demonstrate foundations and data-layer understanding without framework or agent dependence
   core_topics:
@@ -290,6 +358,26 @@ weeks:
   - openapi-swagger
   - bruno
   - postman
+  - grpc-protobuf
+  primary_outcome: Reason about HTTP/REST semantics and establish gRPC/Protobuf service-contract literacy
+  core_topics:
+  - DNS/TCP overview
+  - HTTP semantics/idempotency
+  - REST/OpenAPI
+  - gRPC/Protobuf concepts
+  - deadlines/errors/streaming concepts
+  english_outcome: Explain when an interface should be REST versus gRPC in English.
+  ai_outcome: Use an agent to inspect HTTP/gRPC traces only after independently identifying protocol facts.
+  project_milestone: Keep the external API REST/OpenAPI and design one bounded internal gRPC candidate contract.
+  assessment_mode: HTTP/REST/gRPC contract analysis
+  career_action: Recognize API-contract and service-to-service requirements in backend vacancies.
+  prerequisites: []
+  phase_gate: false
+  estimated_hours: 12
+  industry_platforms:
+  - openapi-swagger
+  - bruno
+  - postman
   primary_outcome: Reason about HTTP semantics before designing APIs
   core_topics:
   - DNS/TCP overview
@@ -309,6 +397,24 @@ weeks:
   phase_gate: false
 - week: 15
   phase: Data and Web
+  estimated_hours: 12
+  industry_platforms:
+  - graphql
+  primary_outcome: Design secure evolvable APIs while distinguishing REST, GraphQL exposure, authentication, and authorization
+  core_topics:
+  - REST constraints
+  - pagination/filtering/versioning
+  - JWT/OAuth2/OIDC
+  - RBAC/object authorization
+  - rate limiting/OWASP API risks
+  - GraphQL exposure
+  english_outcome: Write an English API/security review comparing one REST and GraphQL trade-off.
+  ai_outcome: Use an agent for threat brainstorming; verify applicability against actual data flows.
+  project_milestone: Add authentication/authorization/error conventions; keep GraphQL exposure bounded unless justified.
+  assessment_mode: API/security design simulation
+  career_action: Prioritize protocol/security fundamentals over framework-specific API buzzwords.
+  prerequisites: []
+  phase_gate: false
   estimated_hours: 12
   industry_platforms: []
   primary_outcome: Design secure, evolvable APIs with explicit auth and authorization trade-offs
@@ -371,6 +477,24 @@ weeks:
   phase_gate: false
 - week: 18
   phase: Modern Backend
+  estimated_hours: 12
+  industry_platforms:
+  - postgresql
+  primary_outcome: Use Eloquent and migrations on PostgreSQL without losing SQL/query-plan awareness
+  core_topics:
+  - Eloquent
+  - PostgreSQL migrations
+  - relationships
+  - query scopes
+  - N+1
+  - validation/query plans
+  english_outcome: Write an English review note identifying an ORM-to-PostgreSQL query risk.
+  ai_outcome: Use an agent to flag ORM issues only after capturing real SQL and PostgreSQL evidence.
+  project_milestone: Implement Project B entities/migrations on PostgreSQL and preserve query/index rationale.
+  assessment_mode: Eloquent/PostgreSQL integration lab
+  career_action: Present ORM familiarity as subordinate to relational/database depth.
+  prerequisites: []
+  phase_gate: false
   estimated_hours: 12
   industry_platforms: []
   primary_outcome: Use Eloquent and migrations without losing SQL/data-model awareness
@@ -439,6 +563,23 @@ weeks:
   phase: Modern Backend
   estimated_hours: 12
   industry_platforms: []
+  primary_outcome: Apply pragmatic backend architecture and justify modular versus service boundaries
+  core_topics:
+  - application services
+  - domain boundaries
+  - DTO/value objects
+  - dependency direction
+  - ADRs
+  - modular monolith vs service boundary
+  english_outcome: Defend one boundary decision in English including why it is not a microservice.
+  ai_outcome: Use an agent as an architecture critic after a SOLO boundary proposal.
+  project_milestone: Create ADR criteria that will later decide whether the Python capability deserves a separate service.
+  assessment_mode: architecture and boundary reasoning simulation
+  career_action: Practice senior-level architecture trade-offs rather than pattern-name recall.
+  prerequisites: []
+  phase_gate: false
+  estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Apply pragmatic architecture patterns without overengineering
   core_topics:
   - application services
@@ -460,6 +601,24 @@ weeks:
   phase_gate: false
 - week: 22
   phase: Modern Backend
+  estimated_hours: 12
+  industry_platforms:
+  - docker-compose
+  primary_outcome: Containerize the Laravel/PostgreSQL/Redis platform reproducibly and prepare a bounded secondary-service slot
+  core_topics:
+  - Docker images/layers
+  - Dockerfile/Compose
+  - networks/volumes
+  - health checks
+  - PostgreSQL/Redis service configuration
+  - multi-service boundaries
+  english_outcome: Explain the container topology and state boundaries in English.
+  ai_outcome: Use an agent to review Docker/Compose only after defining runtime/state expectations.
+  project_milestone: Containerize Laravel + PostgreSQL + Redis and create the integration seam for Week 24.
+  assessment_mode: hands-on Docker multi-service lab
+  career_action: Maintain Docker as core production evidence independent of language stack.
+  prerequisites: []
+  phase_gate: false
   estimated_hours: 12
   industry_platforms:
   - docker-compose
@@ -487,6 +646,25 @@ weeks:
   estimated_hours: 12
   industry_platforms:
   - nginx
+  - k6
+  primary_outcome: Build and diagnose the production-like PHP request path while absorbing integration and bounded load-test evidence
+  core_topics:
+  - Nginx
+  - PHP-FPM
+  - reverse proxy
+  - timeouts/logs
+  - health/dependency checks
+  - bounded k6 baseline
+  english_outcome: Troubleshoot and narrate a production-like request failure in English.
+  ai_outcome: Use an agent for hypotheses only after collecting process/socket/HTTP/log evidence.
+  project_milestone: Finalize Laravel/Nginx/PHP-FPM/PostgreSQL/Redis local-production baseline before adding Python.
+  assessment_mode: production troubleshooting + integration lab
+  career_action: Demonstrate operational ownership, not only framework implementation.
+  prerequisites: []
+  phase_gate: false
+  estimated_hours: 12
+  industry_platforms:
+  - nginx
   primary_outcome: Understand Nginx/PHP-FPM/runtime behavior inside and outside containers
   core_topics:
   - Nginx basics
@@ -507,6 +685,25 @@ weeks:
   phase_gate: false
 - week: 24
   phase: Modern Backend
+  estimated_hours: 12
+  industry_platforms:
+  - fastapi
+  - grpc-protobuf
+  primary_outcome: Build test and explain a bounded Python/FastAPI backend service and connect it through a justified REST or gRPC boundary
+  core_topics:
+  - Python typing/runtime/project structure
+  - FastAPI/Pydantic
+  - testing
+  - async concepts
+  - PostgreSQL integration
+  - Protobuf/gRPC practical
+  english_outcome: Present the Python service boundary and REST-vs-gRPC decision in English.
+  ai_outcome: Preserve a SOLO service/API design before agent implementation/review; independently validate tests and contracts.
+  project_milestone: Create the bounded Python/FastAPI Project B capability plus one practical gRPC server/client contract.
+  assessment_mode: Python/FastAPI + gRPC coding lab
+  career_action: Add Python/FastAPI as demonstrated secondary-backend evidence, not a resume keyword.
+  prerequisites: []
+  phase_gate: false
   estimated_hours: 12
   industry_platforms:
   - k6
@@ -537,6 +734,25 @@ weeks:
   industry_platforms:
   - cloudflare
   - aws-cli
+  primary_outcome: Build AWS identity/network/edge foundations for a multi-service PHP/Python backend
+  core_topics:
+  - AWS IAM
+  - regions/AZs
+  - VPC/subnets/security groups
+  - shared responsibility
+  - Cloudflare edge
+  - multi-service network boundaries
+  english_outcome: Explain the edge-to-Laravel/Python AWS request path in English.
+  ai_outcome: Use an agent for cloud design only after a SOLO trust/network diagram; verify service behavior in official docs.
+  project_milestone: Draft AWS architecture covering Laravel, Python service, PostgreSQL/RDS, Redis, and service communication.
+  assessment_mode: cloud architecture assessment
+  career_action: Track AWS/networking expectations in target senior-backend roles.
+  prerequisites: []
+  phase_gate: false
+  estimated_hours: 12
+  industry_platforms:
+  - cloudflare
+  - aws-cli
   primary_outcome: Build a mental model of AWS identity, networking, regions, and shared responsibility
   core_topics:
   - AWS IAM
@@ -555,6 +771,25 @@ weeks:
   phase_gate: false
 - week: 26
   phase: Gate 2
+  estimated_hours: 12
+  industry_platforms:
+  - fastapi
+  - grpc-protobuf
+  primary_outcome: Demonstrate modern backend fundamentals including Laravel PostgreSQL containers and a bounded Python/FastAPI service
+  core_topics:
+  - Laravel/PostgreSQL
+  - application security/architecture
+  - Docker/Nginx runtime
+  - Python/FastAPI
+  - REST vs gRPC
+  - AWS foundations
+  english_outcome: Complete part of Gate 2 architecture/service-boundary review in English.
+  ai_outcome: Agents are prohibited during scored Gate 2 sections; use them only after evidence freeze.
+  project_milestone: Freeze Gate 2 PHP/Python/service-boundary evidence and remediation.
+  assessment_mode: PHASE GATE 2 — modern backend + Python/service practical
+  career_action: Use Gate 2 evidence to widen role eligibility beyond PHP-only vacancies.
+  prerequisites: []
+  phase_gate: false
   estimated_hours: 12
   industry_platforms: []
   primary_outcome: Demonstrate production-ready backend fundamentals through a cumulative implementation and design review
@@ -587,6 +822,24 @@ weeks:
 - week: 27
   phase: Cloud and Delivery
   estimated_hours: 12
+  industry_platforms:
+  - dynamodb
+  primary_outcome: Deploy managed AWS runtime/data components and model one DynamoDB workload from access patterns
+  core_topics:
+  - ECS/Fargate
+  - ALB
+  - RDS PostgreSQL
+  - ElastiCache
+  - DynamoDB partition/sort keys and GSI
+  - Auto Scaling
+  english_outcome: Explain RDS/PostgreSQL versus DynamoDB selection in English.
+  ai_outcome: Use an agent to challenge DynamoDB access-pattern/key design only after a SOLO model.
+  project_milestone: Keep RDS PostgreSQL primary; add a bounded DynamoDB access-pattern lab and ADR.
+  assessment_mode: AWS runtime + DynamoDB system-design lab
+  career_action: Be able to discuss managed relational versus AWS NoSQL trade-offs.
+  prerequisites: []
+  phase_gate: false
+  estimated_hours: 12
   industry_platforms: []
   primary_outcome: Deploy core backend infrastructure using managed AWS compute, storage, database, and cache choices
   core_topics:
@@ -608,6 +861,26 @@ weeks:
   phase_gate: false
 - week: 28
   phase: Cloud and Delivery
+  estimated_hours: 12
+  industry_platforms:
+  - sqs
+  - rabbitmq
+  - kafka
+  primary_outcome: Design asynchronous work across PHP or Python workers with retries DLQs idempotency and broker trade-offs
+  core_topics:
+  - SQS
+  - workers
+  - retry/backoff
+  - DLQ
+  - idempotency
+  - RabbitMQ/Kafka comparison
+  english_outcome: Explain at-least-once delivery and an idempotent PHP or Python consumer in English.
+  ai_outcome: Use an agent to generate failure cases only after a SOLO delivery-semantics model.
+  project_milestone: Implement one queue consumer in the language that best fits the justified service boundary.
+  assessment_mode: async failure/system-design lab
+  career_action: Show messaging knowledge as delivery/reliability reasoning rather than broker-name familiarity.
+  prerequisites: []
+  phase_gate: false
   estimated_hours: 12
   industry_platforms:
   - sqs
@@ -664,6 +937,27 @@ weeks:
   - prometheus
   - grafana
   - sentry
+  primary_outcome: Make both PHP and bounded Python service paths observable with logs metrics traces and actionable signals
+  core_topics:
+  - structured logs
+  - metrics
+  - tracing
+  - OpenTelemetry PHP/Python
+  - CloudWatch
+  - SLI/SLO basics
+  english_outcome: Present one cross-service trace/incident in English.
+  ai_outcome: Use an agent to correlate telemetry after you independently establish timestamps/IDs/evidence.
+  project_milestone: Instrument Laravel and Python paths where practical and connect them through shared correlation evidence.
+  assessment_mode: cross-service observability diagnosis
+  career_action: Treat observability/incident ownership as a senior-backend differentiator.
+  prerequisites: []
+  phase_gate: false
+  estimated_hours: 12
+  industry_platforms:
+  - opentelemetry
+  - prometheus
+  - grafana
+  - sentry
   - datadog
   - new-relic
   primary_outcome: Make the backend observable with structured logs, metrics, traces, and actionable signals
@@ -688,6 +982,27 @@ weeks:
   phase: Cloud and Delivery
   estimated_hours: 12
   industry_platforms:
+  - terraform
+  - cloudflare
+  - vault
+  primary_outcome: Represent AWS/edge infrastructure declaratively including selected PostgreSQL or DynamoDB resources
+  core_topics:
+  - Terraform workflow
+  - state
+  - modules
+  - AWS provider
+  - Cloudflare provider
+  - RDS/DynamoDB resource boundaries
+  - secret-state risk
+  english_outcome: Explain Terraform state and managed-data secret boundaries in English.
+  ai_outcome: Use an agent for IaC review after a SOLO plan and inspect every plan-changing suggestion.
+  project_milestone: Model selected Project B relational/NoSQL infrastructure in Terraform without storing secrets.
+  assessment_mode: IaC coding/design lab
+  career_action: Build infrastructure literacy without repositioning as a full-time platform engineer.
+  prerequisites: []
+  phase_gate: false
+  estimated_hours: 12
+  industry_platforms:
   - cloudflare
   - vault
   primary_outcome: Represent cloud infrastructure declaratively with Terraform and safe state practices
@@ -710,6 +1025,28 @@ weeks:
   phase_gate: false
 - week: 32
   phase: Cloud and Delivery
+  estimated_hours: 12
+  industry_platforms:
+  - kubernetes
+  - helm
+  - argocd
+  - cloudflare-waf
+  primary_outcome: Operate a backend application in Kubernetes at normal application-team depth while keeping cluster administration out of scope
+  core_topics:
+  - Deployment/Service
+  - ConfigMap/Secret concepts
+  - readiness/liveness
+  - requests/limits
+  - rollouts
+  - logs/events troubleshooting
+  - Helm/Argo exposure
+  english_outcome: Explain a Kubernetes application rollout or failure in English.
+  ai_outcome: Use an agent to review manifests after a SOLO topology/resource/probe plan; validate with kubectl evidence.
+  project_milestone: Deploy a bounded Project B slice to a local/sandbox Kubernetes environment and capture troubleshooting evidence.
+  assessment_mode: Kubernetes application-operations lab
+  career_action: Promote Kubernetes from keyword exposure to credible application-level operational evidence.
+  prerequisites: []
+  phase_gate: false
   estimated_hours: 12
   industry_platforms:
   - cloudflare-waf
@@ -742,6 +1079,24 @@ weeks:
   estimated_hours: 12
   industry_platforms:
   - k6
+  primary_outcome: Estimate and validate capacity across a mixed PHP/Python backend while preserving state and data boundaries
+  core_topics:
+  - traffic/concurrency estimation
+  - CPU/memory/DB/cache bottlenecks
+  - load testing
+  - horizontal scaling
+  - shared-state constraints
+  - backpressure
+  english_outcome: Present a multi-service capacity estimate and falsifiable assumptions in English.
+  ai_outcome: Use an agent to challenge capacity assumptions only after a SOLO model.
+  project_milestone: Load-test one Laravel path and, where useful, one Python path without manufacturing scale.
+  assessment_mode: capacity/system-design simulation
+  career_action: Use quantitative capacity reasoning in senior system-design interviews.
+  prerequisites: []
+  phase_gate: false
+  estimated_hours: 12
+  industry_platforms:
+  - k6
   primary_outcome: Design scalable services using load balancing, caching, replication, and capacity reasoning
   core_topics:
   - latency/throughput
@@ -760,6 +1115,28 @@ weeks:
   phase_gate: false
 - week: 34
   phase: Architecture and AI Engineering
+  estimated_hours: 12
+  industry_platforms:
+  - mongodb
+  - dynamodb
+  - cassandra
+  - opensearch
+  primary_outcome: Model document and distributed data deliberately and choose among PostgreSQL MongoDB Redis DynamoDB Cassandra and search by access pattern
+  core_topics:
+  - MongoDB document modeling
+  - embedding vs references
+  - MongoDB indexes/aggregation
+  - replication/read-write concerns
+  - sharding/shard keys
+  - DynamoDB comparison
+  - Cassandra/OpenSearch exposure
+  english_outcome: Defend one datastore selection in English against at least two credible alternatives.
+  ai_outcome: Use an agent as a datastore-design critic only after a SOLO access-pattern and consistency analysis.
+  project_milestone: Run a real MongoDB lab and write a PostgreSQL/JSONB-vs-MongoDB ADR before any permanent architecture change.
+  assessment_mode: NoSQL/data-store selection + MongoDB lab
+  career_action: Be prepared for system-design questions that test data-model choice rather than one database product.
+  prerequisites: []
+  phase_gate: false
   estimated_hours: 12
   industry_platforms:
   - opensearch
@@ -787,6 +1164,27 @@ weeks:
   - sqs
   - rabbitmq
   - kafka
+  primary_outcome: Apply reliability patterns across relational NoSQL and messaging boundaries with explicit consistency trade-offs
+  core_topics:
+  - retries/backoff
+  - circuit/bulkhead concepts
+  - transactional outbox
+  - saga/compensation
+  - idempotency
+  - distributed locks trade-offs
+  - datastore-specific failure modes
+  english_outcome: Explain a failure/recovery path that crosses PostgreSQL and messaging or NoSQL boundaries.
+  ai_outcome: Use an agent to enumerate failures only after you define invariants and ownership.
+  project_milestone: Revisit Project B outbox/saga/data-store choices using V1.1 datastore evidence.
+  assessment_mode: reliability/system-design simulation
+  career_action: Connect distributed-system patterns to concrete failure semantics in interviews.
+  prerequisites: []
+  phase_gate: false
+  estimated_hours: 12
+  industry_platforms:
+  - sqs
+  - rabbitmq
+  - kafka
   primary_outcome: Use reliability patterns deliberately across synchronous and asynchronous boundaries
   core_topics:
   - timeouts
@@ -808,6 +1206,24 @@ weeks:
   phase_gate: false
 - week: 36
   phase: Architecture and AI Engineering
+  estimated_hours: 12
+  industry_platforms:
+  - python-fastapi
+  primary_outcome: Integrate an LLM API through the Python/FastAPI service with structured outputs validation latency cost and failure controls
+  core_topics:
+  - tokens/context
+  - structured outputs
+  - schema validation
+  - timeouts/retries
+  - latency/cost
+  - Python service boundary
+  english_outcome: Explain why schema-valid AI output is still untrusted in English.
+  ai_outcome: The model is the study subject and tool; keep deterministic acceptance criteria outside the model.
+  project_milestone: Implement the structured-output capability primarily in Python and expose a bounded integration to Laravel.
+  assessment_mode: Python AI integration coding lab
+  career_action: Show AI integration as backend engineering with reliability and validation evidence.
+  prerequisites: []
+  phase_gate: false
   estimated_hours: 12
   industry_platforms: []
   primary_outcome: Integrate an LLM API as a backend dependency with structured outputs, latency, cost, and failure controls
@@ -832,6 +1248,24 @@ weeks:
 - week: 37
   phase: Architecture and AI Engineering
   estimated_hours: 12
+  industry_platforms:
+  - python-fastapi
+  primary_outcome: Use tool calling safely with Python orchestration while keeping authorization validation and side effects application-owned
+  core_topics:
+  - tool schemas
+  - argument validation
+  - authorization
+  - idempotent tools
+  - approval boundaries
+  - auditability
+  english_outcome: Explain the model/tool/application trust boundary in English.
+  ai_outcome: Use agent assistance only inside explicit permission and validation boundaries.
+  project_milestone: Implement a bounded Python tool-calling flow and integrate one safe Laravel-facing capability.
+  assessment_mode: AI tool-boundary challenge
+  career_action: Prepare to discuss safe AI-assisted/product AI engineering rather than prompt-only work.
+  prerequisites: []
+  phase_gate: false
+  estimated_hours: 12
   industry_platforms: []
   primary_outcome: Use tool/function calling safely and distinguish deterministic application logic from model decisions
   core_topics:
@@ -851,6 +1285,26 @@ weeks:
   phase_gate: false
 - week: 38
   phase: Architecture and AI Engineering
+  estimated_hours: 12
+  industry_platforms:
+  - python-fastapi
+  - opensearch
+  primary_outcome: Build and evaluate retrieval in Python while justifying storage and search choices
+  core_topics:
+  - embeddings
+  - chunking
+  - retrieval
+  - RAG
+  - citations
+  - retrieval eval
+  - PostgreSQL/MongoDB/OpenSearch/vector-store boundary concepts
+  english_outcome: Explain a retrieval failure and why changing the prompt would not fix it.
+  ai_outcome: Use agents to generate hard negatives only after defining retrieval acceptance criteria.
+  project_milestone: Implement the retrieval/evaluation path in Python and document why its storage/index choice is justified.
+  assessment_mode: RAG/retrieval evaluation lab
+  career_action: Present RAG as retrieval/data quality engineering, not a demo feature.
+  prerequisites: []
+  phase_gate: false
   estimated_hours: 12
   industry_platforms: []
   primary_outcome: Build and evaluate retrieval when semantic search is justified
@@ -873,6 +1327,27 @@ weeks:
   phase_gate: false
 - week: 39
   phase: Gate 3
+  estimated_hours: 12
+  industry_platforms:
+  - kubernetes
+  - mongodb
+  - dynamodb
+  - python-fastapi
+  primary_outcome: Demonstrate cloud Kubernetes distributed-data system-design and foundational AI capability across PHP and Python
+  core_topics:
+  - AWS/observability/Terraform
+  - Kubernetes application operations
+  - distributed reliability
+  - PostgreSQL/MongoDB/DynamoDB selection
+  - Python AI service
+  - LLM tools/RAG
+  english_outcome: Complete a senior architecture walkthrough covering data and service boundaries in English.
+  ai_outcome: Closed sections are SOLO; any HYBRID section measures supervision separately.
+  project_milestone: Freeze Gate 3 PHP/Python/Kubernetes/NoSQL evidence and remediation backlog.
+  assessment_mode: PHASE GATE 3 — cloud + data + distributed + AI
+  career_action: Use Gate 3 evidence to target broader Senior Backend roles and identify remaining stack-specific gaps.
+  prerequisites: []
+  phase_gate: false
   estimated_hours: 12
   industry_platforms: []
   primary_outcome: Demonstrate cloud, distributed-system, system-design, and foundational AI-engineering capability
@@ -904,6 +1379,25 @@ weeks:
 - week: 40
   phase: Architecture and AI Engineering
   estimated_hours: 12
+  industry_platforms:
+  - python-fastapi
+  primary_outcome: Evaluate AI behavior and security with a repeatable Python eval harness and production-quality release criteria
+  core_topics:
+  - eval datasets
+  - graders
+  - regression
+  - AI tracing
+  - prompt/tool/retrieval attacks
+  - data leakage
+  - human-in-the-loop
+  english_outcome: Present one AI regression/security release decision in English.
+  ai_outcome: Use models to generate adversarial cases, but keep release criteria versioned and independently reviewable.
+  project_milestone: Create the Python eval harness and AI security/release note.
+  assessment_mode: AI safety/evals simulation
+  career_action: Use eval/security evidence to distinguish production AI engineering from API familiarity.
+  prerequisites: []
+  phase_gate: false
+  estimated_hours: 12
   industry_platforms: []
   primary_outcome: Evaluate AI behavior, trace failures, and defend against prompt injection/data-boundary failures
   core_topics:
@@ -927,6 +1421,26 @@ weeks:
   phase_gate: false
 - week: 41
   phase: Interviews and Agentic Engineering
+  estimated_hours: 12
+  industry_platforms:
+  - go
+  - spring-boot
+  - typescript-node
+  primary_outcome: Build backend polyglot literacy in Go Java/Spring and TypeScript/Node while retaining Big-O arrays strings and hashing interview fundamentals
+  core_topics:
+  - Go service mapping
+  - Spring Boot controller/service/data/config/test path
+  - TypeScript/Node async/service/test path
+  - bounded safe patch
+  - Big O
+  - arrays/strings/hash maps
+  english_outcome: Explain an unfamiliar backend request path and one coding solution in English.
+  ai_outcome: Use AI only after each bounded SOLO code-reading or timed DSA attempt.
+  project_milestone: Do not add polyglot production services; preserve small synthetic/external code-reading and patch evidence.
+  assessment_mode: polyglot code-reading + timed DSA assessment
+  career_action: Match deeper language preparation to active target roles instead of claiming production mastery.
+  prerequisites: []
+  phase_gate: false
   estimated_hours: 12
   industry_platforms: []
   primary_outcome: Build coding-interview fundamentals around complexity, arrays, strings, and hash maps
@@ -1028,6 +1542,24 @@ weeks:
 - week: 46
   phase: Interviews and Agentic Engineering
   estimated_hours: 12
+  industry_platforms:
+  - mcp
+  primary_outcome: Build an agentic workflow and bounded MCP capability in PHP or Python with explicit tool and human-review boundaries
+  core_topics:
+  - agent workflows
+  - context/repository instructions
+  - MCP client/server concepts
+  - tool schemas/permissions
+  - human-in-the-loop
+  - PHP/Python integration choice
+  english_outcome: Explain an MCP/agent architecture and application-owned security boundaries in English.
+  ai_outcome: The agent may help implement its own bounded tooling, but permission contracts and validation are human-owned.
+  project_milestone: Expose or consume one justified Project B capability through MCP using PHP or Python.
+  assessment_mode: agentic engineering challenge
+  career_action: Discuss AI-assisted engineering with evidence across both primary and secondary backend stacks.
+  prerequisites: []
+  phase_gate: false
+  estimated_hours: 12
   industry_platforms: []  # MCP remains in Agentic Engineering; bounded platform tools are optional.
   primary_outcome: Build an agentic engineering workflow using repository instructions, tool boundaries, MCP concepts, and
     human review
@@ -1070,6 +1602,23 @@ weeks:
   phase: Market Campaign
   estimated_hours: 12
   industry_platforms: []
+  primary_outcome: Perform a senior backend interview loop covering PHP depth Python secondary backend dual-relational data APIs runtime and architecture
+  core_topics:
+  - PHP/Laravel deep dive
+  - Python/FastAPI bounded implementation
+  - MySQL/PostgreSQL performance
+  - REST/gRPC
+  - Docker/Kubernetes/AWS
+  - system design
+  english_outcome: Run the majority of a full mixed-stack backend mock in English.
+  ai_outcome: Keep closed sections SOLO and use agents only for retrospective.
+  project_milestone: Polish PHP/Python project walkthrough and datastore/service-boundary decisions.
+  assessment_mode: full V1.1 senior backend mock loop
+  career_action: Target broad Senior Backend roles while staying factual about each stack's depth.
+  prerequisites: []
+  phase_gate: false
+  estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Perform a complete senior backend interview loop across PHP, SQL, APIs, runtime, and architecture
   core_topics:
   - PHP deep dive
@@ -1087,6 +1636,25 @@ weeks:
   phase_gate: false
 - week: 49
   phase: Market Campaign
+  estimated_hours: 12
+  industry_platforms:
+  - mongodb
+  - dynamodb
+  primary_outcome: Diagnose production and data-performance failures across relational cache document and cloud NoSQL scenarios
+  core_topics:
+  - query diagnosis
+  - locks/concurrency
+  - Redis failures
+  - MongoDB query/model issues
+  - DynamoDB partition/access-pattern issues
+  - logs/metrics/traces
+  english_outcome: Run an English incident explanation using one randomly selected datastore scenario.
+  ai_outcome: Use an agent only after the mock to challenge the root-cause model.
+  project_milestone: Create a synthetic incident/postmortem rotating across V1.1 data models.
+  assessment_mode: multi-datastore production incident simulation
+  career_action: Prepare for production-debugging interviews that are not tied to one database.
+  prerequisites: []
+  phase_gate: false
   estimated_hours: 12
   industry_platforms: []
   primary_outcome: Demonstrate production troubleshooting and data-performance reasoning under interview constraints
@@ -1108,6 +1676,23 @@ weeks:
   phase: Market Campaign
   estimated_hours: 12
   industry_platforms: []
+  primary_outcome: Combine coding system design polyglot code reading and behavioral communication in one realistic interview day
+  core_topics:
+  - DSA review
+  - system design
+  - polyglot code reading
+  - data-store selection
+  - behavioral stories
+  - trade-off communication
+  english_outcome: Conduct an end-to-end mock interview day in English.
+  ai_outcome: Agents remain outside closed mocks and may only support structured retrospective.
+  project_milestone: Finalize portfolio documentation around demonstrated—not claimed—multi-stack evidence.
+  assessment_mode: V1.1 multi-round interview simulation
+  career_action: Use active-pipeline needs to choose PHP/Python or polyglot emphasis.
+  prerequisites: []
+  phase_gate: false
+  estimated_hours: 12
+  industry_platforms: []
   primary_outcome: Combine coding, system design, and behavioral communication in one realistic interview day
   core_topics:
   - DSA review
@@ -1125,6 +1710,22 @@ weeks:
   phase_gate: false
 - week: 51
   phase: Market Campaign
+  estimated_hours: 12
+  industry_platforms:
+  - market-triggered
+  primary_outcome: Prepare selectively for active companies while preserving general Senior Backend readiness
+  core_topics:
+  - company-specific backend gaps
+  - architecture/data review
+  - Go/Java/TypeScript market-triggered depth
+  - role evaluation criteria
+  english_outcome: Practice technical clarification and negotiation language in English.
+  ai_outcome: Use agents for research organization and mock generation; verify current company claims externally.
+  project_milestone: Freeze a public-safe portfolio release candidate and only deepen extra stacks when active pipeline evidence supports it.
+  assessment_mode: targeted company-specific simulation
+  career_action: Focus on active pipelines referrals follow-ups and role-quality evaluation.
+  prerequisites: []
+  phase_gate: false
   estimated_hours: 12
   industry_platforms: []
   primary_outcome: Prepare selectively for active companies while maintaining general engineering readiness
@@ -1146,6 +1747,31 @@ weeks:
   phase_gate: false
 - week: 52
   phase: Gate 4
+  estimated_hours: 12
+  industry_platforms:
+  - postgresql
+  - python-fastapi
+  - mongodb
+  - dynamodb
+  - kubernetes
+  - grpc-protobuf
+  primary_outcome: Demonstrate job-ready Senior Backend capability across deep PHP a bounded Python backend dual relational data NoSQL selection cloud platform and AI-assisted engineering
+  core_topics:
+  - PHP/Laravel depth
+  - Python/FastAPI competence
+  - MySQL/PostgreSQL
+  - Redis/MongoDB/DynamoDB selection
+  - REST/gRPC/async trade-offs
+  - Docker/Kubernetes/AWS
+  - AI-assisted engineering
+  - interview readiness
+  english_outcome: Complete final technical/behavioral presentation in English and defend technology-depth claims precisely.
+  ai_outcome: Complete both SOLO and AI-ASSISTED sections to measure independence and leverage separately.
+  project_milestone: Tag the Year-1 V1.1 portfolio milestone and archive evidence without rewriting history.
+  assessment_mode: PHASE GATE 4 — V1.1 final cumulative assessment
+  career_action: Evaluate job outcomes/funnel and enter Year 2 from evidence; continue focused campaign/remediation if needed.
+  prerequisites: []
+  phase_gate: false
   estimated_hours: 12
   industry_platforms: []
   primary_outcome: Demonstrate job-ready Senior Backend capability and produce the transition plan for the next professional

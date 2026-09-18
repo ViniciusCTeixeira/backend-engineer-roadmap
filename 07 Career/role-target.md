@@ -1,4 +1,4 @@
-# Year 1 Target Role
+# Year 1 Target Role — V1.1
 
 ## Primary role family
 
@@ -10,13 +10,47 @@ Senior Software Engineer — Backend
 Senior PHP Backend Engineer
 ```
 
-The intended professional identity is broader than a framework:
+The intended identity is a **backend engineer whose strongest commercial stack is PHP**, not a framework-only specialist.
+
+## Technical positioning
 
 ```text
-PHP/Laravel | MySQL | Redis | AWS | Distributed Systems | AI-Assisted Development
+Primary backend
+PHP / Laravel
+
+Secondary backend
+Python / FastAPI
+
+Data
+MySQL / PostgreSQL / Redis
+MongoDB
+DynamoDB
+
+Platform
+AWS
+Docker / Kubernetes
+Terraform
+Messaging
+Observability
+
+Architecture
+REST / OpenAPI / gRPC
+Distributed Systems
+System Design
+Reliability
+
+AI
+AI-assisted Development
+LLM / RAG / Evals
+Agents / MCP
+
+Polyglot literacy
+Go
+Java / Spring Boot
+TypeScript / Node.js
 ```
 
-CakePHP experience is useful evidence of production experience, framework depth, and legacy modernization. It should not become the only role filter.
+CakePHP remains valuable evidence of production experience, framework depth, and legacy modernization. It should not become the only role filter.
 
 ## What a stronger role means
 
@@ -26,11 +60,13 @@ A target role is stronger when it offers meaningful evidence across several dime
 
 - non-trivial domain/business logic;
 - APIs and integrations;
+- relational and non-relational data decisions;
 - database design/performance;
 - caching;
 - queues/background jobs;
 - concurrency/idempotency;
-- distributed-system trade-offs.
+- distributed-system trade-offs;
+- production ownership.
 
 ### Engineering practices
 
@@ -39,16 +75,19 @@ A target role is stronger when it offers meaningful evidence across several dime
 - code review;
 - CI/CD;
 - incident/debugging practices;
-- technical documentation.
+- technical documentation;
+- architecture/design review.
 
 ### Production and cloud
 
 - cloud infrastructure;
 - containers;
+- application-level Kubernetes literacy where relevant;
 - observability;
 - operational ownership;
-- security practices;
-- reliability/performance work.
+- security;
+- reliability/performance;
+- IaC.
 
 ### Senior-level scope
 
@@ -57,7 +96,8 @@ A target role is stronger when it offers meaningful evidence across several dime
 - mentoring/review;
 - decomposition of ambiguous work;
 - cross-team communication;
-- production accountability.
+- production accountability;
+- ability to enter unfamiliar backend stacks and reason from fundamentals.
 
 ### International-readiness signals
 
@@ -66,6 +106,28 @@ A target role is stronger when it offers meaningful evidence across several dime
 - international customers/stakeholders;
 - architecture/design communication in English;
 - internal mobility or global office structure.
+
+## Stack interpretation
+
+### Primary vs secondary
+
+PHP/Laravel is expected to have the deepest implementation evidence.
+
+Python/FastAPI must be independently usable for a bounded service, tests, debugging, data/API integration, and AI-oriented backend work.
+
+### Polyglot literacy
+
+Go, Java/Spring, and TypeScript/Node do not need Year-1 production mastery.
+
+The learner should be able to:
+
+- run an unfamiliar service;
+- identify its entry point and main boundaries;
+- find configuration and dependency injection;
+- trace an API request;
+- find data access and tests;
+- make a small safe change;
+- explain similarities/differences from the primary stack.
 
 ## Employer-quality rubric
 
@@ -78,6 +140,8 @@ Do not reduce employer quality to one score or salary.
 | Code review | PR/review workflow, engineering collaboration |
 | CI/CD | automated quality/deployment process |
 | Cloud | real production infrastructure, not keyword-only |
+| Containers/platform | Docker and realistic deployment/runtime ownership |
+| Data | relational depth plus justified cache/NoSQL choices |
 | Observability | logs, metrics, tracing, incident response |
 | Engineering maturity | design docs, retrospectives, platform practices |
 | Learning opportunity | senior peers, meaningful architecture exposure |
@@ -95,7 +159,8 @@ Examples:
 - framework-only description with no engineering depth;
 - production responsibility without observability/support;
 - many unrelated technologies with unclear ownership;
-- "cloud" that appears to mean only manual server administration.
+- "cloud" that means only manual server administration;
+- microservices/Kubernetes requirements without clear product or scale justification.
 
 These are questions to investigate, not automatic conclusions.
 
