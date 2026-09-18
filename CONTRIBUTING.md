@@ -45,7 +45,7 @@ Do not silently change:
 - major project architecture;
 - adding/removing a technology track.
 
-Create a reviewable proposal first.
+Create a reviewable proposal first under `docs/proposals/` using `90 Templates/curriculum-proposal.md`.
 
 ## Public/private boundary
 

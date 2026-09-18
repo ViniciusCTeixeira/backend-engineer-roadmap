@@ -14,6 +14,11 @@ Thumbs.db
 __pycache__/
 *.py[cod]
 
+# Intentional negative fixture used to prove the validator rejects tracked private learner state.
+!tests/fixtures/private-tracked/
+!tests/fixtures/private-tracked/.study/
+!tests/fixtures/private-tracked/.study/**
+
 # Intentional negative fixture used to prove the validator rejects cache artifacts.
 !tests/fixtures/generated-python-cache/
 !tests/fixtures/generated-python-cache/**

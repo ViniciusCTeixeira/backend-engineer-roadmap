@@ -11,7 +11,7 @@ resources:
   source_authority: official
   language: en
   cost: free
-  last_verified: '2026-09-15'
+  last_verified: '2026-09-17'
   version_scope: PHP support lifecycle; currently 8.2–8.5 supported
   technology_depth: core
   notes: Use to choose a supported runtime; do not make the curriculum depend on one point release.
@@ -203,7 +203,7 @@ resources:
   source_authority: official
   language: en
   cost: free
-  last_verified: '2026-09-15'
+  last_verified: '2026-09-17'
   version_scope: Laravel 13.x current docs as verified
   technology_depth: core
   notes: Curriculum concepts remain framework-principle-first; record major if project pins it.
@@ -217,7 +217,7 @@ resources:
   source_authority: official
   language: en
   cost: free
-  last_verified: '2026-09-15'
+  last_verified: '2026-09-17'
   version_scope: current Docker docs
   technology_depth: core
   notes: Use for image/container/stack exercises, then deepen through project Dockerfiles.
@@ -246,7 +246,7 @@ resources:
   source_authority: official
   language: en
   cost: free
-  last_verified: '2026-09-15'
+  last_verified: '2026-09-17'
   version_scope: current GitHub Actions docs
   technology_depth: supporting
   notes: Use to build CI evidence rather than memorize YAML.
@@ -261,7 +261,7 @@ resources:
   source_authority: official
   language: en
   cost: free
-  last_verified: '2026-09-15'
+  last_verified: '2026-09-17'
   version_scope: current AWS docs
   technology_depth: core
   notes: Primary cloud security entry point.
@@ -276,7 +276,7 @@ resources:
   source_authority: official
   language: en
   cost: free
-  last_verified: '2026-09-15'
+  last_verified: '2026-09-17'
   version_scope: current AWS docs
   technology_depth: core
   notes: Use with architecture diagram and subnet/routing exercises.
@@ -291,7 +291,7 @@ resources:
   source_authority: official
   language: en
   cost: free
-  last_verified: '2026-09-15'
+  last_verified: '2026-09-17'
   version_scope: current AWS docs
   technology_depth: core
   notes: Connect managed-database trade-offs back to MySQL concepts.
@@ -306,7 +306,7 @@ resources:
   source_authority: official
   language: en
   cost: free
-  last_verified: '2026-09-15'
+  last_verified: '2026-09-17'
   version_scope: current AWS docs
   technology_depth: core
   notes: Primary managed queue for the AWS path.
@@ -425,7 +425,7 @@ resources:
   source_authority: official
   language: en
   cost: free
-  last_verified: '2026-09-15'
+  last_verified: '2026-09-17'
   version_scope: current Cloudflare docs
   technology_depth: supporting
   notes: Use with proxy-status behavior and origin architecture.
@@ -455,7 +455,7 @@ resources:
   source_authority: official
   language: en
   cost: free
-  last_verified: '2026-09-15'
+  last_verified: '2026-09-17'
   version_scope: current Cloudflare docs
   technology_depth: supporting
   notes: Use after HTTP/security fundamentals.
@@ -499,13 +499,13 @@ resources:
   source_authority: official
   language: en
   cost: free
-  last_verified: '2026-09-15'
+  last_verified: '2026-09-17'
   version_scope: current Kubernetes docs
   technology_depth: professional-exposure
   notes: Exposure lab only in V1 unless market signal promotes depth.
 - id: helm-quickstart
   title: Helm — Quickstart Guide
-  url: https://docs.helm.sh/docs/intro/quickstart/
+  url: https://helm.sh/docs/intro/quickstart/
   topic_ids:
   - helm
   - kubernetes
@@ -513,7 +513,7 @@ resources:
   source_authority: official
   language: en
   cost: free
-  last_verified: '2026-09-15'
+  last_verified: '2026-09-17'
   version_scope: Helm 4.3.0 current docs as verified
   technology_depth: professional-exposure
   notes: Run only after Kubernetes basics.
@@ -591,7 +591,7 @@ resources:
   source_authority: official
   language: en
   cost: free
-  last_verified: '2026-09-15'
+  last_verified: '2026-09-17'
   version_scope: current OpenAI developer platform; fast-moving
   technology_depth: core
   notes: Use concept-specific current pages at study time; re-verify before tasks.

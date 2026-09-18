@@ -1,7 +1,7 @@
 # Task 16 Validation — Public Release Documentation
 
 **Date:** 2026-09-17  
-**Status:** Package structural validation PASS; repository validation pending application
+**Status:** PASS — approved after `master` repository revalidation
 
 ## Scope
 
@@ -56,4 +56,13 @@ git diff --check
 git status
 ```
 
-Task 16 is approved only after those commands pass in the real repository and the pushed `master` is revalidated.
+Repository revalidation completed on `master` at:
+
+```text
+3a24f0e9181cc5d770fbb569172b6d52c6421c74
+docs: prepare public roadmap release
+```
+
+The 11 Task 16 files match the approved package by Git blob SHA. Task 17/C7 performs the final clean-room release checks.
+
+Result: **PASS**

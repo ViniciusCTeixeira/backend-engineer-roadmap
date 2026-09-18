@@ -18,7 +18,8 @@ Potential generic curriculum problem identified.
 
 ## Files it may write
 
-- `proposal file only`
+- `docs/proposals/YYYY-MM-DD-<short-slug>.md` only when a generic curriculum deficiency is supported
+- no public file when evidence is learner-specific only
 
 ## Files it must not alter
 
@@ -36,7 +37,7 @@ B. genuinely generic curriculum deficiency.
 
 If only A exists, stop and recommend private adaptation.
 
-If B is supported, create a curriculum proposal containing:
+If B is supported, create a public proposal under `docs/proposals/` using `90 Templates/curriculum-proposal.md` and include:
 - problem;
 - generalized evidence;
 - why it is generic;

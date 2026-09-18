@@ -114,7 +114,7 @@ See [`docs/study-methodology.md`](docs/study-methodology.md).
 ### 1. Clone
 
 ```bash
-git clone <your-fork-or-repository-url> backend-engineer-roadmap
+git clone https://github.com/ViniciusCTeixeira/backend-engineer-roadmap.git
 cd backend-engineer-roadmap
 ```
 

@@ -2,6 +2,7 @@ from pathlib import Path
 import contextlib
 import importlib.util
 import io
+import subprocess
 import sys
 import unittest
 
@@ -64,6 +65,21 @@ class ValidatorContractTests(unittest.TestCase):
 
     def test_tracked_private_study_file_fails(self):
         self.assert_fixture_fails_with("private-tracked", "PRIVATE_TRACKED")
+
+    def test_private_tracked_negative_fixture_is_present_and_versioned(self):
+        fixture = FIXTURES / "private-tracked" / ".study" / "state.yaml"
+        self.assertTrue(fixture.exists(), "private-tracked negative fixture is missing from this checkout")
+        if (PROJECT_ROOT / ".git").exists():
+            rel = fixture.relative_to(PROJECT_ROOT).as_posix()
+            proc = subprocess.run(
+                ["git", "ls-files", "--error-unmatch", rel],
+                cwd=PROJECT_ROOT,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(0, proc.returncode, proc.stderr or f"{rel} is not tracked")
 
     def test_invalid_technology_depth_fails(self):
         self.assert_fixture_fails_with("invalid-tech-depth", "INVALID_TECHNOLOGY_DEPTH")

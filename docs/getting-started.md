@@ -20,7 +20,7 @@ The roadmap remains usable without Obsidian or a coding agent because the source
 ## 1. Clone
 
 ```bash
-git clone <your-fork-or-repository-url> backend-engineer-roadmap
+git clone https://github.com/ViniciusCTeixeira/backend-engineer-roadmap.git
 cd backend-engineer-roadmap
 ```
 
