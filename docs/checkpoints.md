@@ -26,6 +26,12 @@ Validate one representative month for clarity, workload, source quality, difficu
 
 Explicitly authorize full public curriculum generation after the preceding design artifacts and representative sample have passed review. Without C6 approval, generate no complete 52-week daily content.
 
-## C7 — Public-release QA passed
+## C7 — Public-release QA passed ✅
 
-Confirm clean-clone onboarding, private-state initialization and ignore behavior, agent write boundaries, assessment integrity, resource freshness, static validation, and the approved V1 success criteria before release/tagging.
+**Approved:** 2026-09-17
+
+Clean-clone onboarding, private-state initialization/ignore behavior, agent write boundaries, assessment integrity, resource freshness, static validation, public visibility, and the approved V1 success criteria have been revalidated for the V1 release candidate.
+
+Evidence: `docs/validation/v1-release-checklist.md`.
+
+The release candidate is approved for the annotated `v1.0.0` tag.
