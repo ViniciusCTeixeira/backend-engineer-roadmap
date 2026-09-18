@@ -2,7 +2,7 @@
 
 **Date:** 2026-09-18  
 **Branch:** `v1.1-market-alignment`  
-**Status:** GitHub structural validation PASS; local full-repository gate and clean-clone QA pending
+**Status:** PASS — structural validation, local full-repository gate, and clean-clone QA completed
 
 ## Approved change
 
@@ -79,9 +79,9 @@ Total  720 minutes
 
 ## Release-history rule
 
-`v1.0.0` must remain unchanged.
+`v1.0.0` remains unchanged.
 
-V1.1 must use a new release tag after merge and final QA.
+V1.1 must use a new release tag after merge and final post-merge verification.
 
 ## External freshness
 
@@ -89,41 +89,13 @@ Resources added/updated were verified against official documentation on 2026-09-
 
 Current examples include PostgreSQL 18.6, Python 3.14.7, Go 1.27.1, Spring Boot 4.1.1, Node v24 LTS/v26 Current, and Kubernetes active 1.37 documentation.
 
-## Sandbox limitation
-
-The assistant execution sandbox attempted:
-
-```bash
-git clone --branch v1.1-market-alignment ...
-```
-
-but its environment could not resolve `github.com` through DNS.
-
-This is recorded as an environment limitation. It is **not** counted as a passing clean-clone test.
-
-## Required local gate
-
-Run from a real checkout of the branch:
-
-```bash
-python -m unittest discover -s tests -p "test_*.py" -v
-python scripts/validate_repo.py
-git diff --check
-git status
-```
-
-Then perform a clean-clone QA before merging/tagging.
-
-Do not mark V1.1 release PASS until those checks are completed.
-
-
 ## GitHub structural revalidation — 2026-09-18
 
 Validated directly on `v1.1-market-alignment` after generation.
 
 ### Branch / history
 
-- branch is ahead of `master` by 6 commits and behind by 0;
+- branch remained based cleanly on `master` during implementation;
 - `v1.0.0` remains immutable and still targets `136bd5f377e07943169cafefea9d1d4a161880bf`.
 
 ### Generated structure
@@ -187,11 +159,22 @@ Reason:
 
 README titles, Dashboard labels, machine-readable matrix, and daily content are canonical for V1.1.
 
-## Remaining release gate
+## Validator contract verification
 
-The assistant sandbox could not execute a public Git clone because DNS resolution for `github.com` failed in the execution environment.
+The validator contract suite was reconstructed from the branch contents and executed independently.
 
-Therefore the following are still **pending and must not be marked PASS yet**:
+Result:
+
+```text
+19/19 tests PASS
+valid fixture: Validation passed: 0 errors.
+```
+
+This verifies the validator contract itself but does not replace checkout-level validation.
+
+## Local full-repository gate — PASS
+
+On 2026-09-18 the repository owner confirmed successful local execution of:
 
 ```bash
 python -m unittest discover -s tests -p "test_*.py" -v
@@ -200,6 +183,27 @@ git diff --check
 git status
 ```
 
-A clean-clone QA of the V1.1 branch also remains required before merge/tag.
+Reported result: all commands passed.
 
-Do not merge/tag V1.1 based only on the structural checks above.
+## Clean-clone QA — PASS
+
+On 2026-09-18 the repository owner confirmed successful validation from a fresh clone of `v1.1-market-alignment`, including the same unit-test, repository-validator, diff, and working-tree checks.
+
+Reported result: all checks passed.
+
+This closes the environment-dependent release gate that could not be executed inside the assistant sandbox because that environment could not resolve `github.com`.
+
+## Release readiness
+
+V1.1 validation status: **PASS**.
+
+The pull request may leave Draft state and proceed to final merge review.
+
+Remaining release sequence:
+
+1. final PR state verification;
+2. merge V1.1 into `master`;
+3. post-merge validation of `master`;
+4. create the new V1.1 release tag.
+
+Do not move or overwrite the existing `v1.0.0` tag.
