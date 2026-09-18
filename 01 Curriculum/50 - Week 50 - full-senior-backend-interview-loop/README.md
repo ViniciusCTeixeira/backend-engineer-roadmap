@@ -2,37 +2,33 @@
 type: curriculum-week
 schema_version: 1
 week: 50
-phase: Market & Interview Campaign
+phase: Market Campaign
 estimated_minutes: 720
-primary_outcome: "Run an integrated interview loop covering coding, backend fundamentals, system design, production diagnosis, English communication, and agent-use judgment."
+primary_outcome: "Combine coding, system design, polyglot code reading, data-store selection, and behavioral communication in one realistic interview day."
 project_milestone: "platform-market-hardening"
+v1_1_market_alignment: true
 ---
 
-# Week 50 — Full Senior Backend Interview Loop
+# Week 50 — Full V1.1 Senior Backend Interview Day
 
 ## Primary outcome
 
-Run an integrated interview loop covering coding, backend fundamentals, system design, production diagnosis, English communication, and agent-use judgment.
+Combine coding, system design, polyglot code reading, data-store selection, and behavioral communication in one realistic interview day.
 
-## Matrix alignment
+## V1.1 alignment
 
-Core topics:
-- coding interview
-- backend fundamentals
-- system design
-- production diagnosis
-- English
-- AI judgment
+This week implements the approved V1.1 market-alignment amendment within the 12-hour ceiling.
 
 Project milestone: `platform-market-hardening`
 
 Weekly simulation: `SOLO` / `closed-technical`
 
-English: Run the behavioral/system-design portions primarily in English.
+## Skills
 
-AI/agent: Use an agent only after a SOLO baseline; independently verify consequential claims.
-
-Career: Use the full-loop result to select final-month companies and remediation priorities.
+- full-interview-loop
+- dsa
+- system-design
+- polyglot
 
 ## Planned workload
 
@@ -47,13 +43,14 @@ Career: Use the full-loop result to select final-month companies and remediation
 | Day 07 | 60 |
 | **Total** | **720 (12h)** |
 
-Assessment time is included.
-
 ## Primary resource IDs
 
 - mit-ocw-algorithms
 - builders-library
+- go-127-docs
+- spring-boot-current
+- typescript-handbook
 
-## Adaptation rule
+## Integrity
 
-This is a public baseline. Learner-specific scores, remediation, reviews, applications, and future scheduling belong under `.study/`. Historical attempts are preserved; a gate failure creates private remediation instead of erasing later public curriculum.
+Learner-specific outcomes remain private. Exposure technologies must not be presented as production mastery without evidence.

@@ -1,83 +1,83 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w52-d07-phase-gate-four-year-one-release
+id: task-w52-d07-v1-1
 week: 52
 day: 7
 date: null
 track: core
 skill_ids:
-- cumulative-backend
-- system-design
-- production-diagnosis
-- algorithms
-mode: HYBRID
+- phase-gate-4
+- php-python
+- data-selection
+- senior-readiness
+mode: SOLO
 estimated_minutes: 60
 technology_depth: core
 resource_ids:
 []
 deliverables:
-- Review, career evidence, and English reflection evidence
-- Week 52 private assessment attempt
-- `platform-year1-release` increment or review
+- review events
+- private campaign update
+- English reflection
 review_policy: adaptive
 prerequisites:
 - week-51
 status: planned
 ---
 
-# Day 07 — Review, career evidence, and English reflection
+# Day 07 — Review, Transfer, and Campaign Evidence
 
-## Why this matters
+## Outcome
 
-Demonstrate integrated Year-1 senior-backend capability across coding, backend fundamentals, production/cloud/distributed design, AI engineering, English, and independent judgment.
+> Complete reviews and update private interview/career evidence without rewriting historical attempts.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
-| Closed recall | `SOLO` | 10 |
+| Active recall | `SOLO` | 10 |
 | Due reviews | `SOLO` | 20 |
-| Career / evidence action | `SOLO` | 20 |
-| Technical English reflection | `SOLO` | 10 |
+| Career action | `SOLO` | 20 |
+| English reflection | `SOLO` | 10 |
 | **Total** |  | **60** |
 
-## Primary sources
+## Resources
 
-- No new source; use prior primary sources or frozen evidence.
+- Reuse prior evidence/resources.
 
 ## Activities
 
-### Closed recall — 10 min — `SOLO`
+### Active recall — 10 min — `SOLO`
 
-Reconstruct one important concept from memory before opening notes.
+Reconstruct the key model from memory.
 
 ### Due reviews — 20 min — `SOLO`
 
-Complete due D+1/D+7 reviews; create targeted D+30 transfer only when justified.
+Complete due reviews.
 
-### Career / evidence action — 20 min — `SOLO`
+### Career action — 20 min — `SOLO`
 
-Freeze Year-1 evidence, identify readiness gaps, and define the stronger-role/Year-2 consolidation path.
+Update private pipeline/portfolio evidence.
 
-### Technical English reflection — 10 min — `SOLO`
+### English reflection — 10 min — `SOLO`
 
-Complete the final technical defense and retrospective substantially in English.
+Write a concise reflection in English.
 
 ## Deliverables
 
-- Review, career evidence, and English reflection evidence
-- Week 52 private assessment attempt
-- `platform-year1-release` increment or review
+- review events
+- private campaign update
+- English reflection
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 52/Day 07.md`. Store learner responses only in private state.
-
-## Review hook
-
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Run `02 Daily Assessments/Week 52/Day 07.md`. Store attempts privately.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves first-attempt evidence.
+
+## Completion rule
+
+Evidence—not exposure or agent output alone—determines completion.

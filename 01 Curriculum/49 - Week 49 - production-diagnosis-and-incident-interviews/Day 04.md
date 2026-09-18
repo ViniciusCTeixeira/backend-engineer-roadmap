@@ -1,90 +1,86 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w49-d04-production-diagnosis-and-incident-interviews
+id: task-w49-d04-v1-1
 week: 49
 day: 4
 date: null
 track: core
 skill_ids:
-- incident-diagnosis
-- logs-metrics-traces
-- database-cache-queue-failure
-- safe-mitigation
+- production-diagnosis
+- postgresql
+- mongodb
+- dynamodb
 mode: SOLO
 estimated_minutes: 105
 technology_depth: core
 resource_ids:
-- grafana-get-started
-- builders-library
+- aws-dynamodb-data-modeling
 deliverables:
-- Choose safe mitigation/rollback under uncertainty evidence
-- Week 49 private assessment attempt
-- `platform-market-hardening` increment or review
+- DynamoDB incident diagnosis
+- redesign hypothesis
 review_policy: adaptive
 prerequisites:
 - week-48
 status: planned
 ---
 
-# Day 04 — Choose safe mitigation/rollback under uncertainty
+# Day 04 — Diagnose a DynamoDB Partition/Access-Pattern Incident
 
-## Why this matters
+## Outcome
 
-Diagnose multi-layer production incidents under ambiguity using hypotheses, evidence, observability, safe mitigations, and post-incident reasoning.
+> Analyze partition-key distribution, throttling/hot key, missing access pattern, or GSI design evidence.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
 | Primary-source study | `SOLO` | 20 |
-| Hands-on reasoning / lab | `SOLO` | 40 |
-| Project / evidence update | `SOLO` | 15 |
+| Hands-on/timed lab | `SOLO` | 40 |
+| Evidence update | `SOLO` | 15 |
 | Technical English | `SOLO` | 10 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
-- `grafana-get-started`
-- `builders-library`
+- `aws-dynamodb-data-modeling`
 
 ## Activities
 
 ### Primary-source study — 20 min — `SOLO`
 
-Read the relevant primary source with the specific question: Choose safe mitigation/rollback under uncertainty.
+Read only source sections needed for today's reasoning.
 
-### Hands-on reasoning / lab — 40 min — `SOLO`
+### Hands-on/timed lab — 40 min — `SOLO`
 
-Choose safe mitigation/rollback under uncertainty. Start with a prediction/design before execution or lookup.
+Analyze partition-key distribution, throttling/hot key, missing access pattern, or GSI design evidence.
 
-### Project / evidence update — 15 min — `SOLO`
+### Evidence update — 15 min — `SOLO`
 
-Connect the result to `platform-market-hardening` or preserve a reproducible standalone artifact.
+Preserve reproducible technical/interview evidence.
 
 ### Technical English — 10 min — `SOLO`
 
-Lead an incident explanation and mitigation summary in English.
+Explain one decision or failure mode in English.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Choose safe mitigation/rollback under uncertainty evidence
-- Week 49 private assessment attempt
-- `platform-market-hardening` increment or review
+- DynamoDB incident diagnosis
+- redesign hypothesis
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 49/Day 04.md`. Store learner responses only in private state.
-
-## Review hook
-
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Run `02 Daily Assessments/Week 49/Day 04.md`. Store attempts privately.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves first-attempt evidence.
+
+## Completion rule
+
+Evidence—not exposure or agent output alone—determines completion.

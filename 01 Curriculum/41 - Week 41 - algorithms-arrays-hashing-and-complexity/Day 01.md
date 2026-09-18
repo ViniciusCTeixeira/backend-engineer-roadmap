@@ -1,88 +1,86 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w41-d01-algorithms-arrays-hashing-and-complexity
+id: task-w41-d01-v1-1
 week: 41
 day: 1
 date: null
 track: core
 skill_ids:
-- big-o
-- arrays-strings
-- hash-maps-sets
-- two-pointers
+- backend-polyglot
+- go
+- spring-boot
+- typescript-node
 mode: SOLO
 estimated_minutes: 105
-technology_depth: core
+technology_depth: professional-exposure
 resource_ids:
-- mit-ocw-algorithms
+- go-127-docs
 deliverables:
-- Analyze time/space complexity and input constraints evidence
-- Week 41 private assessment attempt
-- `platform-market-hardening` increment or review
+- Go architecture map
+- small verified patch
 review_policy: adaptive
 prerequisites:
 - week-40
 status: planned
 ---
 
-# Day 01 — Analyze time/space complexity and input constraints
+# Day 01 — Map a Go Backend Without Pretending Mastery
 
-## Why this matters
+## Outcome
 
-Solve interview-style array/string/hash problems with explicit complexity analysis, invariants, tests, and clear communication rather than memorized patterns.
+> Run/read a small Go service; locate module/package, handler, service/client, context/error flow, configuration, and tests; make one bounded safe patch.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
 | Primary-source study | `SOLO` | 20 |
-| Hands-on reasoning / lab | `SOLO` | 40 |
-| Project / evidence update | `SOLO` | 15 |
+| Hands-on/timed lab | `SOLO` | 40 |
+| Evidence update | `SOLO` | 15 |
 | Technical English | `SOLO` | 10 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
-- `mit-ocw-algorithms`
+- `go-127-docs`
 
 ## Activities
 
 ### Primary-source study — 20 min — `SOLO`
 
-Read the relevant primary source with the specific question: Analyze time/space complexity and input constraints.
+Read only source sections needed for today's reasoning.
 
-### Hands-on reasoning / lab — 40 min — `SOLO`
+### Hands-on/timed lab — 40 min — `SOLO`
 
-Analyze time/space complexity and input constraints. Start with a prediction/design before execution or lookup.
+Run/read a small Go service; locate module/package, handler, service/client, context/error flow, configuration, and tests; make one bounded safe patch.
 
-### Project / evidence update — 15 min — `SOLO`
+### Evidence update — 15 min — `SOLO`
 
-Connect the result to `platform-market-hardening` or preserve a reproducible standalone artifact.
+Preserve reproducible technical/interview evidence.
 
 ### Technical English — 10 min — `SOLO`
 
-Explain one algorithm invariant and complexity trade-off in English.
+Explain one decision or failure mode in English.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Analyze time/space complexity and input constraints evidence
-- Week 41 private assessment attempt
-- `platform-market-hardening` increment or review
+- Go architecture map
+- small verified patch
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 41/Day 01.md`. Store learner responses only in private state.
-
-## Review hook
-
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Run `02 Daily Assessments/Week 41/Day 01.md`. Store attempts privately.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves first-attempt evidence.
+
+## Completion rule
+
+Evidence—not exposure or agent output alone—determines completion.

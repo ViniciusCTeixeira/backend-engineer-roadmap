@@ -1,88 +1,88 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w48-d05-senior-backend-system-design-and-behavioral
+id: task-w48-d05-v1-1
 week: 48
 day: 5
 date: null
 track: core
 skill_ids:
-- system-design-interviews
-- requirements-clarification
-- capacity-data-async-reliability
-- trade-offs
-mode: HYBRID
+- senior-backend-interview
+- php
+- python
+- system-design
+mode: SOLO
 estimated_minutes: 105
 technology_depth: core
 resource_ids:
-- builders-library
+- aws-vpc-overview
+- kubernetes-application-basics
 deliverables:
-- Run a full senior-backend mock with independent scoring evidence
-- Week 48 private assessment attempt
-- `platform-market-hardening` increment or review
+- architecture attempt
+- risk/assumption list
 review_policy: adaptive
 prerequisites:
 - week-47
 status: planned
 ---
 
-# Day 05 — Run a full senior-backend mock with independent scoring
+# Day 05 — Run a Cloud/Kubernetes Architecture Screen
 
-## Why this matters
+## Outcome
 
-Practice senior-level backend system design and behavioral communication grounded in concrete project/production evidence.
+> Design a small AWS backend and explain Docker/Kubernetes, data, observability, and failure ownership.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
-| SOLO baseline | `SOLO` | 25 |
-| Agent challenge | `AI-ASSISTED` | 20 |
-| Independent validation | `SOLO` | 20 |
-| Project / evidence update | `SOLO` | 20 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Primary-source study | `SOLO` | 20 |
+| Hands-on/timed lab | `SOLO` | 40 |
+| Evidence update | `SOLO` | 15 |
+| Technical English | `SOLO` | 10 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
-- `builders-library`
+- `aws-vpc-overview`
+- `kubernetes-application-basics`
 
 ## Activities
 
-### SOLO baseline — 25 min — `SOLO`
+### Primary-source study — 20 min — `SOLO`
 
-Work on: Run a full senior-backend mock with independent scoring. Freeze your plan/findings before using an agent.
+Read only source sections needed for today's reasoning.
 
-### Agent challenge — 20 min — `AI-ASSISTED`
+### Hands-on/timed lab — 40 min — `SOLO`
 
-Use an agent only after a SOLO baseline; independently verify consequential claims.
+Design a small AWS backend and explain Docker/Kubernetes, data, observability, and failure ownership.
 
-### Independent validation — 20 min — `SOLO`
+### Evidence update — 15 min — `SOLO`
 
-Verify/reject claims using primary sources, tests, measurements, traces, queries, or code evidence.
+Preserve reproducible technical/interview evidence.
 
-### Project / evidence update — 20 min — `SOLO`
+### Technical English — 10 min — `SOLO`
 
-Apply only validated conclusions to `platform-market-hardening` or a reviewable evidence artifact.
+Explain one decision or failure mode in English.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Run a full senior-backend mock with independent scoring evidence
-- Week 48 private assessment attempt
-- `platform-market-hardening` increment or review
+- architecture attempt
+- risk/assumption list
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 48/Day 05.md`. Store learner responses only in private state.
-
-## Review hook
-
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Run `02 Daily Assessments/Week 48/Day 05.md`. Store attempts privately.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves first-attempt evidence.
+
+## Completion rule
+
+Evidence—not exposure or agent output alone—determines completion.

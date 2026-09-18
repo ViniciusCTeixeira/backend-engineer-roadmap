@@ -1,63 +1,40 @@
 ---
 type: weekly-simulation
 schema_version: 1
-id: simulation-w50
+id: simulation-w50-v1-1
 week: 50
 mode: SOLO
 simulation_type: closed-technical
 skill_ids:
-- coding-interview
-- backend-fundamentals
+- full-interview-loop
+- dsa
 - system-design
-- production-diagnosis
-- english
+- polyglot
 estimated_minutes: 75
 status: planned
 score_total: null
 ---
 
-# Week 50 — Full Senior Backend Interview Loop Simulation
+# Week 50 — Full V1.1 Senior Backend Interview Day Simulation
 
 ## Rules
 
-- Follow the declared mode exactly.
-- Preserve the first SOLO attempt before feedback or agent use.
-- Do not search for a model solution during scored SOLO phases.
-- Store learner responses privately under `.study/`.
-- Grade using `docs/assessments.md` and critical floors where applicable.
-- No public answer key is stored beside this simulation.
+- Follow the declared mode.
+- Preserve first-attempt SOLO evidence.
+- Keep scored closed sections free of agent/search assistance.
+- Store learner answers privately.
 
-## Closed integrated scenario — 60 min
 
-Solve/design/diagnose a scenario covering:
+## Scenario
 
-- Closed backend fundamentals round
-- Timed coding/algorithms round
-- System-design round
-- Production-debugging round
-
-State assumptions and produce evidence or falsifiable validation steps.
-
-## Transfer explanation — 15 min
-
-Explain the key trade-off and one failure mode without notes or agent assistance.
+Demonstrate the week's capability using implementation, diagnosis, code reading, system design, or interview communication evidence.
 
 ## Raw attempt — IMMUTABLE AFTER SUBMISSION
 
 _Private learner record only._
 
-## Assistance declaration
-
-_Private learner record only._
-
 ## Feedback
 
-Append only after submission.
+Append after submission and schedule reviews/remediation from demonstrated gaps.
 
-## Error records created
-
-## Review events created
-
-## Weekly adaptation recommendation
-
-Use `docs/adaptive-learning.md`; never rewrite public curriculum from one learner result.
+No public model solution is stored here.

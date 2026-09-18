@@ -1,49 +1,48 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w41-d04-algorithms-arrays-hashing-and-complexity
+id: task-w41-d04-v1-1
 week: 41
 day: 4
 date: null
 track: core
 skill_ids:
-- big-o
-- arrays-strings
-- hash-maps-sets
-- two-pointers
+- backend-polyglot
+- go
+- spring-boot
+- typescript-node
 mode: SOLO
 estimated_minutes: 105
-technology_depth: core
+technology_depth: professional-exposure
 resource_ids:
 - mit-ocw-algorithms
 deliverables:
-- Practice sliding-window problems with correctness explanations evidence
-- Week 41 private assessment attempt
-- `platform-market-hardening` increment or review
+- timed SOLO problems
+- complexity explanations
 review_policy: adaptive
 prerequisites:
 - week-40
 status: planned
 ---
 
-# Day 04 — Practice sliding-window problems with correctness explanations
+# Day 04 — Practice Big O, Arrays, Strings, and Hash Maps
 
-## Why this matters
+## Outcome
 
-Solve interview-style array/string/hash problems with explicit complexity analysis, invariants, tests, and clear communication rather than memorized patterns.
+> Use the remaining interview block for complexity, array/string traversal, hash maps/sets, and explanation under time pressure.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
 | Primary-source study | `SOLO` | 20 |
-| Hands-on reasoning / lab | `SOLO` | 40 |
-| Project / evidence update | `SOLO` | 15 |
+| Hands-on/timed lab | `SOLO` | 40 |
+| Evidence update | `SOLO` | 15 |
 | Technical English | `SOLO` | 10 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
 - `mit-ocw-algorithms`
 
@@ -51,38 +50,37 @@ Solve interview-style array/string/hash problems with explicit complexity analys
 
 ### Primary-source study — 20 min — `SOLO`
 
-Read the relevant primary source with the specific question: Practice sliding-window problems with correctness explanations.
+Read only source sections needed for today's reasoning.
 
-### Hands-on reasoning / lab — 40 min — `SOLO`
+### Hands-on/timed lab — 40 min — `SOLO`
 
-Practice sliding-window problems with correctness explanations. Start with a prediction/design before execution or lookup.
+Use the remaining interview block for complexity, array/string traversal, hash maps/sets, and explanation under time pressure.
 
-### Project / evidence update — 15 min — `SOLO`
+### Evidence update — 15 min — `SOLO`
 
-Connect the result to `platform-market-hardening` or preserve a reproducible standalone artifact.
+Preserve reproducible technical/interview evidence.
 
 ### Technical English — 10 min — `SOLO`
 
-Explain one algorithm invariant and complexity trade-off in English.
+Explain one decision or failure mode in English.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Practice sliding-window problems with correctness explanations evidence
-- Week 41 private assessment attempt
-- `platform-market-hardening` increment or review
+- timed SOLO problems
+- complexity explanations
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 41/Day 04.md`. Store learner responses only in private state.
-
-## Review hook
-
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Run `02 Daily Assessments/Week 41/Day 04.md`. Store attempts privately.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves first-attempt evidence.
+
+## Completion rule
+
+Evidence—not exposure or agent output alone—determines completion.

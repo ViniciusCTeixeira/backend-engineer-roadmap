@@ -2,36 +2,33 @@
 type: curriculum-week
 schema_version: 1
 week: 49
-phase: Market & Interview Campaign
+phase: Market Campaign
 estimated_minutes: 720
-primary_outcome: "Diagnose multi-layer production incidents under ambiguity using hypotheses, evidence, observability, safe mitigations, and post-incident reasoning."
+primary_outcome: "Diagnose production failures under interview constraints across multiple data models using evidence-first reasoning."
 project_milestone: "platform-market-hardening"
+v1_1_market_alignment: true
 ---
 
-# Week 49 — Production Diagnosis and Incident Interviews
+# Week 49 — Production Diagnosis Across Relational, Redis, MongoDB, and DynamoDB
 
 ## Primary outcome
 
-Diagnose multi-layer production incidents under ambiguity using hypotheses, evidence, observability, safe mitigations, and post-incident reasoning.
+Diagnose production failures under interview constraints across multiple data models using evidence-first reasoning.
 
-## Matrix alignment
+## V1.1 alignment
 
-Core topics:
-- incident diagnosis
-- logs/metrics/traces
-- database/cache/queue failure
-- safe mitigation
-- postmortem reasoning
+This week implements the approved V1.1 market-alignment amendment within the 12-hour ceiling.
 
 Project milestone: `platform-market-hardening`
 
 Weekly simulation: `SOLO` / `sql-debugging`
 
-English: Lead an incident explanation and mitigation summary in English.
+## Skills
 
-AI/agent: Use an agent only after a SOLO baseline; independently verify consequential claims.
-
-Career: Track role-fit evidence and interview/application signals privately.
+- production-diagnosis
+- postgresql
+- mongodb
+- dynamodb
 
 ## Planned workload
 
@@ -46,15 +43,16 @@ Career: Track role-fit evidence and interview/application signals privately.
 | Day 07 | 60 |
 | **Total** | **720 (12h)** |
 
-Assessment time is included.
-
 ## Primary resource IDs
 
-- builders-library
+- postgresql-explain
+- mysql-explain-manual
+- redis-eviction
+- mongodb-indexes
+- aws-dynamodb-data-modeling
 - otel-php
-- prometheus-overview
-- grafana-get-started
+- otel-python
 
-## Adaptation rule
+## Integrity
 
-This is a public baseline. Learner-specific scores, remediation, reviews, applications, and future scheduling belong under `.study/`. Historical attempts are preserved; a gate failure creates private remediation instead of erasing later public curriculum.
+Learner-specific outcomes remain private. Exposure technologies must not be presented as production mastery without evidence.

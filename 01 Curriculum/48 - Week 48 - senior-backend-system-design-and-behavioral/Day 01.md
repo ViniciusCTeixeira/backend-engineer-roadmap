@@ -1,88 +1,86 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w48-d01-senior-backend-system-design-and-behavioral
+id: task-w48-d01-v1-1
 week: 48
 day: 1
 date: null
 track: core
 skill_ids:
-- system-design-interviews
-- requirements-clarification
-- capacity-data-async-reliability
-- trade-offs
+- senior-backend-interview
+- php
+- python
+- system-design
 mode: SOLO
 estimated_minutes: 105
 technology_depth: core
 resource_ids:
-- builders-library
+- laravel-current-docs
 deliverables:
-- Clarify functional/nonfunctional requirements before designing evidence
-- Week 48 private assessment attempt
-- `platform-market-hardening` increment or review
+- PHP deep-dive attempt
+- gap notes
 review_policy: adaptive
 prerequisites:
 - week-47
 status: planned
 ---
 
-# Day 01 — Clarify functional/nonfunctional requirements before designing
+# Day 01 — Run a PHP/Laravel Deep-Dive Screen
 
-## Why this matters
+## Outcome
 
-Practice senior-level backend system design and behavioral communication grounded in concrete project/production evidence.
+> Answer runtime/OOP/framework/data/testing/debugging questions and inspect one unfamiliar code path without agent assistance.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
 | Primary-source study | `SOLO` | 20 |
-| Hands-on reasoning / lab | `SOLO` | 40 |
-| Project / evidence update | `SOLO` | 15 |
+| Hands-on/timed lab | `SOLO` | 40 |
+| Evidence update | `SOLO` | 15 |
 | Technical English | `SOLO` | 10 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
-- `builders-library`
+- `laravel-current-docs`
 
 ## Activities
 
 ### Primary-source study — 20 min — `SOLO`
 
-Read the relevant primary source with the specific question: Clarify functional/nonfunctional requirements before designing.
+Read only source sections needed for today's reasoning.
 
-### Hands-on reasoning / lab — 40 min — `SOLO`
+### Hands-on/timed lab — 40 min — `SOLO`
 
-Clarify functional/nonfunctional requirements before designing. Start with a prediction/design before execution or lookup.
+Answer runtime/OOP/framework/data/testing/debugging questions and inspect one unfamiliar code path without agent assistance.
 
-### Project / evidence update — 15 min — `SOLO`
+### Evidence update — 15 min — `SOLO`
 
-Connect the result to `platform-market-hardening` or preserve a reproducible standalone artifact.
+Preserve reproducible technical/interview evidence.
 
 ### Technical English — 10 min — `SOLO`
 
-Run substantial portions of the mock interview in English.
+Explain one decision or failure mode in English.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Clarify functional/nonfunctional requirements before designing evidence
-- Week 48 private assessment attempt
-- `platform-market-hardening` increment or review
+- PHP deep-dive attempt
+- gap notes
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 48/Day 01.md`. Store learner responses only in private state.
-
-## Review hook
-
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Run `02 Daily Assessments/Week 48/Day 01.md`. Store attempts privately.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves first-attempt evidence.
+
+## Completion rule
+
+Evidence—not exposure or agent output alone—determines completion.

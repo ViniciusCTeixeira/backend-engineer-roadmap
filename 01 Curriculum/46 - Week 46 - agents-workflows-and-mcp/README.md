@@ -2,37 +2,33 @@
 type: curriculum-week
 schema_version: 1
 week: 46
-phase: Interview & Senior Readiness
+phase: Interviews and Agentic Engineering
 estimated_minutes: 720
-primary_outcome: "Build and review bounded agent workflows with tool permissions, MCP capabilities, context management, approval boundaries, and post-agent independent verification."
+primary_outcome: "Build a bounded agent/MCP workflow in PHP or Python while keeping capability permissions, validation, and human review application-owned."
 project_milestone: "platform-mcp"
+v1_1_market_alignment: true
 ---
 
-# Week 46 — Agentic Engineering and MCP
+# Week 46 — Agentic Engineering and MCP Across PHP/Python Boundaries
 
 ## Primary outcome
 
-Build and review bounded agent workflows with tool permissions, MCP capabilities, context management, approval boundaries, and post-agent independent verification.
+Build a bounded agent/MCP workflow in PHP or Python while keeping capability permissions, validation, and human review application-owned.
 
-## Matrix alignment
+## V1.1 alignment
 
-Core topics:
-- agent planning
-- context engineering
-- tool permissions
-- MCP client/server concepts
-- approval boundaries
-- verification
+This week implements the approved V1.1 market-alignment amendment within the 12-hour ceiling.
 
 Project milestone: `platform-mcp`
 
 Weekly simulation: `HYBRID` / `ai-assisted`
 
-English: Explain an MCP/agent permission boundary in English.
+## Skills
 
-AI/agent: Use an agent only after a SOLO baseline; independently verify consequential claims.
-
-Career: Add agentic-engineering evidence to interview stories without overstating AI autonomy.
+- agents
+- mcp
+- tool-boundaries
+- php-python
 
 ## Planned workload
 
@@ -47,14 +43,12 @@ Career: Add agentic-engineering evidence to interview stories without overstatin
 | Day 07 | 60 |
 | **Total** | **720 (12h)** |
 
-Assessment time is included.
-
 ## Primary resource IDs
 
 - mcp-intro
 - openai-function-calling-guide
-- openai-developers
+- python-314-docs
 
-## Adaptation rule
+## Integrity
 
-This is a public baseline. Learner-specific scores, remediation, reviews, applications, and future scheduling belong under `.study/`. Historical attempts are preserved; a gate failure creates private remediation instead of erasing later public curriculum.
+Learner-specific outcomes remain private. Exposure technologies must not be presented as production mastery without evidence.

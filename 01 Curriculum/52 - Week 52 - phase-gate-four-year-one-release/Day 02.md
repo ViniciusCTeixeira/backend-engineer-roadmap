@@ -1,83 +1,92 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w52-d02-phase-gate-four-year-one-release
+id: task-w52-d02-v1-1
 week: 52
 day: 2
 date: null
 track: core
 skill_ids:
-- cumulative-backend
-- system-design
-- production-diagnosis
-- algorithms
+- phase-gate-4
+- php-python
+- data-selection
+- senior-readiness
 mode: SOLO
 estimated_minutes: 105
 technology_depth: core
 resource_ids:
-[]
+- python-314-docs
+- fastapi-tutorial
+- fastapi-testing
 deliverables:
-- Closed coding/algorithms practical evidence
-- Week 52 private assessment attempt
-- `platform-year1-release` increment or review
+- Python gate patch
+- tests
+- depth self-boundary
 review_policy: adaptive
 prerequisites:
 - week-51
 status: planned
 ---
 
-# Day 02 — Closed coding/algorithms practical
+# Day 02 — Closed Python/FastAPI Secondary-Backend Practical
 
-## Why this matters
+## Outcome
 
-Demonstrate integrated Year-1 senior-backend capability across coding, backend fundamentals, production/cloud/distributed design, AI engineering, English, and independent judgment.
+> Implement/modify a bounded endpoint/service behavior with tests and explain typing/async/error/data boundaries independently.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
-| Closed gate setup | `SOLO` | 10 |
-| Closed gate practical / reasoning | `SOLO` | 60 |
-| Validation and explanation | `SOLO` | 25 |
-| Daily micro-assessment | `SOLO` | 10 |
+| Primary-source study | `SOLO` | 20 |
+| Hands-on/timed lab | `SOLO` | 40 |
+| Evidence update | `SOLO` | 15 |
+| Technical English | `SOLO` | 10 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
-- No new source; use prior primary sources or frozen evidence.
+- `python-314-docs`
+- `fastapi-tutorial`
+- `fastapi-testing`
 
 ## Activities
 
-### Closed gate setup — 10 min — `SOLO`
+### Primary-source study — 20 min — `SOLO`
 
-Declare closed conditions and create the private immutable attempt record.
+Read only source sections needed for today's reasoning.
 
-### Closed gate practical / reasoning — 60 min — `SOLO`
+### Hands-on/timed lab — 40 min — `SOLO`
 
-Closed coding/algorithms practical
+Implement/modify a bounded endpoint/service behavior with tests and explain typing/async/error/data boundaries independently.
 
-### Validation and explanation — 25 min — `SOLO`
+### Evidence update — 15 min — `SOLO`
 
-Validate the work, state assumptions, and explain decisive trade-offs.
+Preserve reproducible technical/interview evidence.
 
-### Daily micro-assessment — 10 min — `SOLO`
+### Technical English — 10 min — `SOLO`
 
-Freeze a short transfer answer before feedback.
+Explain one decision or failure mode in English.
+
+### Daily assessment — 20 min — `SOLO`
+
+Complete scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Closed coding/algorithms practical evidence
-- Week 52 private assessment attempt
-- `platform-year1-release` increment or review
+- Python gate patch
+- tests
+- depth self-boundary
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 52/Day 02.md`. Store learner responses only in private state.
-
-## Review hook
-
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Run `02 Daily Assessments/Week 52/Day 02.md`. Store attempts privately.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves first-attempt evidence.
+
+## Completion rule
+
+Evidence—not exposure or agent output alone—determines completion.

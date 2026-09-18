@@ -1,67 +1,40 @@
 ---
 type: weekly-simulation
 schema_version: 1
-id: simulation-w46
+id: simulation-w46-v1-1
 week: 46
 mode: HYBRID
 simulation_type: ai-assisted
 skill_ids:
-- agent-planning
-- context-engineering
-- tool-permissions
-- mcp-client-server-concepts
-- approval-boundaries
+- agents
+- mcp
+- tool-boundaries
+- php-python
 estimated_minutes: 75
 status: planned
 score_total: null
 ---
 
-# Week 46 — Agentic Engineering and MCP Simulation
+# Week 46 — Agentic Engineering and MCP Across PHP/Python Boundaries Simulation
 
 ## Rules
 
-- Follow the declared mode exactly.
-- Preserve the first SOLO attempt before feedback or agent use.
-- Do not search for a model solution during scored SOLO phases.
-- Store learner responses privately under `.study/`.
-- Grade using `docs/assessments.md` and critical floors where applicable.
-- No public answer key is stored beside this simulation.
+- Follow the declared mode.
+- Preserve first-attempt SOLO evidence.
+- Keep scored closed sections free of agent/search assistance.
+- Store learner answers privately.
 
-## Phase A — SOLO baseline — 55 min
 
-Solve/design/diagnose a scenario covering:
+## Scenario
 
-- Decompose a repo task into bounded agent work
-- Design context/acceptance criteria that reduce ambiguity
-- Map MCP client/server/tool/resource trust boundaries
-- Build or configure one bounded MCP capability without broad permissions
-
-Freeze the complete baseline.
-
-## Phase B — agent challenge — 10 min
-
-Ask for one alternative, missing risk, or review. Do not allow unbounded edits.
-
-## Phase C — independent review — 10 min
-
-Accept/reject agent claims using evidence and explain the trade-off.
+Demonstrate the week's capability using implementation, diagnosis, code reading, system design, or interview communication evidence.
 
 ## Raw attempt — IMMUTABLE AFTER SUBMISSION
 
 _Private learner record only._
 
-## Assistance declaration
-
-_Private learner record only._
-
 ## Feedback
 
-Append only after submission.
+Append after submission and schedule reviews/remediation from demonstrated gaps.
 
-## Error records created
-
-## Review events created
-
-## Weekly adaptation recommendation
-
-Use `docs/adaptive-learning.md`; never rewrite public curriculum from one learner result.
+No public model solution is stored here.
