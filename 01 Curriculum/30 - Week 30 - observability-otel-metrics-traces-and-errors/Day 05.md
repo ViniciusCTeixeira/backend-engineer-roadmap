@@ -1,98 +1,94 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w30-d05-observability-otel-metrics-traces-and-errors
+id: task-w30-d05-v1-1
 week: 30
 day: 5
 date: null
 track: core
 skill_ids:
 - opentelemetry
-- metrics
-- traces
-- logs
-mode: HYBRID
+- php-observability
+- python-observability
+- incident-diagnosis
+mode: SOLO
 estimated_minutes: 105
-technology_depth: core
+technology_depth: supporting
 resource_ids:
+- aws-cloudwatch-overview
+- otel-python
 - otel-php
-- prometheus-overview
-- grafana-get-started
-- sentry-php-docs
-- datadog-php-tracing
-- newrelic-php-intro
 deliverables:
-- Map Datadog/New Relic concepts to vendor-neutral telemetry evidence
-- Week 30 private assessment attempt
-- `platform-observability` increment or review
+- incident diagnosis
+- observability gap list
 review_policy: adaptive
 prerequisites:
 - week-29
 status: planned
 ---
 
-# Day 05 — Map Datadog/New Relic concepts to vendor-neutral telemetry
+# Day 05 — Run a Cross-Service Incident Diagnosis
 
-## Why this matters
+## Outcome
 
-Build an evidence-oriented observability model using logs, metrics, traces, errors, and service-level questions rather than dashboard vanity.
+> Break one synthetic dependency failure and diagnose from telemetry without random restarts; compare vendor-neutral evidence with CloudWatch concepts.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
-| SOLO baseline | `SOLO` | 25 |
-| Agent challenge | `AI-ASSISTED` | 20 |
-| Independent validation | `SOLO` | 20 |
-| Project / evidence update | `SOLO` | 20 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Primary-source study | `SOLO` | 20 |
+| Hands-on lab | `SOLO` | 40 |
+| Project/evidence update | `SOLO` | 15 |
+| Technical English | `SOLO` | 10 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
+- `aws-cloudwatch-overview`
+- `otel-python`
 - `otel-php`
-- `prometheus-overview`
-- `grafana-get-started`
-- `sentry-php-docs`
-- `datadog-php-tracing`
-- `newrelic-php-intro`
 
 ## Activities
 
-### SOLO baseline — 25 min — `SOLO`
+### Primary-source study — 20 min — `SOLO`
 
-Work on: Map Datadog/New Relic concepts to vendor-neutral telemetry. Freeze your plan/findings before using an agent.
+Read only the sections required for the day's reasoning.
 
-### Agent challenge — 20 min — `AI-ASSISTED`
+### Hands-on lab — 40 min — `SOLO`
 
-Use an agent only after a SOLO baseline; independently verify consequential claims.
+Break one synthetic dependency failure and diagnose from telemetry without random restarts; compare vendor-neutral evidence with CloudWatch concepts.
 
-### Independent validation — 20 min — `SOLO`
+### Project/evidence update — 15 min — `SOLO`
 
-Verify/reject claims using primary sources, tests, measurements, traces, queries, or code evidence.
+Connect the result to Project B or preserve reproducible standalone evidence.
 
-### Project / evidence update — 20 min — `SOLO`
+### Technical English — 10 min — `SOLO`
 
-Apply only validated conclusions to `platform-observability` or a reviewable evidence artifact.
+Explain one decision/assumption/failure mode in English.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete the scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Map Datadog/New Relic concepts to vendor-neutral telemetry evidence
-- Week 30 private assessment attempt
-- `platform-observability` increment or review
+- incident diagnosis
+- observability gap list
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 30/Day 05.md`. Store learner responses only in private state.
+Run `02 Daily Assessments/Week 30/Day 05.md`. Store attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review where justified.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves independent evidence before agent use.
+
+## Completion rule
+
+Required evidence must exist; reading or agent conversation alone is not completion.

@@ -1,83 +1,89 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w21-d07-pragmatic-backend-architecture
+id: task-w21-d07-v1-1
 week: 21
 day: 7
 date: null
 track: core
 skill_ids:
-- application-services
-- repository-trade-offs
-- domain-boundaries
-- dto-value-objects
+- architecture
+- adrs
+- service-boundaries
+- dependency-direction
 mode: SOLO
 estimated_minutes: 60
 technology_depth: core
 resource_ids:
 []
 deliverables:
-- Review, career evidence, and English reflection evidence
-- Week 21 private assessment attempt
-- `platform-architecture` increment or review
+- review events
+- private market/portfolio update
+- English reflection
 review_policy: adaptive
 prerequisites:
 - week-20
 status: planned
 ---
 
-# Day 07 — Review, career evidence, and English reflection
+# Day 07 — Review, Transfer, and Market Evidence
 
-## Why this matters
+## Outcome
 
-Apply application services, boundaries, DTO/value objects, dependency direction, and repository trade-offs without overengineering.
+> Reconstruct key concepts, complete due reviews, and connect evidence to target-role readiness.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
-| Closed recall | `SOLO` | 10 |
+| Active recall | `SOLO` | 10 |
 | Due reviews | `SOLO` | 20 |
-| Career / evidence action | `SOLO` | 20 |
-| Technical English reflection | `SOLO` | 10 |
+| Career/evidence action | `SOLO` | 20 |
+| English reflection | `SOLO` | 10 |
 | **Total** |  | **60** |
 
-## Primary sources
+Assessment time is included.
 
-- No new source; use prior primary sources or frozen evidence.
+## Resources
+
+- Reuse prior primary evidence/resources.
 
 ## Activities
 
-### Closed recall — 10 min — `SOLO`
+### Active recall — 10 min — `SOLO`
 
-Reconstruct one important concept from memory before opening notes.
+Reconstruct the week's most important decision from memory.
 
 ### Due reviews — 20 min — `SOLO`
 
-Complete due D+1/D+7 reviews; create targeted D+30 transfer only when justified.
+Complete due D+1/D+7 reviews before optional new content.
 
-### Career / evidence action — 20 min — `SOLO`
+### Career/evidence action — 20 min — `SOLO`
 
-Start senior-backend interview preparation alongside selective applications.
+Update private market/portfolio evidence without changing public curriculum.
 
-### Technical English reflection — 10 min — `SOLO`
+### English reflection — 10 min — `SOLO`
 
-Defend an architecture decision in English.
+Write a concise evidence-based English reflection.
 
 ## Deliverables
 
-- Review, career evidence, and English reflection evidence
-- Week 21 private assessment attempt
-- `platform-architecture` increment or review
+- review events
+- private market/portfolio update
+- English reflection
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 21/Day 07.md`. Store learner responses only in private state.
+Run `02 Daily Assessments/Week 21/Day 07.md`. Store learner attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review when justified.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves the first independent attempt before agent use.
+
+## Completion rule
+
+Reading or agent conversation alone is not completion; required evidence must exist.

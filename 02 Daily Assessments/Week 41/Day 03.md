@@ -1,70 +1,41 @@
 ---
 type: assessment
 schema_version: 1
-id: assessment-w41-d03-algorithms-arrays-hashing-and-complexity
+id: assessment-w41-d03-v1-1
 date: null
 week: 41
 assessment_type: coding-implementation
 mode: SOLO
 skill_ids:
-- big-o
-- arrays-strings
-- hash-maps-sets
-- two-pointers
+- backend-polyglot
+- go
+- spring-boot
+- typescript-node
 status: planned
 assistance_declared: none
-started_at: null
-submitted_at: null
-graded_at: null
 score_total: null
-score_dimensions:
-  factual_correctness: null
-  reasoning: null
-  practical_execution: null
-  validation: null
-  communication: null
-  english_quality: null
-  ai_supervision: null
-confidence_self_report: null
-grader: null
 estimated_minutes: 20
 ---
 
-# Week 41 / Day 03 Micro-Assessment
+# Week 41 / Day 03 — V1.1 Micro-Assessment
 
-## Instructions snapshot
+## Instructions
 
-- Timebox: **20 minutes**.
-- Scored attempt mode: **SOLO**.
+- Scored attempt is **SOLO**.
 - No LLM, coding agent, answer search, or existing solution during the scored attempt.
-- Freeze the response before feedback.
-- If help is required, mark the attempt `abandoned` before receiving solution-oriented help.
+- Freeze raw response before feedback.
 
 ## Prompts
 
-1. Explain the key invariant, mechanism, or trade-off in **Practice two-pointers and interval/window invariants** without relying on tool/framework vocabulary alone.
-2. What concrete evidence would validate or falsify your conclusion about **Practice two-pointers and interval/window invariants** in a production-oriented backend?
+1. What async error-handling behavior deserves special attention?
+2. Which TypeScript type guarantee disappears at runtime?
 
 ## Raw attempt — IMMUTABLE AFTER SUBMISSION
 
-_Copy this assessment into private state and record the learner response there._
-
-## Assistance declaration — IMMUTABLE AFTER SUBMISSION
-
-Expected during the scored attempt: `none`.
+_Private learner record only._
 
 ## Grading
 
-Grade after submission using `docs/assessments.md` and the `coding-implementation` rubric.
+Use `docs/assessments.md` after submission.
 
-## Feedback
-
-_Append after grading; never replace the raw attempt._
-
-## Error records created
-
-## Review events created
-
-## Regrade history
-
-No solution/model answer is stored in the public roadmap.
+No public model answer is stored here.

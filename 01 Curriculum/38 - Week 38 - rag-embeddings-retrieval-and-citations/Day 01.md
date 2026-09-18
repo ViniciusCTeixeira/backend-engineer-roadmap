@@ -1,90 +1,90 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w38-d01-rag-embeddings-retrieval-and-citations
+id: task-w38-d01-v1-1
 week: 38
 day: 1
 date: null
 track: core
 skill_ids:
+- rag
 - embeddings
-- chunking
-- vector-retrieval
-- grounding
+- retrieval
+- python
 mode: SOLO
 estimated_minutes: 105
 technology_depth: core
 resource_ids:
 - openai-embeddings-guide
-- opensearch-getting-started
 deliverables:
-- Create a small source corpus and chunking strategy evidence
-- Week 38 private assessment attempt
-- `platform-ai-retrieval` increment or review
+- versioned corpus
+- retrieval test cases
 review_policy: adaptive
 prerequisites:
 - week-37
 status: planned
 ---
 
-# Day 01 — Create a small source corpus and chunking strategy
+# Day 01 — Create a Corpus, Chunking Strategy, and Retrieval Acceptance Cases
 
-## Why this matters
+## Outcome
 
-Build and evaluate a small retrieval-augmented workflow using chunking, embeddings, retrieval, grounding, citations, and failure analysis.
+> Define source ownership, chunk boundaries, metadata, positive/hard-negative queries, and citation expectations before embeddings.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
 | Primary-source study | `SOLO` | 20 |
-| Hands-on reasoning / lab | `SOLO` | 40 |
-| Project / evidence update | `SOLO` | 15 |
+| Hands-on lab | `SOLO` | 40 |
+| Project/evidence update | `SOLO` | 15 |
 | Technical English | `SOLO` | 10 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
 - `openai-embeddings-guide`
-- `opensearch-getting-started`
 
 ## Activities
 
 ### Primary-source study — 20 min — `SOLO`
 
-Read the relevant primary source with the specific question: Create a small source corpus and chunking strategy.
+Read only the sections required for the day's reasoning.
 
-### Hands-on reasoning / lab — 40 min — `SOLO`
+### Hands-on lab — 40 min — `SOLO`
 
-Create a small source corpus and chunking strategy. Start with a prediction/design before execution or lookup.
+Define source ownership, chunk boundaries, metadata, positive/hard-negative queries, and citation expectations before embeddings.
 
-### Project / evidence update — 15 min — `SOLO`
+### Project/evidence update — 15 min — `SOLO`
 
-Connect the result to `platform-ai-retrieval` or preserve a reproducible standalone artifact.
+Connect the result to Project B or preserve reproducible standalone evidence.
 
 ### Technical English — 10 min — `SOLO`
 
-Explain a retrieval failure and evidence in English.
+Explain one decision/assumption/failure mode in English.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete the scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Create a small source corpus and chunking strategy evidence
-- Week 38 private assessment attempt
-- `platform-ai-retrieval` increment or review
+- versioned corpus
+- retrieval test cases
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 38/Day 01.md`. Store learner responses only in private state.
+Run `02 Daily Assessments/Week 38/Day 01.md`. Store attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review where justified.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves independent evidence before agent use.
+
+## Completion rule
+
+Required evidence must exist; reading or agent conversation alone is not completion.

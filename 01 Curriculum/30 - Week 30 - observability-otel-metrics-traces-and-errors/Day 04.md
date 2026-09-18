@@ -1,90 +1,94 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w30-d04-observability-otel-metrics-traces-and-errors
+id: task-w30-d04-v1-1
 week: 30
 day: 4
 date: null
 track: core
 skill_ids:
 - opentelemetry
-- metrics
-- traces
-- logs
+- php-observability
+- python-observability
+- incident-diagnosis
 mode: SOLO
 estimated_minutes: 105
-technology_depth: core
+technology_depth: supporting
 resource_ids:
 - sentry-php-docs
-- datadog-php-tracing
+- otel-php
+- otel-python
 deliverables:
-- Use error-event concepts with Sentry and correlate failures evidence
-- Week 30 private assessment attempt
-- `platform-observability` increment or review
+- error-to-trace correlation
+- incident timeline
 review_policy: adaptive
 prerequisites:
 - week-29
 status: planned
 ---
 
-# Day 04 — Use error-event concepts with Sentry and correlate failures
+# Day 04 — Correlate Error Events With Traces and Logs
 
-## Why this matters
+## Outcome
 
-Build an evidence-oriented observability model using logs, metrics, traces, errors, and service-level questions rather than dashboard vanity.
+> Use Sentry/error-event concepts plus application logs/traces to build a causal incident timeline.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
 | Primary-source study | `SOLO` | 20 |
-| Hands-on reasoning / lab | `SOLO` | 40 |
-| Project / evidence update | `SOLO` | 15 |
+| Hands-on lab | `SOLO` | 40 |
+| Project/evidence update | `SOLO` | 15 |
 | Technical English | `SOLO` | 10 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
 - `sentry-php-docs`
-- `datadog-php-tracing`
+- `otel-php`
+- `otel-python`
 
 ## Activities
 
 ### Primary-source study — 20 min — `SOLO`
 
-Read the relevant primary source with the specific question: Use error-event concepts with Sentry and correlate failures.
+Read only the sections required for the day's reasoning.
 
-### Hands-on reasoning / lab — 40 min — `SOLO`
+### Hands-on lab — 40 min — `SOLO`
 
-Use error-event concepts with Sentry and correlate failures. Start with a prediction/design before execution or lookup.
+Use Sentry/error-event concepts plus application logs/traces to build a causal incident timeline.
 
-### Project / evidence update — 15 min — `SOLO`
+### Project/evidence update — 15 min — `SOLO`
 
-Connect the result to `platform-observability` or preserve a reproducible standalone artifact.
+Connect the result to Project B or preserve reproducible standalone evidence.
 
 ### Technical English — 10 min — `SOLO`
 
-Present an incident using logs/metrics/traces in English.
+Explain one decision/assumption/failure mode in English.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete the scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Use error-event concepts with Sentry and correlate failures evidence
-- Week 30 private assessment attempt
-- `platform-observability` increment or review
+- error-to-trace correlation
+- incident timeline
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 30/Day 04.md`. Store learner responses only in private state.
+Run `02 Daily Assessments/Week 30/Day 04.md`. Store attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review where justified.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves independent evidence before agent use.
+
+## Completion rule
+
+Required evidence must exist; reading or agent conversation alone is not completion.

@@ -17,27 +17,52 @@ This repository is not a list of links and it is not a personal study diary. It 
 
 The public repository stays reusable. Learner-specific progress lives in a separate private `.study/` repository that is ignored by this repository.
 
-## V1 target
+## V1.1 target — market-aligned candidate
 
-V1 is optimized for developers who already have meaningful PHP experience and want to strengthen the engineering foundations behind production backend work.
+V1.1 keeps the evidence-driven PHP foundation from v1.0.0 and expands the target toward broader US Senior Backend roles without increasing the 52-week / 12-hour-per-week budget.
 
 The target profile is broader than a framework:
 
 ```text
 Senior Backend Engineer
+
+Primary:
 PHP / Laravel
-MySQL
-Redis
+
+Secondary:
+Python / FastAPI
+
+Data:
+MySQL / PostgreSQL / Redis
+MongoDB / DynamoDB
+
+Platform:
 Linux
-Docker
-AWS
-Distributed Systems
-Testing / Observability / IaC
+Docker / Kubernetes
+AWS / Terraform
+Observability / Messaging
+
+Architecture:
+REST / OpenAPI / gRPC
+Distributed Systems / Reliability
+
+AI:
 AI-assisted Development
-AI Engineering
+LLM / RAG / Evals
+Agents / MCP
+
+Polyglot literacy:
+Go / Java-Spring / TypeScript-Node
 ```
 
 CakePHP is deliberately treated as valuable legacy/modernization experience rather than as the learner's professional identity.
+
+## Release history
+
+- `v1.0.0` — original 52-week PHP-to-Senior-Backend public release.
+- V1.1 — market-alignment candidate on `v1.1-market-alignment`; adds PostgreSQL/Python/FastAPI/MongoDB/DynamoDB/Kubernetes/gRPC and bounded polyglot literacy while preserving the 12h/week ceiling.
+
+The `v1.0.0` tag remains immutable.
 
 ## What you will build
 
@@ -58,10 +83,14 @@ Weeks 1–24 use a synthetic legacy-oriented PHP/CakePHP system to practice:
 Data/API pre-work starts before Week 17. The main implementation runs through the rest of Year 1 and covers:
 
 - Laravel;
-- MySQL and Redis;
-- API security;
+- PostgreSQL and Redis as the Project B primary data path;
+- repeated MySQL evidence through Project A;
+- one bounded Python/FastAPI secondary backend service;
+- MongoDB and DynamoDB data-modeling labs;
+- API security plus REST/OpenAPI/gRPC trade-offs;
 - asynchronous workflows;
 - AWS;
+- application-level Kubernetes operations;
 - observability;
 - Terraform;
 - reliability and distributed-system trade-offs;
@@ -76,11 +105,11 @@ See [`docs/projects.md`](docs/projects.md).
 |---|---|
 | Week 0 | Diagnostic and private-state initialization |
 | 1–8 | PHP/OOP/Composer/Git/Linux/CakePHP foundations |
-| 9–16 | MySQL, Redis, HTTP, APIs, security, testing + Phase Gate 1 |
-| 17–24 | Laravel, modernization, architecture, Docker/Nginx |
-| 25–32 | AWS, queues, delivery, observability, Terraform + Phase Gate 2 |
-| 33–40 | Scalability, distributed systems, LLM/RAG/evals + Phase Gate 3 |
-| 41–46 | Algorithms, interviews, agents, MCP |
+| 9–16 | MySQL + PostgreSQL, Redis, HTTP/REST/gRPC, APIs, security, testing + Phase Gate 1 |
+| 17–24 | Laravel/PostgreSQL, modernization, Docker/Nginx, Python/FastAPI + gRPC |
+| 25–32 | AWS, DynamoDB, queues, observability, Terraform, Kubernetes + Phase Gate 2 |
+| 33–40 | Scalability, MongoDB/NoSQL, distributed systems, Python LLM/RAG/evals + Phase Gate 3 |
+| 41–46 | Polyglot backend literacy, algorithms, interviews, agents, MCP |
 | 47–52 | Remediation, full interview campaign + Phase Gate 4 |
 
 The default workload is **12 hours per week**. Learner-specific adaptation may change future private planning, but it does not silently rewrite public curriculum or historical evidence.
@@ -298,7 +327,7 @@ GitHub Actions is still studied in the curriculum in a dedicated learning contex
 
 Primary/official sources are preferred.
 
-The full V1 learning path must remain possible using free learning resources, excluding optional infrastructure usage.
+The full V1.1 learning path must remain possible using free learning resources, excluding optional infrastructure usage.
 
 Fast-moving resources are re-verified more frequently.
 

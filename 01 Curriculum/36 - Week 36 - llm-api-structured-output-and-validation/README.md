@@ -2,37 +2,33 @@
 type: curriculum-week
 schema_version: 1
 week: 36
-phase: Distributed Systems & AI
+phase: Architecture and AI Engineering
 estimated_minutes: 720
-primary_outcome: "Build a small backend AI feature while treating model output as untrusted probabilistic data and validating structured responses at application boundaries."
+primary_outcome: "Use the Python/FastAPI service to integrate an LLM while treating structured model output as untrusted data."
 project_milestone: "platform-ai-structured"
+v1_1_market_alignment: true
 ---
 
-# Week 36 — LLM Fundamentals, Structured Outputs, and Validation
+# Week 36 — Python LLM Backend, Structured Outputs, and Validation
 
 ## Primary outcome
 
-Build a small backend AI feature while treating model output as untrusted probabilistic data and validating structured responses at application boundaries.
+Use the Python/FastAPI service to integrate an LLM while treating structured model output as untrusted data.
 
-## Matrix alignment
+## V1.1 alignment
 
-Core topics:
-- LLM API fundamentals
-- tokens/context
-- structured outputs
-- JSON Schema
-- latency/cost
-- validation/fallbacks
+This week implements the approved V1.1 market-alignment amendment without increasing the weekly ceiling.
 
 Project milestone: `platform-ai-structured`
 
 Weekly simulation: `HYBRID` / `coding-lab`
 
-English: Explain why structured output is not equivalent to truth in English.
+## Skills
 
-AI/agent: The model is both study subject and tool; preserve non-AI acceptance criteria and validate outputs independently.
-
-Career: Track role-fit evidence and interview/application signals privately.
+- python-ai
+- structured-outputs
+- validation
+- llm-backend
 
 ## Planned workload
 
@@ -47,13 +43,13 @@ Career: Track role-fit evidence and interview/application signals privately.
 | Day 07 | 60 |
 | **Total** | **720 (12h)** |
 
-Assessment time is included.
-
 ## Primary resource IDs
 
+- python-314-docs
+- fastapi-tutorial
 - openai-developers
 - openai-structured-outputs-guide
 
-## Adaptation rule
+## Adaptation and integrity
 
-This is a public baseline. Learner-specific scores, remediation, reviews, applications, and future scheduling belong under `.study/`. Historical attempts are preserved; a gate failure creates private remediation instead of erasing later public curriculum.
+Learner-specific scores/remediation remain private under `.study/`. SOLO evidence is independent; HYBRID work freezes the first attempt before agent use.

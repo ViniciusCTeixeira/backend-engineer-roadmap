@@ -1,90 +1,92 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w51-d03-company-specific-preparation-and-interview-campaign
+id: task-w51-d03-v1-1
 week: 51
 day: 3
 date: null
 track: core
 skill_ids:
-- company-research
-- role-specific-system-design
-- targeted-coding
-- domain-context-prep
+- company-specific-prep
+- market-triggered
+- role-fit
+- interview-strategy
 mode: SOLO
 estimated_minutes: 105
-technology_depth: core
+technology_depth: market-triggered
 resource_ids:
-- builders-library
-- mit-ocw-algorithms
+- postgresql-18-manual
+- mongodb-data-modeling
+- kubernetes-application-basics
+- grpc-docs
 deliverables:
-- Run company-style coding/backend questions evidence
-- Week 51 private assessment attempt
-- `platform-market-hardening` increment or review
+- targeted technical lab
+- interview explanation
 review_policy: adaptive
 prerequisites:
 - week-50
 status: planned
 ---
 
-# Day 03 — Run company-style coding/backend questions
+# Day 03 — Deepen One Data/API/Platform Gap
 
-## Why this matters
+## Outcome
 
-Adapt preparation to evidence from selected companies without mutating the public curriculum from one vacancy or interview.
+> Choose PostgreSQL/MongoDB/DynamoDB/Kubernetes/gRPC or another approved topic from active evidence and run a targeted lab.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
 | Primary-source study | `SOLO` | 20 |
-| Hands-on reasoning / lab | `SOLO` | 40 |
-| Project / evidence update | `SOLO` | 15 |
+| Hands-on/timed lab | `SOLO` | 40 |
+| Evidence update | `SOLO` | 15 |
 | Technical English | `SOLO` | 10 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
-- `builders-library`
-- `mit-ocw-algorithms`
+- `postgresql-18-manual`
+- `mongodb-data-modeling`
+- `kubernetes-application-basics`
+- `grpc-docs`
 
 ## Activities
 
 ### Primary-source study — 20 min — `SOLO`
 
-Read the relevant primary source with the specific question: Run company-style coding/backend questions.
+Read only source sections needed for today's reasoning.
 
-### Hands-on reasoning / lab — 40 min — `SOLO`
+### Hands-on/timed lab — 40 min — `SOLO`
 
-Run company-style coding/backend questions. Start with a prediction/design before execution or lookup.
+Choose PostgreSQL/MongoDB/DynamoDB/Kubernetes/gRPC or another approved topic from active evidence and run a targeted lab.
 
-### Project / evidence update — 15 min — `SOLO`
+### Evidence update — 15 min — `SOLO`
 
-Connect the result to `platform-market-hardening` or preserve a reproducible standalone artifact.
+Preserve reproducible technical/interview evidence.
 
 ### Technical English — 10 min — `SOLO`
 
-Practice company-specific explanations/questions in English.
+Explain one decision or failure mode in English.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Run company-style coding/backend questions evidence
-- Week 51 private assessment attempt
-- `platform-market-hardening` increment or review
+- targeted technical lab
+- interview explanation
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 51/Day 03.md`. Store learner responses only in private state.
-
-## Review hook
-
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Run `02 Daily Assessments/Week 51/Day 03.md`. Store attempts privately.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves first-attempt evidence.
+
+## Completion rule
+
+Evidence—not exposure or agent output alone—determines completion.

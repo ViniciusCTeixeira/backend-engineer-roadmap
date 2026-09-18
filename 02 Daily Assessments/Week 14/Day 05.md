@@ -1,70 +1,46 @@
 ---
 type: assessment
 schema_version: 1
-id: assessment-w14-d05-http-semantics-idempotency-and-api-contracts
+id: assessment-w14-d05-v1-1
 date: null
 week: 14
-assessment_type: ai-assisted
+assessment_type: system-design
 mode: SOLO
 skill_ids:
-- http-semantics
-- idempotency
-- http-caching
-- openapi
+- http
+- rest
+- grpc
+- protobuf
 status: planned
 assistance_declared: none
-started_at: null
-submitted_at: null
-graded_at: null
 score_total: null
-score_dimensions:
-  factual_correctness: null
-  reasoning: null
-  practical_execution: null
-  validation: null
-  communication: null
-  english_quality: null
-  ai_supervision: null
-confidence_self_report: null
-grader: null
 estimated_minutes: 20
 ---
 
-# Week 14 / Day 05 Micro-Assessment
+# Week 14 / Day 05 — V1.1 Micro-Assessment
 
-## Instructions snapshot
+## Instructions
 
-- Timebox: **20 minutes**.
-- Scored attempt mode: **SOLO**.
+- Scored attempt is **SOLO**.
 - No LLM, coding agent, answer search, or existing solution during the scored attempt.
-- Freeze the response before feedback.
-- If help is required, mark the attempt `abandoned` before receiving solution-oriented help.
+- Freeze the raw response before feedback.
+- If help is required, mark the attempt abandoned before receiving solution-oriented help.
 
 ## Prompts
 
-1. What makes OpenAPI a contract rather than generated docs?
-2. Why must an API client not become source of truth for protocol behavior?
+1. What property would justify gRPC for an internal boundary?
+2. When should the same capability remain a normal in-process call?
 
 ## Raw attempt — IMMUTABLE AFTER SUBMISSION
 
 _Copy this assessment into private state and record the learner response there._
 
-## Assistance declaration — IMMUTABLE AFTER SUBMISSION
-
-Expected during the scored attempt: `none`.
-
 ## Grading
 
-Grade after submission using `docs/assessments.md` and the `ai-assisted` rubric.
+Grade after submission using `docs/assessments.md` and the applicable rubric.
 
 ## Feedback
 
-_Append after grading; never replace the raw attempt._
-
-## Error records created
-
-## Review events created
-
-## Regrade history
+Append after submission. Never replace the raw attempt.
 
 No solution/model answer is stored in the public roadmap.

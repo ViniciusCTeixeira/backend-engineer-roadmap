@@ -1,67 +1,47 @@
 ---
 type: weekly-simulation
 schema_version: 1
-id: simulation-w34
+id: simulation-w34-v1-1
 week: 34
 mode: HYBRID
 simulation_type: system-design
 skill_ids:
-- replication
-- partitioning-sharding
-- consistency
-- distributed-caches
-- opensearch-exposure
+- mongodb
+- nosql
+- distributed-data
+- datastore-selection
 estimated_minutes: 75
 status: planned
 score_total: null
 ---
 
-# Week 34 — Distributed Data, Replication, Consistency, and Search Exposure Simulation
+# Week 34 — MongoDB Document Modeling and Distributed NoSQL Trade-offs Simulation
 
 ## Rules
 
-- Follow the declared mode exactly.
-- Preserve the first SOLO attempt before feedback or agent use.
+- Respect the declared mode.
+- Preserve the first SOLO attempt before feedback/agent use.
 - Do not search for a model solution during scored SOLO phases.
-- Store learner responses privately under `.study/`.
-- Grade using `docs/assessments.md` and critical floors where applicable.
-- No public answer key is stored beside this simulation.
+- Store responses privately under `.study/`.
 
-## Phase A — SOLO baseline — 55 min
 
-Solve/design/diagnose a scenario covering:
+## Scenario
 
-- Model primary/replica read-write paths and stale reads
-- Reason about partition keys and hotspot risks
-- Compare consistency/availability trade-offs without slogans
-- Analyze cache/database/search source-of-truth boundaries
+Demonstrate the week's outcome with implementation, diagnosis, or design evidence.
 
-Freeze the complete baseline.
+Required evidence:
 
-## Phase B — agent challenge — 10 min
-
-Ask for one alternative, missing risk, or review. Do not allow unbounded edits.
-
-## Phase C — independent review — 10 min
-
-Accept/reject agent claims using evidence and explain the trade-off.
+- mongodb
+- nosql
+- distributed-data
+- datastore-selection
 
 ## Raw attempt — IMMUTABLE AFTER SUBMISSION
 
 _Private learner record only._
 
-## Assistance declaration
+## Feedback / reviews
 
-_Private learner record only._
+Append only after submission and create spaced reviews from demonstrated gaps.
 
-## Feedback
-
-Append only after submission.
-
-## Error records created
-
-## Review events created
-
-## Weekly adaptation recommendation
-
-Use `docs/adaptive-learning.md`; never rewrite public curriculum from one learner result.
+No public model solution is stored here.

@@ -2,37 +2,33 @@
 type: curriculum-week
 schema_version: 1
 week: 31
-phase: Cloud & Delivery
+phase: Cloud and Delivery
 estimated_minutes: 720
-primary_outcome: "Provision selected AWS/Cloudflare infrastructure reproducibly while understanding Terraform state, plan/apply workflow, modules, drift, and secret boundaries."
+primary_outcome: "Represent selected Project B infrastructure declaratively while understanding state, modules, managed data resources, and secret exposure risks."
 project_milestone: "platform-iac-edge"
+v1_1_market_alignment: true
 ---
 
-# Week 31 — Terraform: State, Modules, AWS/Cloudflare, and Secret Boundaries
+# Week 31 — Terraform for AWS, PostgreSQL, DynamoDB, and Secret Boundaries
 
 ## Primary outcome
 
-Provision selected AWS/Cloudflare infrastructure reproducibly while understanding Terraform state, plan/apply workflow, modules, drift, and secret boundaries.
+Represent selected Project B infrastructure declaratively while understanding state, modules, managed data resources, and secret exposure risks.
 
-## Matrix alignment
+## V1.1 alignment
 
-Core topics:
-- Terraform workflow
-- state
-- modules
-- AWS provider
-- Cloudflare provider
-- Vault concepts
+This week implements the approved V1.1 market-alignment amendment without increasing the weekly ceiling.
 
 Project milestone: `platform-iac-edge`
 
 Weekly simulation: `HYBRID` / `coding-lab`
 
-English: Explain Terraform state and secret risks in English.
+## Skills
 
-AI/agent: Use an agent only after a SOLO baseline; independently verify consequential claims.
-
-Career: Track role-fit evidence and interview/application signals privately.
+- terraform
+- state
+- rds
+- dynamodb
 
 ## Planned workload
 
@@ -47,14 +43,12 @@ Career: Track role-fit evidence and interview/application signals privately.
 | Day 07 | 60 |
 | **Total** | **720 (12h)** |
 
-Assessment time is included.
-
 ## Primary resource IDs
 
 - terraform-aws-get-started
 - cloudflare-terraform
 - vault-docs
 
-## Adaptation rule
+## Adaptation and integrity
 
-This is a public baseline. Learner-specific scores, remediation, reviews, applications, and future scheduling belong under `.study/`. Historical attempts are preserved; a gate failure creates private remediation instead of erasing later public curriculum.
+Learner-specific scores/remediation remain private under `.study/`. SOLO evidence is independent; HYBRID work freezes the first attempt before agent use.

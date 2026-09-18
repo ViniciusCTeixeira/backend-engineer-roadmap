@@ -1,46 +1,47 @@
 ---
 type: weekly-simulation
 schema_version: 1
-id: simulation-w23
+id: simulation-w23-v1-1
 week: 23
 mode: SOLO
-simulation_type: sql-debugging
+simulation_type: coding-lab
 skill_ids:
 - nginx
 - php-fpm
-- fastcgi
-- reverse-proxy
-- health-checks
+- troubleshooting
+- k6
 estimated_minutes: 75
 status: planned
 score_total: null
 ---
 
-# Week 23 — Nginx, PHP-FPM, Reverse Proxy, and Production Request Path Simulation
+# Week 23 — Nginx, PHP-FPM, Production Request Path, and Integration Evidence Simulation
 
 ## Rules
 
 - Follow the declared mode exactly.
-- Preserve the first SOLO attempt before feedback or agent use.
+- Preserve the first SOLO attempt before any agent feedback.
 - Do not search for a model solution during scored SOLO phases.
 - Store learner responses privately under `.study/`.
-- Grade using `docs/assessments.md` and critical floors where applicable.
-- No public answer key is stored beside this simulation.
+- Grade using `docs/assessments.md`.
 
-## Closed integrated scenario — 60 min
 
-Solve/design/diagnose a scenario covering:
+## Scenario
 
-- Build the Nginx→FPM request path
-- Configure document root/front controller/FastCGI safely
-- Reason about timeouts/body limits and upstream failure
-- Correlate access/error/FPM logs
+Demonstrate the week's outcome against a bounded backend scenario that requires implementation, diagnosis, or design evidence rather than terminology recall.
 
-State assumptions and produce evidence or falsifiable validation steps.
+Required evidence:
 
-## Transfer explanation — 15 min
+- nginx
+- php-fpm
+- troubleshooting
+- k6
 
-Explain the key trade-off and one failure mode without notes or agent assistance.
+## Timebox
+
+- 55 min primary implementation/design/diagnosis.
+- 10 min adversarial/edge-case review.
+- 10 min explanation and evidence freeze.
 
 ## Raw attempt — IMMUTABLE AFTER SUBMISSION
 
@@ -50,14 +51,8 @@ _Private learner record only._
 
 _Private learner record only._
 
-## Feedback
+## Feedback / review creation
 
-Append only after submission.
+Append only after submission. Create D+1/D+7/D+30 reviews from demonstrated gaps.
 
-## Error records created
-
-## Review events created
-
-## Weekly adaptation recommendation
-
-Use `docs/adaptive-learning.md`; never rewrite public curriculum from one learner result.
+No public model solution is stored here.

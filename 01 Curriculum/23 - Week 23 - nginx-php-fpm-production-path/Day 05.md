@@ -1,7 +1,7 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w23-d05-nginx-php-fpm-production-path
+id: task-w23-d05-v1-1
 week: 23
 day: 5
 date: null
@@ -9,82 +9,84 @@ track: core
 skill_ids:
 - nginx
 - php-fpm
-- fastcgi
-- reverse-proxy
-mode: HYBRID
+- troubleshooting
+- k6
+mode: SOLO
 estimated_minutes: 105
-technology_depth: core
+technology_depth: supporting
 resource_ids:
-- nginx-beginners-guide
-- docker-get-started
+- k6-get-started
 deliverables:
-- Diagnose a broken local-production stack evidence-first evidence
-- Week 23 private assessment attempt
-- `legacy-containerized + platform-local-production` increment or review
+- k6 scenario
+- baseline report
 review_policy: adaptive
 prerequisites:
 - week-22
 status: planned
 ---
 
-# Day 05 — Diagnose a broken local-production stack evidence-first
+# Day 05 — Establish a Bounded k6 Baseline
 
-## Why this matters
+## Outcome
 
-Run a production-like local request path through Nginx and PHP-FPM with explicit timeouts, health behavior, logs, and least-privilege boundaries.
+> Create one load scenario tied to a latency/error question and record baseline throughput/error behavior before Week 24 changes.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
-| SOLO baseline | `SOLO` | 25 |
-| Agent challenge | `AI-ASSISTED` | 20 |
-| Independent validation | `SOLO` | 20 |
-| Project / evidence update | `SOLO` | 20 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Primary-source study | `SOLO` | 20 |
+| Hands-on lab | `SOLO` | 40 |
+| Project/evidence update | `SOLO` | 15 |
+| Technical English | `SOLO` | 10 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+Assessment time is included.
 
-- `nginx-beginners-guide`
-- `docker-get-started`
+## Resources
+
+- `k6-get-started`
 
 ## Activities
 
-### SOLO baseline — 25 min — `SOLO`
+### Primary-source study — 20 min — `SOLO`
 
-Work on: Diagnose a broken local-production stack evidence-first. Freeze your plan/findings before using an agent.
+Read only the source sections needed to reason about the day's focus.
 
-### Agent challenge — 20 min — `AI-ASSISTED`
+### Hands-on lab — 40 min — `SOLO`
 
-Use an agent only after a SOLO baseline; independently verify consequential claims.
+Create one load scenario tied to a latency/error question and record baseline throughput/error behavior before Week 24 changes.
 
-### Independent validation — 20 min — `SOLO`
+### Project/evidence update — 15 min — `SOLO`
 
-Verify/reject claims using primary sources, tests, measurements, traces, queries, or code evidence.
+Connect the result to Project A/B or preserve a reproducible standalone artifact.
 
-### Project / evidence update — 20 min — `SOLO`
+### Technical English — 10 min — `SOLO`
 
-Apply only validated conclusions to `legacy-containerized + platform-local-production` or a reviewable evidence artifact.
+Explain one important decision, assumption, or failure mode in English.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete the scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Diagnose a broken local-production stack evidence-first evidence
-- Week 23 private assessment attempt
-- `legacy-containerized + platform-local-production` increment or review
+- k6 scenario
+- baseline report
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 23/Day 05.md`. Store learner responses only in private state.
+Run `02 Daily Assessments/Week 23/Day 05.md`. Store learner attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review when justified.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves the first independent attempt before agent use.
+
+## Completion rule
+
+Reading or agent conversation alone is not completion; required evidence must exist.

@@ -4,36 +4,31 @@ schema_version: 1
 week: 10
 phase: Data and Web
 estimated_minutes: 720
-primary_outcome: "Understand B-tree indexing and prove query improvements with EXPLAIN/EXPLAIN ANALYZE and repeatable measurements."
-project_milestone: "legacy-mysql + platform-data-model"
+primary_outcome: "Prove query improvements with engine-specific plans and repeatable measurements instead of assuming index behavior is universal."
+project_milestone: "platform-data-model"
+v1_1_market_alignment: true
 ---
 
-# Week 10 — MySQL Indexes, EXPLAIN, and Evidence-Based Query Performance
+# Week 10 — Indexes, Query Plans, and Benchmarking Across MySQL and PostgreSQL
 
 ## Primary outcome
 
-Understand B-tree indexing and prove query improvements with EXPLAIN/EXPLAIN ANALYZE and repeatable measurements.
+Prove query improvements with engine-specific plans and repeatable measurements instead of assuming index behavior is universal.
 
-## Matrix alignment
+## V1.1 alignment
 
-Core topics:
-- B-tree indexes
-- composite indexes
-- selectivity
-- covering indexes
-- EXPLAIN
-- EXPLAIN ANALYZE
-- benchmarking
+This week implements the approved V1.1 US-market amendment while preserving the 12-hour ceiling.
 
-Project milestone: `legacy-mysql + platform-data-model`
+Project milestone: `platform-data-model`
 
 Weekly simulation: `SOLO` / `sql-debugging`
 
-English: Write an English before/after performance note with query-plan and timing evidence.
+## Core skills
 
-AI/agent: Let an agent propose indexes only after your own prediction; verify suggestions with plans and measurements.
-
-Career: Analyze at least five relevant vacancies; do not change public curriculum from this sample.
+- indexes
+- mysql-explain
+- postgresql-explain
+- benchmarking
 
 ## Planned workload
 
@@ -48,14 +43,18 @@ Career: Analyze at least five relevant vacancies; do not change public curriculu
 | Day 07 | 60 |
 | **Total** | **720 (12h)** |
 
-Assessment time is already included.
+Assessment time is included.
 
 ## Primary resource IDs
 
-- mysql-84-manual
 - mysql-indexes-manual
 - mysql-explain-manual
+- postgresql-explain
 
 ## Adaptation rule
 
-This is a public baseline. Learner-specific remediation, reviews, scores, and future scheduling belong under `.study/`. A phase-gate failure preserves the original attempt and creates targeted private remediation rather than erasing history.
+Public curriculum remains generic. Learner-specific remediation, scores, reviews, and market-triggered depth belong under private `.study/`.
+
+## AI integrity
+
+SOLO evidence must remain independent. HYBRID work freezes the first attempt before agent use and validates consequential claims afterward.

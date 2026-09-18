@@ -1,67 +1,47 @@
 ---
 type: weekly-simulation
 schema_version: 1
-id: simulation-w37
+id: simulation-w37-v1-1
 week: 37
 mode: HYBRID
-simulation_type: coding-lab
+simulation_type: ai-assisted
 skill_ids:
-- function-calling
-- tool-schemas
+- tool-calling
+- python
 - authorization
-- side-effects
-- approval-boundaries
+- human-approval
 estimated_minutes: 75
 status: planned
 score_total: null
 ---
 
-# Week 37 — LLM Tool Calling, Permissions, and Bounded Actions Simulation
+# Week 37 — Python Tool Calling, Authorization, and Bounded Actions Simulation
 
 ## Rules
 
-- Follow the declared mode exactly.
-- Preserve the first SOLO attempt before feedback or agent use.
+- Respect the declared mode.
+- Preserve the first SOLO attempt before feedback/agent use.
 - Do not search for a model solution during scored SOLO phases.
-- Store learner responses privately under `.study/`.
-- Grade using `docs/assessments.md` and critical floors where applicable.
-- No public answer key is stored beside this simulation.
+- Store responses privately under `.study/`.
 
-## Phase A — SOLO baseline — 55 min
 
-Solve/design/diagnose a scenario covering:
+## Scenario
 
-- Design narrow tool schemas from allowed business actions
-- Validate tool arguments and reject unauthorized resource access
-- Separate model proposal from application execution
-- Implement human approval for consequential actions
+Demonstrate the week's outcome with implementation, diagnosis, or design evidence.
 
-Freeze the complete baseline.
+Required evidence:
 
-## Phase B — agent challenge — 10 min
-
-Ask for one alternative, missing risk, or review. Do not allow unbounded edits.
-
-## Phase C — independent review — 10 min
-
-Accept/reject agent claims using evidence and explain the trade-off.
+- tool-calling
+- python
+- authorization
+- human-approval
 
 ## Raw attempt — IMMUTABLE AFTER SUBMISSION
 
 _Private learner record only._
 
-## Assistance declaration
+## Feedback / reviews
 
-_Private learner record only._
+Append only after submission and create spaced reviews from demonstrated gaps.
 
-## Feedback
-
-Append only after submission.
-
-## Error records created
-
-## Review events created
-
-## Weekly adaptation recommendation
-
-Use `docs/adaptive-learning.md`; never rewrite public curriculum from one learner result.
+No public model solution is stored here.

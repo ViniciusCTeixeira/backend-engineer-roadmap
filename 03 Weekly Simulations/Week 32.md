@@ -1,63 +1,47 @@
 ---
 type: weekly-simulation
 schema_version: 1
-id: simulation-w32
+id: simulation-w32-v1-1
 week: 32
 mode: SOLO
-simulation_type: system-design
+simulation_type: coding-lab
 skill_ids:
-- timeouts-retries
-- cloudflare-waf-rate-limiting
-- kubernetes-exposure
-- helm-exposure
-- argo-cd-gitops-exposure
+- kubernetes
+- resilience
+- probes
+- rollouts
 estimated_minutes: 75
 status: planned
 score_total: null
 ---
 
-# Week 32 — Resilience, Cloudflare WAF, Kubernetes/Helm, and GitOps Exposure Simulation
+# Week 32 — Resilience and Kubernetes Application Operations Simulation
 
 ## Rules
 
-- Follow the declared mode exactly.
-- Preserve the first SOLO attempt before feedback or agent use.
+- Respect the declared mode.
+- Preserve the first SOLO attempt before feedback/agent use.
 - Do not search for a model solution during scored SOLO phases.
-- Store learner responses privately under `.study/`.
-- Grade using `docs/assessments.md` and critical floors where applicable.
-- No public answer key is stored beside this simulation.
+- Store responses privately under `.study/`.
 
-## Closed integrated scenario — 60 min
 
-Solve/design/diagnose a scenario covering:
+## Scenario
 
-- Design edge/origin rate-limit and WAF boundaries
-- Reason about timeout/retry budgets and failure amplification
-- Map Docker Compose concepts to Kubernetes objects
-- Inspect Helm values/templates in a bounded lab
+Demonstrate the week's outcome with implementation, diagnosis, or design evidence.
 
-State assumptions and produce evidence or falsifiable validation steps.
+Required evidence:
 
-## Transfer explanation — 15 min
-
-Explain the key trade-off and one failure mode without notes or agent assistance.
+- kubernetes
+- resilience
+- probes
+- rollouts
 
 ## Raw attempt — IMMUTABLE AFTER SUBMISSION
 
 _Private learner record only._
 
-## Assistance declaration
+## Feedback / reviews
 
-_Private learner record only._
+Append only after submission and create spaced reviews from demonstrated gaps.
 
-## Feedback
-
-Append only after submission.
-
-## Error records created
-
-## Review events created
-
-## Weekly adaptation recommendation
-
-Use `docs/adaptive-learning.md`; never rewrite public curriculum from one learner result.
+No public model solution is stored here.

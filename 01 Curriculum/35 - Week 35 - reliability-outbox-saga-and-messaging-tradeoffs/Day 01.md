@@ -1,90 +1,90 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w35-d01-reliability-outbox-saga-and-messaging-tradeoffs
+id: task-w35-d01-v1-1
 week: 35
 day: 1
 date: null
 track: core
 skill_ids:
-- transactional-outbox
-- saga-compensation
+- outbox
+- saga
 - idempotency
-- retry-storms
+- failure-modes
 mode: SOLO
 estimated_minutes: 105
 technology_depth: core
 resource_ids:
 - builders-library
-- aws-sqs-overview
 deliverables:
-- Derive the dual-write problem from a concrete workflow evidence
-- Week 35 private assessment attempt
-- `platform-scale` increment or review
+- dual-write timeline
+- invariant list
 review_policy: adaptive
 prerequisites:
 - week-34
 status: planned
 ---
 
-# Day 01 — Derive the dual-write problem from a concrete workflow
+# Day 01 — Derive the Dual-Write Problem From a Real Workflow
 
-## Why this matters
+## Outcome
 
-Design reliable multi-step workflows using explicit failure semantics, transactional outbox thinking, sagas/compensation, idempotency, and broker trade-offs.
+> Model a PostgreSQL state change plus message/publication and show the inconsistent outcomes without an atomic strategy.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
 | Primary-source study | `SOLO` | 20 |
-| Hands-on reasoning / lab | `SOLO` | 40 |
-| Project / evidence update | `SOLO` | 15 |
+| Hands-on lab | `SOLO` | 40 |
+| Project/evidence update | `SOLO` | 15 |
 | Technical English | `SOLO` | 10 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
 - `builders-library`
-- `aws-sqs-overview`
 
 ## Activities
 
 ### Primary-source study — 20 min — `SOLO`
 
-Read the relevant primary source with the specific question: Derive the dual-write problem from a concrete workflow.
+Read only the sections required for the day's reasoning.
 
-### Hands-on reasoning / lab — 40 min — `SOLO`
+### Hands-on lab — 40 min — `SOLO`
 
-Derive the dual-write problem from a concrete workflow. Start with a prediction/design before execution or lookup.
+Model a PostgreSQL state change plus message/publication and show the inconsistent outcomes without an atomic strategy.
 
-### Project / evidence update — 15 min — `SOLO`
+### Project/evidence update — 15 min — `SOLO`
 
-Connect the result to `platform-scale` or preserve a reproducible standalone artifact.
+Connect the result to Project B or preserve reproducible standalone evidence.
 
 ### Technical English — 10 min — `SOLO`
 
-Explain outbox vs saga responsibilities in English.
+Explain one decision/assumption/failure mode in English.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete the scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Derive the dual-write problem from a concrete workflow evidence
-- Week 35 private assessment attempt
-- `platform-scale` increment or review
+- dual-write timeline
+- invariant list
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 35/Day 01.md`. Store learner responses only in private state.
+Run `02 Daily Assessments/Week 35/Day 01.md`. Store attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review where justified.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves independent evidence before agent use.
+
+## Completion rule
+
+Required evidence must exist; reading or agent conversation alone is not completion.

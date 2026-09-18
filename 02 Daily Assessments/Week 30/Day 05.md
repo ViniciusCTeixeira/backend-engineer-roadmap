@@ -1,70 +1,45 @@
 ---
 type: assessment
 schema_version: 1
-id: assessment-w30-d05-observability-otel-metrics-traces-and-errors
+id: assessment-w30-d05-v1-1
 date: null
 week: 30
 assessment_type: sql-debugging
 mode: SOLO
 skill_ids:
 - opentelemetry
-- metrics
-- traces
-- logs
+- php-observability
+- python-observability
+- incident-diagnosis
 status: planned
 assistance_declared: none
-started_at: null
-submitted_at: null
-graded_at: null
 score_total: null
-score_dimensions:
-  factual_correctness: null
-  reasoning: null
-  practical_execution: null
-  validation: null
-  communication: null
-  english_quality: null
-  ai_supervision: null
-confidence_self_report: null
-grader: null
 estimated_minutes: 20
 ---
 
-# Week 30 / Day 05 Micro-Assessment
+# Week 30 / Day 05 — V1.1 Micro-Assessment
 
-## Instructions snapshot
+## Instructions
 
-- Timebox: **20 minutes**.
-- Scored attempt mode: **SOLO**.
+- Scored attempt is **SOLO**.
 - No LLM, coding agent, answer search, or existing solution during the scored attempt.
-- Freeze the response before feedback.
-- If help is required, mark the attempt `abandoned` before receiving solution-oriented help.
+- Freeze the raw response before feedback.
 
 ## Prompts
 
-1. Explain the key invariant, mechanism, or trade-off in **Map Datadog/New Relic concepts to vendor-neutral telemetry** without relying on tool/framework vocabulary alone.
-2. What concrete evidence would validate or falsify your conclusion about **Map Datadog/New Relic concepts to vendor-neutral telemetry** in a production-oriented backend?
+1. Which signal first indicated user impact?
+2. What missing telemetry slowed diagnosis?
 
 ## Raw attempt — IMMUTABLE AFTER SUBMISSION
 
-_Copy this assessment into private state and record the learner response there._
-
-## Assistance declaration — IMMUTABLE AFTER SUBMISSION
-
-Expected during the scored attempt: `none`.
+_Copy this assessment into private state._
 
 ## Grading
 
-Grade after submission using `docs/assessments.md` and the `sql-debugging` rubric.
+Use `docs/assessments.md` after submission.
 
 ## Feedback
 
-_Append after grading; never replace the raw attempt._
-
-## Error records created
-
-## Review events created
-
-## Regrade history
+Append after submission; never replace the raw attempt.
 
 No solution/model answer is stored in the public roadmap.

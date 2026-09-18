@@ -1,70 +1,41 @@
 ---
 type: assessment
 schema_version: 1
-id: assessment-w52-d05-phase-gate-four-year-one-release
+id: assessment-w52-d05-v1-1
 date: null
 week: 52
-assessment_type: conceptual
+assessment_type: system-design
 mode: SOLO
 skill_ids:
-- cumulative-backend
-- system-design
-- production-diagnosis
-- algorithms
+- phase-gate-4
+- php-python
+- data-selection
+- senior-readiness
 status: planned
 assistance_declared: none
-started_at: null
-submitted_at: null
-graded_at: null
 score_total: null
-score_dimensions:
-  factual_correctness: null
-  reasoning: null
-  practical_execution: null
-  validation: null
-  communication: null
-  english_quality: null
-  ai_supervision: null
-confidence_self_report: null
-grader: null
 estimated_minutes: 20
 ---
 
-# Week 52 / Day 05 Micro-Assessment
+# Week 52 / Day 05 — V1.1 Micro-Assessment
 
-## Instructions snapshot
+## Instructions
 
-- Timebox: **20 minutes**.
-- Scored attempt mode: **SOLO**.
+- Scored attempt is **SOLO**.
 - No LLM, coding agent, answer search, or existing solution during the scored attempt.
-- Freeze the response before feedback.
-- If help is required, mark the attempt `abandoned` before receiving solution-oriented help.
+- Freeze raw response before feedback.
 
 ## Prompts
 
-1. Explain the key invariant, mechanism, or trade-off in **Portfolio/evidence defense and Year-1 retrospective** without relying on tool/framework vocabulary alone.
-2. Identify the most important prerequisite dependency tested by **Portfolio/evidence defense and Year-1 retrospective** and the critical evidence/floor that would trigger remediation.
+1. Which control must remain outside model output?
+2. What evidence makes an AI feature release-ready?
 
 ## Raw attempt — IMMUTABLE AFTER SUBMISSION
 
-_Copy this assessment into private state and record the learner response there._
-
-## Assistance declaration — IMMUTABLE AFTER SUBMISSION
-
-Expected during the scored attempt: `none`.
+_Private learner record only._
 
 ## Grading
 
-Grade after submission using `docs/assessments.md` and the `conceptual` rubric.
+Use `docs/assessments.md` after submission.
 
-## Feedback
-
-_Append after grading; never replace the raw attempt._
-
-## Error records created
-
-## Review events created
-
-## Regrade history
-
-No solution/model answer is stored in the public roadmap.
+No public model answer is stored here.

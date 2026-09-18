@@ -1,15 +1,15 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w10-d07-mysql-indexes-explain-and-benchmarking
+id: task-w10-d07-v1-1
 week: 10
 day: 7
 date: null
 track: core
 skill_ids:
-- mysql-indexes
-- explain
-- query-plans
+- indexes
+- mysql-explain
+- postgresql-explain
 - benchmarking
 mode: SOLO
 estimated_minutes: 60
@@ -18,27 +18,27 @@ resource_ids:
 []
 deliverables:
 - review events
-- 5+ private vacancy analyses
-- English evidence statement
+- private market/portfolio update
+- English reflection
 review_policy: adaptive
 prerequisites:
 - week-09
 status: planned
 ---
 
-# Day 07 — Review Query Performance and Analyze Five Vacancies
+# Day 07 — Review, Transfer, and Market Evidence
 
 ## Outcome
 
-> Review indexing/EXPLAIN errors and analyze at least five target roles for database depth/ownership signals.
+> Reconstruct key concepts, complete due reviews, and connect evidence to target-role readiness.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
-| Daily micro-assessment | `SOLO` | 10 |
+| Active recall | `SOLO` | 10 |
 | Due reviews | `SOLO` | 20 |
-| Career / evidence action | `SOLO` | 20 |
+| Career/evidence action | `SOLO` | 20 |
 | English reflection | `SOLO` | 10 |
 | **Total** |  | **60** |
 
@@ -46,33 +46,31 @@ Assessment time is included.
 
 ## Resources
 
-- No new source; use prior primary sources / frozen evidence.
-
-Resource IDs resolve through `09 Resources/catalog.yaml`.
+- Reuse prior primary evidence/resources.
 
 ## Activities
 
-### Daily micro-assessment — 10 min — `SOLO`
+### Active recall — 10 min — `SOLO`
 
-Reconstruct a key concept from memory.
+Reconstruct the week's most important decision from memory.
 
 ### Due reviews — 20 min — `SOLO`
 
 Complete due D+1/D+7 reviews before optional new content.
 
-### Career / evidence action — 20 min — `SOLO`
+### Career/evidence action — 20 min — `SOLO`
 
-Complete the week's private career/evidence action without changing public curriculum.
+Update private market/portfolio evidence without changing public curriculum.
 
 ### English reflection — 10 min — `SOLO`
 
-Write a concise English reflection grounded in evidence.
+Write a concise evidence-based English reflection.
 
 ## Deliverables
 
 - review events
-- 5+ private vacancy analyses
-- English evidence statement
+- private market/portfolio update
+- English reflection
 
 ## Daily assessment
 
@@ -80,11 +78,11 @@ Run `02 Daily Assessments/Week 10/Day 07.md`. Store learner attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; add D+30 transfer review when justified. Gate remediation is private and preserves the raw attempt.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review when justified.
 
 ## AI integrity
 
-Scored attempts are SOLO. HYBRID activities freeze the SOLO baseline before agent use and require independent validation afterward.
+Scored attempts are SOLO. HYBRID work preserves the first independent attempt before agent use.
 
 ## Completion rule
 

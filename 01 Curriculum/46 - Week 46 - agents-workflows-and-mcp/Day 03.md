@@ -1,90 +1,88 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w46-d03-agents-workflows-and-mcp
+id: task-w46-d03-v1-1
 week: 46
 day: 3
 date: null
 track: core
 skill_ids:
-- agent-planning
-- context-engineering
-- tool-permissions
-- mcp-client-server-concepts
+- agents
+- mcp
+- tool-boundaries
+- php-python
 mode: SOLO
 estimated_minutes: 105
 technology_depth: core
 resource_ids:
-- openai-developers
 - mcp-intro
+- python-314-docs
 deliverables:
-- Map MCP client/server/tool/resource trust boundaries evidence
-- Week 46 private assessment attempt
-- `platform-mcp` increment or review
+- bounded MCP/tool implementation
+- contract tests
 review_policy: adaptive
 prerequisites:
 - week-45
 status: planned
 ---
 
-# Day 03 — Map MCP client/server/tool/resource trust boundaries
+# Day 03 — Implement the Capability in PHP or Python
 
-## Why this matters
+## Outcome
 
-Build and review bounded agent workflows with tool permissions, MCP capabilities, context management, approval boundaries, and post-agent independent verification.
+> Choose the stack from ownership/ecosystem fit and implement a bounded client/server or equivalent tool path with validation.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
 | Primary-source study | `SOLO` | 20 |
-| Hands-on reasoning / lab | `SOLO` | 40 |
-| Project / evidence update | `SOLO` | 15 |
+| Hands-on/timed lab | `SOLO` | 40 |
+| Evidence update | `SOLO` | 15 |
 | Technical English | `SOLO` | 10 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
-- `openai-developers`
 - `mcp-intro`
+- `python-314-docs`
 
 ## Activities
 
 ### Primary-source study — 20 min — `SOLO`
 
-Read the relevant primary source with the specific question: Map MCP client/server/tool/resource trust boundaries.
+Read only source sections needed for today's reasoning.
 
-### Hands-on reasoning / lab — 40 min — `SOLO`
+### Hands-on/timed lab — 40 min — `SOLO`
 
-Map MCP client/server/tool/resource trust boundaries. Start with a prediction/design before execution or lookup.
+Choose the stack from ownership/ecosystem fit and implement a bounded client/server or equivalent tool path with validation.
 
-### Project / evidence update — 15 min — `SOLO`
+### Evidence update — 15 min — `SOLO`
 
-Connect the result to `platform-mcp` or preserve a reproducible standalone artifact.
+Preserve reproducible technical/interview evidence.
 
 ### Technical English — 10 min — `SOLO`
 
-Explain an MCP/agent permission boundary in English.
+Explain one decision or failure mode in English.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Map MCP client/server/tool/resource trust boundaries evidence
-- Week 46 private assessment attempt
-- `platform-mcp` increment or review
+- bounded MCP/tool implementation
+- contract tests
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 46/Day 03.md`. Store learner responses only in private state.
-
-## Review hook
-
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Run `02 Daily Assessments/Week 46/Day 03.md`. Store attempts privately.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves first-attempt evidence.
+
+## Completion rule
+
+Evidence—not exposure or agent output alone—determines completion.

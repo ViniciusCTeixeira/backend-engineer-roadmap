@@ -2,37 +2,33 @@
 type: curriculum-week
 schema_version: 1
 week: 27
-phase: Cloud & Delivery
+phase: Cloud and Delivery
 estimated_minutes: 720
-primary_outcome: "Map the production backend onto managed AWS runtime components with explicit availability, health, data, cache, scaling, and cost trade-offs."
+primary_outcome: "Map the backend onto managed AWS runtime components and design one DynamoDB workload from explicit access patterns."
 project_milestone: "platform-aws-foundation"
+v1_1_market_alignment: true
 ---
 
-# Week 27 — AWS Runtime: ECS/Fargate, ALB, RDS, ElastiCache, and Scaling
+# Week 27 — AWS Runtime, PostgreSQL RDS, ElastiCache, DynamoDB, and Scaling
 
 ## Primary outcome
 
-Map the production backend onto managed AWS runtime components with explicit availability, health, data, cache, scaling, and cost trade-offs.
+Map the backend onto managed AWS runtime components and design one DynamoDB workload from explicit access patterns.
 
-## Matrix alignment
+## V1.1 alignment
 
-Core topics:
-- ECS/Fargate
-- ALB
-- RDS
-- ElastiCache
-- Auto Scaling
-- health/availability
+This week implements the approved V1.1 market-alignment amendment without increasing the weekly ceiling.
 
 Project milestone: `platform-aws-foundation`
 
 Weekly simulation: `HYBRID` / `system-design`
 
-English: Explain the managed-AWS runtime architecture in English.
+## Skills
 
-AI/agent: Use an agent only after a SOLO baseline; independently verify consequential claims.
-
-Career: Track role-fit evidence and interview/application signals privately.
+- aws-runtime
+- rds-postgresql
+- dynamodb
+- autoscaling
 
 ## Planned workload
 
@@ -47,16 +43,15 @@ Career: Track role-fit evidence and interview/application signals privately.
 | Day 07 | 60 |
 | **Total** | **720 (12h)** |
 
-Assessment time is included.
-
 ## Primary resource IDs
 
 - aws-ecs-overview
 - aws-alb-overview
 - aws-rds-overview
 - aws-elasticache-overview
+- aws-dynamodb-data-modeling
 - aws-ec2-autoscaling
 
-## Adaptation rule
+## Adaptation and integrity
 
-This is a public baseline. Learner-specific scores, remediation, reviews, applications, and future scheduling belong under `.study/`. Historical attempts are preserved; a gate failure creates private remediation instead of erasing later public curriculum.
+Learner-specific scores/remediation remain private under `.study/`. SOLO evidence is independent; HYBRID work freezes the first attempt before agent use.

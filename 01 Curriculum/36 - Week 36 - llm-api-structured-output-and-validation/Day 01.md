@@ -1,90 +1,92 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w36-d01-llm-api-structured-output-and-validation
+id: task-w36-d01-v1-1
 week: 36
 day: 1
 date: null
 track: core
 skill_ids:
-- llm-api-fundamentals
-- tokens-context
+- python-ai
 - structured-outputs
-- json-schema
+- validation
+- llm-backend
 mode: SOLO
 estimated_minutes: 105
 technology_depth: core
 resource_ids:
-- openai-developers
 - openai-structured-outputs-guide
+- fastapi-tutorial
 deliverables:
-- Map request/model/output lifecycle and failure modes evidence
-- Week 36 private assessment attempt
-- `platform-ai-structured` increment or review
+- AI contract
+- failure taxonomy
 review_policy: adaptive
 prerequisites:
 - week-35
 status: planned
 ---
 
-# Day 01 — Map request/model/output lifecycle and failure modes
+# Day 01 — Define the AI Backend Contract Before Calling a Model
 
-## Why this matters
+## Outcome
 
-Build a small backend AI feature while treating model output as untrusted probabilistic data and validating structured responses at application boundaries.
+> Specify input/output schema, deterministic pre/postconditions, timeout/cost/privacy boundaries, and fallback behavior.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
 | Primary-source study | `SOLO` | 20 |
-| Hands-on reasoning / lab | `SOLO` | 40 |
-| Project / evidence update | `SOLO` | 15 |
+| Hands-on lab | `SOLO` | 40 |
+| Project/evidence update | `SOLO` | 15 |
 | Technical English | `SOLO` | 10 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
-- `openai-developers`
 - `openai-structured-outputs-guide`
+- `fastapi-tutorial`
 
 ## Activities
 
 ### Primary-source study — 20 min — `SOLO`
 
-Read the relevant primary source with the specific question: Map request/model/output lifecycle and failure modes.
+Read only the sections required for the day's reasoning.
 
-### Hands-on reasoning / lab — 40 min — `SOLO`
+### Hands-on lab — 40 min — `SOLO`
 
-Map request/model/output lifecycle and failure modes. Start with a prediction/design before execution or lookup.
+Specify input/output schema, deterministic pre/postconditions, timeout/cost/privacy boundaries, and fallback behavior.
 
-### Project / evidence update — 15 min — `SOLO`
+### Project/evidence update — 15 min — `SOLO`
 
-Connect the result to `platform-ai-structured` or preserve a reproducible standalone artifact.
+Connect the result to Project B or preserve reproducible standalone evidence.
 
 ### Technical English — 10 min — `SOLO`
 
-Explain why structured output is not equivalent to truth in English.
+Explain one decision/assumption/failure mode in English.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete the scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Map request/model/output lifecycle and failure modes evidence
-- Week 36 private assessment attempt
-- `platform-ai-structured` increment or review
+- AI contract
+- failure taxonomy
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 36/Day 01.md`. Store learner responses only in private state.
+Run `02 Daily Assessments/Week 36/Day 01.md`. Store attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review where justified.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves independent evidence before agent use.
+
+## Completion rule
+
+Required evidence must exist; reading or agent conversation alone is not completion.

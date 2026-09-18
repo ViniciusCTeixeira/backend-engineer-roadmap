@@ -1,16 +1,16 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w35-d06-reliability-outbox-saga-and-messaging-tradeoffs
+id: task-w35-d06-v1-1
 week: 35
 day: 6
 date: null
 track: core
 skill_ids:
-- transactional-outbox
-- saga-compensation
+- outbox
+- saga
 - idempotency
-- retry-storms
+- failure-modes
 mode: SOLO
 estimated_minutes: 135
 technology_depth: core
@@ -20,20 +20,20 @@ resource_ids:
 - rabbitmq-tutorials
 - kafka-quickstart
 deliverables:
-- Weekly integration / simulation evidence
-- Week 35 private assessment attempt
-- `platform-scale` increment or review
+- Week 35 simulation
+- project evidence
+- English explanation
 review_policy: adaptive
 prerequisites:
 - week-34
 status: planned
 ---
 
-# Day 06 — Weekly integration / simulation
+# Day 06 — Run the Weekly V1.1 Simulation
 
-## Why this matters
+## Outcome
 
-Design reliable multi-step workflows using explicit failure semantics, transactional outbox thinking, sagas/compensation, idempotency, and broker trade-offs.
+> Integrate the week's skills under the declared simulation mode.
 
 ## Timebox
 
@@ -41,12 +41,12 @@ Design reliable multi-step workflows using explicit failure semantics, transacti
 |---|---|---:|
 | Confidence calibration | `SOLO` | 10 |
 | Weekly simulation | `SOLO` | 75 |
-| Project milestone evidence | `SOLO` | 25 |
-| Transfer prompt | `SOLO` | 10 |
+| Project milestone | `SOLO` | 25 |
+| Transfer assessment | `SOLO` | 10 |
 | Technical English | `SOLO` | 15 |
 | **Total** |  | **135** |
 
-## Primary sources
+## Resources
 
 - `builders-library`
 - `aws-sqs-overview`
@@ -57,38 +57,42 @@ Design reliable multi-step workflows using explicit failure semantics, transacti
 
 ### Confidence calibration — 10 min — `SOLO`
 
-Record confidence before the weekly simulation.
+Rate the week's core skills before simulation.
 
 ### Weekly simulation — 75 min — `SOLO`
 
-Run `03 Weekly Simulations/Week 35.md`; preserve any required pre-agent SOLO evidence.
+Run `03 Weekly Simulations/Week 35.md` and preserve the SOLO baseline.
 
-### Project milestone evidence — 25 min — `SOLO`
+### Project milestone — 25 min — `SOLO`
 
-Finalize this week’s `platform-scale` evidence and reproducible validation.
+Finalize reproducible V1.1 project evidence.
 
-### Transfer prompt — 10 min — `SOLO`
+### Transfer assessment — 10 min — `SOLO`
 
-Complete the daily transfer prompt without assistance.
+Complete the transfer prompt without assistance.
 
 ### Technical English — 15 min — `SOLO`
 
-Explain outbox vs saga responsibilities in English.
+Explain the week's most important trade-off in English.
 
 ## Deliverables
 
-- Weekly integration / simulation evidence
-- Week 35 private assessment attempt
-- `platform-scale` increment or review
+- Week 35 simulation
+- project evidence
+- English explanation
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 35/Day 06.md`. Store learner responses only in private state.
+Run `02 Daily Assessments/Week 35/Day 06.md`. Store attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review where justified.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves independent evidence before agent use.
+
+## Completion rule
+
+Required evidence must exist; reading or agent conversation alone is not completion.

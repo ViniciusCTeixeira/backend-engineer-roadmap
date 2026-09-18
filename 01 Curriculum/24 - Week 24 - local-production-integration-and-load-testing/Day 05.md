@@ -1,38 +1,37 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w24-d05-local-production-integration-and-load-testing
+id: task-w24-d05-v1-1
 week: 24
 day: 5
 date: null
 track: core
 skill_ids:
-- integration
-- docker-compose
-- release-checklist
-- k6
+- python
+- fastapi
+- grpc
+- secondary-backend
 mode: HYBRID
 estimated_minutes: 105
 technology_depth: core
 resource_ids:
-- docker-get-started
-- nginx-beginners-guide
-- k6-get-started
+- grpc-docs
+- fastapi-testing
 deliverables:
-- Package a reproducible local-production release artifact evidence
-- Week 24 private assessment attempt
-- `legacy-containerized + platform-local-production` increment or review
+- Laravel-Python integration
+- REST-vs-gRPC ADR
+- agent review
 review_policy: adaptive
 prerequisites:
 - week-23
 status: planned
 ---
 
-# Day 05 — Package a reproducible local-production release artifact
+# Day 05 — Integrate With Laravel and Review the Service Boundary
 
-## Why this matters
+## Outcome
 
-Integrate Docker/Nginx/PHP-FPM/MySQL/Redis into a reproducible local-production stack and measure behavior with bounded load tests.
+> Connect one justified call path, compare REST vs gRPC, add observability hooks, then ask an agent to critique after the SOLO implementation baseline.
 
 ## Timebox
 
@@ -41,52 +40,57 @@ Integrate Docker/Nginx/PHP-FPM/MySQL/Redis into a reproducible local-production 
 | SOLO baseline | `SOLO` | 25 |
 | Agent challenge | `AI-ASSISTED` | 20 |
 | Independent validation | `SOLO` | 20 |
-| Project / evidence update | `SOLO` | 20 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Project evidence | `SOLO` | 20 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+Assessment time is included.
 
-- `docker-get-started`
-- `nginx-beginners-guide`
-- `k6-get-started`
+## Resources
+
+- `grpc-docs`
+- `fastapi-testing`
 
 ## Activities
 
 ### SOLO baseline — 25 min — `SOLO`
 
-Work on: Package a reproducible local-production release artifact. Freeze your plan/findings before using an agent.
+Connect one justified call path, compare REST vs gRPC, add observability hooks, then ask an agent to critique after the SOLO implementation baseline. Freeze your plan/findings before agent use.
 
 ### Agent challenge — 20 min — `AI-ASSISTED`
 
-Use an agent only after a SOLO baseline; independently verify consequential claims.
+Ask for alternatives/critique only; require explicit assumptions.
 
 ### Independent validation — 20 min — `SOLO`
 
-Verify/reject claims using primary sources, tests, measurements, traces, queries, or code evidence.
+Verify consequential claims with code, tests, SQL, traces, measurements, or primary sources.
 
-### Project / evidence update — 20 min — `SOLO`
+### Project evidence — 20 min — `SOLO`
 
-Apply only validated conclusions to `legacy-containerized + platform-local-production` or a reviewable evidence artifact.
+Apply only validated conclusions and preserve evidence.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete the scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Package a reproducible local-production release artifact evidence
-- Week 24 private assessment attempt
-- `legacy-containerized + platform-local-production` increment or review
+- Laravel-Python integration
+- REST-vs-gRPC ADR
+- agent review
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 24/Day 05.md`. Store learner responses only in private state.
+Run `02 Daily Assessments/Week 24/Day 05.md`. Store learner attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review when justified.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves the first independent attempt before agent use.
+
+## Completion rule
+
+Reading or agent conversation alone is not completion; required evidence must exist.

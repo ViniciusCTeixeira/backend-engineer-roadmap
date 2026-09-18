@@ -1,5 +1,5 @@
 schema_version: 1
-last_full_review: '2026-09-15'
+last_full_review: '2026-09-18'
 resources:
 - id: php-supported-versions
   title: PHP Supported Versions
@@ -287,6 +287,7 @@ resources:
   - aws
   - rds
   - mysql
+  - postgresql
   type: docs
   source_authority: official
   language: en
@@ -294,7 +295,7 @@ resources:
   last_verified: '2026-09-17'
   version_scope: current AWS docs
   technology_depth: core
-  notes: Connect managed-database trade-offs back to MySQL concepts.
+  notes: Connect managed relational-database choices back to MySQL/PostgreSQL concepts and project requirements.
 - id: aws-sqs-overview
   title: AWS — Amazon SQS Developer Guide
   url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html
@@ -499,10 +500,10 @@ resources:
   source_authority: official
   language: en
   cost: free
-  last_verified: '2026-09-17'
+  last_verified: '2026-09-18'
   version_scope: current Kubernetes docs
-  technology_depth: professional-exposure
-  notes: Exposure lab only in V1 unless market signal promotes depth.
+  technology_depth: supporting
+  notes: V1.1 supporting lab covers normal backend application deployment, probes, resources, rollouts, logs, and events; cluster administration remains out of scope.
 - id: helm-quickstart
   title: Helm — Quickstart Guide
   url: https://helm.sh/docs/intro/quickstart/
@@ -1363,3 +1364,319 @@ resources:
   version_scope: MIT OCW 6.006 stable fundamentals
   technology_depth: core
   notes: Use selected notes/problems; interview practice remains explanation-first.
+- id: postgresql-18-manual
+  title: PostgreSQL 18 Documentation
+  url: https://www.postgresql.org/docs/18/
+  topic_ids:
+  - postgresql
+  - sql
+  - indexes
+  - transactions
+  - query-plans
+  type: reference
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-18'
+  version_scope: PostgreSQL 18.6 current supported release line
+  technology_depth: core
+  notes: Primary V1.1 PostgreSQL source; Project B uses PostgreSQL for repeated practical evidence.
+- id: postgresql-explain
+  title: PostgreSQL 18 — Using EXPLAIN
+  url: https://www.postgresql.org/docs/18/using-explain.html
+  topic_ids:
+  - postgresql
+  - explain
+  - query-plans
+  - performance
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-18'
+  version_scope: PostgreSQL 18.6
+  technology_depth: core
+  notes: Compare planner evidence with MySQL EXPLAIN without assuming identical optimizer behavior.
+- id: postgresql-mvcc
+  title: PostgreSQL 18 — Concurrency Control
+  url: https://www.postgresql.org/docs/18/mvcc.html
+  topic_ids:
+  - postgresql
+  - mvcc
+  - transactions
+  - isolation
+  - locking
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-18'
+  version_scope: PostgreSQL 18.6
+  technology_depth: core
+  notes: Week 11 source for MVCC/isolation/locking comparison with InnoDB.
+- id: python-314-docs
+  title: Python 3.14 Documentation
+  url: https://docs.python.org/3/
+  topic_ids:
+  - python
+  - typing
+  - async
+  - packaging
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-18'
+  version_scope: Python 3.14.7 current documentation
+  technology_depth: core
+  notes: Secondary backend language source for V1.1; focus on backend-relevant language/runtime features.
+- id: fastapi-tutorial
+  title: FastAPI — Tutorial
+  url: https://fastapi.tiangolo.com/tutorial/
+  topic_ids:
+  - python
+  - fastapi
+  - http-api
+  - validation
+  type: tutorial
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-18'
+  version_scope: current FastAPI documentation
+  technology_depth: core
+  notes: Primary Week 24 path for the bounded secondary backend service.
+- id: fastapi-testing
+  title: FastAPI — Testing
+  url: https://fastapi.tiangolo.com/tutorial/testing/
+  topic_ids:
+  - python
+  - fastapi
+  - testing
+  type: tutorial
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-18'
+  version_scope: current FastAPI documentation
+  technology_depth: core
+  notes: Use to preserve the roadmap's test-first evidence standard in the Python service.
+- id: grpc-docs
+  title: gRPC Documentation
+  url: https://grpc.io/docs/
+  topic_ids:
+  - grpc
+  - protobuf
+  - rpc
+  - service-to-service
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-18'
+  version_scope: current gRPC documentation
+  technology_depth: supporting
+  notes: Use for REST vs RPC trade-offs, service definitions, deadlines, errors, and streaming concepts.
+- id: grpc-python-basics
+  title: gRPC — Python Basics Tutorial
+  url: https://grpc.io/docs/languages/python/basics/
+  topic_ids:
+  - grpc
+  - protobuf
+  - python
+  type: tutorial
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-18'
+  version_scope: current gRPC Python tutorial
+  technology_depth: supporting
+  notes: Week 24 practical service/client exercise.
+- id: mongodb-data-modeling
+  title: MongoDB — Data Modeling
+  url: https://www.mongodb.com/docs/manual/data-modeling/
+  topic_ids:
+  - mongodb
+  - document-modeling
+  - access-patterns
+  - embedding
+  - references
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-18'
+  version_scope: current MongoDB manual
+  technology_depth: supporting
+  notes: Primary Week 34 document-modeling reference; model from access patterns rather than translating relational tables.
+- id: mongodb-indexes
+  title: MongoDB — Indexes
+  url: https://www.mongodb.com/docs/manual/indexes/
+  topic_ids:
+  - mongodb
+  - indexes
+  - query-performance
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-18'
+  version_scope: current MongoDB manual
+  technology_depth: supporting
+  notes: Use with explain/query evidence and compare compound-index design to relational engines.
+- id: mongodb-sharding
+  title: MongoDB — Sharding
+  url: https://www.mongodb.com/docs/manual/sharding/
+  topic_ids:
+  - mongodb
+  - sharding
+  - partitioning
+  - distributed-data
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-18'
+  version_scope: current MongoDB manual
+  technology_depth: supporting
+  notes: Bounded shard-key/hotspot reasoning; operations mastery is not required.
+- id: aws-dynamodb-data-modeling
+  title: AWS — DynamoDB Data Modeling
+  url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/data-modeling.html
+  topic_ids:
+  - aws
+  - dynamodb
+  - nosql
+  - partition-key
+  - access-patterns
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-18'
+  version_scope: current DynamoDB Developer Guide
+  technology_depth: supporting
+  notes: Week 27 access-pattern-first lab covering partition/sort keys, secondary indexes, and distribution risk.
+- id: kubernetes-application-basics
+  title: Kubernetes — Learn Kubernetes Basics
+  url: https://kubernetes.io/docs/tutorials/kubernetes-basics/
+  topic_ids:
+  - kubernetes
+  - deployment
+  - service
+  - rollout
+  - troubleshooting
+  type: tutorial
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-18'
+  version_scope: current Kubernetes docs; latest active release line 1.37
+  technology_depth: supporting
+  notes: V1.1 application-level Kubernetes lab; pair with probes/resources/log/event evidence.
+- id: graphql-learn
+  title: GraphQL — Learn
+  url: https://graphql.org/learn/
+  topic_ids:
+  - graphql
+  - api
+  - schema
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-18'
+  version_scope: current GraphQL learning documentation
+  technology_depth: professional-exposure
+  notes: Bounded comparison with REST/gRPC; not a second API core.
+- id: go-127-docs
+  title: Go 1.27 Documentation
+  url: https://go.dev/doc/
+  topic_ids:
+  - go
+  - backend-polyglot
+  - concurrency
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-18'
+  version_scope: Go 1.27.1 current release line
+  technology_depth: professional-exposure
+  notes: Week 41 code-reading/bounded-change reference; not full Go mastery.
+- id: spring-boot-current
+  title: Spring Boot
+  url: https://spring.io/projects/spring-boot
+  topic_ids:
+  - java
+  - spring-boot
+  - backend-polyglot
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-18'
+  version_scope: Spring Boot 4.1.1 current stable as verified
+  technology_depth: professional-exposure
+  notes: Week 41 architecture mapping for controller/service/data/config/test patterns.
+- id: nodejs-releases
+  title: Node.js — Releases
+  url: https://nodejs.org/en/about/previous-releases
+  topic_ids:
+  - nodejs
+  - javascript
+  - backend-polyglot
+  type: reference
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-18'
+  version_scope: Node.js v24 LTS; v26 current as verified
+  technology_depth: professional-exposure
+  notes: Version/lifecycle reference for Week 41 TypeScript/Node exposure.
+- id: typescript-handbook
+  title: TypeScript Handbook
+  url: https://www.typescriptlang.org/docs/handbook/
+  topic_ids:
+  - typescript
+  - nodejs
+  - backend-polyglot
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-18'
+  version_scope: current TypeScript handbook
+  technology_depth: professional-exposure
+  notes: Focus on typing, modules, async/backend code reading, and safe bounded changes.
+- id: cassandra-data-modeling
+  title: Apache Cassandra — Data Modeling
+  url: https://cassandra.apache.org/doc/stable/cassandra/developing/data-modeling/
+  topic_ids:
+  - cassandra
+  - wide-column
+  - partitioning
+  - query-driven-modeling
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-18'
+  version_scope: Apache Cassandra 5.0 stable documentation
+  technology_depth: professional-exposure
+  notes: Week 34 comparison resource for query-driven partition-oriented modeling.
+- id: otel-python
+  title: OpenTelemetry — Python
+  url: https://opentelemetry.io/docs/languages/python/
+  topic_ids:
+  - observability
+  - opentelemetry
+  - python
+  type: docs
+  source_authority: official
+  language: en
+  cost: free
+  last_verified: '2026-09-18'
+  version_scope: current OpenTelemetry Python docs
+  technology_depth: supporting
+  notes: Week 30 instrument the bounded Python service alongside PHP telemetry.

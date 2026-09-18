@@ -1,90 +1,90 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w40-d03-ai-evals-security-and-production-quality
+id: task-w40-d03-v1-1
 week: 40
 day: 3
 date: null
 track: core
 skill_ids:
-- eval-datasets
-- graders
+- ai-evals
+- python
+- ai-security
 - regression
-- prompt-injection
-mode: SOLO
+mode: HYBRID
 estimated_minutes: 105
 technology_depth: core
 resource_ids:
-- mcp-intro
 - openai-evals-guide
 deliverables:
-- Run grading and inspect disagreements/failures evidence
-- Week 40 private assessment attempt
-- `platform-ai-evals` increment or review
+- grader comparison
+- disagreement review
 review_policy: adaptive
 prerequisites:
 - week-39
 status: planned
 ---
 
-# Day 03 — Run grading and inspect disagreements/failures
+# Day 03 — Use Structured and Semantic Grading Carefully
 
-## Why this matters
+## Outcome
 
-Evaluate AI behavior with reproducible datasets, graders, security/adversarial cases, tracing, and regression decisions rather than anecdotal prompt demos.
+> Combine deterministic checks with bounded model-assisted grading and inspect disagreements manually.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
-| Primary-source study | `SOLO` | 20 |
-| Hands-on reasoning / lab | `SOLO` | 40 |
-| Project / evidence update | `SOLO` | 15 |
-| Technical English | `SOLO` | 10 |
-| Daily micro-assessment | `SOLO` | 20 |
+| SOLO baseline | `SOLO` | 25 |
+| Agent challenge | `AI-ASSISTED` | 20 |
+| Independent validation | `SOLO` | 20 |
+| Project evidence | `SOLO` | 20 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
-- `mcp-intro`
 - `openai-evals-guide`
 
 ## Activities
 
-### Primary-source study — 20 min — `SOLO`
+### SOLO baseline — 25 min — `SOLO`
 
-Read the relevant primary source with the specific question: Run grading and inspect disagreements/failures.
+Combine deterministic checks with bounded model-assisted grading and inspect disagreements manually. Freeze your first plan/evidence before agent use.
 
-### Hands-on reasoning / lab — 40 min — `SOLO`
+### Agent challenge — 20 min — `AI-ASSISTED`
 
-Run grading and inspect disagreements/failures. Start with a prediction/design before execution or lookup.
+Ask for critique/alternatives only; require assumptions.
 
-### Project / evidence update — 15 min — `SOLO`
+### Independent validation — 20 min — `SOLO`
 
-Connect the result to `platform-ai-evals` or preserve a reproducible standalone artifact.
+Verify consequential claims through code/tests/data/traces/primary sources.
 
-### Technical English — 10 min — `SOLO`
+### Project evidence — 20 min — `SOLO`
 
-Present an AI regression/security decision in English.
+Apply only validated conclusions.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete the scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Run grading and inspect disagreements/failures evidence
-- Week 40 private assessment attempt
-- `platform-ai-evals` increment or review
+- grader comparison
+- disagreement review
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 40/Day 03.md`. Store learner responses only in private state.
+Run `02 Daily Assessments/Week 40/Day 03.md`. Store attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review where justified.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves independent evidence before agent use.
+
+## Completion rule
+
+Required evidence must exist; reading or agent conversation alone is not completion.

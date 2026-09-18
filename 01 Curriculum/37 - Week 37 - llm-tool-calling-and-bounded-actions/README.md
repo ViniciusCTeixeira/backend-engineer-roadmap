@@ -2,37 +2,33 @@
 type: curriculum-week
 schema_version: 1
 week: 37
-phase: Distributed Systems & AI
+phase: Architecture and AI Engineering
 estimated_minutes: 720
-primary_outcome: "Build tool-calling workflows where the application—not the model—owns authorization, argument validation, execution, side effects, retries, and auditability."
+primary_outcome: "Orchestrate tool calls in Python while keeping authorization, validation, side effects, and auditability outside model control."
 project_milestone: "platform-ai-tools"
+v1_1_market_alignment: true
 ---
 
-# Week 37 — LLM Tool Calling, Permissions, and Bounded Actions
+# Week 37 — Python Tool Calling, Authorization, and Bounded Actions
 
 ## Primary outcome
 
-Build tool-calling workflows where the application—not the model—owns authorization, argument validation, execution, side effects, retries, and auditability.
+Orchestrate tool calls in Python while keeping authorization, validation, side effects, and auditability outside model control.
 
-## Matrix alignment
+## V1.1 alignment
 
-Core topics:
-- function calling
-- tool schemas
-- authorization
-- side effects
-- approval boundaries
-- audit logs
+This week implements the approved V1.1 market-alignment amendment without increasing the weekly ceiling.
 
 Project milestone: `platform-ai-tools`
 
-Weekly simulation: `HYBRID` / `coding-lab`
+Weekly simulation: `HYBRID` / `ai-assisted`
 
-English: Explain the model/tool/application trust boundary in English.
+## Skills
 
-AI/agent: Use an agent only after a SOLO baseline; independently verify consequential claims.
-
-Career: Track role-fit evidence and interview/application signals privately.
+- tool-calling
+- python
+- authorization
+- human-approval
 
 ## Planned workload
 
@@ -47,13 +43,12 @@ Career: Track role-fit evidence and interview/application signals privately.
 | Day 07 | 60 |
 | **Total** | **720 (12h)** |
 
-Assessment time is included.
-
 ## Primary resource IDs
 
+- python-314-docs
 - openai-function-calling-guide
-- openai-developers
+- fastapi-tutorial
 
-## Adaptation rule
+## Adaptation and integrity
 
-This is a public baseline. Learner-specific scores, remediation, reviews, applications, and future scheduling belong under `.study/`. Historical attempts are preserved; a gate failure creates private remediation instead of erasing later public curriculum.
+Learner-specific scores/remediation remain private under `.study/`. SOLO evidence is independent; HYBRID work freezes the first attempt before agent use.

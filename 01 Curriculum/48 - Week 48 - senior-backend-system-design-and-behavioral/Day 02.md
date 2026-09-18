@@ -1,88 +1,88 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w48-d02-senior-backend-system-design-and-behavioral
+id: task-w48-d02-v1-1
 week: 48
 day: 2
 date: null
 track: core
 skill_ids:
-- system-design-interviews
-- requirements-clarification
-- capacity-data-async-reliability
-- trade-offs
+- senior-backend-interview
+- php
+- python
+- system-design
 mode: SOLO
 estimated_minutes: 105
 technology_depth: core
 resource_ids:
-- builders-library
+- python-314-docs
+- fastapi-tutorial
 deliverables:
-- Build a bounded backend design with APIs/data/cache/queues evidence
-- Week 48 private assessment attempt
-- `platform-market-hardening` increment or review
+- Python timed patch
+- test evidence
 review_policy: adaptive
 prerequisites:
 - week-47
 status: planned
 ---
 
-# Day 02 — Build a bounded backend design with APIs/data/cache/queues
+# Day 02 — Run a Python/FastAPI Secondary-Backend Screen
 
-## Why this matters
+## Outcome
 
-Practice senior-level backend system design and behavioral communication grounded in concrete project/production evidence.
+> Implement/modify a bounded Python API behavior with types/tests and explain async/runtime limitations honestly.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
 | Primary-source study | `SOLO` | 20 |
-| Hands-on reasoning / lab | `SOLO` | 40 |
-| Project / evidence update | `SOLO` | 15 |
+| Hands-on/timed lab | `SOLO` | 40 |
+| Evidence update | `SOLO` | 15 |
 | Technical English | `SOLO` | 10 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
-- `builders-library`
+- `python-314-docs`
+- `fastapi-tutorial`
 
 ## Activities
 
 ### Primary-source study — 20 min — `SOLO`
 
-Read the relevant primary source with the specific question: Build a bounded backend design with APIs/data/cache/queues.
+Read only source sections needed for today's reasoning.
 
-### Hands-on reasoning / lab — 40 min — `SOLO`
+### Hands-on/timed lab — 40 min — `SOLO`
 
-Build a bounded backend design with APIs/data/cache/queues. Start with a prediction/design before execution or lookup.
+Implement/modify a bounded Python API behavior with types/tests and explain async/runtime limitations honestly.
 
-### Project / evidence update — 15 min — `SOLO`
+### Evidence update — 15 min — `SOLO`
 
-Connect the result to `platform-market-hardening` or preserve a reproducible standalone artifact.
+Preserve reproducible technical/interview evidence.
 
 ### Technical English — 10 min — `SOLO`
 
-Run substantial portions of the mock interview in English.
+Explain one decision or failure mode in English.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Build a bounded backend design with APIs/data/cache/queues evidence
-- Week 48 private assessment attempt
-- `platform-market-hardening` increment or review
+- Python timed patch
+- test evidence
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 48/Day 02.md`. Store learner responses only in private state.
-
-## Review hook
-
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Run `02 Daily Assessments/Week 48/Day 02.md`. Store attempts privately.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves first-attempt evidence.
+
+## Completion rule
+
+Evidence—not exposure or agent output alone—determines completion.

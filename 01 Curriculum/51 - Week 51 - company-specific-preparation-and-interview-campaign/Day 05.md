@@ -1,90 +1,86 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w51-d05-company-specific-preparation-and-interview-campaign
+id: task-w51-d05-v1-1
 week: 51
 day: 5
 date: null
 track: core
 skill_ids:
-- company-research
-- role-specific-system-design
-- targeted-coding
-- domain-context-prep
-mode: HYBRID
+- company-specific-prep
+- market-triggered
+- role-fit
+- interview-strategy
+mode: SOLO
 estimated_minutes: 105
-technology_depth: core
+technology_depth: market-triggered
 resource_ids:
-- builders-library
-- mit-ocw-algorithms
+[]
 deliverables:
-- Review application/interview feedback and preserve private remediation evidence
-- Week 51 private assessment attempt
-- `platform-market-hardening` increment or review
+- role-quality questions
+- private evaluation notes
 review_policy: adaptive
 prerequisites:
 - week-50
 status: planned
 ---
 
-# Day 05 — Review application/interview feedback and preserve private remediation
+# Day 05 — Evaluate Role Quality and Prepare Questions
 
-## Why this matters
+## Outcome
 
-Adapt preparation to evidence from selected companies without mutating the public curriculum from one vacancy or interview.
+> Prepare technical/cultural/ownership questions and compare role evidence against the target-role dimensions rather than salary/title alone.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
-| SOLO baseline | `SOLO` | 25 |
-| Agent challenge | `AI-ASSISTED` | 20 |
-| Independent validation | `SOLO` | 20 |
-| Project / evidence update | `SOLO` | 20 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Primary-source study | `SOLO` | 20 |
+| Hands-on/timed lab | `SOLO` | 40 |
+| Evidence update | `SOLO` | 15 |
+| Technical English | `SOLO` | 10 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
-- `builders-library`
-- `mit-ocw-algorithms`
+- Reuse prior evidence/resources.
 
 ## Activities
 
-### SOLO baseline — 25 min — `SOLO`
+### Primary-source study — 20 min — `SOLO`
 
-Work on: Review application/interview feedback and preserve private remediation. Freeze your plan/findings before using an agent.
+Read only source sections needed for today's reasoning.
 
-### Agent challenge — 20 min — `AI-ASSISTED`
+### Hands-on/timed lab — 40 min — `SOLO`
 
-Use an agent only after a SOLO baseline; independently verify consequential claims.
+Prepare technical/cultural/ownership questions and compare role evidence against the target-role dimensions rather than salary/title alone.
 
-### Independent validation — 20 min — `SOLO`
+### Evidence update — 15 min — `SOLO`
 
-Verify/reject claims using primary sources, tests, measurements, traces, queries, or code evidence.
+Preserve reproducible technical/interview evidence.
 
-### Project / evidence update — 20 min — `SOLO`
+### Technical English — 10 min — `SOLO`
 
-Apply only validated conclusions to `platform-market-hardening` or a reviewable evidence artifact.
+Explain one decision or failure mode in English.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Review application/interview feedback and preserve private remediation evidence
-- Week 51 private assessment attempt
-- `platform-market-hardening` increment or review
+- role-quality questions
+- private evaluation notes
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 51/Day 05.md`. Store learner responses only in private state.
-
-## Review hook
-
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Run `02 Daily Assessments/Week 51/Day 05.md`. Store attempts privately.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves first-attempt evidence.
+
+## Completion rule
+
+Evidence—not exposure or agent output alone—determines completion.

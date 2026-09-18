@@ -1,88 +1,90 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w48-d03-senior-backend-system-design-and-behavioral
+id: task-w48-d03-v1-1
 week: 48
 day: 3
 date: null
 track: core
 skill_ids:
-- system-design-interviews
-- requirements-clarification
-- capacity-data-async-reliability
-- trade-offs
+- senior-backend-interview
+- php
+- python
+- system-design
 mode: SOLO
 estimated_minutes: 105
 technology_depth: core
 resource_ids:
-- builders-library
+- mysql-explain-manual
+- postgresql-explain
+- postgresql-mvcc
 deliverables:
-- Stress-test the design with capacity/failure/security scenarios evidence
-- Week 48 private assessment attempt
-- `platform-market-hardening` increment or review
+- database interview attempt
+- engine-specific explanation
 review_policy: adaptive
 prerequisites:
 - week-47
 status: planned
 ---
 
-# Day 03 — Stress-test the design with capacity/failure/security scenarios
+# Day 03 — Run a MySQL/PostgreSQL Performance and Concurrency Screen
 
-## Why this matters
+## Outcome
 
-Practice senior-level backend system design and behavioral communication grounded in concrete project/production evidence.
+> Interpret plans/indexes/transactions in a randomly selected engine and transfer concepts without inventing equivalence.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
 | Primary-source study | `SOLO` | 20 |
-| Hands-on reasoning / lab | `SOLO` | 40 |
-| Project / evidence update | `SOLO` | 15 |
+| Hands-on/timed lab | `SOLO` | 40 |
+| Evidence update | `SOLO` | 15 |
 | Technical English | `SOLO` | 10 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
-- `builders-library`
+- `mysql-explain-manual`
+- `postgresql-explain`
+- `postgresql-mvcc`
 
 ## Activities
 
 ### Primary-source study — 20 min — `SOLO`
 
-Read the relevant primary source with the specific question: Stress-test the design with capacity/failure/security scenarios.
+Read only source sections needed for today's reasoning.
 
-### Hands-on reasoning / lab — 40 min — `SOLO`
+### Hands-on/timed lab — 40 min — `SOLO`
 
-Stress-test the design with capacity/failure/security scenarios. Start with a prediction/design before execution or lookup.
+Interpret plans/indexes/transactions in a randomly selected engine and transfer concepts without inventing equivalence.
 
-### Project / evidence update — 15 min — `SOLO`
+### Evidence update — 15 min — `SOLO`
 
-Connect the result to `platform-market-hardening` or preserve a reproducible standalone artifact.
+Preserve reproducible technical/interview evidence.
 
 ### Technical English — 10 min — `SOLO`
 
-Run substantial portions of the mock interview in English.
+Explain one decision or failure mode in English.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Stress-test the design with capacity/failure/security scenarios evidence
-- Week 48 private assessment attempt
-- `platform-market-hardening` increment or review
+- database interview attempt
+- engine-specific explanation
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 48/Day 03.md`. Store learner responses only in private state.
-
-## Review hook
-
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Run `02 Daily Assessments/Week 48/Day 03.md`. Store attempts privately.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves first-attempt evidence.
+
+## Completion rule
+
+Evidence—not exposure or agent output alone—determines completion.

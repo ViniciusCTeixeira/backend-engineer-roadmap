@@ -1,50 +1,47 @@
 ---
 type: weekly-simulation
 schema_version: 1
-id: simulation-w24
+id: simulation-w24-v1-1
 week: 24
 mode: HYBRID
 simulation_type: coding-lab
 skill_ids:
-- integration
-- docker-compose
-- release-checklist
-- k6
-- capacity-signals
+- python
+- fastapi
+- grpc
+- secondary-backend
 estimated_minutes: 75
 status: planned
 score_total: null
 ---
 
-# Week 24 — Local Production Integration, k6, and Release Evidence Simulation
+# Week 24 — Python/FastAPI Secondary Backend and Practical gRPC Simulation
 
 ## Rules
 
 - Follow the declared mode exactly.
-- Preserve the first SOLO attempt before feedback or agent use.
+- Preserve the first SOLO attempt before any agent feedback.
 - Do not search for a model solution during scored SOLO phases.
 - Store learner responses privately under `.study/`.
-- Grade using `docs/assessments.md` and critical floors where applicable.
-- No public answer key is stored beside this simulation.
+- Grade using `docs/assessments.md`.
 
-## Phase A — SOLO baseline — 55 min
 
-Solve/design/diagnose a scenario covering:
+## Scenario
 
-- Integrate app/database/cache/runtime services
-- Create readiness/health and dependency-failure checks
-- Design a small k6 scenario from an SLO question
-- Measure latency/error/throughput under bounded load
+Demonstrate the week's outcome against a bounded backend scenario that requires implementation, diagnosis, or design evidence rather than terminology recall.
 
-Freeze the complete baseline.
+Required evidence:
 
-## Phase B — agent challenge — 10 min
+- python
+- fastapi
+- grpc
+- secondary-backend
 
-Ask for one alternative, missing risk, or review. Do not allow unbounded edits.
+## Timebox
 
-## Phase C — independent review — 10 min
-
-Accept/reject agent claims using evidence and explain the trade-off.
+- 55 min primary implementation/design/diagnosis.
+- 10 min adversarial/edge-case review.
+- 10 min explanation and evidence freeze.
 
 ## Raw attempt — IMMUTABLE AFTER SUBMISSION
 
@@ -54,14 +51,8 @@ _Private learner record only._
 
 _Private learner record only._
 
-## Feedback
+## Feedback / review creation
 
-Append only after submission.
+Append only after submission. Create D+1/D+7/D+30 reviews from demonstrated gaps.
 
-## Error records created
-
-## Review events created
-
-## Weekly adaptation recommendation
-
-Use `docs/adaptive-learning.md`; never rewrite public curriculum from one learner result.
+No public model solution is stored here.

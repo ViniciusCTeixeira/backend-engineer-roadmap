@@ -2,37 +2,33 @@
 type: curriculum-week
 schema_version: 1
 week: 28
-phase: Cloud & Delivery
+phase: Cloud and Delivery
 estimated_minutes: 720
-primary_outcome: "Design asynchronous workflows around delivery semantics, idempotency, retries, visibility/timeouts, DLQs, and bounded broker trade-offs."
+primary_outcome: "Design asynchronous workflows with delivery semantics, retries, DLQs, idempotency, and justified worker-language/broker choices."
 project_milestone: "platform-async"
+v1_1_market_alignment: true
 ---
 
-# Week 28 — Asynchronous Messaging: SQS, Retries, DLQs, RabbitMQ, and Kafka
+# Week 28 — Asynchronous Messaging Across PHP and Python Workers
 
 ## Primary outcome
 
-Design asynchronous workflows around delivery semantics, idempotency, retries, visibility/timeouts, DLQs, and bounded broker trade-offs.
+Design asynchronous workflows with delivery semantics, retries, DLQs, idempotency, and justified worker-language/broker choices.
 
-## Matrix alignment
+## V1.1 alignment
 
-Core topics:
-- SQS
-- retry/backoff
-- DLQ
-- idempotency
-- RabbitMQ comparison
-- Kafka comparison
+This week implements the approved V1.1 market-alignment amendment without increasing the weekly ceiling.
 
 Project milestone: `platform-async`
 
 Weekly simulation: `SOLO` / `system-design`
 
-English: Explain at-least-once delivery and idempotent consumers in English.
+## Skills
 
-AI/agent: Use an agent only after a SOLO baseline; independently verify consequential claims.
-
-Career: Track role-fit evidence and interview/application signals privately.
+- sqs
+- idempotency
+- async-workers
+- messaging
 
 ## Planned workload
 
@@ -47,14 +43,12 @@ Career: Track role-fit evidence and interview/application signals privately.
 | Day 07 | 60 |
 | **Total** | **720 (12h)** |
 
-Assessment time is included.
-
 ## Primary resource IDs
 
 - aws-sqs-overview
 - rabbitmq-tutorials
 - kafka-quickstart
 
-## Adaptation rule
+## Adaptation and integrity
 
-This is a public baseline. Learner-specific scores, remediation, reviews, applications, and future scheduling belong under `.study/`. Historical attempts are preserved; a gate failure creates private remediation instead of erasing later public curriculum.
+Learner-specific scores/remediation remain private under `.study/`. SOLO evidence is independent; HYBRID work freezes the first attempt before agent use.

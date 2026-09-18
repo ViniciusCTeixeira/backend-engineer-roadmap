@@ -2,36 +2,33 @@
 type: curriculum-week
 schema_version: 1
 week: 32
-phase: Cloud & Delivery
+phase: Cloud and Delivery
 estimated_minutes: 720
-primary_outcome: "Strengthen edge/origin resilience and gain bounded professional exposure to Kubernetes, Helm, and GitOps without making them Year-1 core mastery requirements."
-project_milestone: "platform-iac-edge"
+primary_outcome: "Operate a backend application in Kubernetes at application-team depth and connect resilience choices to probes, resources, rollouts, and troubleshooting."
+project_milestone: "platform-kubernetes"
+v1_1_market_alignment: true
 ---
 
-# Week 32 — Resilience, Cloudflare WAF, Kubernetes/Helm, and GitOps Exposure
+# Week 32 — Resilience and Kubernetes Application Operations
 
 ## Primary outcome
 
-Strengthen edge/origin resilience and gain bounded professional exposure to Kubernetes, Helm, and GitOps without making them Year-1 core mastery requirements.
+Operate a backend application in Kubernetes at application-team depth and connect resilience choices to probes, resources, rollouts, and troubleshooting.
 
-## Matrix alignment
+## V1.1 alignment
 
-Core topics:
-- timeouts/retries
-- Cloudflare WAF/rate limiting
-- Kubernetes exposure
-- Helm exposure
-- Argo CD/GitOps exposure
+This week implements the approved V1.1 market-alignment amendment without increasing the weekly ceiling.
 
-Project milestone: `platform-iac-edge`
+Project milestone: `platform-kubernetes`
 
-Weekly simulation: `SOLO` / `system-design`
+Weekly simulation: `SOLO` / `coding-lab`
 
-English: Explain why Kubernetes/GitOps are exposure—not core mastery—in the Year-1 plan.
+## Skills
 
-AI/agent: Use an agent only after a SOLO baseline; independently verify consequential claims.
-
-Career: Track role-fit evidence and interview/application signals privately.
+- kubernetes
+- resilience
+- probes
+- rollouts
 
 ## Planned workload
 
@@ -46,16 +43,15 @@ Career: Track role-fit evidence and interview/application signals privately.
 | Day 07 | 60 |
 | **Total** | **720 (12h)** |
 
-Assessment time is included.
-
 ## Primary resource IDs
 
-- cloudflare-waf
 - kubernetes-basics
+- kubernetes-application-basics
 - helm-quickstart
 - argocd-getting-started
+- cloudflare-waf
 - builders-library
 
-## Adaptation rule
+## Adaptation and integrity
 
-This is a public baseline. Learner-specific scores, remediation, reviews, applications, and future scheduling belong under `.study/`. Historical attempts are preserved; a gate failure creates private remediation instead of erasing later public curriculum.
+Learner-specific scores/remediation remain private under `.study/`. SOLO evidence is independent; HYBRID work freezes the first attempt before agent use.

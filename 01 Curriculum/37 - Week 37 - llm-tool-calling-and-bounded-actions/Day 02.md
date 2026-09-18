@@ -1,90 +1,92 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w37-d02-llm-tool-calling-and-bounded-actions
+id: task-w37-d02-v1-1
 week: 37
 day: 2
 date: null
 track: core
 skill_ids:
-- function-calling
-- tool-schemas
+- tool-calling
+- python
 - authorization
-- side-effects
+- human-approval
 mode: SOLO
 estimated_minutes: 105
 technology_depth: core
 resource_ids:
-- openai-developers
 - openai-function-calling-guide
+- python-314-docs
 deliverables:
-- Validate tool arguments and reject unauthorized resource access evidence
-- Week 37 private assessment attempt
-- `platform-ai-tools` increment or review
+- tool validator
+- authorization tests
 review_policy: adaptive
 prerequisites:
 - week-36
 status: planned
 ---
 
-# Day 02 — Validate tool arguments and reject unauthorized resource access
+# Day 02 — Validate Arguments and Resource Authorization in Python
 
-## Why this matters
+## Outcome
 
-Build tool-calling workflows where the application—not the model—owns authorization, argument validation, execution, side effects, retries, and auditability.
+> Treat tool arguments as untrusted and enforce actor/resource/tenant authorization before side effects.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
 | Primary-source study | `SOLO` | 20 |
-| Hands-on reasoning / lab | `SOLO` | 40 |
-| Project / evidence update | `SOLO` | 15 |
+| Hands-on lab | `SOLO` | 40 |
+| Project/evidence update | `SOLO` | 15 |
 | Technical English | `SOLO` | 10 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
-- `openai-developers`
 - `openai-function-calling-guide`
+- `python-314-docs`
 
 ## Activities
 
 ### Primary-source study — 20 min — `SOLO`
 
-Read the relevant primary source with the specific question: Validate tool arguments and reject unauthorized resource access.
+Read only the sections required for the day's reasoning.
 
-### Hands-on reasoning / lab — 40 min — `SOLO`
+### Hands-on lab — 40 min — `SOLO`
 
-Validate tool arguments and reject unauthorized resource access. Start with a prediction/design before execution or lookup.
+Treat tool arguments as untrusted and enforce actor/resource/tenant authorization before side effects.
 
-### Project / evidence update — 15 min — `SOLO`
+### Project/evidence update — 15 min — `SOLO`
 
-Connect the result to `platform-ai-tools` or preserve a reproducible standalone artifact.
+Connect the result to Project B or preserve reproducible standalone evidence.
 
 ### Technical English — 10 min — `SOLO`
 
-Explain the model/tool/application trust boundary in English.
+Explain one decision/assumption/failure mode in English.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete the scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Validate tool arguments and reject unauthorized resource access evidence
-- Week 37 private assessment attempt
-- `platform-ai-tools` increment or review
+- tool validator
+- authorization tests
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 37/Day 02.md`. Store learner responses only in private state.
+Run `02 Daily Assessments/Week 37/Day 02.md`. Store attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review where justified.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves independent evidence before agent use.
+
+## Completion rule
+
+Required evidence must exist; reading or agent conversation alone is not completion.

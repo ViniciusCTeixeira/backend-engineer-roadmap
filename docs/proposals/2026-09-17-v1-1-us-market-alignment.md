@@ -2,7 +2,7 @@
 type: curriculum-proposal
 schema_version: 1
 id: "v1-1-us-market-alignment-2026-09-17"
-status: proposed
+status: approved
 created_at: "2026-09-17"
 proposal_type: curriculum-change
 affected_skill_ids:
@@ -492,6 +492,6 @@ Additional V1.1 QA should prove:
 
 ## Human decision
 
-- [ ] Approved
+- [x] Approved — 2026-09-18
 - [ ] Rejected
 - [ ] Needs revision

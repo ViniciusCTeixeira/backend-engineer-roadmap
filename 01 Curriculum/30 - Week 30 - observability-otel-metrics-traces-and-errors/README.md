@@ -2,39 +2,33 @@
 type: curriculum-week
 schema_version: 1
 week: 30
-phase: Cloud & Delivery
+phase: Cloud and Delivery
 estimated_minutes: 720
-primary_outcome: "Build an evidence-oriented observability model using logs, metrics, traces, errors, and service-level questions rather than dashboard vanity."
+primary_outcome: "Correlate logs, metrics, traces, and errors across Laravel and the bounded Python service using vendor-neutral telemetry."
 project_milestone: "platform-observability"
+v1_1_market_alignment: true
 ---
 
-# Week 30 — Observability: OpenTelemetry, Metrics, Traces, Errors, and Dashboards
+# Week 30 — Observability Across PHP and Python Services
 
 ## Primary outcome
 
-Build an evidence-oriented observability model using logs, metrics, traces, errors, and service-level questions rather than dashboard vanity.
+Correlate logs, metrics, traces, and errors across Laravel and the bounded Python service using vendor-neutral telemetry.
 
-## Matrix alignment
+## V1.1 alignment
 
-Core topics:
-- OpenTelemetry
-- metrics
-- traces
-- logs
-- Prometheus
-- Grafana
-- Sentry
-- vendor APM equivalence
+This week implements the approved V1.1 market-alignment amendment without increasing the weekly ceiling.
 
 Project milestone: `platform-observability`
 
 Weekly simulation: `SOLO` / `sql-debugging`
 
-English: Present an incident using logs/metrics/traces in English.
+## Skills
 
-AI/agent: Use an agent only after a SOLO baseline; independently verify consequential claims.
-
-Career: Track role-fit evidence and interview/application signals privately.
+- opentelemetry
+- php-observability
+- python-observability
+- incident-diagnosis
 
 ## Planned workload
 
@@ -49,17 +43,15 @@ Career: Track role-fit evidence and interview/application signals privately.
 | Day 07 | 60 |
 | **Total** | **720 (12h)** |
 
-Assessment time is included.
-
 ## Primary resource IDs
 
 - otel-php
+- otel-python
 - prometheus-overview
 - grafana-get-started
 - sentry-php-docs
-- datadog-php-tracing
-- newrelic-php-intro
+- aws-cloudwatch-overview
 
-## Adaptation rule
+## Adaptation and integrity
 
-This is a public baseline. Learner-specific scores, remediation, reviews, applications, and future scheduling belong under `.study/`. Historical attempts are preserved; a gate failure creates private remediation instead of erasing later public curriculum.
+Learner-specific scores/remediation remain private under `.study/`. SOLO evidence is independent; HYBRID work freezes the first attempt before agent use.

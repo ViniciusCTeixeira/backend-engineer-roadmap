@@ -1,47 +1,46 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w09-d04-relational-modeling-and-sql
+id: task-w09-d04-v1-1
 week: 9
 day: 4
 date: null
 track: core
 skill_ids:
 - relational-modeling
+- mysql
+- postgresql
 - sql
-- constraints
-- joins
-mode: HYBRID
+mode: SOLO
 estimated_minutes: 105
 technology_depth: core
 resource_ids:
 - mysql-84-manual
+- postgresql-18-manual
 deliverables:
-- frozen SOLO schema review
-- agent critique
-- accept/reject table
-- Project B model increment
+- feature comparison ADR
+- portability boundary
 review_policy: adaptive
 prerequisites:
 - week-08
 status: planned
 ---
 
-# Day 04 — Critique a Schema With an Agent After a SOLO Baseline
+# Day 04 — Use Engine-Specific Features Deliberately
 
 ## Outcome
 
-> Freeze a SOLO schema review, request read-only agent critique, then accept/reject every suggestion using integrity/query evidence.
+> Inspect data types, generated/default values, JSON capabilities, and SQL extensions; use only when the benefit justifies portability loss.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
-| SOLO baseline | `SOLO` | 25 |
-| Agent challenge | `AI-ASSISTED` | 20 |
-| Independent validation | `SOLO` | 20 |
-| Project / evidence update | `SOLO` | 20 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Primary-source study | `SOLO` | 20 |
+| Hands-on lab | `SOLO` | 40 |
+| Project/evidence update | `SOLO` | 15 |
+| Technical English | `SOLO` | 10 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
 Assessment time is included.
@@ -49,37 +48,34 @@ Assessment time is included.
 ## Resources
 
 - `mysql-84-manual`
-
-Resource IDs resolve through `09 Resources/catalog.yaml`.
+- `postgresql-18-manual`
 
 ## Activities
 
-### SOLO baseline — 25 min — `SOLO`
+### Primary-source study — 20 min — `SOLO`
 
-Freeze a SOLO schema review, request read-only agent critique, then accept/reject every suggestion using integrity/query evidence. Freeze your plan/findings before agent use.
+Read only the source sections needed to reason about the day's focus.
 
-### Agent challenge — 20 min — `AI-ASSISTED`
+### Hands-on lab — 40 min — `SOLO`
 
-Ask for critique/alternatives only; require explicit assumptions and evidence.
+Inspect data types, generated/default values, JSON capabilities, and SQL extensions; use only when the benefit justifies portability loss.
 
-### Independent validation — 20 min — `SOLO`
+### Project/evidence update — 15 min — `SOLO`
 
-Verify or reject agent claims through primary sources, code, SQL, traces, tests, or measurements.
+Connect the result to Project A/B or preserve a reproducible standalone artifact.
 
-### Project / evidence update — 20 min — `SOLO`
+### Technical English — 10 min — `SOLO`
 
-Apply only validated conclusions to the project/evidence artifact.
+Explain one important decision, assumption, or failure mode in English.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
 Complete the scored transfer prompt without assistance.
 
 ## Deliverables
 
-- frozen SOLO schema review
-- agent critique
-- accept/reject table
-- Project B model increment
+- feature comparison ADR
+- portability boundary
 
 ## Daily assessment
 
@@ -87,11 +83,11 @@ Run `02 Daily Assessments/Week 09/Day 04.md`. Store learner attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; add D+30 transfer review when justified. Gate remediation is private and preserves the raw attempt.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review when justified.
 
 ## AI integrity
 
-Scored attempts are SOLO. HYBRID activities freeze the SOLO baseline before agent use and require independent validation afterward.
+Scored attempts are SOLO. HYBRID work preserves the first independent attempt before agent use.
 
 ## Completion rule
 

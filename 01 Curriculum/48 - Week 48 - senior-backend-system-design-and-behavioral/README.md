@@ -2,36 +2,33 @@
 type: curriculum-week
 schema_version: 1
 week: 48
-phase: Market & Interview Campaign
+phase: Market Campaign
 estimated_minutes: 720
-primary_outcome: "Practice senior-level backend system design and behavioral communication grounded in concrete project/production evidence."
+primary_outcome: "Perform a realistic Senior Backend loop that preserves deep PHP evidence while testing bounded Python, MySQL/PostgreSQL, API, cloud, and architecture transfer."
 project_milestone: "platform-market-hardening"
+v1_1_market_alignment: true
 ---
 
-# Week 48 — Senior Backend Interviews: System Design, Trade-offs, and Behavioral Evidence
+# Week 48 — Senior Backend Mock — PHP Depth, Python Secondary, Data, APIs, and Architecture
 
 ## Primary outcome
 
-Practice senior-level backend system design and behavioral communication grounded in concrete project/production evidence.
+Perform a realistic Senior Backend loop that preserves deep PHP evidence while testing bounded Python, MySQL/PostgreSQL, API, cloud, and architecture transfer.
 
-## Matrix alignment
+## V1.1 alignment
 
-Core topics:
-- system design interviews
-- requirements clarification
-- capacity/data/async/reliability
-- trade-offs
-- behavioral STAR evidence
+This week implements the approved V1.1 market-alignment amendment within the 12-hour ceiling.
 
 Project milestone: `platform-market-hardening`
 
-Weekly simulation: `SOLO` / `system-design`
+Weekly simulation: `SOLO` / `closed-technical`
 
-English: Run substantial portions of the mock interview in English.
+## Skills
 
-AI/agent: Use an agent only after a SOLO baseline; independently verify consequential claims.
-
-Career: Run regular high-fit applications and senior-backend interviews; capture outcomes privately.
+- senior-backend-interview
+- php
+- python
+- system-design
 
 ## Planned workload
 
@@ -46,12 +43,14 @@ Career: Run regular high-fit applications and senior-backend interviews; capture
 | Day 07 | 60 |
 | **Total** | **720 (12h)** |
 
-Assessment time is included.
-
 ## Primary resource IDs
 
-- builders-library
+- laravel-current-docs
+- python-314-docs
+- postgresql-18-manual
+- mysql-84-manual
+- grpc-docs
 
-## Adaptation rule
+## Integrity
 
-This is a public baseline. Learner-specific scores, remediation, reviews, applications, and future scheduling belong under `.study/`. Historical attempts are preserved; a gate failure creates private remediation instead of erasing later public curriculum.
+Learner-specific outcomes remain private. Exposure technologies must not be presented as production mastery without evidence.

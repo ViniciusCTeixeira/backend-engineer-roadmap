@@ -1,90 +1,92 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w31-d02-terraform-state-modules-and-secrets
+id: task-w31-d02-v1-1
 week: 31
 day: 2
 date: null
 track: core
 skill_ids:
-- terraform-workflow
+- terraform
 - state
-- modules
-- aws-provider
+- rds
+- dynamodb
 mode: SOLO
 estimated_minutes: 105
 technology_depth: core
 resource_ids:
-- cloudflare-terraform
-- vault-docs
+- terraform-aws-get-started
+- aws-rds-overview
 deliverables:
-- Provision a bounded AWS resource set in code or safe sandbox evidence
-- Week 31 private assessment attempt
-- `platform-iac-edge` increment or review
+- RDS Terraform slice
+- ownership note
 review_policy: adaptive
 prerequisites:
 - week-30
 status: planned
 ---
 
-# Day 02 — Provision a bounded AWS resource set in code or safe sandbox
+# Day 02 — Represent RDS/PostgreSQL Without Hiding Application Responsibilities
 
-## Why this matters
+## Outcome
 
-Provision selected AWS/Cloudflare infrastructure reproducibly while understanding Terraform state, plan/apply workflow, modules, drift, and secret boundaries.
+> Model selected network/database settings and separate infrastructure configuration from schema/migration ownership.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
 | Primary-source study | `SOLO` | 20 |
-| Hands-on reasoning / lab | `SOLO` | 40 |
-| Project / evidence update | `SOLO` | 15 |
+| Hands-on lab | `SOLO` | 40 |
+| Project/evidence update | `SOLO` | 15 |
 | Technical English | `SOLO` | 10 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
-- `cloudflare-terraform`
-- `vault-docs`
+- `terraform-aws-get-started`
+- `aws-rds-overview`
 
 ## Activities
 
 ### Primary-source study — 20 min — `SOLO`
 
-Read the relevant primary source with the specific question: Provision a bounded AWS resource set in code or safe sandbox.
+Read only the sections required for the day's reasoning.
 
-### Hands-on reasoning / lab — 40 min — `SOLO`
+### Hands-on lab — 40 min — `SOLO`
 
-Provision a bounded AWS resource set in code or safe sandbox. Start with a prediction/design before execution or lookup.
+Model selected network/database settings and separate infrastructure configuration from schema/migration ownership.
 
-### Project / evidence update — 15 min — `SOLO`
+### Project/evidence update — 15 min — `SOLO`
 
-Connect the result to `platform-iac-edge` or preserve a reproducible standalone artifact.
+Connect the result to Project B or preserve reproducible standalone evidence.
 
 ### Technical English — 10 min — `SOLO`
 
-Explain Terraform state and secret risks in English.
+Explain one decision/assumption/failure mode in English.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete the scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Provision a bounded AWS resource set in code or safe sandbox evidence
-- Week 31 private assessment attempt
-- `platform-iac-edge` increment or review
+- RDS Terraform slice
+- ownership note
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 31/Day 02.md`. Store learner responses only in private state.
+Run `02 Daily Assessments/Week 31/Day 02.md`. Store attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review where justified.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves independent evidence before agent use.
+
+## Completion rule
+
+Required evidence must exist; reading or agent conversation alone is not completion.

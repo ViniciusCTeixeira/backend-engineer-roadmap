@@ -1,83 +1,90 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w39-d02-phase-gate-three-cloud-distributed-and-ai
+id: task-w39-d02-v1-1
 week: 39
 day: 2
 date: null
 track: core
 skill_ids:
-- aws
-- queues-reliability
-- observability-iac
-- distributed-systems
+- phase-gate-3
+- kubernetes
+- nosql-selection
+- python-ai
 mode: SOLO
 estimated_minutes: 105
 technology_depth: core
 resource_ids:
-[]
+- kubernetes-application-basics
 deliverables:
-- Closed queue/reliability failure case evidence
-- Week 39 private assessment attempt
-- `gate-3-evidence-freeze` increment or review
+- Kubernetes gate diagnosis
+- remediation explanation
 review_policy: adaptive
 prerequisites:
 - week-38
 status: planned
 ---
 
-# Day 02 — Closed queue/reliability failure case
+# Day 02 — Closed Kubernetes Application Diagnosis
 
-## Why this matters
+## Outcome
 
-Demonstrate cloud/runtime, async/reliability, observability/IaC, distributed-system, and AI foundations without agent dependence in closed sections.
+> Read manifests/events/log evidence and diagnose readiness/resource/rollout failure without changing cluster internals.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
-| Closed gate setup | `SOLO` | 10 |
-| Closed gate practical / reasoning | `SOLO` | 60 |
-| Validation and explanation | `SOLO` | 25 |
-| Daily micro-assessment | `SOLO` | 10 |
+| Primary-source study | `SOLO` | 20 |
+| Hands-on lab | `SOLO` | 40 |
+| Project/evidence update | `SOLO` | 15 |
+| Technical English | `SOLO` | 10 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
-- No new source; use prior primary sources or frozen evidence.
+- `kubernetes-application-basics`
 
 ## Activities
 
-### Closed gate setup — 10 min — `SOLO`
+### Primary-source study — 20 min — `SOLO`
 
-Declare closed conditions and create the private immutable attempt record.
+Read only the sections required for the day's reasoning.
 
-### Closed gate practical / reasoning — 60 min — `SOLO`
+### Hands-on lab — 40 min — `SOLO`
 
-Closed queue/reliability failure case
+Read manifests/events/log evidence and diagnose readiness/resource/rollout failure without changing cluster internals.
 
-### Validation and explanation — 25 min — `SOLO`
+### Project/evidence update — 15 min — `SOLO`
 
-Validate the work, state assumptions, and explain decisive trade-offs.
+Connect the result to Project B or preserve reproducible standalone evidence.
 
-### Daily micro-assessment — 10 min — `SOLO`
+### Technical English — 10 min — `SOLO`
 
-Freeze a short transfer answer before feedback.
+Explain one decision/assumption/failure mode in English.
+
+### Daily assessment — 20 min — `SOLO`
+
+Complete the scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Closed queue/reliability failure case evidence
-- Week 39 private assessment attempt
-- `gate-3-evidence-freeze` increment or review
+- Kubernetes gate diagnosis
+- remediation explanation
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 39/Day 02.md`. Store learner responses only in private state.
+Run `02 Daily Assessments/Week 39/Day 02.md`. Store attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review where justified.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves independent evidence before agent use.
+
+## Completion rule
+
+Required evidence must exist; reading or agent conversation alone is not completion.

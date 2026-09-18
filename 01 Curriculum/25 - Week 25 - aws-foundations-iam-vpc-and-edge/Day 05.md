@@ -1,96 +1,94 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w25-d05-aws-foundations-iam-vpc-and-edge
+id: task-w25-d05-v1-1
 week: 25
 day: 5
 date: null
 track: core
 skill_ids:
+- aws
 - iam
 - vpc
-- subnets-routing
-- aws-cli
-mode: HYBRID
+- multi-service-networking
+mode: SOLO
 estimated_minutes: 105
 technology_depth: core
 resource_ids:
-- aws-iam-getting-started
 - aws-vpc-overview
-- aws-cli-v2
+- aws-iam-getting-started
 - cloudflare-dns
-- cloudflare-cache
 deliverables:
-- Draw the complete public-to-private request path and threats evidence
-- Week 25 private assessment attempt
-- `platform-aws-foundation` increment or review
+- AWS architecture ADR
+- cost/risk checklist
 review_policy: adaptive
 prerequisites:
 - week-24
 status: planned
 ---
 
-# Day 05 — Draw the complete public-to-private request path and threats
+# Day 05 — Create the AWS Target Architecture ADR
 
-## Why this matters
+## Outcome
 
-Build a least-privilege AWS mental model covering identity, networking, CLI use, DNS/CDN/TLS, and edge-to-origin request flow.
+> Consolidate identity, network, edge, data, and service-boundary choices with costs/risks and explicit non-goals.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
-| SOLO baseline | `SOLO` | 25 |
-| Agent challenge | `AI-ASSISTED` | 20 |
-| Independent validation | `SOLO` | 20 |
-| Project / evidence update | `SOLO` | 20 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Primary-source study | `SOLO` | 20 |
+| Hands-on lab | `SOLO` | 40 |
+| Project/evidence update | `SOLO` | 15 |
+| Technical English | `SOLO` | 10 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
-- `aws-iam-getting-started`
 - `aws-vpc-overview`
-- `aws-cli-v2`
+- `aws-iam-getting-started`
 - `cloudflare-dns`
-- `cloudflare-cache`
 
 ## Activities
 
-### SOLO baseline — 25 min — `SOLO`
+### Primary-source study — 20 min — `SOLO`
 
-Work on: Draw the complete public-to-private request path and threats. Freeze your plan/findings before using an agent.
+Read only the sections required for the day's reasoning.
 
-### Agent challenge — 20 min — `AI-ASSISTED`
+### Hands-on lab — 40 min — `SOLO`
 
-Use an agent only after a SOLO baseline; independently verify consequential claims.
+Consolidate identity, network, edge, data, and service-boundary choices with costs/risks and explicit non-goals.
 
-### Independent validation — 20 min — `SOLO`
+### Project/evidence update — 15 min — `SOLO`
 
-Verify/reject claims using primary sources, tests, measurements, traces, queries, or code evidence.
+Connect the result to Project B or preserve reproducible standalone evidence.
 
-### Project / evidence update — 20 min — `SOLO`
+### Technical English — 10 min — `SOLO`
 
-Apply only validated conclusions to `platform-aws-foundation` or a reviewable evidence artifact.
+Explain one decision/assumption/failure mode in English.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete the scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Draw the complete public-to-private request path and threats evidence
-- Week 25 private assessment attempt
-- `platform-aws-foundation` increment or review
+- AWS architecture ADR
+- cost/risk checklist
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 25/Day 05.md`. Store learner responses only in private state.
+Run `02 Daily Assessments/Week 25/Day 05.md`. Store attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review where justified.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves independent evidence before agent use.
+
+## Completion rule
+
+Required evidence must exist; reading or agent conversation alone is not completion.

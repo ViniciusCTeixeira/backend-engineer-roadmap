@@ -1,90 +1,86 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w46-d01-agents-workflows-and-mcp
+id: task-w46-d01-v1-1
 week: 46
 day: 1
 date: null
 track: core
 skill_ids:
-- agent-planning
-- context-engineering
-- tool-permissions
-- mcp-client-server-concepts
+- agents
+- mcp
+- tool-boundaries
+- php-python
 mode: SOLO
 estimated_minutes: 105
 technology_depth: core
 resource_ids:
 - mcp-intro
-- openai-function-calling-guide
 deliverables:
-- Decompose a repo task into bounded agent work evidence
-- Week 46 private assessment attempt
-- `platform-mcp` increment or review
+- agent boundary diagram
+- context policy
 review_policy: adaptive
 prerequisites:
 - week-45
 status: planned
 ---
 
-# Day 01 — Decompose a repo task into bounded agent work
+# Day 01 — Model Agent State, Context, and Capability Boundaries
 
-## Why this matters
+## Outcome
 
-Build and review bounded agent workflows with tool permissions, MCP capabilities, context management, approval boundaries, and post-agent independent verification.
+> Define what context the agent sees, what tools exist, what data is private, and which decisions require deterministic application checks.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
 | Primary-source study | `SOLO` | 20 |
-| Hands-on reasoning / lab | `SOLO` | 40 |
-| Project / evidence update | `SOLO` | 15 |
+| Hands-on/timed lab | `SOLO` | 40 |
+| Evidence update | `SOLO` | 15 |
 | Technical English | `SOLO` | 10 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
 - `mcp-intro`
-- `openai-function-calling-guide`
 
 ## Activities
 
 ### Primary-source study — 20 min — `SOLO`
 
-Read the relevant primary source with the specific question: Decompose a repo task into bounded agent work.
+Read only source sections needed for today's reasoning.
 
-### Hands-on reasoning / lab — 40 min — `SOLO`
+### Hands-on/timed lab — 40 min — `SOLO`
 
-Decompose a repo task into bounded agent work. Start with a prediction/design before execution or lookup.
+Define what context the agent sees, what tools exist, what data is private, and which decisions require deterministic application checks.
 
-### Project / evidence update — 15 min — `SOLO`
+### Evidence update — 15 min — `SOLO`
 
-Connect the result to `platform-mcp` or preserve a reproducible standalone artifact.
+Preserve reproducible technical/interview evidence.
 
 ### Technical English — 10 min — `SOLO`
 
-Explain an MCP/agent permission boundary in English.
+Explain one decision or failure mode in English.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Decompose a repo task into bounded agent work evidence
-- Week 46 private assessment attempt
-- `platform-mcp` increment or review
+- agent boundary diagram
+- context policy
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 46/Day 01.md`. Store learner responses only in private state.
-
-## Review hook
-
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Run `02 Daily Assessments/Week 46/Day 01.md`. Store attempts privately.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves first-attempt evidence.
+
+## Completion rule
+
+Evidence—not exposure or agent output alone—determines completion.

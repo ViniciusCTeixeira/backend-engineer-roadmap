@@ -2,36 +2,33 @@
 type: curriculum-week
 schema_version: 1
 week: 41
-phase: Interview & Senior Readiness
+phase: Interviews and Agentic Engineering
 estimated_minutes: 720
-primary_outcome: "Solve interview-style array/string/hash problems with explicit complexity analysis, invariants, tests, and clear communication rather than memorized patterns."
-project_milestone: "platform-market-hardening"
+primary_outcome: "Read and safely modify unfamiliar Go, Java/Spring, and TypeScript/Node services while retaining core coding-interview fundamentals."
+project_milestone: "platform-polyglot"
+v1_1_market_alignment: true
 ---
 
-# Week 41 — Algorithms: Complexity, Arrays, Strings, and Hashing
+# Week 41 — Backend Polyglot Literacy + Big O, Arrays, Strings, and Hashing
 
 ## Primary outcome
 
-Solve interview-style array/string/hash problems with explicit complexity analysis, invariants, tests, and clear communication rather than memorized patterns.
+Read and safely modify unfamiliar Go, Java/Spring, and TypeScript/Node services while retaining core coding-interview fundamentals.
 
-## Matrix alignment
+## V1.1 alignment
 
-Core topics:
-- Big-O
-- arrays/strings
-- hash maps/sets
-- two pointers
-- sliding window
+This week implements the approved V1.1 market-alignment amendment within the 12-hour ceiling.
 
-Project milestone: `platform-market-hardening`
+Project milestone: `platform-polyglot`
 
-Weekly simulation: `HYBRID` / `coding-lab`
+Weekly simulation: `SOLO` / `coding-lab`
 
-English: Explain one algorithm invariant and complexity trade-off in English.
+## Skills
 
-AI/agent: Use an agent only after a SOLO baseline; independently verify consequential claims.
-
-Career: Begin systematic senior-backend interview practice and track problem-solving evidence privately.
+- backend-polyglot
+- go
+- spring-boot
+- typescript-node
 
 ## Planned workload
 
@@ -46,12 +43,14 @@ Career: Begin systematic senior-backend interview practice and track problem-sol
 | Day 07 | 60 |
 | **Total** | **720 (12h)** |
 
-Assessment time is included.
-
 ## Primary resource IDs
 
+- go-127-docs
+- spring-boot-current
+- nodejs-releases
+- typescript-handbook
 - mit-ocw-algorithms
 
-## Adaptation rule
+## Integrity
 
-This is a public baseline. Learner-specific scores, remediation, reviews, applications, and future scheduling belong under `.study/`. Historical attempts are preserved; a gate failure creates private remediation instead of erasing later public curriculum.
+Learner-specific outcomes remain private. Exposure technologies must not be presented as production mastery without evidence.

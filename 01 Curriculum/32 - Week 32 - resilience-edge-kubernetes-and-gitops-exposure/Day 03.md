@@ -1,90 +1,90 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w32-d03-resilience-edge-kubernetes-and-gitops-exposure
+id: task-w32-d03-v1-1
 week: 32
 day: 3
 date: null
 track: core
 skill_ids:
-- timeouts-retries
-- cloudflare-waf-rate-limiting
-- kubernetes-exposure
-- helm-exposure
+- kubernetes
+- resilience
+- probes
+- rollouts
 mode: SOLO
 estimated_minutes: 105
-technology_depth: core
+technology_depth: supporting
 resource_ids:
-- helm-quickstart
-- argocd-getting-started
+- kubernetes-application-basics
 deliverables:
-- Map Docker Compose concepts to Kubernetes objects evidence
-- Week 32 private assessment attempt
-- `platform-iac-edge` increment or review
+- probe design
+- failure experiment
 review_policy: adaptive
 prerequisites:
 - week-31
 status: planned
 ---
 
-# Day 03 — Map Docker Compose concepts to Kubernetes objects
+# Day 03 — Design Readiness and Liveness for Real Failure Modes
 
-## Why this matters
+## Outcome
 
-Strengthen edge/origin resilience and gain bounded professional exposure to Kubernetes, Helm, and GitOps without making them Year-1 core mastery requirements.
+> Implement/plan probes that distinguish startup/readiness from process deadlock without making every dependency a liveness condition.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
 | Primary-source study | `SOLO` | 20 |
-| Hands-on reasoning / lab | `SOLO` | 40 |
-| Project / evidence update | `SOLO` | 15 |
+| Hands-on lab | `SOLO` | 40 |
+| Project/evidence update | `SOLO` | 15 |
 | Technical English | `SOLO` | 10 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
-- `helm-quickstart`
-- `argocd-getting-started`
+- `kubernetes-application-basics`
 
 ## Activities
 
 ### Primary-source study — 20 min — `SOLO`
 
-Read the relevant primary source with the specific question: Map Docker Compose concepts to Kubernetes objects.
+Read only the sections required for the day's reasoning.
 
-### Hands-on reasoning / lab — 40 min — `SOLO`
+### Hands-on lab — 40 min — `SOLO`
 
-Map Docker Compose concepts to Kubernetes objects. Start with a prediction/design before execution or lookup.
+Implement/plan probes that distinguish startup/readiness from process deadlock without making every dependency a liveness condition.
 
-### Project / evidence update — 15 min — `SOLO`
+### Project/evidence update — 15 min — `SOLO`
 
-Connect the result to `platform-iac-edge` or preserve a reproducible standalone artifact.
+Connect the result to Project B or preserve reproducible standalone evidence.
 
 ### Technical English — 10 min — `SOLO`
 
-Explain why Kubernetes/GitOps are exposure—not core mastery—in the Year-1 plan.
+Explain one decision/assumption/failure mode in English.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete the scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Map Docker Compose concepts to Kubernetes objects evidence
-- Week 32 private assessment attempt
-- `platform-iac-edge` increment or review
+- probe design
+- failure experiment
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 32/Day 03.md`. Store learner responses only in private state.
+Run `02 Daily Assessments/Week 32/Day 03.md`. Store attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review where justified.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves independent evidence before agent use.
+
+## Completion rule
+
+Required evidence must exist; reading or agent conversation alone is not completion.

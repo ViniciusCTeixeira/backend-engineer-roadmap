@@ -1,96 +1,96 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w32-d05-resilience-edge-kubernetes-and-gitops-exposure
+id: task-w32-d05-v1-1
 week: 32
 day: 5
 date: null
 track: core
 skill_ids:
-- timeouts-retries
-- cloudflare-waf-rate-limiting
-- kubernetes-exposure
-- helm-exposure
-mode: HYBRID
+- kubernetes
+- resilience
+- probes
+- rollouts
+mode: SOLO
 estimated_minutes: 105
-technology_depth: core
+technology_depth: supporting
 resource_ids:
 - cloudflare-waf
-- kubernetes-basics
 - helm-quickstart
 - argocd-getting-started
 - builders-library
 deliverables:
-- Trace Git→Argo CD→Kubernetes reconciliation and risk boundaries evidence
-- Week 32 private assessment attempt
-- `platform-iac-edge` increment or review
+- resilience map
+- Helm/Argo exposure note
 review_policy: adaptive
 prerequisites:
 - week-31
 status: planned
 ---
 
-# Day 05 — Trace Git→Argo CD→Kubernetes reconciliation and risk boundaries
+# Day 05 — Connect Edge Resilience and Keep Helm/Argo as Exposure
 
-## Why this matters
+## Outcome
 
-Strengthen edge/origin resilience and gain bounded professional exposure to Kubernetes, Helm, and GitOps without making them Year-1 core mastery requirements.
+> Design timeout/retry/WAF boundaries, inspect a Helm values/template path and GitOps reconciliation concept, then state what remains outside Year-1 scope.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
-| SOLO baseline | `SOLO` | 25 |
-| Agent challenge | `AI-ASSISTED` | 20 |
-| Independent validation | `SOLO` | 20 |
-| Project / evidence update | `SOLO` | 20 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Primary-source study | `SOLO` | 20 |
+| Hands-on lab | `SOLO` | 40 |
+| Project/evidence update | `SOLO` | 15 |
+| Technical English | `SOLO` | 10 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
 - `cloudflare-waf`
-- `kubernetes-basics`
 - `helm-quickstart`
 - `argocd-getting-started`
 - `builders-library`
 
 ## Activities
 
-### SOLO baseline — 25 min — `SOLO`
+### Primary-source study — 20 min — `SOLO`
 
-Work on: Trace Git→Argo CD→Kubernetes reconciliation and risk boundaries. Freeze your plan/findings before using an agent.
+Read only the sections required for the day's reasoning.
 
-### Agent challenge — 20 min — `AI-ASSISTED`
+### Hands-on lab — 40 min — `SOLO`
 
-Use an agent only after a SOLO baseline; independently verify consequential claims.
+Design timeout/retry/WAF boundaries, inspect a Helm values/template path and GitOps reconciliation concept, then state what remains outside Year-1 scope.
 
-### Independent validation — 20 min — `SOLO`
+### Project/evidence update — 15 min — `SOLO`
 
-Verify/reject claims using primary sources, tests, measurements, traces, queries, or code evidence.
+Connect the result to Project B or preserve reproducible standalone evidence.
 
-### Project / evidence update — 20 min — `SOLO`
+### Technical English — 10 min — `SOLO`
 
-Apply only validated conclusions to `platform-iac-edge` or a reviewable evidence artifact.
+Explain one decision/assumption/failure mode in English.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete the scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Trace Git→Argo CD→Kubernetes reconciliation and risk boundaries evidence
-- Week 32 private assessment attempt
-- `platform-iac-edge` increment or review
+- resilience map
+- Helm/Argo exposure note
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 32/Day 05.md`. Store learner responses only in private state.
+Run `02 Daily Assessments/Week 32/Day 05.md`. Store attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review where justified.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves independent evidence before agent use.
+
+## Completion rule
+
+Required evidence must exist; reading or agent conversation alone is not completion.

@@ -1,4 +1,4 @@
-# Career Track
+# Career Track — V1.1
 
 The career track converts technical evidence into a progressive job-search and interview campaign.
 
@@ -12,17 +12,39 @@ Typical target titles:
 - Senior Software Engineer — Backend
 - Senior PHP Backend Engineer in teams with strong engineering depth
 
-Core positioning:
+Positioning:
 
 ```text
+Primary backend:
 PHP / Laravel
-MySQL / Redis
+
+Secondary backend:
+Python / FastAPI
+
+Data:
+MySQL / PostgreSQL / Redis
+MongoDB / DynamoDB familiarity with evidence
+
+Platform:
 AWS
+Docker / Kubernetes
+Terraform
+Observability / Messaging
+
+Architecture:
+REST / gRPC
 Distributed Systems
+System Design
+
+AI:
 AI-assisted Development
+LLM / RAG / Evals
+Agents / MCP
 ```
 
-CakePHP is positioned as commercial/legacy-modernization experience, not as the only professional identity.
+CakePHP remains commercial/legacy-modernization evidence, not the only role identity.
+
+Go, Java/Spring Boot, and TypeScript/Node are **polyglot literacy** unless later market evidence creates deeper private preparation.
 
 ## Campaign progression
 
@@ -32,7 +54,7 @@ CakePHP is positioned as commercial/legacy-modernization experience, not as the 
 | Month 3 | structured vacancy analysis |
 | Month 4 | CV/LinkedIn/GitHub/portfolio positioning |
 | Month 5 | selective high-fit applications |
-| Month 6 | experimental interviews and feedback collection |
+| Month 6 | experimental interviews and feedback |
 | Months 7–9 | regular application/interview campaign |
 | Months 10–12 | intensive campaign + evidence-driven remediation |
 
@@ -45,16 +67,26 @@ Prefer claims backed by artifacts.
 Weak:
 
 ```text
-experienced with scalable systems
+experienced with Python, MongoDB and Kubernetes
 ```
 
 Stronger:
 
 ```text
-designed and load-tested a queued backend workflow, documented retry/idempotency trade-offs, and measured latency/error behavior
+built and tested a bounded FastAPI service, compared REST/gRPC boundaries, modeled MongoDB documents from access patterns, and diagnosed a Kubernetes rollout/probe failure
 ```
 
-Use only statements you can defend in an interview.
+Do not promote an exposure technology to "production experience" without evidence.
+
+## Stack-depth language
+
+Recommended wording must match evidence:
+
+- **Primary/deep** — can design, implement, debug, operate, and defend trade-offs independently.
+- **Secondary** — can build/test/debug a bounded production-style backend independently, with less breadth than primary.
+- **Supporting** — realistic labs and normal operational/debug literacy.
+- **Professional exposure** — can read, map, discuss, and make a small bounded change; not production mastery.
+- **Market-triggered** — deeper private practice only when repeated/active-pipeline evidence justifies it.
 
 ## Vacancy analysis
 
@@ -68,9 +100,9 @@ A single vacancy cannot:
 
 - reorder public curriculum;
 - add a public technology track;
-- promote one platform from exposure/supporting to core.
+- promote one platform's public depth.
 
-Recurring market evidence can trigger a formal proposal.
+Recurring evidence can trigger a formal proposal.
 
 ## Interview retrospectives
 
@@ -85,31 +117,20 @@ Capture:
 - question/context;
 - what you attempted;
 - what went well;
-- evidence of a technical gap;
-- communication gap vs knowledge gap;
-- remediation action;
-- whether the signal repeats elsewhere.
+- knowledge vs communication gap;
+- stack-specific gap;
+- remediation;
+- whether the signal repeats.
 
 Do not rewrite the original interview note after later learning.
 
-## Application data
-
-Keep real company/application data private:
-
-```text
-.study/career/jobs/
-.study/career/applications/
-.study/career/interviews/
-.study/career/market-signals/
-```
-
 ## International readiness / Year 2
 
-Year 1 aims first at stronger backend work and stronger evidence.
+Year 1 aims first at stronger backend work and defensible multi-stack evidence.
 
 `12 Year 2/` describes post-hire consolidation and international-readiness milestones.
 
-It does not guarantee relocation, sponsorship, immigration eligibility, compensation, or a specific timeline. Legal/immigration decisions should rely on current professional guidance and official government sources.
+It does not guarantee relocation, sponsorship, immigration eligibility, compensation, or a specific timeline.
 
 ## Public career methods
 

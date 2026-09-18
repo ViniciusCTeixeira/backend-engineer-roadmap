@@ -1,92 +1,90 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w33-d05-capacity-scalability-and-load-models
+id: task-w33-d05-v1-1
 week: 33
 day: 5
 date: null
 track: core
 skill_ids:
-- capacity-planning
-- vertical-horizontal-scaling
-- bottlenecks
+- capacity
+- scalability
 - load-testing
-mode: HYBRID
+- bottlenecks
+mode: SOLO
 estimated_minutes: 105
 technology_depth: core
 resource_ids:
 - builders-library
-- k6-get-started
-- aws-ec2-autoscaling
 deliverables:
-- Create a capacity plan with assumptions, safety margin, and falsifiers evidence
-- Week 33 private assessment attempt
-- `platform-scale` increment or review
+- capacity plan
+- falsifier list
 review_policy: adaptive
 prerequisites:
 - week-32
 status: planned
 ---
 
-# Day 05 — Create a capacity plan with assumptions, safety margin, and falsifiers
+# Day 05 — Write a Capacity Plan With Falsifiers
 
-## Why this matters
+## Outcome
 
-Estimate capacity, identify bottlenecks, and validate scaling assumptions with load tests and measurable system limits.
+> Create targets/safety margin/monitoring triggers and state what measurements would invalidate the plan.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
-| SOLO baseline | `SOLO` | 25 |
-| Agent challenge | `AI-ASSISTED` | 20 |
-| Independent validation | `SOLO` | 20 |
-| Project / evidence update | `SOLO` | 20 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Primary-source study | `SOLO` | 20 |
+| Hands-on lab | `SOLO` | 40 |
+| Project/evidence update | `SOLO` | 15 |
+| Technical English | `SOLO` | 10 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
 - `builders-library`
-- `k6-get-started`
-- `aws-ec2-autoscaling`
 
 ## Activities
 
-### SOLO baseline — 25 min — `SOLO`
+### Primary-source study — 20 min — `SOLO`
 
-Work on: Create a capacity plan with assumptions, safety margin, and falsifiers. Freeze your plan/findings before using an agent.
+Read only the sections required for the day's reasoning.
 
-### Agent challenge — 20 min — `AI-ASSISTED`
+### Hands-on lab — 40 min — `SOLO`
 
-Use an agent only after a SOLO baseline; independently verify consequential claims.
+Create targets/safety margin/monitoring triggers and state what measurements would invalidate the plan.
 
-### Independent validation — 20 min — `SOLO`
+### Project/evidence update — 15 min — `SOLO`
 
-Verify/reject claims using primary sources, tests, measurements, traces, queries, or code evidence.
+Connect the result to Project B or preserve reproducible standalone evidence.
 
-### Project / evidence update — 20 min — `SOLO`
+### Technical English — 10 min — `SOLO`
 
-Apply only validated conclusions to `platform-scale` or a reviewable evidence artifact.
+Explain one decision/assumption/failure mode in English.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete the scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Create a capacity plan with assumptions, safety margin, and falsifiers evidence
-- Week 33 private assessment attempt
-- `platform-scale` increment or review
+- capacity plan
+- falsifier list
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 33/Day 05.md`. Store learner responses only in private state.
+Run `02 Daily Assessments/Week 33/Day 05.md`. Store attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review where justified.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves independent evidence before agent use.
+
+## Completion rule
+
+Required evidence must exist; reading or agent conversation alone is not completion.
