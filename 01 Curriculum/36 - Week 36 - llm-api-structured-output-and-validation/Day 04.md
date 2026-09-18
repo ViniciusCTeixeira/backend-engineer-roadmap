@@ -1,90 +1,90 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w36-d04-llm-api-structured-output-and-validation
+id: task-w36-d04-v1-1
 week: 36
 day: 4
 date: null
 track: core
 skill_ids:
-- llm-api-fundamentals
-- tokens-context
+- python-ai
 - structured-outputs
-- json-schema
+- validation
+- llm-backend
 mode: SOLO
 estimated_minutes: 105
 technology_depth: core
 resource_ids:
-- openai-structured-outputs-guide
 - openai-developers
 deliverables:
-- Measure latency/cost/error categories on a small eval set evidence
-- Week 36 private assessment attempt
-- `platform-ai-structured` increment or review
+- fallback policy
+- human-review rule
 review_policy: adaptive
 prerequisites:
 - week-35
 status: planned
 ---
 
-# Day 04 — Measure latency/cost/error categories on a small eval set
+# Day 04 — Add Fallback and Human-Review Boundaries
 
-## Why this matters
+## Outcome
 
-Build a small backend AI feature while treating model output as untrusted probabilistic data and validating structured responses at application boundaries.
+> Implement/pseudocode retry limits, deterministic fallback, and human approval for consequential output.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
 | Primary-source study | `SOLO` | 20 |
-| Hands-on reasoning / lab | `SOLO` | 40 |
-| Project / evidence update | `SOLO` | 15 |
+| Hands-on lab | `SOLO` | 40 |
+| Project/evidence update | `SOLO` | 15 |
 | Technical English | `SOLO` | 10 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
-- `openai-structured-outputs-guide`
 - `openai-developers`
 
 ## Activities
 
 ### Primary-source study — 20 min — `SOLO`
 
-Read the relevant primary source with the specific question: Measure latency/cost/error categories on a small eval set.
+Read only the sections required for the day's reasoning.
 
-### Hands-on reasoning / lab — 40 min — `SOLO`
+### Hands-on lab — 40 min — `SOLO`
 
-Measure latency/cost/error categories on a small eval set. Start with a prediction/design before execution or lookup.
+Implement/pseudocode retry limits, deterministic fallback, and human approval for consequential output.
 
-### Project / evidence update — 15 min — `SOLO`
+### Project/evidence update — 15 min — `SOLO`
 
-Connect the result to `platform-ai-structured` or preserve a reproducible standalone artifact.
+Connect the result to Project B or preserve reproducible standalone evidence.
 
 ### Technical English — 10 min — `SOLO`
 
-Explain why structured output is not equivalent to truth in English.
+Explain one decision/assumption/failure mode in English.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete the scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Measure latency/cost/error categories on a small eval set evidence
-- Week 36 private assessment attempt
-- `platform-ai-structured` increment or review
+- fallback policy
+- human-review rule
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 36/Day 04.md`. Store learner responses only in private state.
+Run `02 Daily Assessments/Week 36/Day 04.md`. Store attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review where justified.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves independent evidence before agent use.
+
+## Completion rule
+
+Required evidence must exist; reading or agent conversation alone is not completion.

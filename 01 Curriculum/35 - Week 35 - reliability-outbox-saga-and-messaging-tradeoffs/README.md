@@ -2,37 +2,33 @@
 type: curriculum-week
 schema_version: 1
 week: 35
-phase: Distributed Systems & AI
+phase: Architecture and AI Engineering
 estimated_minutes: 720
-primary_outcome: "Design reliable multi-step workflows using explicit failure semantics, transactional outbox thinking, sagas/compensation, idempotency, and broker trade-offs."
-project_milestone: "platform-scale"
+primary_outcome: "Design retry, outbox, saga, idempotency, and failure handling while respecting each datastore's consistency and ownership model."
+project_milestone: "platform-reliability"
+v1_1_market_alignment: true
 ---
 
-# Week 35 — Reliability Patterns: Outbox, Saga, Idempotency, and Messaging Trade-offs
+# Week 35 — Reliability Across Relational, NoSQL, and Messaging Boundaries
 
 ## Primary outcome
 
-Design reliable multi-step workflows using explicit failure semantics, transactional outbox thinking, sagas/compensation, idempotency, and broker trade-offs.
+Design retry, outbox, saga, idempotency, and failure handling while respecting each datastore's consistency and ownership model.
 
-## Matrix alignment
+## V1.1 alignment
 
-Core topics:
-- transactional outbox
-- saga/compensation
-- idempotency
-- retry storms
-- poison messages
-- messaging trade-offs
+This week implements the approved V1.1 market-alignment amendment without increasing the weekly ceiling.
 
-Project milestone: `platform-scale`
+Project milestone: `platform-reliability`
 
 Weekly simulation: `SOLO` / `system-design`
 
-English: Explain outbox vs saga responsibilities in English.
+## Skills
 
-AI/agent: Use an agent only after a SOLO baseline; independently verify consequential claims.
-
-Career: Track role-fit evidence and interview/application signals privately.
+- outbox
+- saga
+- idempotency
+- failure-modes
 
 ## Planned workload
 
@@ -47,8 +43,6 @@ Career: Track role-fit evidence and interview/application signals privately.
 | Day 07 | 60 |
 | **Total** | **720 (12h)** |
 
-Assessment time is included.
-
 ## Primary resource IDs
 
 - builders-library
@@ -56,6 +50,6 @@ Assessment time is included.
 - rabbitmq-tutorials
 - kafka-quickstart
 
-## Adaptation rule
+## Adaptation and integrity
 
-This is a public baseline. Learner-specific scores, remediation, reviews, applications, and future scheduling belong under `.study/`. Historical attempts are preserved; a gate failure creates private remediation instead of erasing later public curriculum.
+Learner-specific scores/remediation remain private under `.study/`. SOLO evidence is independent; HYBRID work freezes the first attempt before agent use.

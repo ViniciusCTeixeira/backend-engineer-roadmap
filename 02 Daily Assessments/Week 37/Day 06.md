@@ -1,70 +1,45 @@
 ---
 type: assessment
 schema_version: 1
-id: assessment-w37-d06-llm-tool-calling-and-bounded-actions
+id: assessment-w37-d06-v1-1
 date: null
 week: 37
-assessment_type: coding-implementation
+assessment_type: sql-debugging
 mode: SOLO
 skill_ids:
-- function-calling
-- tool-schemas
+- tool-calling
+- python
 - authorization
-- side-effects
+- human-approval
 status: planned
 assistance_declared: none
-started_at: null
-submitted_at: null
-graded_at: null
 score_total: null
-score_dimensions:
-  factual_correctness: null
-  reasoning: null
-  practical_execution: null
-  validation: null
-  communication: null
-  english_quality: null
-  ai_supervision: null
-confidence_self_report: null
-grader: null
 estimated_minutes: 10
 ---
 
-# Week 37 / Day 06 Micro-Assessment
+# Week 37 / Day 06 — V1.1 Micro-Assessment
 
-## Instructions snapshot
+## Instructions
 
-- Timebox: **10 minutes**.
-- Scored attempt mode: **SOLO**.
+- Scored attempt is **SOLO**.
 - No LLM, coding agent, answer search, or existing solution during the scored attempt.
-- Freeze the response before feedback.
-- If help is required, mark the attempt `abandoned` before receiving solution-oriented help.
+- Freeze the raw response before feedback.
 
 ## Prompts
 
-1. Explain the key invariant, mechanism, or trade-off in **Weekly integration / simulation** without relying on tool/framework vocabulary alone.
-2. What concrete evidence would validate or falsify your conclusion about **Weekly integration / simulation** in a production-oriented backend?
+1. State the most important invariant or decision tested by today's simulation.
+2. Name one piece of evidence that could falsify your conclusion.
 
 ## Raw attempt — IMMUTABLE AFTER SUBMISSION
 
-_Copy this assessment into private state and record the learner response there._
-
-## Assistance declaration — IMMUTABLE AFTER SUBMISSION
-
-Expected during the scored attempt: `none`.
+_Copy this assessment into private state._
 
 ## Grading
 
-Grade after submission using `docs/assessments.md` and the `coding-implementation` rubric.
+Use `docs/assessments.md` after submission.
 
 ## Feedback
 
-_Append after grading; never replace the raw attempt._
-
-## Error records created
-
-## Review events created
-
-## Regrade history
+Append after submission; never replace the raw attempt.
 
 No solution/model answer is stored in the public roadmap.

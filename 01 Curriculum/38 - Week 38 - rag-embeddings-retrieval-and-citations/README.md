@@ -2,37 +2,33 @@
 type: curriculum-week
 schema_version: 1
 week: 38
-phase: Distributed Systems & AI
+phase: Architecture and AI Engineering
 estimated_minutes: 720
-primary_outcome: "Build and evaluate a small retrieval-augmented workflow using chunking, embeddings, retrieval, grounding, citations, and failure analysis."
+primary_outcome: "Build and evaluate retrieval in Python and justify the storage/index boundary rather than defaulting to a vector database."
 project_milestone: "platform-ai-retrieval"
+v1_1_market_alignment: true
 ---
 
-# Week 38 — RAG, Embeddings, Retrieval Quality, and Citations
+# Week 38 — Python RAG, Embeddings, Retrieval Quality, and Storage Choice
 
 ## Primary outcome
 
-Build and evaluate a small retrieval-augmented workflow using chunking, embeddings, retrieval, grounding, citations, and failure analysis.
+Build and evaluate retrieval in Python and justify the storage/index boundary rather than defaulting to a vector database.
 
-## Matrix alignment
+## V1.1 alignment
 
-Core topics:
-- embeddings
-- chunking
-- vector retrieval
-- grounding
-- citations
-- retrieval evaluation
+This week implements the approved V1.1 market-alignment amendment without increasing the weekly ceiling.
 
 Project milestone: `platform-ai-retrieval`
 
 Weekly simulation: `SOLO` / `coding-lab`
 
-English: Explain a retrieval failure and evidence in English.
+## Skills
 
-AI/agent: Use an agent only after a SOLO baseline; independently verify consequential claims.
-
-Career: Track role-fit evidence and interview/application signals privately.
+- rag
+- embeddings
+- retrieval
+- python
 
 ## Planned workload
 
@@ -47,13 +43,14 @@ Career: Track role-fit evidence and interview/application signals privately.
 | Day 07 | 60 |
 | **Total** | **720 (12h)** |
 
-Assessment time is included.
-
 ## Primary resource IDs
 
 - openai-embeddings-guide
+- python-314-docs
 - opensearch-getting-started
+- postgresql-18-manual
+- mongodb-data-modeling
 
-## Adaptation rule
+## Adaptation and integrity
 
-This is a public baseline. Learner-specific scores, remediation, reviews, applications, and future scheduling belong under `.study/`. Historical attempts are preserved; a gate failure creates private remediation instead of erasing later public curriculum.
+Learner-specific scores/remediation remain private under `.study/`. SOLO evidence is independent; HYBRID work freezes the first attempt before agent use.

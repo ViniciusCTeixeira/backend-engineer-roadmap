@@ -4,36 +4,32 @@ schema_version: 1
 week: 26
 phase: Gate 2
 estimated_minutes: 720
-primary_outcome: "Demonstrate Laravel, security, architecture, containers, production request flow, and AWS foundations without agent dependence."
+primary_outcome: "Demonstrate production-ready Laravel/PostgreSQL plus a bounded Python/FastAPI service, service contracts, containers, and AWS foundations independently."
 project_milestone: "gate-2-evidence-freeze"
+v1_1_market_alignment: true
 phase_gate: true
 ---
 
-# Week 26 — Phase Gate 2 — Modern Backend and Cloud Foundations
+# Week 26 — Phase Gate 2 — Modern Backend, Python Service, and Cloud Foundations
 
 ## Primary outcome
 
-Demonstrate Laravel, security, architecture, containers, production request flow, and AWS foundations without agent dependence.
+Demonstrate production-ready Laravel/PostgreSQL plus a bounded Python/FastAPI service, service contracts, containers, and AWS foundations independently.
 
-## Matrix alignment
+## V1.1 alignment
 
-Core topics:
-- Laravel
-- security
-- architecture
-- Docker/Nginx/FPM
-- AWS IAM/VPC
-- technical communication
+This week implements the approved V1.1 market-alignment amendment without increasing the weekly ceiling.
 
 Project milestone: `gate-2-evidence-freeze`
 
 Weekly simulation: `SOLO` / `closed-technical`
 
-English: Complete part of Gate 2 explanation and retrospective in English.
+## Skills
 
-AI/agent: Agents are prohibited during scored Gate 2 sections; use them only after immutable submission.
-
-Career: Review role-fit/applications against Gate 2 evidence and create private remediation.
+- phase-gate-2
+- laravel
+- python-fastapi
+- aws
 
 ## Planned workload
 
@@ -48,12 +44,17 @@ Career: Review role-fit/applications against Gate 2 evidence and create private 
 | Day 07 | 60 |
 | **Total** | **720 (12h)** |
 
-Assessment time is included.
-
 ## Primary resource IDs
 
-- Reuse previously verified sources and frozen project/gate evidence.
+- laravel-current-docs
+- postgresql-18-manual
+- python-314-docs
+- fastapi-tutorial
+- grpc-docs
+- docker-get-started
+- aws-iam-getting-started
+- aws-vpc-overview
 
-## Adaptation rule
+## Adaptation and integrity
 
-This is a public baseline. Learner-specific scores, remediation, reviews, applications, and future scheduling belong under `.study/`. Historical attempts are preserved; a gate failure creates private remediation instead of erasing later public curriculum.
+Learner-specific scores/remediation remain private under `.study/`. SOLO evidence is independent; HYBRID work freezes the first attempt before agent use.

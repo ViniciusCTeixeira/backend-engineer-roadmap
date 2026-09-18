@@ -1,60 +1,47 @@
 ---
 type: weekly-simulation
 schema_version: 1
-id: simulation-w39
+id: simulation-w39-v1-1
 week: 39
 mode: SOLO
 simulation_type: closed-technical
 skill_ids:
-- aws
-- queues-reliability
-- observability-iac
-- distributed-systems
-- llm-structured-output-tools-rag
+- phase-gate-3
+- kubernetes
+- nosql-selection
+- python-ai
 estimated_minutes: 90
 status: planned
 score_total: null
 ---
 
-# Week 39 — Phase Gate 3 — Cloud, Distributed Systems, and AI Engineering Simulation
+# Week 39 — Phase Gate 3 — Cloud, Kubernetes, Distributed Data, and AI Simulation
 
 ## Rules
 
-- Follow the declared mode exactly.
-- Preserve the first SOLO attempt before feedback or agent use.
+- Respect the declared mode.
+- Preserve the first SOLO attempt before feedback/agent use.
 - Do not search for a model solution during scored SOLO phases.
-- Store learner responses privately under `.study/`.
-- Grade using `docs/assessments.md` and critical floors where applicable.
-- No public answer key is stored beside this simulation.
+- Store responses privately under `.study/`.
+- All scored gate sections are closed SOLO; agent comparison is post-submission only.
 
-## Closed cumulative sections — 90 min
+## Scenario
 
-Work through five cumulative sections derived from this gate's themes:
+Demonstrate the week's outcome with implementation, diagnosis, or design evidence.
 
-- Closed AWS/runtime architecture case
-- Closed queue/reliability failure case
-- Closed observability/IaC diagnosis
-- Closed distributed-data/system-design case
-- Closed LLM structured-output/tool/RAG reasoning
+Required evidence:
 
-For every section: state assumptions, preserve reasoning, validate where practical, and do not use agents/search/model solutions. The complete scored gate is SOLO. Agent feedback is allowed only after the immutable attempt is frozen.
+- phase-gate-3
+- kubernetes
+- nosql-selection
+- python-ai
 
 ## Raw attempt — IMMUTABLE AFTER SUBMISSION
 
 _Private learner record only._
 
-## Assistance declaration
+## Feedback / reviews
 
-_Private learner record only._
+Append only after submission and create spaced reviews from demonstrated gaps.
 
-## Feedback
-
-Append only after submission.
-
-## Error records created
-
-## Review events created
-
-## Weekly adaptation recommendation
-
-Use `docs/adaptive-learning.md`; never rewrite public curriculum from one learner result.
+No public model solution is stored here.

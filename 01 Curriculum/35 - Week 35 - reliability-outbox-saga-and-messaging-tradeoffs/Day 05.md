@@ -1,94 +1,92 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w35-d05-reliability-outbox-saga-and-messaging-tradeoffs
+id: task-w35-d05-v1-1
 week: 35
 day: 5
 date: null
 track: core
 skill_ids:
-- transactional-outbox
-- saga-compensation
+- outbox
+- saga
 - idempotency
-- retry-storms
-mode: HYBRID
+- failure-modes
+mode: SOLO
 estimated_minutes: 105
 technology_depth: core
 resource_ids:
-- builders-library
-- aws-sqs-overview
-- rabbitmq-tutorials
-- kafka-quickstart
+- aws-dynamodb-data-modeling
+- mongodb-data-modeling
 deliverables:
-- Compare SQS/RabbitMQ/Kafka against one workload evidence
-- Week 35 private assessment attempt
-- `platform-scale` increment or review
+- NoSQL reliability ADR
+- failure-mode matrix
 review_policy: adaptive
 prerequisites:
 - week-34
 status: planned
 ---
 
-# Day 05 — Compare SQS/RabbitMQ/Kafka against one workload
+# Day 05 — Apply Reliability to MongoDB/DynamoDB Boundaries
 
-## Why this matters
+## Outcome
 
-Design reliable multi-step workflows using explicit failure semantics, transactional outbox thinking, sagas/compensation, idempotency, and broker trade-offs.
+> Revisit one NoSQL scenario and state consistency/idempotency/source-of-truth assumptions before agent-free simulation.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
-| SOLO baseline | `SOLO` | 25 |
-| Agent challenge | `AI-ASSISTED` | 20 |
-| Independent validation | `SOLO` | 20 |
-| Project / evidence update | `SOLO` | 20 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Primary-source study | `SOLO` | 20 |
+| Hands-on lab | `SOLO` | 40 |
+| Project/evidence update | `SOLO` | 15 |
+| Technical English | `SOLO` | 10 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
-- `builders-library`
-- `aws-sqs-overview`
-- `rabbitmq-tutorials`
-- `kafka-quickstart`
+- `aws-dynamodb-data-modeling`
+- `mongodb-data-modeling`
 
 ## Activities
 
-### SOLO baseline — 25 min — `SOLO`
+### Primary-source study — 20 min — `SOLO`
 
-Work on: Compare SQS/RabbitMQ/Kafka against one workload. Freeze your plan/findings before using an agent.
+Read only the sections required for the day's reasoning.
 
-### Agent challenge — 20 min — `AI-ASSISTED`
+### Hands-on lab — 40 min — `SOLO`
 
-Use an agent only after a SOLO baseline; independently verify consequential claims.
+Revisit one NoSQL scenario and state consistency/idempotency/source-of-truth assumptions before agent-free simulation.
 
-### Independent validation — 20 min — `SOLO`
+### Project/evidence update — 15 min — `SOLO`
 
-Verify/reject claims using primary sources, tests, measurements, traces, queries, or code evidence.
+Connect the result to Project B or preserve reproducible standalone evidence.
 
-### Project / evidence update — 20 min — `SOLO`
+### Technical English — 10 min — `SOLO`
 
-Apply only validated conclusions to `platform-scale` or a reviewable evidence artifact.
+Explain one decision/assumption/failure mode in English.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete the scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Compare SQS/RabbitMQ/Kafka against one workload evidence
-- Week 35 private assessment attempt
-- `platform-scale` increment or review
+- NoSQL reliability ADR
+- failure-mode matrix
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 35/Day 05.md`. Store learner responses only in private state.
+Run `02 Daily Assessments/Week 35/Day 05.md`. Store attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review where justified.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves independent evidence before agent use.
+
+## Completion rule
+
+Required evidence must exist; reading or agent conversation alone is not completion.

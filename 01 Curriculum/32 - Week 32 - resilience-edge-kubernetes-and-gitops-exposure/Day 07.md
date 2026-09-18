@@ -1,83 +1,87 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w32-d07-resilience-edge-kubernetes-and-gitops-exposure
+id: task-w32-d07-v1-1
 week: 32
 day: 7
 date: null
 track: core
 skill_ids:
-- timeouts-retries
-- cloudflare-waf-rate-limiting
-- kubernetes-exposure
-- helm-exposure
+- kubernetes
+- resilience
+- probes
+- rollouts
 mode: SOLO
 estimated_minutes: 60
-technology_depth: core
+technology_depth: supporting
 resource_ids:
 []
 deliverables:
-- Review, career evidence, and English reflection evidence
-- Week 32 private assessment attempt
-- `platform-iac-edge` increment or review
+- review events
+- private evidence update
+- English reflection
 review_policy: adaptive
 prerequisites:
 - week-31
 status: planned
 ---
 
-# Day 07 — Review, career evidence, and English reflection
+# Day 07 — Review, Transfer, and Market Evidence
 
-## Why this matters
+## Outcome
 
-Strengthen edge/origin resilience and gain bounded professional exposure to Kubernetes, Helm, and GitOps without making them Year-1 core mastery requirements.
+> Reconstruct key concepts, complete reviews, and connect evidence to target-role readiness.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
-| Closed recall | `SOLO` | 10 |
+| Active recall | `SOLO` | 10 |
 | Due reviews | `SOLO` | 20 |
-| Career / evidence action | `SOLO` | 20 |
-| Technical English reflection | `SOLO` | 10 |
+| Career/evidence action | `SOLO` | 20 |
+| English reflection | `SOLO` | 10 |
 | **Total** |  | **60** |
 
-## Primary sources
+## Resources
 
-- No new source; use prior primary sources or frozen evidence.
+- Reuse prior primary evidence/resources.
 
 ## Activities
 
-### Closed recall — 10 min — `SOLO`
+### Active recall — 10 min — `SOLO`
 
-Reconstruct one important concept from memory before opening notes.
+Reconstruct the week's main engineering model from memory.
 
 ### Due reviews — 20 min — `SOLO`
 
-Complete due D+1/D+7 reviews; create targeted D+30 transfer only when justified.
+Complete due D+1/D+7 reviews before optional new content.
 
-### Career / evidence action — 20 min — `SOLO`
+### Career/evidence action — 20 min — `SOLO`
 
-Track role-fit evidence and interview/application signals privately.
+Update private market/portfolio evidence.
 
-### Technical English reflection — 10 min — `SOLO`
+### English reflection — 10 min — `SOLO`
 
-Explain why Kubernetes/GitOps are exposure—not core mastery—in the Year-1 plan.
+Write a concise evidence-based English reflection.
 
 ## Deliverables
 
-- Review, career evidence, and English reflection evidence
-- Week 32 private assessment attempt
-- `platform-iac-edge` increment or review
+- review events
+- private evidence update
+- English reflection
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 32/Day 07.md`. Store learner responses only in private state.
+Run `02 Daily Assessments/Week 32/Day 07.md`. Store attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review where justified.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves independent evidence before agent use.
+
+## Completion rule
+
+Required evidence must exist; reading or agent conversation alone is not completion.

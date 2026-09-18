@@ -4,35 +4,32 @@ schema_version: 1
 week: 39
 phase: Gate 3
 estimated_minutes: 720
-primary_outcome: "Demonstrate cloud/runtime, async/reliability, observability/IaC, distributed-system, and AI foundations without agent dependence in closed sections."
+primary_outcome: "Demonstrate AWS, Kubernetes application operations, distributed-data selection, reliability, and Python AI backend capability independently."
 project_milestone: "gate-3-evidence-freeze"
+v1_1_market_alignment: true
 phase_gate: true
 ---
 
-# Week 39 — Phase Gate 3 — Cloud, Distributed Systems, and AI Engineering
+# Week 39 — Phase Gate 3 — Cloud, Kubernetes, Distributed Data, and AI
 
 ## Primary outcome
 
-Demonstrate cloud/runtime, async/reliability, observability/IaC, distributed-system, and AI foundations without agent dependence in closed sections.
+Demonstrate AWS, Kubernetes application operations, distributed-data selection, reliability, and Python AI backend capability independently.
 
-## Matrix alignment
+## V1.1 alignment
 
-Core topics:
-- AWS
-- queues/reliability
-- observability/IaC
-- distributed systems
-- LLM structured output/tools/RAG
+This week implements the approved V1.1 market-alignment amendment without increasing the weekly ceiling.
 
 Project milestone: `gate-3-evidence-freeze`
 
 Weekly simulation: `SOLO` / `closed-technical`
 
-English: Complete a Gate 3 architecture explanation and retrospective in English.
+## Skills
 
-AI/agent: Agents are prohibited during scored Gate 3 sections; use them only after immutable submission.
-
-Career: Use Gate 3 evidence to reassess senior-role readiness and private remediation.
+- phase-gate-3
+- kubernetes
+- nosql-selection
+- python-ai
 
 ## Planned workload
 
@@ -47,12 +44,15 @@ Career: Use Gate 3 evidence to reassess senior-role readiness and private remedi
 | Day 07 | 60 |
 | **Total** | **720 (12h)** |
 
-Assessment time is included.
-
 ## Primary resource IDs
 
-- Reuse previously verified sources and frozen project/gate evidence.
+- aws-ecs-overview
+- kubernetes-application-basics
+- mongodb-data-modeling
+- aws-dynamodb-data-modeling
+- python-314-docs
+- openai-function-calling-guide
 
-## Adaptation rule
+## Adaptation and integrity
 
-This is a public baseline. Learner-specific scores, remediation, reviews, applications, and future scheduling belong under `.study/`. Historical attempts are preserved; a gate failure creates private remediation instead of erasing later public curriculum.
+Learner-specific scores/remediation remain private under `.study/`. SOLO evidence is independent; HYBRID work freezes the first attempt before agent use.

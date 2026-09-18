@@ -1,83 +1,87 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w39-d07-phase-gate-three-cloud-distributed-and-ai
+id: task-w39-d07-v1-1
 week: 39
 day: 7
 date: null
 track: core
 skill_ids:
-- aws
-- queues-reliability
-- observability-iac
-- distributed-systems
-mode: HYBRID
+- phase-gate-3
+- kubernetes
+- nosql-selection
+- python-ai
+mode: SOLO
 estimated_minutes: 60
 technology_depth: core
 resource_ids:
 []
 deliverables:
-- Review, career evidence, and English reflection evidence
-- Week 39 private assessment attempt
-- `gate-3-evidence-freeze` increment or review
+- review events
+- private evidence update
+- English reflection
 review_policy: adaptive
 prerequisites:
 - week-38
 status: planned
 ---
 
-# Day 07 — Review, career evidence, and English reflection
+# Day 07 — Review, Transfer, and Market Evidence
 
-## Why this matters
+## Outcome
 
-Demonstrate cloud/runtime, async/reliability, observability/IaC, distributed-system, and AI foundations without agent dependence in closed sections.
+> Reconstruct key concepts, complete reviews, and connect evidence to target-role readiness.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
-| Closed recall | `SOLO` | 10 |
+| Active recall | `SOLO` | 10 |
 | Due reviews | `SOLO` | 20 |
-| Career / evidence action | `SOLO` | 20 |
-| Technical English reflection | `SOLO` | 10 |
+| Career/evidence action | `SOLO` | 20 |
+| English reflection | `SOLO` | 10 |
 | **Total** |  | **60** |
 
-## Primary sources
+## Resources
 
-- No new source; use prior primary sources or frozen evidence.
+- Reuse prior primary evidence/resources.
 
 ## Activities
 
-### Closed recall — 10 min — `SOLO`
+### Active recall — 10 min — `SOLO`
 
-Reconstruct one important concept from memory before opening notes.
+Reconstruct the week's main engineering model from memory.
 
 ### Due reviews — 20 min — `SOLO`
 
-Complete due D+1/D+7 reviews; create targeted D+30 transfer only when justified.
+Complete due D+1/D+7 reviews before optional new content.
 
-### Career / evidence action — 20 min — `SOLO`
+### Career/evidence action — 20 min — `SOLO`
 
-Use Gate 3 evidence to reassess senior-role readiness and private remediation.
+Update private market/portfolio evidence.
 
-### Technical English reflection — 10 min — `SOLO`
+### English reflection — 10 min — `SOLO`
 
-Complete a Gate 3 architecture explanation and retrospective in English.
+Write a concise evidence-based English reflection.
 
 ## Deliverables
 
-- Review, career evidence, and English reflection evidence
-- Week 39 private assessment attempt
-- `gate-3-evidence-freeze` increment or review
+- review events
+- private evidence update
+- English reflection
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 39/Day 07.md`. Store learner responses only in private state.
+Run `02 Daily Assessments/Week 39/Day 07.md`. Store attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review where justified.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves independent evidence before agent use.
+
+## Completion rule
+
+Required evidence must exist; reading or agent conversation alone is not completion.

@@ -2,36 +2,33 @@
 type: curriculum-week
 schema_version: 1
 week: 34
-phase: Distributed Systems & AI
+phase: Architecture and AI Engineering
 estimated_minutes: 720
-primary_outcome: "Reason about replication, partitioning, consistency trade-offs, read/write paths, and when a search engine such as OpenSearch is justified."
-project_milestone: "platform-scale"
+primary_outcome: "Use MongoDB for real document-model practice and choose among PostgreSQL, MongoDB, Redis, DynamoDB, Cassandra, and search from access patterns."
+project_milestone: "platform-nosql"
+v1_1_market_alignment: true
 ---
 
-# Week 34 — Distributed Data, Replication, Consistency, and Search Exposure
+# Week 34 — MongoDB Document Modeling and Distributed NoSQL Trade-offs
 
 ## Primary outcome
 
-Reason about replication, partitioning, consistency trade-offs, read/write paths, and when a search engine such as OpenSearch is justified.
+Use MongoDB for real document-model practice and choose among PostgreSQL, MongoDB, Redis, DynamoDB, Cassandra, and search from access patterns.
 
-## Matrix alignment
+## V1.1 alignment
 
-Core topics:
-- replication
-- partitioning/sharding
-- consistency
-- distributed caches
-- OpenSearch exposure
+This week implements the approved V1.1 market-alignment amendment without increasing the weekly ceiling.
 
-Project milestone: `platform-scale`
+Project milestone: `platform-nosql`
 
 Weekly simulation: `HYBRID` / `system-design`
 
-English: Explain one distributed-data consistency trade-off in English.
+## Skills
 
-AI/agent: Use an agent only after a SOLO baseline; independently verify consequential claims.
-
-Career: Track role-fit evidence and interview/application signals privately.
+- mongodb
+- nosql
+- distributed-data
+- datastore-selection
 
 ## Planned workload
 
@@ -46,13 +43,16 @@ Career: Track role-fit evidence and interview/application signals privately.
 | Day 07 | 60 |
 | **Total** | **720 (12h)** |
 
-Assessment time is included.
-
 ## Primary resource IDs
 
-- builders-library
+- mongodb-data-modeling
+- mongodb-indexes
+- mongodb-sharding
+- aws-dynamodb-data-modeling
+- cassandra-data-modeling
 - opensearch-getting-started
+- postgresql-18-manual
 
-## Adaptation rule
+## Adaptation and integrity
 
-This is a public baseline. Learner-specific scores, remediation, reviews, applications, and future scheduling belong under `.study/`. Historical attempts are preserved; a gate failure creates private remediation instead of erasing later public curriculum.
+Learner-specific scores/remediation remain private under `.study/`. SOLO evidence is independent; HYBRID work freezes the first attempt before agent use.

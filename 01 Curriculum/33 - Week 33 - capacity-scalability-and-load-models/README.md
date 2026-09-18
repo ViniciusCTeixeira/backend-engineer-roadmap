@@ -2,37 +2,33 @@
 type: curriculum-week
 schema_version: 1
 week: 33
-phase: Distributed Systems & AI
+phase: Architecture and AI Engineering
 estimated_minutes: 720
-primary_outcome: "Estimate capacity, identify bottlenecks, and validate scaling assumptions with load tests and measurable system limits."
+primary_outcome: "Estimate capacity and validate bottleneck hypotheses across the mixed backend without manufacturing microservice scale."
 project_milestone: "platform-scale"
+v1_1_market_alignment: true
 ---
 
-# Week 33 — Scalability, Capacity Planning, and Load Models
+# Week 33 — Scalability and Capacity Across PHP/Python Services
 
 ## Primary outcome
 
-Estimate capacity, identify bottlenecks, and validate scaling assumptions with load tests and measurable system limits.
+Estimate capacity and validate bottleneck hypotheses across the mixed backend without manufacturing microservice scale.
 
-## Matrix alignment
+## V1.1 alignment
 
-Core topics:
-- capacity planning
-- vertical/horizontal scaling
-- bottlenecks
-- load testing
-- latency/throughput
-- backpressure
+This week implements the approved V1.1 market-alignment amendment without increasing the weekly ceiling.
 
 Project milestone: `platform-scale`
 
 Weekly simulation: `SOLO` / `system-design`
 
-English: Present a capacity estimate and assumptions in English.
+## Skills
 
-AI/agent: Use an agent only after a SOLO baseline; independently verify consequential claims.
-
-Career: Track role-fit evidence and interview/application signals privately.
+- capacity
+- scalability
+- load-testing
+- bottlenecks
 
 ## Planned workload
 
@@ -47,14 +43,12 @@ Career: Track role-fit evidence and interview/application signals privately.
 | Day 07 | 60 |
 | **Total** | **720 (12h)** |
 
-Assessment time is included.
-
 ## Primary resource IDs
 
 - builders-library
 - k6-get-started
 - aws-ec2-autoscaling
 
-## Adaptation rule
+## Adaptation and integrity
 
-This is a public baseline. Learner-specific scores, remediation, reviews, applications, and future scheduling belong under `.study/`. Historical attempts are preserved; a gate failure creates private remediation instead of erasing later public curriculum.
+Learner-specific scores/remediation remain private under `.study/`. SOLO evidence is independent; HYBRID work freezes the first attempt before agent use.

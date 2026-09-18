@@ -1,70 +1,45 @@
 ---
 type: assessment
 schema_version: 1
-id: assessment-w28-d02-async-messaging-sqs-rabbitmq-and-kafka
+id: assessment-w28-d02-v1-1
 date: null
 week: 28
 assessment_type: system-design
 mode: SOLO
 skill_ids:
 - sqs
-- retry-backoff
-- dlq
 - idempotency
+- async-workers
+- messaging
 status: planned
 assistance_declared: none
-started_at: null
-submitted_at: null
-graded_at: null
 score_total: null
-score_dimensions:
-  factual_correctness: null
-  reasoning: null
-  practical_execution: null
-  validation: null
-  communication: null
-  english_quality: null
-  ai_supervision: null
-confidence_self_report: null
-grader: null
 estimated_minutes: 20
 ---
 
-# Week 28 / Day 02 Micro-Assessment
+# Week 28 / Day 02 — V1.1 Micro-Assessment
 
-## Instructions snapshot
+## Instructions
 
-- Timebox: **20 minutes**.
-- Scored attempt mode: **SOLO**.
+- Scored attempt is **SOLO**.
 - No LLM, coding agent, answer search, or existing solution during the scored attempt.
-- Freeze the response before feedback.
-- If help is required, mark the attempt `abandoned` before receiving solution-oriented help.
+- Freeze the raw response before feedback.
 
 ## Prompts
 
-1. Explain the key invariant, mechanism, or trade-off in **Design retries/backoff/visibility/dead-letter behavior** without relying on tool/framework vocabulary alone.
-2. What concrete evidence would validate or falsify your conclusion about **Design retries/backoff/visibility/dead-letter behavior** in a production-oriented backend?
+1. Why can unlimited retry amplify an outage?
+2. What evidence should accompany DLQ replay?
 
 ## Raw attempt — IMMUTABLE AFTER SUBMISSION
 
-_Copy this assessment into private state and record the learner response there._
-
-## Assistance declaration — IMMUTABLE AFTER SUBMISSION
-
-Expected during the scored attempt: `none`.
+_Copy this assessment into private state._
 
 ## Grading
 
-Grade after submission using `docs/assessments.md` and the `system-design` rubric.
+Use `docs/assessments.md` after submission.
 
 ## Feedback
 
-_Append after grading; never replace the raw attempt._
-
-## Error records created
-
-## Review events created
-
-## Regrade history
+Append after submission; never replace the raw attempt.
 
 No solution/model answer is stored in the public roadmap.

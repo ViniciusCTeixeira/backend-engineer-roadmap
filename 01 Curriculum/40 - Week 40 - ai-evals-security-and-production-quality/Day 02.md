@@ -1,90 +1,92 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w40-d02-ai-evals-security-and-production-quality
+id: task-w40-d02-v1-1
 week: 40
 day: 2
 date: null
 track: core
 skill_ids:
-- eval-datasets
-- graders
+- ai-evals
+- python
+- ai-security
 - regression
-- prompt-injection
 mode: SOLO
 estimated_minutes: 105
 technology_depth: core
 resource_ids:
-- openai-developers
-- mcp-intro
+- openai-evals-guide
+- python-314-docs
 deliverables:
-- Build a small versioned eval dataset with edge cases evidence
-- Week 40 private assessment attempt
-- `platform-ai-evals` increment or review
+- Python eval harness
+- result artifact
 review_policy: adaptive
 prerequisites:
 - week-39
 status: planned
 ---
 
-# Day 02 — Build a small versioned eval dataset with edge cases
+# Day 02 — Implement a Python Eval Harness
 
-## Why this matters
+## Outcome
 
-Evaluate AI behavior with reproducible datasets, graders, security/adversarial cases, tracing, and regression decisions rather than anecdotal prompt demos.
+> Run cases, capture model/config/version/output/latency/cost, and store machine-readable results for comparison.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
 | Primary-source study | `SOLO` | 20 |
-| Hands-on reasoning / lab | `SOLO` | 40 |
-| Project / evidence update | `SOLO` | 15 |
+| Hands-on lab | `SOLO` | 40 |
+| Project/evidence update | `SOLO` | 15 |
 | Technical English | `SOLO` | 10 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
-- `openai-developers`
-- `mcp-intro`
+- `openai-evals-guide`
+- `python-314-docs`
 
 ## Activities
 
 ### Primary-source study — 20 min — `SOLO`
 
-Read the relevant primary source with the specific question: Build a small versioned eval dataset with edge cases.
+Read only the sections required for the day's reasoning.
 
-### Hands-on reasoning / lab — 40 min — `SOLO`
+### Hands-on lab — 40 min — `SOLO`
 
-Build a small versioned eval dataset with edge cases. Start with a prediction/design before execution or lookup.
+Run cases, capture model/config/version/output/latency/cost, and store machine-readable results for comparison.
 
-### Project / evidence update — 15 min — `SOLO`
+### Project/evidence update — 15 min — `SOLO`
 
-Connect the result to `platform-ai-evals` or preserve a reproducible standalone artifact.
+Connect the result to Project B or preserve reproducible standalone evidence.
 
 ### Technical English — 10 min — `SOLO`
 
-Present an AI regression/security decision in English.
+Explain one decision/assumption/failure mode in English.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete the scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Build a small versioned eval dataset with edge cases evidence
-- Week 40 private assessment attempt
-- `platform-ai-evals` increment or review
+- Python eval harness
+- result artifact
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 40/Day 02.md`. Store learner responses only in private state.
+Run `02 Daily Assessments/Week 40/Day 02.md`. Store attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review where justified.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves independent evidence before agent use.
+
+## Completion rule
+
+Required evidence must exist; reading or agent conversation alone is not completion.

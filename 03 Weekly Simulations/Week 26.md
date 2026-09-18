@@ -1,60 +1,47 @@
 ---
 type: weekly-simulation
 schema_version: 1
-id: simulation-w26
+id: simulation-w26-v1-1
 week: 26
 mode: SOLO
 simulation_type: closed-technical
 skill_ids:
+- phase-gate-2
 - laravel
-- security
-- architecture
-- docker-nginx-fpm
-- aws-iam-vpc
+- python-fastapi
+- aws
 estimated_minutes: 90
 status: planned
 score_total: null
 ---
 
-# Week 26 — Phase Gate 2 — Modern Backend and Cloud Foundations Simulation
+# Week 26 — Phase Gate 2 — Modern Backend, Python Service, and Cloud Foundations Simulation
 
 ## Rules
 
-- Follow the declared mode exactly.
-- Preserve the first SOLO attempt before feedback or agent use.
+- Respect the declared mode.
+- Preserve the first SOLO attempt before feedback/agent use.
 - Do not search for a model solution during scored SOLO phases.
-- Store learner responses privately under `.study/`.
-- Grade using `docs/assessments.md` and critical floors where applicable.
-- No public answer key is stored beside this simulation.
+- Store responses privately under `.study/`.
+- All scored gate sections are closed SOLO; agent comparison is post-submission only.
 
-## Closed cumulative sections — 90 min
+## Scenario
 
-Work through five cumulative sections derived from this gate's themes:
+Demonstrate the week's outcome with implementation, diagnosis, or design evidence.
 
-- Closed Laravel lifecycle/persistence assessment
-- Closed security/architecture practical
-- Closed Docker/Nginx troubleshooting lab
-- Closed AWS IAM/VPC design case
-- Closed cross-layer production diagnosis
+Required evidence:
 
-For every section: state assumptions, preserve reasoning, validate where practical, and do not use agents/search/model solutions. The complete scored gate is SOLO. Agent feedback is allowed only after the immutable attempt is frozen.
+- phase-gate-2
+- laravel
+- python-fastapi
+- aws
 
 ## Raw attempt — IMMUTABLE AFTER SUBMISSION
 
 _Private learner record only._
 
-## Assistance declaration
+## Feedback / reviews
 
-_Private learner record only._
+Append only after submission and create spaced reviews from demonstrated gaps.
 
-## Feedback
-
-Append only after submission.
-
-## Error records created
-
-## Review events created
-
-## Weekly adaptation recommendation
-
-Use `docs/adaptive-learning.md`; never rewrite public curriculum from one learner result.
+No public model solution is stored here.

@@ -1,37 +1,36 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w37-d05-llm-tool-calling-and-bounded-actions
+id: task-w37-d05-v1-1
 week: 37
 day: 5
 date: null
 track: core
 skill_ids:
-- function-calling
-- tool-schemas
+- tool-calling
+- python
 - authorization
-- side-effects
+- human-approval
 mode: HYBRID
 estimated_minutes: 105
 technology_depth: core
 resource_ids:
 - openai-function-calling-guide
-- openai-developers
 deliverables:
-- Trace tool-call failures/retries/audit evidence end to end evidence
-- Week 37 private assessment attempt
-- `platform-ai-tools` increment or review
+- SOLO attack set
+- agent adversarial set
+- verified rejections
 review_policy: adaptive
 prerequisites:
 - week-36
 status: planned
 ---
 
-# Day 05 — Trace tool-call failures/retries/audit evidence end to end
+# Day 05 — Run Adversarial Tool-Call Tests With Agent Assistance
 
-## Why this matters
+## Outcome
 
-Build tool-calling workflows where the application—not the model—owns authorization, argument validation, execution, side effects, retries, and auditability.
+> Freeze SOLO attack cases first, then use an agent to generate additional malicious/ambiguous prompts and verify the application rejects unsafe actions.
 
 ## Timebox
 
@@ -40,51 +39,54 @@ Build tool-calling workflows where the application—not the model—owns author
 | SOLO baseline | `SOLO` | 25 |
 | Agent challenge | `AI-ASSISTED` | 20 |
 | Independent validation | `SOLO` | 20 |
-| Project / evidence update | `SOLO` | 20 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Project evidence | `SOLO` | 20 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
 - `openai-function-calling-guide`
-- `openai-developers`
 
 ## Activities
 
 ### SOLO baseline — 25 min — `SOLO`
 
-Work on: Trace tool-call failures/retries/audit evidence end to end. Freeze your plan/findings before using an agent.
+Freeze SOLO attack cases first, then use an agent to generate additional malicious/ambiguous prompts and verify the application rejects unsafe actions. Freeze your first plan/evidence before agent use.
 
 ### Agent challenge — 20 min — `AI-ASSISTED`
 
-Use an agent only after a SOLO baseline; independently verify consequential claims.
+Ask for critique/alternatives only; require assumptions.
 
 ### Independent validation — 20 min — `SOLO`
 
-Verify/reject claims using primary sources, tests, measurements, traces, queries, or code evidence.
+Verify consequential claims through code/tests/data/traces/primary sources.
 
-### Project / evidence update — 20 min — `SOLO`
+### Project evidence — 20 min — `SOLO`
 
-Apply only validated conclusions to `platform-ai-tools` or a reviewable evidence artifact.
+Apply only validated conclusions.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete the scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Trace tool-call failures/retries/audit evidence end to end evidence
-- Week 37 private assessment attempt
-- `platform-ai-tools` increment or review
+- SOLO attack set
+- agent adversarial set
+- verified rejections
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 37/Day 05.md`. Store learner responses only in private state.
+Run `02 Daily Assessments/Week 37/Day 05.md`. Store attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review where justified.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves independent evidence before agent use.
+
+## Completion rule
+
+Required evidence must exist; reading or agent conversation alone is not completion.

@@ -1,88 +1,102 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w39-d06-phase-gate-three-cloud-distributed-and-ai
+id: task-w39-d06-v1-1
 week: 39
 day: 6
 date: null
 track: core
 skill_ids:
-- aws
-- queues-reliability
-- observability-iac
-- distributed-systems
+- phase-gate-3
+- kubernetes
+- nosql-selection
+- python-ai
 mode: SOLO
 estimated_minutes: 135
 technology_depth: core
 resource_ids:
-[]
+- aws-ecs-overview
+- kubernetes-application-basics
+- mongodb-data-modeling
+- aws-dynamodb-data-modeling
+- python-314-docs
+- openai-function-calling-guide
 deliverables:
-- Weekly integration / simulation evidence
-- Week 39 private assessment attempt
-- `gate-3-evidence-freeze` increment or review
+- Week 39 simulation
+- project evidence
+- English explanation
 review_policy: adaptive
 prerequisites:
 - week-38
 status: planned
 ---
 
-# Day 06 — Weekly integration / simulation
+# Day 06 — Run the Cumulative Phase Gate
 
-## Why this matters
+## Outcome
 
-Demonstrate cloud/runtime, async/reliability, observability/IaC, distributed-system, and AI foundations without agent dependence in closed sections.
+> Complete the cumulative gate under closed SOLO conditions.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
-| Confidence calibration | `SOLO` | 10 |
-| Phase-gate simulation | `SOLO` | 90 |
+| Gate setup | `SOLO` | 10 |
+| Phase Gate simulation | `SOLO` | 90 |
 | Evidence freeze | `SOLO` | 15 |
-| Transfer prompt | `SOLO` | 10 |
+| Transfer assessment | `SOLO` | 10 |
 | English retrospective | `SOLO` | 10 |
 | **Total** |  | **135** |
 
-## Primary sources
+## Resources
 
-- No new source; use prior primary sources or frozen evidence.
+- `aws-ecs-overview`
+- `kubernetes-application-basics`
+- `mongodb-data-modeling`
+- `aws-dynamodb-data-modeling`
+- `python-314-docs`
+- `openai-function-calling-guide`
 
 ## Activities
 
-### Confidence calibration — 10 min — `SOLO`
+### Gate setup — 10 min — `SOLO`
 
-Record confidence by gate domain before the scored cumulative attempt.
+Record confidence and closed conditions before the gate.
 
-### Phase-gate simulation — 90 min — `SOLO`
+### Phase Gate simulation — 90 min — `SOLO`
 
-Run `03 Weekly Simulations/Week 39.md` under closed conditions; no agent/search/solution assistance.
+Run `03 Weekly Simulations/Week 39.md` under closed conditions.
 
 ### Evidence freeze — 15 min — `SOLO`
 
-Freeze the immutable attempt and evidence references before feedback.
+Freeze immutable evidence before feedback.
 
-### Transfer prompt — 10 min — `SOLO`
+### Transfer assessment — 10 min — `SOLO`
 
-Complete the daily transfer prompt and critical-floor self-check.
+Complete the daily transfer prompt.
 
 ### English retrospective — 10 min — `SOLO`
 
-Complete a Gate 3 architecture explanation and retrospective in English.
+Explain strongest/weakest evidence area in English.
 
 ## Deliverables
 
-- Weekly integration / simulation evidence
-- Week 39 private assessment attempt
-- `gate-3-evidence-freeze` increment or review
+- Week 39 simulation
+- project evidence
+- English explanation
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 39/Day 06.md`. Store learner responses only in private state.
+Run `02 Daily Assessments/Week 39/Day 06.md`. Store attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review where justified.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves independent evidence before agent use.
+
+## Completion rule
+
+Required evidence must exist; reading or agent conversation alone is not completion.

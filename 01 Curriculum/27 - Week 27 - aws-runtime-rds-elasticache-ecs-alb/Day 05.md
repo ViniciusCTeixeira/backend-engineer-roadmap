@@ -1,40 +1,37 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w27-d05-aws-runtime-rds-elasticache-ecs-alb
+id: task-w27-d05-v1-1
 week: 27
 day: 5
 date: null
 track: core
 skill_ids:
-- ecs-fargate
-- alb
-- rds
-- elasticache
+- aws-runtime
+- rds-postgresql
+- dynamodb
+- autoscaling
 mode: HYBRID
 estimated_minutes: 105
 technology_depth: core
 resource_ids:
-- aws-ecs-overview
-- aws-alb-overview
-- aws-rds-overview
-- aws-elasticache-overview
+- aws-dynamodb-data-modeling
 - aws-ec2-autoscaling
 deliverables:
-- Reason about scaling/capacity/cost and failure zones evidence
-- Week 27 private assessment attempt
-- `platform-aws-foundation` increment or review
+- RDS-vs-DynamoDB ADR
+- scaling signal plan
+- agent critique
 review_policy: adaptive
 prerequisites:
 - week-26
 status: planned
 ---
 
-# Day 05 — Reason about scaling/capacity/cost and failure zones
+# Day 05 — Decide RDS vs DynamoDB and Scale Deliberately
 
-## Why this matters
+## Outcome
 
-Map the production backend onto managed AWS runtime components with explicit availability, health, data, cache, scaling, and cost trade-offs.
+> Challenge the DynamoDB candidate against PostgreSQL requirements, then model capacity/autoscaling signals and reject unjustified persistence duplication.
 
 ## Timebox
 
@@ -43,54 +40,55 @@ Map the production backend onto managed AWS runtime components with explicit ava
 | SOLO baseline | `SOLO` | 25 |
 | Agent challenge | `AI-ASSISTED` | 20 |
 | Independent validation | `SOLO` | 20 |
-| Project / evidence update | `SOLO` | 20 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Project evidence | `SOLO` | 20 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
-- `aws-ecs-overview`
-- `aws-alb-overview`
-- `aws-rds-overview`
-- `aws-elasticache-overview`
+- `aws-dynamodb-data-modeling`
 - `aws-ec2-autoscaling`
 
 ## Activities
 
 ### SOLO baseline — 25 min — `SOLO`
 
-Work on: Reason about scaling/capacity/cost and failure zones. Freeze your plan/findings before using an agent.
+Challenge the DynamoDB candidate against PostgreSQL requirements, then model capacity/autoscaling signals and reject unjustified persistence duplication. Freeze your first plan/evidence before agent use.
 
 ### Agent challenge — 20 min — `AI-ASSISTED`
 
-Use an agent only after a SOLO baseline; independently verify consequential claims.
+Ask for critique/alternatives only; require assumptions.
 
 ### Independent validation — 20 min — `SOLO`
 
-Verify/reject claims using primary sources, tests, measurements, traces, queries, or code evidence.
+Verify consequential claims through code/tests/data/traces/primary sources.
 
-### Project / evidence update — 20 min — `SOLO`
+### Project evidence — 20 min — `SOLO`
 
-Apply only validated conclusions to `platform-aws-foundation` or a reviewable evidence artifact.
+Apply only validated conclusions.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete the scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Reason about scaling/capacity/cost and failure zones evidence
-- Week 27 private assessment attempt
-- `platform-aws-foundation` increment or review
+- RDS-vs-DynamoDB ADR
+- scaling signal plan
+- agent critique
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 27/Day 05.md`. Store learner responses only in private state.
+Run `02 Daily Assessments/Week 27/Day 05.md`. Store attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review where justified.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves independent evidence before agent use.
+
+## Completion rule
+
+Required evidence must exist; reading or agent conversation alone is not completion.

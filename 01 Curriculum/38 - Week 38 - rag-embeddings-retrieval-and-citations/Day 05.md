@@ -1,90 +1,90 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w38-d05-rag-embeddings-retrieval-and-citations
+id: task-w38-d05-v1-1
 week: 38
 day: 5
 date: null
 track: core
 skill_ids:
+- rag
 - embeddings
-- chunking
-- vector-retrieval
-- grounding
-mode: HYBRID
+- retrieval
+- python
+mode: SOLO
 estimated_minutes: 105
 technology_depth: core
 resource_ids:
 - openai-embeddings-guide
-- opensearch-getting-started
 deliverables:
-- Diagnose missing/wrong/context-poisoned retrieval before prompt changes evidence
-- Week 38 private assessment attempt
-- `platform-ai-retrieval` increment or review
+- retrieval failure taxonomy
+- corrective experiment
 review_policy: adaptive
 prerequisites:
 - week-37
 status: planned
 ---
 
-# Day 05 — Diagnose missing/wrong/context-poisoned retrieval before prompt changes
+# Day 05 — Diagnose Retrieval Failures Before Prompt Changes
 
-## Why this matters
+## Outcome
 
-Build and evaluate a small retrieval-augmented workflow using chunking, embeddings, retrieval, grounding, citations, and failure analysis.
+> Classify missing document, bad chunking, embedding mismatch, filter error, ranking error, or context poisoning and fix the correct layer.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
-| SOLO baseline | `SOLO` | 25 |
-| Agent challenge | `AI-ASSISTED` | 20 |
-| Independent validation | `SOLO` | 20 |
-| Project / evidence update | `SOLO` | 20 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Primary-source study | `SOLO` | 20 |
+| Hands-on lab | `SOLO` | 40 |
+| Project/evidence update | `SOLO` | 15 |
+| Technical English | `SOLO` | 10 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
 - `openai-embeddings-guide`
-- `opensearch-getting-started`
 
 ## Activities
 
-### SOLO baseline — 25 min — `SOLO`
+### Primary-source study — 20 min — `SOLO`
 
-Work on: Diagnose missing/wrong/context-poisoned retrieval before prompt changes. Freeze your plan/findings before using an agent.
+Read only the sections required for the day's reasoning.
 
-### Agent challenge — 20 min — `AI-ASSISTED`
+### Hands-on lab — 40 min — `SOLO`
 
-Use an agent only after a SOLO baseline; independently verify consequential claims.
+Classify missing document, bad chunking, embedding mismatch, filter error, ranking error, or context poisoning and fix the correct layer.
 
-### Independent validation — 20 min — `SOLO`
+### Project/evidence update — 15 min — `SOLO`
 
-Verify/reject claims using primary sources, tests, measurements, traces, queries, or code evidence.
+Connect the result to Project B or preserve reproducible standalone evidence.
 
-### Project / evidence update — 20 min — `SOLO`
+### Technical English — 10 min — `SOLO`
 
-Apply only validated conclusions to `platform-ai-retrieval` or a reviewable evidence artifact.
+Explain one decision/assumption/failure mode in English.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete the scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Diagnose missing/wrong/context-poisoned retrieval before prompt changes evidence
-- Week 38 private assessment attempt
-- `platform-ai-retrieval` increment or review
+- retrieval failure taxonomy
+- corrective experiment
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 38/Day 05.md`. Store learner responses only in private state.
+Run `02 Daily Assessments/Week 38/Day 05.md`. Store attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review where justified.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves independent evidence before agent use.
+
+## Completion rule
+
+Required evidence must exist; reading or agent conversation alone is not completion.

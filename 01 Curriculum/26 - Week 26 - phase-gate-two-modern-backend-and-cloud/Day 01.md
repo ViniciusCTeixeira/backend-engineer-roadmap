@@ -1,83 +1,92 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w26-d01-phase-gate-two-modern-backend-and-cloud
+id: task-w26-d01-v1-1
 week: 26
 day: 1
 date: null
 track: core
 skill_ids:
+- phase-gate-2
 - laravel
-- security
-- architecture
-- docker-nginx-fpm
+- python-fastapi
+- aws
 mode: SOLO
 estimated_minutes: 105
 technology_depth: core
 resource_ids:
-[]
+- laravel-current-docs
+- postgresql-explain
 deliverables:
-- Closed Laravel lifecycle/persistence assessment evidence
-- Week 26 private assessment attempt
-- `gate-2-evidence-freeze` increment or review
+- Laravel/PostgreSQL gate evidence
+- confidence record
 review_policy: adaptive
 prerequisites:
 - week-25
 status: planned
 ---
 
-# Day 01 — Closed Laravel lifecycle/persistence assessment
+# Day 01 — Closed Laravel/PostgreSQL Practical
 
-## Why this matters
+## Outcome
 
-Demonstrate Laravel, security, architecture, containers, production request flow, and AWS foundations without agent dependence.
+> Trace a Laravel request, persistence flow, query plan, and one authorization rule under closed conditions.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
-| Closed gate setup | `SOLO` | 10 |
-| Closed gate practical / reasoning | `SOLO` | 60 |
-| Validation and explanation | `SOLO` | 25 |
-| Daily micro-assessment | `SOLO` | 10 |
+| Primary-source study | `SOLO` | 20 |
+| Hands-on lab | `SOLO` | 40 |
+| Project/evidence update | `SOLO` | 15 |
+| Technical English | `SOLO` | 10 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+## Resources
 
-- No new source; use prior primary sources or frozen evidence.
+- `laravel-current-docs`
+- `postgresql-explain`
 
 ## Activities
 
-### Closed gate setup — 10 min — `SOLO`
+### Primary-source study — 20 min — `SOLO`
 
-Declare closed conditions and create the private immutable attempt record.
+Read only the sections required for the day's reasoning.
 
-### Closed gate practical / reasoning — 60 min — `SOLO`
+### Hands-on lab — 40 min — `SOLO`
 
-Closed Laravel lifecycle/persistence assessment
+Trace a Laravel request, persistence flow, query plan, and one authorization rule under closed conditions.
 
-### Validation and explanation — 25 min — `SOLO`
+### Project/evidence update — 15 min — `SOLO`
 
-Validate the work, state assumptions, and explain decisive trade-offs.
+Connect the result to Project B or preserve reproducible standalone evidence.
 
-### Daily micro-assessment — 10 min — `SOLO`
+### Technical English — 10 min — `SOLO`
 
-Freeze a short transfer answer before feedback.
+Explain one decision/assumption/failure mode in English.
+
+### Daily assessment — 20 min — `SOLO`
+
+Complete the scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Closed Laravel lifecycle/persistence assessment evidence
-- Week 26 private assessment attempt
-- `gate-2-evidence-freeze` increment or review
+- Laravel/PostgreSQL gate evidence
+- confidence record
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 26/Day 01.md`. Store learner responses only in private state.
+Run `02 Daily Assessments/Week 26/Day 01.md`. Store attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review where justified.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves independent evidence before agent use.
+
+## Completion rule
+
+Required evidence must exist; reading or agent conversation alone is not completion.
