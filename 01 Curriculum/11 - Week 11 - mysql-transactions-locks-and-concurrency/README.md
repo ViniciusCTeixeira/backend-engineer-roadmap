@@ -4,36 +4,31 @@ schema_version: 1
 week: 11
 phase: Data and Web
 estimated_minutes: 720
-primary_outcome: "Reason about ACID, isolation, locks, deadlocks, and concurrent updates using predictions and controlled experiments."
-project_milestone: "legacy-mysql + platform-data-model"
+primary_outcome: "Reason about transaction correctness and concurrency using shared invariants plus engine-specific MVCC/locking behavior."
+project_milestone: "platform-data-model"
+v1_1_market_alignment: true
 ---
 
-# Week 11 — MySQL Transactions, Isolation, Locks, and Concurrency
+# Week 11 — Transactions, MVCC, Locks, and Concurrency Across MySQL and PostgreSQL
 
 ## Primary outcome
 
-Reason about ACID, isolation, locks, deadlocks, and concurrent updates using predictions and controlled experiments.
+Reason about transaction correctness and concurrency using shared invariants plus engine-specific MVCC/locking behavior.
 
-## Matrix alignment
+## V1.1 alignment
 
-Core topics:
-- ACID
-- autocommit
-- isolation levels
-- MVCC
-- locking reads
-- deadlocks
-- optimistic/pessimistic concurrency
+This week implements the approved V1.1 US-market amendment while preserving the 12-hour ceiling.
 
-Project milestone: `legacy-mysql + platform-data-model`
+Project milestone: `platform-data-model`
 
 Weekly simulation: `SOLO` / `sql-debugging`
 
-English: Explain a concurrency/deadlock timeline aloud in English.
+## Core skills
 
-AI/agent: Use an agent to suggest concurrency experiments only after predicting behavior; validate with multi-session evidence.
-
-Career: Identify recurring database-concurrency expectations in senior backend roles.
+- transactions
+- mvcc
+- locking
+- deadlocks
 
 ## Planned workload
 
@@ -48,13 +43,17 @@ Career: Identify recurring database-concurrency expectations in senior backend r
 | Day 07 | 60 |
 | **Total** | **720 (12h)** |
 
-Assessment time is already included.
+Assessment time is included.
 
 ## Primary resource IDs
 
-- mysql-84-manual
 - mysql-innodb-transactions
+- postgresql-mvcc
 
 ## Adaptation rule
 
-This is a public baseline. Learner-specific remediation, reviews, scores, and future scheduling belong under `.study/`. A phase-gate failure preserves the original attempt and creates targeted private remediation rather than erasing history.
+Public curriculum remains generic. Learner-specific remediation, scores, reviews, and market-triggered depth belong under private `.study/`.
+
+## AI integrity
+
+SOLO evidence must remain independent. HYBRID work freezes the first attempt before agent use and validates consequential claims afterward.

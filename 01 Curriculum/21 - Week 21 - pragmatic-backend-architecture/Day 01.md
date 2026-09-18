@@ -1,90 +1,92 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w21-d01-pragmatic-backend-architecture
+id: task-w21-d01-v1-1
 week: 21
 day: 1
 date: null
 track: core
 skill_ids:
-- application-services
-- repository-trade-offs
-- domain-boundaries
-- dto-value-objects
+- architecture
+- adrs
+- service-boundaries
+- dependency-direction
 mode: SOLO
 estimated_minutes: 105
 technology_depth: core
 resource_ids:
 - laravel-current-docs
-- builders-library
 deliverables:
-- Identify orchestration vs domain vs infrastructure responsibilities evidence
-- Week 21 private assessment attempt
-- `platform-architecture` increment or review
+- responsibility map
+- refactor candidate
 review_policy: adaptive
 prerequisites:
 - week-20
 status: planned
 ---
 
-# Day 01 — Identify orchestration vs domain vs infrastructure responsibilities
+# Day 01 — Separate Domain, Application, and Infrastructure Responsibilities
 
-## Why this matters
+## Outcome
 
-Apply application services, boundaries, DTO/value objects, dependency direction, and repository trade-offs without overengineering.
+> Map one Project B flow and remove framework/infrastructure concerns from the core business decision.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
 | Primary-source study | `SOLO` | 20 |
-| Hands-on reasoning / lab | `SOLO` | 40 |
-| Project / evidence update | `SOLO` | 15 |
+| Hands-on lab | `SOLO` | 40 |
+| Project/evidence update | `SOLO` | 15 |
 | Technical English | `SOLO` | 10 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+Assessment time is included.
+
+## Resources
 
 - `laravel-current-docs`
-- `builders-library`
 
 ## Activities
 
 ### Primary-source study — 20 min — `SOLO`
 
-Read the relevant primary source with the specific question: Identify orchestration vs domain vs infrastructure responsibilities.
+Read only the source sections needed to reason about the day's focus.
 
-### Hands-on reasoning / lab — 40 min — `SOLO`
+### Hands-on lab — 40 min — `SOLO`
 
-Identify orchestration vs domain vs infrastructure responsibilities. Start with a prediction/design before execution or lookup.
+Map one Project B flow and remove framework/infrastructure concerns from the core business decision.
 
-### Project / evidence update — 15 min — `SOLO`
+### Project/evidence update — 15 min — `SOLO`
 
-Connect the result to `platform-architecture` or preserve a reproducible standalone artifact.
+Connect the result to Project A/B or preserve a reproducible standalone artifact.
 
 ### Technical English — 10 min — `SOLO`
 
-Defend an architecture decision in English.
+Explain one important decision, assumption, or failure mode in English.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete the scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Identify orchestration vs domain vs infrastructure responsibilities evidence
-- Week 21 private assessment attempt
-- `platform-architecture` increment or review
+- responsibility map
+- refactor candidate
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 21/Day 01.md`. Store learner responses only in private state.
+Run `02 Daily Assessments/Week 21/Day 01.md`. Store learner attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review when justified.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves the first independent attempt before agent use.
+
+## Completion rule
+
+Reading or agent conversation alone is not completion; required evidence must exist.

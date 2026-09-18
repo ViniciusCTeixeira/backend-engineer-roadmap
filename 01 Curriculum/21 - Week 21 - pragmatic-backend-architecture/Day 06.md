@@ -1,16 +1,16 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w21-d06-pragmatic-backend-architecture
+id: task-w21-d06-v1-1
 week: 21
 day: 6
 date: null
 track: core
 skill_ids:
-- application-services
-- repository-trade-offs
-- domain-boundaries
-- dto-value-objects
+- architecture
+- adrs
+- service-boundaries
+- dependency-direction
 mode: SOLO
 estimated_minutes: 135
 technology_depth: core
@@ -18,20 +18,20 @@ resource_ids:
 - laravel-current-docs
 - builders-library
 deliverables:
-- Weekly integration / simulation evidence
-- Week 21 private assessment attempt
-- `platform-architecture` increment or review
+- Week 21 simulation
+- project evidence
+- English technical explanation
 review_policy: adaptive
 prerequisites:
 - week-20
 status: planned
 ---
 
-# Day 06 — Weekly integration / simulation
+# Day 06 — Run the Weekly V1.1 Simulation
 
-## Why this matters
+## Outcome
 
-Apply application services, boundaries, DTO/value objects, dependency direction, and repository trade-offs without overengineering.
+> Integrate the week's skills under the declared simulation mode.
 
 ## Timebox
 
@@ -39,12 +39,14 @@ Apply application services, boundaries, DTO/value objects, dependency direction,
 |---|---|---:|
 | Confidence calibration | `SOLO` | 10 |
 | Weekly simulation | `SOLO` | 75 |
-| Project milestone evidence | `SOLO` | 25 |
-| Transfer prompt | `SOLO` | 10 |
+| Project milestone | `SOLO` | 25 |
+| Transfer assessment | `SOLO` | 10 |
 | Technical English | `SOLO` | 15 |
 | **Total** |  | **135** |
 
-## Primary sources
+Assessment time is included.
+
+## Resources
 
 - `laravel-current-docs`
 - `builders-library`
@@ -53,38 +55,42 @@ Apply application services, boundaries, DTO/value objects, dependency direction,
 
 ### Confidence calibration — 10 min — `SOLO`
 
-Record confidence before the weekly simulation.
+Rate the week's core skills before the simulation.
 
 ### Weekly simulation — 75 min — `SOLO`
 
-Run `03 Weekly Simulations/Week 21.md`; preserve any required pre-agent SOLO evidence.
+Run `03 Weekly Simulations/Week 21.md` and preserve required SOLO evidence.
 
-### Project milestone evidence — 25 min — `SOLO`
+### Project milestone — 25 min — `SOLO`
 
-Finalize this week’s `platform-architecture` evidence and reproducible validation.
+Finalize reproducible V1.1 project evidence for this week.
 
-### Transfer prompt — 10 min — `SOLO`
+### Transfer assessment — 10 min — `SOLO`
 
 Complete the daily transfer prompt without assistance.
 
 ### Technical English — 15 min — `SOLO`
 
-Defend an architecture decision in English.
+Explain the week's key trade-off in English.
 
 ## Deliverables
 
-- Weekly integration / simulation evidence
-- Week 21 private assessment attempt
-- `platform-architecture` increment or review
+- Week 21 simulation
+- project evidence
+- English technical explanation
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 21/Day 06.md`. Store learner responses only in private state.
+Run `02 Daily Assessments/Week 21/Day 06.md`. Store learner attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review when justified.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves the first independent attempt before agent use.
+
+## Completion rule
+
+Reading or agent conversation alone is not completion; required evidence must exist.

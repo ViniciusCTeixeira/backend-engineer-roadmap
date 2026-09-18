@@ -1,37 +1,47 @@
 ---
 type: weekly-simulation
 schema_version: 1
-id: simulation-w09
+id: simulation-w09-v1-1
 week: 9
 mode: SOLO
 simulation_type: sql-debugging
 skill_ids:
 - relational-modeling
+- mysql
+- postgresql
 - sql
-- constraints
-- joins
-- aggregation
 estimated_minutes: 75
 status: planned
 score_total: null
 ---
 
-# Week 9 — Relational Modeling and SQL Without ORM Dependence Simulation
+# Week 9 — Relational Modeling and SQL Across MySQL and PostgreSQL Simulation
 
 ## Rules
 
 - Follow the declared mode exactly.
-- Preserve the first SOLO attempt before feedback or agent use.
+- Preserve the first SOLO attempt before any agent feedback.
 - Do not search for a model solution during scored SOLO phases.
-- Store responses privately under `.study/`.
+- Store learner responses privately under `.study/`.
 - Grade using `docs/assessments.md`.
-- Week 13 uses phase-gate critical floors and private remediation rules.
 
-## Closed schema and SQL case — 60 min
-Model a supplied operations domain, write DDL with keys/constraints, and answer four join/aggregation questions. Include counterexample rows that validate one aggregate and one outer join.
 
-## Transfer review — 15 min
-Explain one normalization decision and one deliberate non-denormalization choice.
+## Scenario
+
+Demonstrate the week's outcome against a bounded backend scenario that requires implementation, diagnosis, or design evidence rather than terminology recall.
+
+Required evidence:
+
+- relational-modeling
+- mysql
+- postgresql
+- sql
+
+## Timebox
+
+- 55 min primary implementation/design/diagnosis.
+- 10 min adversarial/edge-case review.
+- 10 min explanation and evidence freeze.
 
 ## Raw attempt — IMMUTABLE AFTER SUBMISSION
 
@@ -41,20 +51,8 @@ _Private learner record only._
 
 _Private learner record only._
 
-## Grading dimensions
+## Feedback / review creation
 
-Use the approved assessment model and applicable critical floors.
+Append only after submission. Create D+1/D+7/D+30 reviews from demonstrated gaps.
 
-## Feedback
-
-Append only after submission.
-
-## Error records created
-
-## Review events created
-
-## Weekly adaptation recommendation
-
-Use `docs/adaptive-learning.md`; do not rewrite public curriculum from one learner result.
-
-No solution/model answer is stored in the public roadmap.
+No public model solution is stored here.

@@ -1,70 +1,46 @@
 ---
 type: assessment
 schema_version: 1
-id: assessment-w10-d02-mysql-indexes-explain-and-benchmarking
+id: assessment-w10-d02-v1-1
 date: null
 week: 10
 assessment_type: sql-debugging
 mode: SOLO
 skill_ids:
-- mysql-indexes
-- explain
-- query-plans
+- indexes
+- mysql-explain
+- postgresql-explain
 - benchmarking
 status: planned
 assistance_declared: none
-started_at: null
-submitted_at: null
-graded_at: null
 score_total: null
-score_dimensions:
-  factual_correctness: null
-  reasoning: null
-  practical_execution: null
-  validation: null
-  communication: null
-  english_quality: null
-  ai_supervision: null
-confidence_self_report: null
-grader: null
 estimated_minutes: 20
 ---
 
-# Week 10 / Day 02 Micro-Assessment
+# Week 10 / Day 02 — V1.1 Micro-Assessment
 
-## Instructions snapshot
+## Instructions
 
-- Timebox: **20 minutes**.
-- Scored attempt mode: **SOLO**.
+- Scored attempt is **SOLO**.
 - No LLM, coding agent, answer search, or existing solution during the scored attempt.
-- Freeze the response before feedback.
-- If help is required, mark the attempt `abandoned` before receiving solution-oriented help.
+- Freeze the raw response before feedback.
+- If help is required, mark the attempt abandoned before receiving solution-oriented help.
 
 ## Prompts
 
-1. Why does column order matter in a composite index?
-2. What is a covering index and why is it not automatically best?
+1. What does MySQL EXPLAIN not prove by itself?
+2. Why might the optimizer ignore a plausible index?
 
 ## Raw attempt — IMMUTABLE AFTER SUBMISSION
 
 _Copy this assessment into private state and record the learner response there._
 
-## Assistance declaration — IMMUTABLE AFTER SUBMISSION
-
-Expected during the scored attempt: `none`.
-
 ## Grading
 
-Grade after submission using `docs/assessments.md` and the `sql-debugging` rubric.
+Grade after submission using `docs/assessments.md` and the applicable rubric.
 
 ## Feedback
 
-_Append after grading; never replace the raw attempt._
-
-## Error records created
-
-## Review events created
-
-## Regrade history
+Append after submission. Never replace the raw attempt.
 
 No solution/model answer is stored in the public roadmap.

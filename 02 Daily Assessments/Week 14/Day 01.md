@@ -1,70 +1,46 @@
 ---
 type: assessment
 schema_version: 1
-id: assessment-w14-d01-http-semantics-idempotency-and-api-contracts
+id: assessment-w14-d01-v1-1
 date: null
 week: 14
 assessment_type: conceptual
 mode: SOLO
 skill_ids:
-- http-semantics
-- idempotency
-- http-caching
-- openapi
+- http
+- rest
+- grpc
+- protobuf
 status: planned
 assistance_declared: none
-started_at: null
-submitted_at: null
-graded_at: null
 score_total: null
-score_dimensions:
-  factual_correctness: null
-  reasoning: null
-  practical_execution: null
-  validation: null
-  communication: null
-  english_quality: null
-  ai_supervision: null
-confidence_self_report: null
-grader: null
 estimated_minutes: 20
 ---
 
-# Week 14 / Day 01 Micro-Assessment
+# Week 14 / Day 01 — V1.1 Micro-Assessment
 
-## Instructions snapshot
+## Instructions
 
-- Timebox: **20 minutes**.
-- Scored attempt mode: **SOLO**.
+- Scored attempt is **SOLO**.
 - No LLM, coding agent, answer search, or existing solution during the scored attempt.
-- Freeze the response before feedback.
-- If help is required, mark the attempt `abandoned` before receiving solution-oriented help.
+- Freeze the raw response before feedback.
+- If help is required, mark the attempt abandoned before receiving solution-oriented help.
 
 ## Prompts
 
-1. What can HTTP evidence prove that DNS/socket evidence cannot?
-2. Why not collapse all layers into 'network'?
+1. What can an HTTP status prove that DNS evidence cannot?
+2. Why should 'network issue' be decomposed by layer?
 
 ## Raw attempt — IMMUTABLE AFTER SUBMISSION
 
 _Copy this assessment into private state and record the learner response there._
 
-## Assistance declaration — IMMUTABLE AFTER SUBMISSION
-
-Expected during the scored attempt: `none`.
-
 ## Grading
 
-Grade after submission using `docs/assessments.md` and the `conceptual` rubric.
+Grade after submission using `docs/assessments.md` and the applicable rubric.
 
 ## Feedback
 
-_Append after grading; never replace the raw attempt._
-
-## Error records created
-
-## Review events created
-
-## Regrade history
+Append after submission. Never replace the raw attempt.
 
 No solution/model answer is stored in the public roadmap.

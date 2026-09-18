@@ -4,35 +4,31 @@ schema_version: 1
 week: 24
 phase: Modern Backend
 estimated_minutes: 720
-primary_outcome: "Integrate Docker/Nginx/PHP-FPM/MySQL/Redis into a reproducible local-production stack and measure behavior with bounded load tests."
-project_milestone: "legacy-containerized + platform-local-production"
+primary_outcome: "Build, test, debug, and explain one bounded Python/FastAPI service and connect it through a justified REST or gRPC boundary."
+project_milestone: "platform-python-service"
+v1_1_market_alignment: true
 ---
 
-# Week 24 — Local Production Integration, k6, and Release Evidence
+# Week 24 — Python/FastAPI Secondary Backend and Practical gRPC
 
 ## Primary outcome
 
-Integrate Docker/Nginx/PHP-FPM/MySQL/Redis into a reproducible local-production stack and measure behavior with bounded load tests.
+Build, test, debug, and explain one bounded Python/FastAPI service and connect it through a justified REST or gRPC boundary.
 
-## Matrix alignment
+## V1.1 alignment
 
-Core topics:
-- integration
-- Docker Compose
-- release checklist
-- k6
-- capacity signals
-- failure testing
+This week implements the approved V1.1 US-market amendment while preserving the 12-hour ceiling.
 
-Project milestone: `legacy-containerized + platform-local-production`
+Project milestone: `platform-python-service`
 
 Weekly simulation: `HYBRID` / `coding-lab`
 
-English: Present the local-production architecture and load-test evidence in English.
+## Core skills
 
-AI/agent: Use an agent only after a SOLO baseline; independently verify consequential claims.
-
-Career: Track role-fit evidence and interview/application signals privately.
+- python
+- fastapi
+- grpc
+- secondary-backend
 
 ## Planned workload
 
@@ -51,10 +47,16 @@ Assessment time is included.
 
 ## Primary resource IDs
 
-- docker-get-started
-- nginx-beginners-guide
-- k6-get-started
+- python-314-docs
+- fastapi-tutorial
+- fastapi-testing
+- grpc-docs
+- grpc-python-basics
 
 ## Adaptation rule
 
-This is a public baseline. Learner-specific scores, remediation, reviews, applications, and future scheduling belong under `.study/`. Historical attempts are preserved; a gate failure creates private remediation instead of erasing later public curriculum.
+Public curriculum remains generic. Learner-specific remediation, scores, reviews, and market-triggered depth belong under private `.study/`.
+
+## AI integrity
+
+SOLO evidence must remain independent. HYBRID work freezes the first attempt before agent use and validates consequential claims afterward.

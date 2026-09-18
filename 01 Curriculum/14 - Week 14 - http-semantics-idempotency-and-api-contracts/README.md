@@ -4,36 +4,31 @@ schema_version: 1
 week: 14
 phase: Data and Web
 estimated_minutes: 720
-primary_outcome: "Reason about HTTP semantics before designing APIs and express behavior through a reviewable contract."
-project_milestone: "legacy-api-quality + platform-api-contract"
+primary_outcome: "Reason about external HTTP/REST contracts and establish service-to-service gRPC/Protobuf literacy."
+project_milestone: "platform-api-contract"
+v1_1_market_alignment: true
 ---
 
-# Week 14 — HTTP Semantics, Idempotency, OpenAPI, and API Clients
+# Week 14 — HTTP, REST, Idempotency, OpenAPI, and gRPC Contracts
 
 ## Primary outcome
 
-Reason about HTTP semantics before designing APIs and express behavior through a reviewable contract.
+Reason about external HTTP/REST contracts and establish service-to-service gRPC/Protobuf literacy.
 
-## Matrix alignment
+## V1.1 alignment
 
-Core topics:
-- DNS/TCP overview
-- HTTP methods/status/headers
-- cookies/sessions
-- HTTP caching
-- idempotency
-- OpenAPI
-- Bruno/Postman
+This week implements the approved V1.1 US-market amendment while preserving the 12-hour ceiling.
 
-Project milestone: `legacy-api-quality + platform-api-contract`
+Project milestone: `platform-api-contract`
 
 Weekly simulation: `SOLO` / `closed-technical`
 
-English: Explain an HTTP request lifecycle in English.
+## Core skills
 
-AI/agent: Use an agent to inspect traces/contracts only after independently identifying protocol-level facts.
-
-Career: Draft role-focused headline/about positioning; no mass applications yet.
+- http
+- rest
+- grpc
+- protobuf
 
 ## Planned workload
 
@@ -48,17 +43,19 @@ Career: Draft role-focused headline/about positioning; no mass applications yet.
 | Day 07 | 60 |
 | **Total** | **720 (12h)** |
 
-Assessment time is already included.
+Assessment time is included.
 
 ## Primary resource IDs
 
 - rfc9110-http-semantics
 - rfc9111-http-caching
 - openapi-spec
-- bruno-openapi
-- postman-collections
-- curl-manpage
+- grpc-docs
 
 ## Adaptation rule
 
-This is a public baseline. Learner-specific remediation, reviews, scores, and future scheduling belong under `.study/`. A phase-gate failure preserves the original attempt and creates targeted private remediation rather than erasing history.
+Public curriculum remains generic. Learner-specific remediation, scores, reviews, and market-triggered depth belong under private `.study/`.
+
+## AI integrity
+
+SOLO evidence must remain independent. HYBRID work freezes the first attempt before agent use and validates consequential claims afterward.

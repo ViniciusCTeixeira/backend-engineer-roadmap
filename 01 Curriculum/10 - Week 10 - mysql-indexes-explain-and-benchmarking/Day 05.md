@@ -1,85 +1,81 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w10-d05-mysql-indexes-explain-and-benchmarking
+id: task-w10-d05-v1-1
 week: 10
 day: 5
 date: null
 track: core
 skill_ids:
-- mysql-indexes
-- explain
-- query-plans
+- indexes
+- mysql-explain
+- postgresql-explain
 - benchmarking
-mode: HYBRID
+mode: SOLO
 estimated_minutes: 105
 technology_depth: core
 resource_ids:
-- mysql-indexes-manual
 - mysql-explain-manual
+- postgresql-explain
 deliverables:
-- frozen tuning plan
-- agent candidate list
-- validation/rejection evidence
+- repeatable benchmark
+- English before/after note
 review_policy: adaptive
 prerequisites:
 - week-09
 status: planned
 ---
 
-# Day 05 — Challenge Agent-Generated Index Advice
+# Day 05 — Run a Dual-Engine Before/After Benchmark
 
 ## Outcome
 
-> Freeze your tuning plan, request agent candidates, independently test each, and reject unsupported/redundant indexes.
+> Use controlled data/query inputs and compare plan plus timing evidence before and after one justified change in each engine.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
-| SOLO baseline | `SOLO` | 25 |
-| Agent challenge | `AI-ASSISTED` | 20 |
-| Independent validation | `SOLO` | 20 |
-| Project / evidence update | `SOLO` | 20 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Primary-source study | `SOLO` | 20 |
+| Hands-on lab | `SOLO` | 40 |
+| Project/evidence update | `SOLO` | 15 |
+| Technical English | `SOLO` | 10 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
 Assessment time is included.
 
 ## Resources
 
-- `mysql-indexes-manual`
 - `mysql-explain-manual`
-
-Resource IDs resolve through `09 Resources/catalog.yaml`.
+- `postgresql-explain`
 
 ## Activities
 
-### SOLO baseline — 25 min — `SOLO`
+### Primary-source study — 20 min — `SOLO`
 
-Freeze your tuning plan, request agent candidates, independently test each, and reject unsupported/redundant indexes. Freeze your plan/findings before agent use.
+Read only the source sections needed to reason about the day's focus.
 
-### Agent challenge — 20 min — `AI-ASSISTED`
+### Hands-on lab — 40 min — `SOLO`
 
-Ask for critique/alternatives only; require explicit assumptions and evidence.
+Use controlled data/query inputs and compare plan plus timing evidence before and after one justified change in each engine.
 
-### Independent validation — 20 min — `SOLO`
+### Project/evidence update — 15 min — `SOLO`
 
-Verify or reject agent claims through primary sources, code, SQL, traces, tests, or measurements.
+Connect the result to Project A/B or preserve a reproducible standalone artifact.
 
-### Project / evidence update — 20 min — `SOLO`
+### Technical English — 10 min — `SOLO`
 
-Apply only validated conclusions to the project/evidence artifact.
+Explain one important decision, assumption, or failure mode in English.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
 Complete the scored transfer prompt without assistance.
 
 ## Deliverables
 
-- frozen tuning plan
-- agent candidate list
-- validation/rejection evidence
+- repeatable benchmark
+- English before/after note
 
 ## Daily assessment
 
@@ -87,11 +83,11 @@ Run `02 Daily Assessments/Week 10/Day 05.md`. Store learner attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; add D+30 transfer review when justified. Gate remediation is private and preserves the raw attempt.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review when justified.
 
 ## AI integrity
 
-Scored attempts are SOLO. HYBRID activities freeze the SOLO baseline before agent use and require independent validation afterward.
+Scored attempts are SOLO. HYBRID work preserves the first independent attempt before agent use.
 
 ## Completion rule
 

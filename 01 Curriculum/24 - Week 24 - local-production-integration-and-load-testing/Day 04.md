@@ -1,90 +1,96 @@
 ---
 type: daily-plan
 schema_version: 1
-id: task-w24-d04-local-production-integration-and-load-testing
+id: task-w24-d04-v1-1
 week: 24
 day: 4
 date: null
 track: core
 skill_ids:
-- integration
-- docker-compose
-- release-checklist
-- k6
+- python
+- fastapi
+- grpc
+- secondary-backend
 mode: SOLO
 estimated_minutes: 105
 technology_depth: core
 resource_ids:
-- docker-get-started
-- nginx-beginners-guide
+- grpc-docs
+- grpc-python-basics
 deliverables:
-- Measure latency/error/throughput under bounded load evidence
-- Week 24 private assessment attempt
-- `legacy-containerized + platform-local-production` increment or review
+- proto file
+- gRPC server/client
+- deadline/error evidence
 review_policy: adaptive
 prerequisites:
 - week-23
 status: planned
 ---
 
-# Day 04 — Measure latency/error/throughput under bounded load
+# Day 04 — Define Protobuf and Implement a Python gRPC Path
 
-## Why this matters
+## Outcome
 
-Integrate Docker/Nginx/PHP-FPM/MySQL/Redis into a reproducible local-production stack and measure behavior with bounded load tests.
+> Create a proto, generate/use Python client/server code, and handle one error/deadline case.
 
 ## Timebox
 
 | Block | Mode | Minutes |
 |---|---|---:|
 | Primary-source study | `SOLO` | 20 |
-| Hands-on reasoning / lab | `SOLO` | 40 |
-| Project / evidence update | `SOLO` | 15 |
+| Hands-on lab | `SOLO` | 40 |
+| Project/evidence update | `SOLO` | 15 |
 | Technical English | `SOLO` | 10 |
-| Daily micro-assessment | `SOLO` | 20 |
+| Daily assessment | `SOLO` | 20 |
 | **Total** |  | **105** |
 
-## Primary sources
+Assessment time is included.
 
-- `docker-get-started`
-- `nginx-beginners-guide`
+## Resources
+
+- `grpc-docs`
+- `grpc-python-basics`
 
 ## Activities
 
 ### Primary-source study — 20 min — `SOLO`
 
-Read the relevant primary source with the specific question: Measure latency/error/throughput under bounded load.
+Read only the source sections needed to reason about the day's focus.
 
-### Hands-on reasoning / lab — 40 min — `SOLO`
+### Hands-on lab — 40 min — `SOLO`
 
-Measure latency/error/throughput under bounded load. Start with a prediction/design before execution or lookup.
+Create a proto, generate/use Python client/server code, and handle one error/deadline case.
 
-### Project / evidence update — 15 min — `SOLO`
+### Project/evidence update — 15 min — `SOLO`
 
-Connect the result to `legacy-containerized + platform-local-production` or preserve a reproducible standalone artifact.
+Connect the result to Project A/B or preserve a reproducible standalone artifact.
 
 ### Technical English — 10 min — `SOLO`
 
-Present the local-production architecture and load-test evidence in English.
+Explain one important decision, assumption, or failure mode in English.
 
-### Daily micro-assessment — 20 min — `SOLO`
+### Daily assessment — 20 min — `SOLO`
 
-Complete the scored assessment without assistance.
+Complete the scored transfer prompt without assistance.
 
 ## Deliverables
 
-- Measure latency/error/throughput under bounded load evidence
-- Week 24 private assessment attempt
-- `legacy-containerized + platform-local-production` increment or review
+- proto file
+- gRPC server/client
+- deadline/error evidence
 
 ## Daily assessment
 
-Run `02 Daily Assessments/Week 24/Day 04.md`. Store learner responses only in private state.
+Run `02 Daily Assessments/Week 24/Day 04.md`. Store learner attempts privately.
 
 ## Review hook
 
-Create D+1/D+7 reviews from demonstrated errors; create D+30 transfer review when justified. Overdue reviews precede optional new content.
+Create D+1/D+7 reviews from demonstrated errors and D+30 transfer review when justified.
 
 ## AI integrity
 
-SOLO evidence remains independent. HYBRID/AI-assisted work freezes the pre-agent baseline and requires independent validation of consequential claims or changes.
+Scored attempts are SOLO. HYBRID work preserves the first independent attempt before agent use.
+
+## Completion rule
+
+Reading or agent conversation alone is not completion; required evidence must exist.

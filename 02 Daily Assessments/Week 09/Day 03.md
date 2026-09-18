@@ -1,70 +1,46 @@
 ---
 type: assessment
 schema_version: 1
-id: assessment-w09-d03-relational-modeling-and-sql
+id: assessment-w09-d03-v1-1
 date: null
 week: 9
 assessment_type: sql-debugging
 mode: SOLO
 skill_ids:
 - relational-modeling
+- mysql
+- postgresql
 - sql
-- constraints
-- joins
 status: planned
 assistance_declared: none
-started_at: null
-submitted_at: null
-graded_at: null
 score_total: null
-score_dimensions:
-  factual_correctness: null
-  reasoning: null
-  practical_execution: null
-  validation: null
-  communication: null
-  english_quality: null
-  ai_supervision: null
-confidence_self_report: null
-grader: null
 estimated_minutes: 20
 ---
 
-# Week 09 / Day 03 Micro-Assessment
+# Week 09 / Day 03 — V1.1 Micro-Assessment
 
-## Instructions snapshot
+## Instructions
 
-- Timebox: **20 minutes**.
-- Scored attempt mode: **SOLO**.
+- Scored attempt is **SOLO**.
 - No LLM, coding agent, answer search, or existing solution during the scored attempt.
-- Freeze the response before feedback.
-- If help is required, mark the attempt `abandoned` before receiving solution-oriented help.
+- Freeze the raw response before feedback.
+- If help is required, mark the attempt abandoned before receiving solution-oriented help.
 
 ## Prompts
 
-1. Why can joining two one-to-many relationships inflate aggregates?
-2. How can a LEFT JOIN accidentally behave like an INNER JOIN?
+1. How can a query be syntactically valid yet non-portable in behavior?
+2. Why do counterexample rows matter for aggregate validation?
 
 ## Raw attempt — IMMUTABLE AFTER SUBMISSION
 
 _Copy this assessment into private state and record the learner response there._
 
-## Assistance declaration — IMMUTABLE AFTER SUBMISSION
-
-Expected during the scored attempt: `none`.
-
 ## Grading
 
-Grade after submission using `docs/assessments.md` and the `sql-debugging` rubric.
+Grade after submission using `docs/assessments.md` and the applicable rubric.
 
 ## Feedback
 
-_Append after grading; never replace the raw attempt._
-
-## Error records created
-
-## Review events created
-
-## Regrade history
+Append after submission. Never replace the raw attempt.
 
 No solution/model answer is stored in the public roadmap.

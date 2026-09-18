@@ -4,35 +4,31 @@ schema_version: 1
 week: 22
 phase: Modern Backend
 estimated_minutes: 720
-primary_outcome: "Containerize the backend with deliberate image layers, runtime configuration, networking, volumes, and reproducible Docker Compose workflows."
-project_milestone: "legacy-containerized + platform-local-production"
+primary_outcome: "Containerize the Laravel/PostgreSQL/Redis platform and create a deliberate integration seam for the bounded Python service."
+project_milestone: "platform-local-production"
+v1_1_market_alignment: true
 ---
 
-# Week 22 — Docker Images, Containers, Compose, and Reproducibility
+# Week 22 — Docker, Compose, PostgreSQL, Redis, and Multi-Service Reproducibility
 
 ## Primary outcome
 
-Containerize the backend with deliberate image layers, runtime configuration, networking, volumes, and reproducible Docker Compose workflows.
+Containerize the Laravel/PostgreSQL/Redis platform and create a deliberate integration seam for the bounded Python service.
 
-## Matrix alignment
+## V1.1 alignment
 
-Core topics:
-- Docker images
-- Dockerfile
-- containers
-- networks
-- volumes
-- Docker Compose
+This week implements the approved V1.1 US-market amendment while preserving the 12-hour ceiling.
 
-Project milestone: `legacy-containerized + platform-local-production`
+Project milestone: `platform-local-production`
 
 Weekly simulation: `SOLO` / `coding-lab`
 
-English: Explain image/container/runtime boundaries in English.
+## Core skills
 
-AI/agent: Use an agent only after a SOLO baseline; independently verify consequential claims.
-
-Career: Track role-fit evidence and interview/application signals privately.
+- docker
+- compose
+- postgresql
+- service-boundary
 
 ## Planned workload
 
@@ -55,4 +51,8 @@ Assessment time is included.
 
 ## Adaptation rule
 
-This is a public baseline. Learner-specific scores, remediation, reviews, applications, and future scheduling belong under `.study/`. Historical attempts are preserved; a gate failure creates private remediation instead of erasing later public curriculum.
+Public curriculum remains generic. Learner-specific remediation, scores, reviews, and market-triggered depth belong under private `.study/`.
+
+## AI integrity
+
+SOLO evidence must remain independent. HYBRID work freezes the first attempt before agent use and validates consequential claims afterward.

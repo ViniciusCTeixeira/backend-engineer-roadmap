@@ -4,35 +4,31 @@ schema_version: 1
 week: 18
 phase: Modern Backend
 estimated_minutes: 720
-primary_outcome: "Use Eloquent and migrations without losing relational-model, query-plan, or transaction awareness."
+primary_outcome: "Use Eloquent on PostgreSQL while preserving relational/query-plan awareness and avoiding ORM-driven schema design."
 project_milestone: "platform-persistence"
+v1_1_market_alignment: true
 ---
 
-# Week 18 — Eloquent, Migrations, Relationships, and SQL Awareness
+# Week 18 — Eloquent, PostgreSQL Migrations, Relationships, and SQL Awareness
 
 ## Primary outcome
 
-Use Eloquent and migrations without losing relational-model, query-plan, or transaction awareness.
+Use Eloquent on PostgreSQL while preserving relational/query-plan awareness and avoiding ORM-driven schema design.
 
-## Matrix alignment
+## V1.1 alignment
 
-Core topics:
-- Eloquent
-- migrations
-- relationships
-- query scopes
-- N+1
-- validation
+This week implements the approved V1.1 US-market amendment while preserving the 12-hour ceiling.
 
 Project milestone: `platform-persistence`
 
 Weekly simulation: `SOLO` / `sql-debugging`
 
-English: Write an English review note explaining an N+1 or data-model risk.
+## Core skills
 
-AI/agent: Use an agent only after a SOLO baseline; independently verify consequential claims.
-
-Career: Track role-fit evidence and interview/application signals privately.
+- eloquent
+- postgresql
+- migrations
+- n-plus-one
 
 ## Planned workload
 
@@ -52,8 +48,13 @@ Assessment time is included.
 ## Primary resource IDs
 
 - laravel-current-docs
-- mysql-84-manual
+- postgresql-18-manual
+- postgresql-explain
 
 ## Adaptation rule
 
-This is a public baseline. Learner-specific scores, remediation, reviews, applications, and future scheduling belong under `.study/`. Historical attempts are preserved; a gate failure creates private remediation instead of erasing later public curriculum.
+Public curriculum remains generic. Learner-specific remediation, scores, reviews, and market-triggered depth belong under private `.study/`.
+
+## AI integrity
+
+SOLO evidence must remain independent. HYBRID work freezes the first attempt before agent use and validates consequential claims afterward.

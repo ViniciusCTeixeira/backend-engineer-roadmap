@@ -1,7 +1,7 @@
 ---
 type: assessment
 schema_version: 1
-id: assessment-w15-d06-api-design-auth-authorization-and-security
+id: assessment-w15-d06-v1-1
 date: null
 week: 15
 assessment_type: system-design
@@ -10,61 +10,37 @@ skill_ids:
 - api-design
 - authentication
 - authorization
-- oauth-oidc
+- graphql
 status: planned
 assistance_declared: none
-started_at: null
-submitted_at: null
-graded_at: null
 score_total: null
-score_dimensions:
-  factual_correctness: null
-  reasoning: null
-  practical_execution: null
-  validation: null
-  communication: null
-  english_quality: null
-  ai_supervision: null
-confidence_self_report: null
-grader: null
 estimated_minutes: 10
 ---
 
-# Week 15 / Day 06 Micro-Assessment
+# Week 15 / Day 06 — V1.1 Micro-Assessment
 
-## Instructions snapshot
+## Instructions
 
-- Timebox: **10 minutes**.
-- Scored attempt mode: **SOLO**.
+- Scored attempt is **SOLO**.
 - No LLM, coding agent, answer search, or existing solution during the scored attempt.
-- Freeze the response before feedback.
-- If help is required, mark the attempt `abandoned` before receiving solution-oriented help.
+- Freeze the raw response before feedback.
+- If help is required, mark the attempt abandoned before receiving solution-oriented help.
 
 ## Prompts
 
-1. State the highest-impact authorization invariant and its negative test.
-2. What token/security mechanism do you delegate to mature tooling and why?
+1. State the most important invariant or decision tested by today's simulation.
+2. Name one piece of evidence that could falsify your conclusion.
 
 ## Raw attempt — IMMUTABLE AFTER SUBMISSION
 
 _Copy this assessment into private state and record the learner response there._
 
-## Assistance declaration — IMMUTABLE AFTER SUBMISSION
-
-Expected during the scored attempt: `none`.
-
 ## Grading
 
-Grade after submission using `docs/assessments.md` and the `system-design` rubric.
+Grade after submission using `docs/assessments.md` and the applicable rubric.
 
 ## Feedback
 
-_Append after grading; never replace the raw attempt._
-
-## Error records created
-
-## Review events created
-
-## Regrade history
+Append after submission. Never replace the raw attempt.
 
 No solution/model answer is stored in the public roadmap.

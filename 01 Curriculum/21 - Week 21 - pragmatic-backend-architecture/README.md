@@ -4,35 +4,31 @@ schema_version: 1
 week: 21
 phase: Modern Backend
 estimated_minutes: 720
-primary_outcome: "Apply application services, boundaries, DTO/value objects, dependency direction, and repository trade-offs without overengineering."
+primary_outcome: "Apply pragmatic boundaries and explicitly decide when functionality stays modular versus becoming a service."
 project_milestone: "platform-architecture"
+v1_1_market_alignment: true
 ---
 
-# Week 21 — Pragmatic Backend Architecture and ADRs
+# Week 21 — Pragmatic Backend Architecture, ADRs, and Service Boundaries
 
 ## Primary outcome
 
-Apply application services, boundaries, DTO/value objects, dependency direction, and repository trade-offs without overengineering.
+Apply pragmatic boundaries and explicitly decide when functionality stays modular versus becoming a service.
 
-## Matrix alignment
+## V1.1 alignment
 
-Core topics:
-- application services
-- repository trade-offs
-- domain boundaries
-- DTO/value objects
-- dependency direction
-- ADRs
+This week implements the approved V1.1 US-market amendment while preserving the 12-hour ceiling.
 
 Project milestone: `platform-architecture`
 
 Weekly simulation: `SOLO` / `system-design`
 
-English: Defend an architecture decision in English.
+## Core skills
 
-AI/agent: Use an agent only after a SOLO baseline; independently verify consequential claims.
-
-Career: Start senior-backend interview preparation alongside selective applications.
+- architecture
+- adrs
+- service-boundaries
+- dependency-direction
 
 ## Planned workload
 
@@ -56,4 +52,8 @@ Assessment time is included.
 
 ## Adaptation rule
 
-This is a public baseline. Learner-specific scores, remediation, reviews, applications, and future scheduling belong under `.study/`. Historical attempts are preserved; a gate failure creates private remediation instead of erasing later public curriculum.
+Public curriculum remains generic. Learner-specific remediation, scores, reviews, and market-triggered depth belong under private `.study/`.
+
+## AI integrity
+
+SOLO evidence must remain independent. HYBRID work freezes the first attempt before agent use and validates consequential claims afterward.
